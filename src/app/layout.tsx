@@ -6,7 +6,7 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 const plex = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-plex", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fandex.vercel.app"),
+  metadataBase: new URL("https://thefandex.vercel.app"),
   title: "Fandex: every season, every team, one scale",
   description:
     "Every NFL, NBA, MLB and NHL season since 1903, scored on one scale. Rank all 124 franchises and 49 cities over any era, and see how good your own teams have been since you were born.",
