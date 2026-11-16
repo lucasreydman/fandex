@@ -14,14 +14,14 @@ type SortKey = "rank" | "pct" | "z" | "avgZ" | "elite" | "dud" | "titles" | "fin
 type Filter = "all" | League;
 
 const COLS: { key: SortKey; label: string; title: string; hide?: string; get: (s: TeamStat) => number }[] = [
-  { key: "seasons", label: "Yrs", title: "Seasons played in this span", hide: "hidden lg:block", get: (s) => s.seasons },
+  { key: "seasons", label: "Yrs", title: "Seasons played in this span", hide: "hidden lg:flex", get: (s) => s.seasons },
   { key: "pct", label: "Win rate", title: "Wins divided by wins plus losses. Ties left out, overtime losses count as losses", get: (s) => s.pct },
-  { key: "z", label: "Record", title: "How far the overall record sits from .500, in units of how spread out that league is", hide: "hidden md:block", get: (s) => s.z },
-  { key: "avgZ", label: "Typical yr", title: "Average of each season’s standing against that year’s league", hide: "hidden lg:block", get: (s) => s.avgZ },
-  { key: "elite", label: "Great", title: "Seasons a full standard deviation above the league", hide: "hidden lg:block", get: (s) => s.elite },
-  { key: "dud", label: "Awful", title: "Seasons a full standard deviation below the league", hide: "hidden lg:block", get: (s) => s.dud },
+  { key: "z", label: "Record", title: "How far the overall record sits from .500, in units of how spread out that league is", hide: "hidden md:flex", get: (s) => s.z },
+  { key: "avgZ", label: "Typical yr", title: "Average of each season’s standing against that year’s league", hide: "hidden lg:flex", get: (s) => s.avgZ },
+  { key: "elite", label: "Great", title: "Seasons a full standard deviation above the league", hide: "hidden lg:flex", get: (s) => s.elite },
+  { key: "dud", label: "Awful", title: "Seasons a full standard deviation below the league", hide: "hidden lg:flex", get: (s) => s.dud },
   { key: "titles", label: "Titles", title: "Championships won", get: (s) => s.titles },
-  { key: "finalsLost", label: "Lost final", title: "Finals reached and lost", hide: "hidden xl:block", get: (s) => s.finalsLost },
+  { key: "finalsLost", label: "Lost final", title: "Finals reached and lost", hide: "hidden xl:flex", get: (s) => s.finalsLost },
   { key: "rank", label: "Luck", title: "Composite score on a 0 to 100 scale", get: (s) => -s.rank },
 ];
 
@@ -89,8 +89,6 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
                 className={clsx(
                   "flex h-10 items-center justify-end gap-1 whitespace-nowrap transition-colors duration-150 hover:text-ink",
                   c.hide,
-                  // On phones only win rate, titles and luck fit.
-                  !c.hide && c.key === "titles" && "max-md:justify-end",
                   active && "text-ink",
                 )}
               >
