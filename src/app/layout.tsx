@@ -6,6 +6,7 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 const plex = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-plex", display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bornlucky.vercel.app"),
   title: "Born Lucky: how your teams have done since you were born",
   description:
     "Pick your birth year and your teams. Every NFL, NBA, MLB and NHL season since, scored on one scale, with rankings for all 124 franchises and 49 cities.",
