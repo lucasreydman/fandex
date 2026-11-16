@@ -81,7 +81,8 @@ export function Tape({
 
 export function HeatLegend() {
   return (
-    <div className="flex items-center gap-2 text-[12px] leading-4 text-ink-3">
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 whitespace-nowrap text-[12px] leading-4 text-ink-3">
+      <span className="flex items-center gap-2">
       <span>Awful</span>
       <span className="flex gap-0.5">
         {[-2.2, -1.4, -0.7, 0, 0.7, 1.4, 2.2].map((z) => (
@@ -89,7 +90,8 @@ export function HeatLegend() {
         ))}
       </span>
       <span>Great</span>
-      <span className="ml-2 flex items-center gap-1 text-ink-2">
+      </span>
+      <span className="flex items-center gap-1 text-ink-2">
         <Pennant size={9} /> title
       </span>
       <span className="flex items-center gap-1">

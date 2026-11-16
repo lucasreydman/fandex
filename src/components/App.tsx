@@ -134,7 +134,7 @@ export function App() {
               className="pb-12 pt-12 lg:pt-16"
             >
               <h1 className="display text-[44px] leading-[1.02] tracking-[-0.01em] text-ink sm:text-[64px]">Every season, one scale</h1>
-              <p className="mt-4 max-w-[36rem] text-[18px] leading-7 text-ink-2">
+              <p className="mt-4 max-w-[36rem] text-pretty text-[18px] leading-7 text-ink-2">
                 The NFL, NBA, MLB and NHL since 1903, scored so a baseball dynasty and a football dynasty can be compared. Set your years and your teams to see how good you’ve had it
               </p>
               <div className="mt-10 grid gap-x-16 gap-y-10 lg:grid-cols-2">

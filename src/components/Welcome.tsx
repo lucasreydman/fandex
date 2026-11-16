@@ -73,7 +73,7 @@ export function Welcome({
             <div className="mt-6">
               <Stepper value={state.year} min={min} max={max} onChange={(v) => set({ mode: "birth", year: Math.max(min, Math.min(max, v)) })} label="Birth year" />
             </div>
-            <div className="mt-2">
+            <div className="mt-4">
               <Ruler min={min} max={max} value={state.year} label="Birth year" onChange={(v) => set({ mode: "birth", year: v })} />
             </div>
           </div>

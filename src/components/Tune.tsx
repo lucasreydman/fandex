@@ -51,7 +51,7 @@ export function Tune({
       <div className="flex h-full flex-col">
         <div className="flex h-14 shrink-0 items-center justify-between border-b border-line px-6">
           <h2 className="text-[15px] font-medium">Scoring</h2>
-          <button type="button" aria-label="Close" onClick={onClose} className="grid size-8 place-items-center rounded-[8px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink">
+          <button type="button" aria-label="Close" onClick={onClose} className="-mr-2 grid size-8 place-items-center rounded-[8px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink">
             <X size={18} strokeWidth={1.5} />
           </button>
         </div>
@@ -136,7 +136,7 @@ export function Tune({
             type="button"
             disabled={isDefault}
             onClick={() => set({ weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false })}
-            className="flex h-9 items-center gap-2 rounded-[10px] px-3 text-[14px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink disabled:opacity-40"
+            className="-ml-3 flex h-9 items-center gap-2 rounded-[10px] px-3 text-[14px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink disabled:opacity-40"
           >
             <RotateCcw size={16} strokeWidth={1.5} /> Reset
           </button>

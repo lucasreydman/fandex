@@ -122,7 +122,7 @@ function CityRow({ m, on, mine, onPick, onHover }: { m: MetroStat; on: boolean; 
 
 function CityCard({ m, total }: { m: MetroStat; total: number }) {
   return (
-    <div className="mt-4 rounded-[16px] border border-line bg-card p-6">
+    <div className="mt-4 rounded-[16px] border border-line bg-card p-6 md:p-8">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
         <h3 className="text-[20px] font-medium leading-7 text-ink">{m.name}</h3>
         <p className="num text-[13px] text-ink-2">

@@ -46,7 +46,7 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
         <span>50</span>
         <span>100</span>
       </div>
-      <p className="mt-3 h-5 text-[13px] leading-5 text-ink-2">
+      <p className="mt-3 min-h-5 text-[13px] leading-5 text-ink-2">
         {hovered ? (
           <>
             <span className="text-ink">{hovered.name}</span> · {Math.round(hovered.index)} · {hovered.teams.length} {hovered.teams.length === 1 ? "team" : "teams"} · {hovered.titles} {hovered.titles === 1 ? "title" : "titles"}
@@ -67,7 +67,7 @@ function Stat({ label, value, note, children }: { label: string; value?: number;
     <div className="min-w-0 py-4">
       <div className="text-[13px] leading-5 text-ink-2">{label}</div>
       <div className="display mt-2 flex h-10 items-center gap-2 text-[36px] text-ink">
-        {children ?? <NumberFlow value={value ?? 0} style={{ lineHeight: 1 }} />}
+        {children ?? <NumberFlow value={value ?? 0} className="[--number-flow-mask-height:0.06em]" style={{ lineHeight: 1 }} />}
       </div>
       {note && <div className="mt-2 truncate text-[12px] leading-4 text-ink-3">{note}</div>}
     </div>
@@ -100,10 +100,10 @@ export function Scorecard({ result, fan, eraLabel }: { result: Result; fan: FanS
             {copied ? <Check size={16} strokeWidth={1.5} /> : <Link2 size={16} strokeWidth={1.5} />} {copied ? "Copied" : "Copy link"}
           </button>
         </div>
-        <div className="mt-4 grid items-end gap-8 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12">
+        <div className="mt-6 grid items-end gap-8 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12">
           <div>
             <div className="flex items-baseline gap-2">
-              <NumberFlow value={Math.round(fan.index)} className="display h-[112px] text-[112px] text-ink md:h-[136px] md:text-[136px]" style={{ lineHeight: 1 }} />
+              <NumberFlow value={Math.round(fan.index)} className="display text-[112px] text-ink [--number-flow-mask-height:0.06em] md:text-[136px]" style={{ lineHeight: 0.86 }} />
               <span className="display text-[28px] text-ink-3">/ 100</span>
             </div>
             <h2 className="mt-4 text-[28px] font-medium leading-8 text-ink">{v.title}</h2>
@@ -115,7 +115,7 @@ export function Scorecard({ result, fan, eraLabel }: { result: Result; fan: FanS
 
       <div className="grid grid-cols-2 gap-x-6 border-t border-line px-6 sm:grid-cols-3 md:px-8 lg:grid-cols-5">
         <Stat label="Titles" note={fan.titles ? `One every ${(fan.seasons / fan.titles).toFixed(fan.seasons / fan.titles >= 10 ? 0 : 1)} team seasons` : `None in ${fan.seasons} team seasons`}>
-          <NumberFlow value={fan.titles} style={{ lineHeight: 1 }} />
+          <NumberFlow value={fan.titles} className="[--number-flow-mask-height:0.06em]" style={{ lineHeight: 1 }} />
           {fan.titles > 0 && <Pennant size={18} className="text-accent" />}
         </Stat>
         <Stat label="Finals lost" value={fan.finalsLost} note="So close" />

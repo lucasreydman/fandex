@@ -6,7 +6,7 @@ import { EASE } from "./ui";
 
 const W = 1000;
 const H = 240;
-const PAD = { l: 36, r: 12, t: 16, b: 28 };
+const PAD = { l: 40, r: 6, t: 16, b: 28 };
 
 /**
  * Fan luck for every possible birth year, for the teams picked.
@@ -57,7 +57,7 @@ export function Curve({
       <svg
         ref={ref}
         viewBox={`0 0 ${W} ${H}`}
-        className="mt-4 block w-full cursor-crosshair touch-pan-y select-none"
+        className="mt-4 block w-full cursor-crosshair touch-pan-y select-none overflow-visible"
         role="img"
         aria-label={`Fan luck by birth year from ${min} to ${max}. Highest for ${best.y}, lowest for ${worst.y}.`}
         onPointerMove={(e) => setHover(yearAt(e.clientX))}
@@ -67,7 +67,7 @@ export function Curve({
         {[0, 50, 100].map((v) => (
           <g key={v}>
             <line x1={PAD.l} x2={W - PAD.r} y1={yy(v)} y2={yy(v)} stroke="var(--line)" strokeDasharray={v === 50 ? "0" : "2 4"} />
-            <text x={PAD.l - 10} y={yy(v) + 4} textAnchor="end" className="num" fontSize="12" fill="var(--text-3)">{v}</text>
+            <text x={0} y={yy(v) + 4} textAnchor="start" className="num" fontSize="12" fill="var(--text-3)">{v}</text>
           </g>
         ))}
         {decades.map((y) => (

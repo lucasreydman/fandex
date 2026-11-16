@@ -173,7 +173,7 @@ export function TeamPicker({ teams, picks, onChange }: { teams: Team[]; picks: P
 
   return (
     <div>
-      <div className="flex items-baseline justify-between">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4">
         <h2 className="text-[15px] font-medium text-ink">Your teams</h2>
         <span className="text-[13px] text-ink-3">One per league, skip any you don’t follow</span>
       </div>

@@ -5,34 +5,31 @@ import { useState } from "react";
 import type { Mode, State } from "@/lib/state";
 import { Segmented } from "./ui";
 
-export function Ruler({ min, max, value, onChange, label }: { min: number; max: number; value: number; onChange: (v: number) => void; label: string }) {
+type Handle = { value: number; onChange: (v: number) => void; label: string };
+
+/**
+ * The year ruler. With `end` it carries two handles and shades the span between
+ * them. Handles are 12px wide to grab; ticks are inset by half of that so a
+ * handle sits exactly on its year.
+ */
+export function Ruler({ min, max, value, onChange, label, end }: Handle & { min: number; max: number; end?: Handle }) {
   const decades: number[] = [];
   for (let y = Math.ceil(min / 10) * 10; y <= max; y += 10) decades.push(y);
   const pos = (y: number) => `${((y - min) / (max - min)) * 100}%`;
   return (
     <div className="relative">
-      {/* Ticks are drawn 2px inside each edge so they sit under the 4px thumb. */}
-      <div className="pointer-events-none absolute inset-x-0.5 top-0 h-8">
+      <span className="pointer-events-none absolute inset-x-0 top-[23px] h-px bg-line-2" />
+      <div className="pointer-events-none absolute inset-x-1.5 top-0 h-8">
         {decades.map((y) => (
-          <span
-            key={y}
-            className="absolute bottom-2 w-px bg-line-2"
-            style={{ left: pos(y), height: y % 50 === 0 ? 16 : 8 }}
-          />
+          <span key={y} className="absolute bottom-2 w-px bg-line-2" style={{ left: pos(y), height: y % 50 === 0 ? 16 : 8 }} />
         ))}
-        <span className="absolute inset-x-0 bottom-2 h-px bg-line-2" />
+        {end && <span className="absolute bottom-[7px] h-[3px] rounded-[1px] bg-ink" style={{ left: pos(value), right: `calc(100% - ${pos(end.value)})` }} />}
       </div>
-      <input
-        type="range"
-        className="ruler relative block"
-        min={min}
-        max={max}
-        step={1}
-        value={value}
-        aria-label={label}
-        onChange={(e) => onChange(Number(e.target.value))}
-      />
-      <div className="num pointer-events-none relative mx-0.5 h-4 text-[12px] leading-4 text-ink-3">
+      <input type="range" className={end ? "ruler dual relative block" : "ruler relative block"} min={min} max={max} step={1} value={value} aria-label={label} onChange={(e) => onChange(Number(e.target.value))} />
+      {end && (
+        <input type="range" className="ruler dual absolute inset-x-0 top-0 block" min={min} max={max} step={1} value={end.value} aria-label={end.label} onChange={(e) => end.onChange(Number(e.target.value))} />
+      )}
+      <div className="num pointer-events-none relative mx-1.5 h-4 text-[12px] leading-4 text-ink-3">
         {decades.filter((y) => y % 20 === 0).map((y) => (
           <span key={y} className="absolute -translate-x-1/2" style={{ left: pos(y) }}>
             {y}
@@ -56,7 +53,7 @@ export function Stepper({ value, min, max, onChange, label }: { value: number; m
   };
   const btn = "grid size-9 place-items-center rounded-[10px] border border-line-2 bg-card text-ink-2 transition-[background-color,color,transform] duration-150 hover:bg-raised hover:text-ink active:scale-[0.97] disabled:opacity-30";
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-3">
       <input
         type="text"
         inputMode="numeric"
@@ -131,28 +128,27 @@ export function YearDial({
         </div>
       ) : (
         <div className="mt-4">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <Stepper value={year} min={min} max={mode === "custom" ? to : max} onChange={(v) => set({ year: clampYear(v) })} label={mode === "birth" ? "Birth year" : "First season"} />
+          <div className="flex flex-wrap items-end gap-x-10 gap-y-4">
+            <div>
+              {mode === "custom" && <div className="mb-1 text-[13px] leading-5 text-ink-2">From</div>}
+              <Stepper value={year} min={min} max={mode === "custom" ? to : max} onChange={(v) => set({ year: clampYear(v) })} label={mode === "birth" ? "Birth year" : "First season"} />
+            </div>
             {mode === "custom" && (
-              <>
-                <span className="display text-[40px] text-ink-3">to</span>
+              <div>
+                <div className="mb-1 text-[13px] leading-5 text-ink-2">To</div>
                 <Stepper value={to} min={year} max={max} onChange={(v) => set({ to: clampYear(v) })} label="Last season" />
-              </>
+              </div>
             )}
           </div>
-          <div className="mt-2">
+          <div className="mt-4">
             <Ruler
               min={min}
               max={max}
               value={year}
               label={mode === "birth" ? "Birth year" : "First season"}
-              onChange={(v) => set({ year: v, to: mode === "custom" ? Math.max(to, v) : to })}
+              onChange={(v) => set(mode === "custom" ? { year: Math.min(v, to) } : { year: v })}
+              end={mode === "custom" ? { value: to, label: "Last season", onChange: (v) => set({ to: Math.max(v, year) }) } : undefined}
             />
-            {mode === "custom" && (
-              <div className="mt-2">
-                <Ruler min={min} max={max} value={to} label="Last season" onChange={(v) => set({ to: v, year: Math.min(year, v) })} />
-              </div>
-            )}
           </div>
         </div>
       )}

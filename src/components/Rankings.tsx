@@ -69,7 +69,7 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
             className="w-full min-w-0 bg-transparent text-[14px] outline-none placeholder:text-ink-3"
           />
         </label>
-        <span className="num ml-auto text-[12px] text-ink-3">{rows.length} teams</span>
+        {rows.length !== result.teams.length && <span className="num ml-auto text-[12px] text-ink-3">{rows.length} of {result.teams.length} teams</span>}
       </div>
 
       <div className="mt-4" role="table" aria-label="Team rankings">
@@ -89,6 +89,8 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
                 className={clsx(
                   "flex h-10 items-center justify-end gap-1 whitespace-nowrap transition-colors duration-150 hover:text-ink",
                   c.hide,
+                  // The luck figure sits left of the row chevron, so its header stops there too.
+                  c.key === "rank" && "md:pr-[22px]",
                   active && "text-ink",
                 )}
               >
@@ -152,7 +154,7 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.25, ease: EASE }}
-                      className="px-2 pb-4 pt-1 md:pl-[52px]"
+                      className="px-2 pb-4 pt-1 md:pl-[60px]"
                     >
                       <Tape league={s.team.league} series={s.series} first={first} last={last} />
                       <p className="num mt-2 text-[12px] leading-4 text-ink-3">

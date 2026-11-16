@@ -115,22 +115,33 @@ button {
   height: 32px;
   background: transparent;
 }
+/* The handle is 12px wide to grab, drawn as a 4px bar in its middle. */
 .ruler::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 4px;
+  width: 12px;
   height: 32px;
-  border-radius: 2px;
-  background: var(--accent);
   border: 0;
-  box-shadow: 0 0 0 3px var(--card);
+  border-radius: 0;
+  background: linear-gradient(to right, transparent 4px, var(--accent) 4px 8px, transparent 8px);
 }
 .ruler::-moz-range-thumb {
-  width: 4px;
+  width: 12px;
   height: 32px;
-  border-radius: 2px;
-  background: var(--accent);
   border: 0;
-  box-shadow: 0 0 0 3px var(--card);
+  border-radius: 0;
+  background: linear-gradient(to right, transparent 4px, var(--accent) 4px 8px, transparent 8px);
+}
+/* Two handles on one ruler: only the handles take the pointer, so both stay reachable. */
+.ruler.dual {
+  pointer-events: none;
+}
+.ruler.dual::-webkit-slider-thumb {
+  pointer-events: auto;
+  cursor: grab;
+}
+.ruler.dual::-moz-range-thumb {
+  pointer-events: auto;
+  cursor: grab;
 }
 
 .slider {
