@@ -6,13 +6,13 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 const plex = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-plex", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bornlucky.vercel.app"),
-  title: "Born Lucky: how your teams have done since you were born",
+  metadataBase: new URL("https://fandex.vercel.app"),
+  title: "Fandex: every season, every team, one scale",
   description:
-    "Pick your birth year and your teams. Every NFL, NBA, MLB and NHL season since, scored on one scale, with rankings for all 124 franchises and 49 cities.",
+    "Every NFL, NBA, MLB and NHL season since 1903, scored on one scale. Rank all 124 franchises and 49 cities over any era, and see how good your own teams have been since you were born.",
   openGraph: {
-    title: "Born Lucky",
-    description: "How your teams have really done since the year you were born, across the NFL, NBA, MLB and NHL.",
+    title: "Fandex",
+    description: "Every NFL, NBA, MLB and NHL season on one scale. Pick your teams and your years.",
     type: "website",
   },
 };
@@ -25,7 +25,7 @@ export const viewport: Viewport = {
 };
 
 // Runs before first paint so the saved or system theme never flashes.
-const themeScript = `try{var t=localStorage.getItem("born-lucky:theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`;
+const themeScript = `try{var t=localStorage.getItem("fandex:theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`;
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

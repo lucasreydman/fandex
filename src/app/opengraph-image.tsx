@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Born Lucky: how your teams have done since you were born";
+export const alt = "Fandex: every season, every team, one scale";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -18,11 +18,11 @@ export default function Image() {
             <path d="M1 0.5v9" stroke="#eeece6" strokeWidth="1.2" strokeLinecap="round" fill="none" />
             <path d="M1.6 1.2 9.4 3.6 1.6 6z" fill="#ee6a4d" />
           </svg>
-          Born Lucky
+          Fandex
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 104, lineHeight: 1, letterSpacing: -2 }}>Were you born lucky</div>
-          <div style={{ fontSize: 34, color: "#aaa69d", marginTop: 24 }}>Your teams, every season since the year you were born</div>
+          <div style={{ fontSize: 104, lineHeight: 1, letterSpacing: -2 }}>Every season, one scale</div>
+          <div style={{ fontSize: 34, color: "#aaa69d", marginTop: 24 }}>NFL, NBA, MLB and NHL since 1903. Pick your teams and your years</div>
         </div>
         <div style={{ display: "flex", gap: 6 }}>
           {TAPE.map((z, i) => (

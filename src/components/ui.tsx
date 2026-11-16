@@ -41,7 +41,7 @@ export function Wordmark() {
   return (
     <span className="flex items-center gap-2 text-ink">
       <Pennant size={16} className="text-accent" />
-      <span className="display text-[20px] tracking-[0.01em]">Born Lucky</span>
+      <span className="display text-[20px] tracking-[0.01em]">Fandex</span>
     </span>
   );
 }

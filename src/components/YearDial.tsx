@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Mode, State } from "@/lib/state";
 import { Segmented, Switch } from "./ui";
 
-function Ruler({ min, max, value, onChange, label }: { min: number; max: number; value: number; onChange: (v: number) => void; label: string }) {
+export function Ruler({ min, max, value, onChange, label }: { min: number; max: number; value: number; onChange: (v: number) => void; label: string }) {
   const decades: number[] = [];
   for (let y = Math.ceil(min / 10) * 10; y <= max; y += 10) decades.push(y);
   const pos = (y: number) => `${((y - min) / (max - min)) * 100}%`;
@@ -43,7 +43,7 @@ function Ruler({ min, max, value, onChange, label }: { min: number; max: number;
   );
 }
 
-function Stepper({ value, min, max, onChange, label }: { value: number; min: number; max: number; onChange: (v: number) => void; label: string }) {
+export function Stepper({ value, min, max, onChange, label }: { value: number; min: number; max: number; onChange: (v: number) => void; label: string }) {
   const btn = "grid size-9 place-items-center rounded-[10px] text-ink-2 transition-[background-color,color,transform] duration-150 hover:bg-raised hover:text-ink active:scale-[0.97] disabled:opacity-30";
   return (
     <div className="flex items-center gap-1">

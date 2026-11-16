@@ -1,6 +1,6 @@
-# Born Lucky
+# Fandex
 
-How your teams have really done since the year you were born. Pick a birth year (or all time, or any span of years) and one team per league; the site scores every NFL, NBA, MLB and NHL season since on one scale, ranks all 124 franchises and 49 cities, and tells you how lucky a fan you have been.
+Every NFL, NBA, MLB and NHL season since 1903 on one scale, and how your own teams have done since the year you were born. Pick a birth year (or all time, or any span of years) and one team per league; the site scores every NFL, NBA, MLB and NHL season since on one scale, ranks all 124 franchises and 49 cities, and tells you how lucky a fan you have been.
 
 It started as a spreadsheet (`big4_win_pct_since_2005.xlsx`). The engine reproduces that sheet's numbers and a test keeps it that way.
 

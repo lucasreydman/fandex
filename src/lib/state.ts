@@ -89,7 +89,16 @@ export function decode(search: string, base: State, data: Dataset, min: number, 
   return s;
 }
 
-const KEY = "born-lucky:v1";
+const KEY = "fandex:v1";
+
+/** True when this browser has been here before. */
+export function hasVisited(): boolean {
+  try {
+    return localStorage.getItem(KEY) !== null;
+  } catch {
+    return true; // storage blocked: don't nag on every load
+  }
+}
 
 export function load(base: State, data: Dataset, min: number, max: number): State {
   try {

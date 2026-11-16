@@ -7,7 +7,7 @@ import { useCallback, useDeferredValue, useEffect, useMemo, useState } from "rea
 import raw from "@/data/data.json";
 import { teamAccent } from "@/lib/color";
 import { bounds, compute, curve, seasonLabel, summarize } from "@/lib/engine";
-import { decode, defaults, encode, load, save, toOptions } from "@/lib/state";
+import { decode, defaults, encode, hasVisited, load, save, toOptions } from "@/lib/state";
 import type { State, Tab } from "@/lib/state";
 import { LEAGUES } from "@/lib/types";
 import type { Dataset } from "@/lib/types";
@@ -17,13 +17,14 @@ import { Rankings } from "./Rankings";
 import { Scorecard } from "./Scorecard";
 import { Seasons } from "./Seasons";
 import { TeamPicker } from "./TeamPicker";
+import { Welcome } from "./Welcome";
 import { Tune } from "./Tune";
 import { EASE, IconButton, Logo, ThemeContext, Wordmark } from "./ui";
 import { YearDial } from "./YearDial";
 
 const data = raw as unknown as Dataset;
 const { min: MIN, max: MAX } = bounds(data);
-const THEME_KEY = "born-lucky:theme";
+const THEME_KEY = "fandex:theme";
 
 const TABS: { value: Tab; label: string }[] = [
   { value: "rankings", label: "Rankings" },
@@ -41,6 +42,7 @@ export function App() {
   const [ready, setReady] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [tuning, setTuning] = useState(false);
+  const [welcome, setWelcome] = useState(false);
 
   // The server renders the default view; the visitor's own link or last visit takes over on load.
   useEffect(() => {
@@ -48,6 +50,8 @@ export function App() {
     /* eslint-disable react-hooks/set-state-in-effect */
     setState(window.location.search ? { ...decode(window.location.search, base, data, MIN, MAX), teamColors: load(base, data, MIN, MAX).teamColors } : load(base, data, MIN, MAX));
     setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+    // A first visit with no shared link gets the short setup; a shared link shows what was shared.
+    if (!window.location.search && !hasVisited()) setWelcome(true);
     setReady(true);
     /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
@@ -60,6 +64,11 @@ export function App() {
   }, [state, ready]);
 
   const set = useCallback((patch: Partial<State>) => setState((s) => ({ ...s, ...patch })), []);
+
+  const finishWelcome = useCallback((finished: boolean) => {
+    setWelcome(false);
+    if (finished) requestAnimationFrame(() => document.getElementById("card")?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }, []);
 
   const toggleTheme = () => {
     const next = theme === "dark" ? "light" : "dark";
@@ -103,7 +112,7 @@ export function App() {
         <div style={style} className="min-h-dvh">
           <header className="sticky top-0 z-30 border-b border-line bg-bg">
             <div className="mx-auto flex h-14 max-w-[1280px] items-center justify-between px-4 sm:px-8">
-              <a href="#top" aria-label="Born Lucky, back to top"><Wordmark /></a>
+              <a href="#top" aria-label="Fandex, back to top"><Wordmark /></a>
               <div className="flex items-center gap-1">
                 <button
                   type="button"
@@ -126,9 +135,9 @@ export function App() {
               transition={{ duration: 0.5, ease: EASE }}
               className="pb-12 pt-12 lg:pt-16"
             >
-              <h1 className="display text-[44px] leading-[1.02] tracking-[-0.01em] text-ink sm:text-[64px]">Were you born lucky</h1>
+              <h1 className="display text-[44px] leading-[1.02] tracking-[-0.01em] text-ink sm:text-[64px]">Every season, one scale</h1>
               <p className="mt-4 max-w-[36rem] text-[18px] leading-7 text-ink-2">
-                Every season your teams have played since the year you were born, scored on one scale across the NFL, NBA, MLB and NHL
+                The NFL, NBA, MLB and NHL since 1903, scored so a baseball dynasty and a football dynasty can be compared. Set your years and your teams to see how good you’ve had it
               </p>
               <div className="mt-10 grid gap-x-16 gap-y-10 lg:grid-cols-2">
                 <YearDial state={state} set={set} min={MIN} max={MAX} />
@@ -136,7 +145,7 @@ export function App() {
               </div>
             </motion.section>
 
-            <div className="grid gap-6">
+            <div id="card" className="grid scroll-mt-20 gap-6">
               {fan ? (
                 <>
                   <Scorecard result={result} fan={fan} eraLabel={eraLabel} />
@@ -204,6 +213,7 @@ export function App() {
             </div>
           </footer>
 
+          <Welcome open={welcome} teams={data.teams} state={state} set={set} min={MIN} max={MAX} onDone={finishWelcome} />
           <Tune open={tuning} onClose={() => setTuning(false)} state={state} set={set} liveNote={liveNote} />
         </div>
       </MotionConfig>
