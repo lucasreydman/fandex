@@ -23,10 +23,13 @@ const rows = Object.entries(sheet.teams) as [string, (typeof sheet.teams)[keyof 
 // The NHL API is the source for hockey here; the sheet used ESPN, whose
 // 2014-15 and 2020-21 hockey seasons are wrong. Those teams are compared loosely.
 const loose = (league: string) => league === "NHL";
+// The sheet gave Utah the Coyotes' seasons. Officially Utah is a new club, so its record here is its own.
+const skip = (name: string) => name === "Utah Mammoth";
 
 describe("engine against the original spreadsheet", () => {
   it("covers all 124 franchises", () => {
-    expect(result.teams).toHaveLength(124);
+    // The sheet's 124 clubs, plus the Coyotes, who the sheet folded into Utah.
+    expect(result.teams).toHaveLength(125);
     for (const [name] of rows) expect(byName.has(name), name).toBe(true);
   });
 
@@ -58,7 +61,7 @@ describe("engine against the original spreadsheet", () => {
 
   it("keeps hockey close to the sheet despite the source change", () => {
     for (const [name, r] of rows) {
-      if (!loose(r.league)) continue;
+      if (!loose(r.league) || skip(name)) continue;
       expect(Math.abs(byName.get(name)!.pct - r.pct), name).toBeLessThan(0.012);
     }
   });

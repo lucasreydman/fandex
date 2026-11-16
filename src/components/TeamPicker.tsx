@@ -16,7 +16,7 @@ export type PickerView = League | "city";
 export function randomPicks(teams: Team[]): Picks {
   const next: Picks = { ...EMPTY_PICKS };
   for (const l of LEAGUES) {
-    const pool = teams.filter((t) => t.league === l);
+    const pool = teams.filter((t) => t.league === l && !t.inactive);
     next[l] = pool[Math.floor(Math.random() * pool.length)].key;
   }
   return next;
@@ -42,7 +42,7 @@ export function TeamBrowser({
   const [query, setQuery] = useState("");
   const metros = useMemo(() => {
     const m = new Map<string, Team[]>();
-    for (const t of teams) m.set(t.metro, [...(m.get(t.metro) ?? []), t]);
+    for (const t of teams) if (!t.inactive) m.set(t.metro, [...(m.get(t.metro) ?? []), t]);
     return [...m].sort((a, b) => a[0].localeCompare(b[0]));
   }, [teams]);
 
@@ -133,7 +133,10 @@ export function TeamBrowser({
                   )}
                 >
                   <Logo team={t} size={40} />
-                  <span className="w-full truncate text-center text-[12px] leading-4 text-ink-2">{t.nick}</span>
+                  <span className="w-full truncate text-center text-[12px] leading-4 text-ink-2">
+                    {t.nick}
+                    {t.inactive && <span className="block text-ink-3">inactive</span>}
+                  </span>
                 </button>
               );
             })}

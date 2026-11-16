@@ -132,10 +132,15 @@ function CityCard({ m, total }: { m: MetroStat; total: number }) {
       <ul className="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2">
         {m.teams.map((s) => (
           <li key={s.team.key} className="flex h-10 items-center gap-3">
-            <Logo team={s.team} size={28} />
+            <Logo team={s.team} size={28} className={s.current ? undefined : "opacity-60"} />
             <span className="min-w-0 flex-1">
-              <span className="block truncate text-[14px] leading-5 text-ink">{s.team.name}</span>
-              <span className="num block text-[12px] leading-4 text-ink-3">#{s.rank} of {total} · {pct(s.pct)}</span>
+              <span className="block truncate text-[14px] leading-5 text-ink">{s.name}</span>
+              <span className="num block truncate text-[12px] leading-4 text-ink-3">
+                {pct(s.pct)}{" · "}
+                {s.current
+                  ? `#${s.stat.rank} of ${total}${s.seasons < s.stat.seasons ? ` · since ${s.first}` : ""}`
+                  : `${s.first === s.last ? s.first : `${s.first} to ${s.last}`} · now ${s.team.inactive ? "inactive" : s.team.name}`}
+              </span>
             </span>
             {s.titles > 0 && (
               <span className="num flex items-center gap-1 text-[13px] text-ink">

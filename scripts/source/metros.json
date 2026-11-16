@@ -1,98 +1,410 @@
 {
   "metros": {
-    "Atlanta": { "lat": 33.749, "lon": -84.388, "region": "GA" },
-    "Baltimore": { "lat": 39.29, "lon": -76.612, "region": "MD" },
-    "Boston": { "lat": 42.36, "lon": -71.059, "region": "MA" },
-    "Buffalo": { "lat": 42.886, "lon": -78.878, "region": "NY" },
-    "Calgary": { "lat": 51.045, "lon": -114.072, "region": "AB" },
-    "Charlotte": { "lat": 35.227, "lon": -80.843, "region": "NC" },
-    "Chicago": { "lat": 41.878, "lon": -87.63, "region": "IL" },
-    "Cincinnati": { "lat": 39.103, "lon": -84.512, "region": "OH" },
-    "Cleveland": { "lat": 41.499, "lon": -81.694, "region": "OH" },
-    "Columbus": { "lat": 39.961, "lon": -82.999, "region": "OH" },
-    "Dallas–Fort Worth": { "lat": 32.777, "lon": -96.797, "region": "TX" },
-    "Denver": { "lat": 39.739, "lon": -104.99, "region": "CO" },
-    "Detroit": { "lat": 42.331, "lon": -83.046, "region": "MI" },
-    "Edmonton": { "lat": 53.546, "lon": -113.494, "region": "AB" },
-    "Green Bay": { "lat": 44.513, "lon": -88.013, "region": "WI" },
-    "Houston": { "lat": 29.76, "lon": -95.37, "region": "TX" },
-    "Indianapolis": { "lat": 39.768, "lon": -86.158, "region": "IN" },
-    "Jacksonville": { "lat": 30.332, "lon": -81.656, "region": "FL" },
-    "Kansas City": { "lat": 39.1, "lon": -94.579, "region": "MO" },
-    "Las Vegas": { "lat": 36.17, "lon": -115.14, "region": "NV" },
-    "Los Angeles": { "lat": 34.052, "lon": -118.244, "region": "CA" },
-    "Memphis": { "lat": 35.15, "lon": -90.049, "region": "TN" },
-    "Miami": { "lat": 25.762, "lon": -80.192, "region": "FL" },
-    "Milwaukee": { "lat": 43.039, "lon": -87.907, "region": "WI" },
-    "Minneapolis–St. Paul": { "lat": 44.978, "lon": -93.265, "region": "MN" },
-    "Montreal": { "lat": 45.502, "lon": -73.567, "region": "QC" },
-    "Nashville": { "lat": 36.163, "lon": -86.782, "region": "TN" },
-    "New Orleans": { "lat": 29.951, "lon": -90.072, "region": "LA" },
-    "New York": { "lat": 40.713, "lon": -74.006, "region": "NY" },
-    "Oklahoma City": { "lat": 35.468, "lon": -97.516, "region": "OK" },
-    "Orlando": { "lat": 28.538, "lon": -81.379, "region": "FL" },
-    "Ottawa": { "lat": 45.422, "lon": -75.697, "region": "ON" },
-    "Philadelphia": { "lat": 39.953, "lon": -75.165, "region": "PA" },
-    "Phoenix": { "lat": 33.448, "lon": -112.074, "region": "AZ" },
-    "Pittsburgh": { "lat": 40.441, "lon": -79.996, "region": "PA" },
-    "Portland": { "lat": 45.515, "lon": -122.679, "region": "OR" },
-    "Raleigh": { "lat": 35.78, "lon": -78.639, "region": "NC" },
-    "Sacramento": { "lat": 38.582, "lon": -121.494, "region": "CA" },
-    "Salt Lake City": { "lat": 40.761, "lon": -111.891, "region": "UT" },
-    "San Antonio": { "lat": 29.424, "lon": -98.494, "region": "TX" },
-    "San Diego": { "lat": 32.716, "lon": -117.161, "region": "CA" },
-    "Seattle": { "lat": 47.606, "lon": -122.332, "region": "WA" },
-    "SF Bay Area": { "lat": 37.775, "lon": -122.419, "region": "CA" },
-    "St. Louis": { "lat": 38.627, "lon": -90.199, "region": "MO" },
-    "Tampa Bay": { "lat": 27.951, "lon": -82.457, "region": "FL" },
-    "Toronto": { "lat": 43.653, "lon": -79.383, "region": "ON" },
-    "Vancouver": { "lat": 49.283, "lon": -123.121, "region": "BC" },
-    "Washington": { "lat": 38.907, "lon": -77.037, "region": "DC" },
-    "Winnipeg": { "lat": 49.895, "lon": -97.138, "region": "MB" }
+    "Atlanta": {
+      "lat": 33.749,
+      "lon": -84.388,
+      "region": "GA"
+    },
+    "Baltimore": {
+      "lat": 39.29,
+      "lon": -76.612,
+      "region": "MD"
+    },
+    "Boston": {
+      "lat": 42.36,
+      "lon": -71.059,
+      "region": "MA"
+    },
+    "Buffalo": {
+      "lat": 42.886,
+      "lon": -78.878,
+      "region": "NY"
+    },
+    "Calgary": {
+      "lat": 51.045,
+      "lon": -114.072,
+      "region": "AB"
+    },
+    "Charlotte": {
+      "lat": 35.227,
+      "lon": -80.843,
+      "region": "NC"
+    },
+    "Chicago": {
+      "lat": 41.878,
+      "lon": -87.63,
+      "region": "IL"
+    },
+    "Cincinnati": {
+      "lat": 39.103,
+      "lon": -84.512,
+      "region": "OH"
+    },
+    "Cleveland": {
+      "lat": 41.499,
+      "lon": -81.694,
+      "region": "OH"
+    },
+    "Columbus": {
+      "lat": 39.961,
+      "lon": -82.999,
+      "region": "OH"
+    },
+    "Dallas–Fort Worth": {
+      "lat": 32.777,
+      "lon": -96.797,
+      "region": "TX"
+    },
+    "Denver": {
+      "lat": 39.739,
+      "lon": -104.99,
+      "region": "CO"
+    },
+    "Detroit": {
+      "lat": 42.331,
+      "lon": -83.046,
+      "region": "MI"
+    },
+    "Edmonton": {
+      "lat": 53.546,
+      "lon": -113.494,
+      "region": "AB"
+    },
+    "Green Bay": {
+      "lat": 44.513,
+      "lon": -88.013,
+      "region": "WI"
+    },
+    "Houston": {
+      "lat": 29.76,
+      "lon": -95.37,
+      "region": "TX"
+    },
+    "Indianapolis": {
+      "lat": 39.768,
+      "lon": -86.158,
+      "region": "IN"
+    },
+    "Jacksonville": {
+      "lat": 30.332,
+      "lon": -81.656,
+      "region": "FL"
+    },
+    "Kansas City": {
+      "lat": 39.1,
+      "lon": -94.579,
+      "region": "MO"
+    },
+    "Las Vegas": {
+      "lat": 36.17,
+      "lon": -115.14,
+      "region": "NV"
+    },
+    "Los Angeles": {
+      "lat": 34.052,
+      "lon": -118.244,
+      "region": "CA"
+    },
+    "Memphis": {
+      "lat": 35.15,
+      "lon": -90.049,
+      "region": "TN"
+    },
+    "Miami": {
+      "lat": 25.762,
+      "lon": -80.192,
+      "region": "FL"
+    },
+    "Milwaukee": {
+      "lat": 43.039,
+      "lon": -87.907,
+      "region": "WI"
+    },
+    "Minneapolis–St. Paul": {
+      "lat": 44.978,
+      "lon": -93.265,
+      "region": "MN"
+    },
+    "Montreal": {
+      "lat": 45.502,
+      "lon": -73.567,
+      "region": "QC"
+    },
+    "Nashville": {
+      "lat": 36.163,
+      "lon": -86.782,
+      "region": "TN"
+    },
+    "New Orleans": {
+      "lat": 29.951,
+      "lon": -90.072,
+      "region": "LA"
+    },
+    "New York": {
+      "lat": 40.713,
+      "lon": -74.006,
+      "region": "NY"
+    },
+    "Oklahoma City": {
+      "lat": 35.468,
+      "lon": -97.516,
+      "region": "OK"
+    },
+    "Orlando": {
+      "lat": 28.538,
+      "lon": -81.379,
+      "region": "FL"
+    },
+    "Ottawa": {
+      "lat": 45.422,
+      "lon": -75.697,
+      "region": "ON"
+    },
+    "Philadelphia": {
+      "lat": 39.953,
+      "lon": -75.165,
+      "region": "PA"
+    },
+    "Phoenix": {
+      "lat": 33.448,
+      "lon": -112.074,
+      "region": "AZ"
+    },
+    "Pittsburgh": {
+      "lat": 40.441,
+      "lon": -79.996,
+      "region": "PA"
+    },
+    "Portland": {
+      "lat": 45.515,
+      "lon": -122.679,
+      "region": "OR"
+    },
+    "Raleigh": {
+      "lat": 35.78,
+      "lon": -78.639,
+      "region": "NC"
+    },
+    "Sacramento": {
+      "lat": 38.582,
+      "lon": -121.494,
+      "region": "CA"
+    },
+    "Salt Lake City": {
+      "lat": 40.761,
+      "lon": -111.891,
+      "region": "UT"
+    },
+    "San Antonio": {
+      "lat": 29.424,
+      "lon": -98.494,
+      "region": "TX"
+    },
+    "San Diego": {
+      "lat": 32.716,
+      "lon": -117.161,
+      "region": "CA"
+    },
+    "Seattle": {
+      "lat": 47.606,
+      "lon": -122.332,
+      "region": "WA"
+    },
+    "SF Bay Area": {
+      "lat": 37.775,
+      "lon": -122.419,
+      "region": "CA"
+    },
+    "St. Louis": {
+      "lat": 38.627,
+      "lon": -90.199,
+      "region": "MO"
+    },
+    "Tampa Bay": {
+      "lat": 27.951,
+      "lon": -82.457,
+      "region": "FL"
+    },
+    "Toronto": {
+      "lat": 43.653,
+      "lon": -79.383,
+      "region": "ON"
+    },
+    "Vancouver": {
+      "lat": 49.283,
+      "lon": -123.121,
+      "region": "BC"
+    },
+    "Washington": {
+      "lat": 38.907,
+      "lon": -77.037,
+      "region": "DC"
+    },
+    "Winnipeg": {
+      "lat": 49.895,
+      "lon": -97.138,
+      "region": "MB"
+    },
+    "Hartford": {
+      "lat": 41.765,
+      "lon": -72.673,
+      "region": "CT"
+    },
+    "Quebec City": {
+      "lat": 46.813,
+      "lon": -71.208,
+      "region": "QC"
+    },
+    "Syracuse": {
+      "lat": 43.048,
+      "lon": -76.147,
+      "region": "NY"
+    },
+    "Rochester": {
+      "lat": 43.157,
+      "lon": -77.615,
+      "region": "NY"
+    },
+    "Fort Wayne": {
+      "lat": 41.079,
+      "lon": -85.139,
+      "region": "IN"
+    },
+    "Tri-Cities": {
+      "lat": 41.507,
+      "lon": -90.515,
+      "region": "IL"
+    },
+    "Portsmouth": {
+      "lat": 38.732,
+      "lon": -82.998,
+      "region": "OH"
+    }
   },
   "teamMetro": {
-    "Anaheim Ducks": "Los Angeles", "Los Angeles Angels": "Los Angeles", "Los Angeles Chargers": "Los Angeles",
-    "LA Clippers": "Los Angeles", "Los Angeles Dodgers": "Los Angeles", "Los Angeles Kings": "Los Angeles",
-    "Los Angeles Lakers": "Los Angeles", "Los Angeles Rams": "Los Angeles",
-    "New Jersey Devils": "New York", "New York Giants": "New York", "New York Islanders": "New York",
-    "New York Jets": "New York", "New York Knicks": "New York", "New York Mets": "New York",
-    "Brooklyn Nets": "New York", "New York Rangers": "New York", "New York Yankees": "New York",
-    "Boston Bruins": "Boston", "Boston Celtics": "Boston", "New England Patriots": "Boston", "Boston Red Sox": "Boston",
-    "Chicago Bears": "Chicago", "Chicago Blackhawks": "Chicago", "Chicago Bulls": "Chicago", "Chicago Cubs": "Chicago", "Chicago White Sox": "Chicago",
-    "Dallas Cowboys": "Dallas–Fort Worth", "Dallas Mavericks": "Dallas–Fort Worth", "Texas Rangers": "Dallas–Fort Worth", "Dallas Stars": "Dallas–Fort Worth",
-    "San Francisco 49ers": "SF Bay Area", "San Francisco Giants": "SF Bay Area", "San Jose Sharks": "SF Bay Area", "Golden State Warriors": "SF Bay Area",
-    "Colorado Avalanche": "Denver", "Denver Broncos": "Denver", "Denver Nuggets": "Denver", "Colorado Rockies": "Denver",
-    "Philadelphia 76ers": "Philadelphia", "Philadelphia Eagles": "Philadelphia", "Philadelphia Flyers": "Philadelphia", "Philadelphia Phillies": "Philadelphia",
-    "Miami Dolphins": "Miami", "Miami Heat": "Miami", "Miami Marlins": "Miami", "Florida Panthers": "Miami",
-    "Minnesota Timberwolves": "Minneapolis–St. Paul", "Minnesota Twins": "Minneapolis–St. Paul", "Minnesota Vikings": "Minneapolis–St. Paul", "Minnesota Wild": "Minneapolis–St. Paul",
-    "Washington Capitals": "Washington", "Washington Commanders": "Washington", "Washington Nationals": "Washington", "Washington Wizards": "Washington",
-    "Detroit Lions": "Detroit", "Detroit Pistons": "Detroit", "Detroit Red Wings": "Detroit", "Detroit Tigers": "Detroit",
-    "Pittsburgh Penguins": "Pittsburgh", "Pittsburgh Pirates": "Pittsburgh", "Pittsburgh Steelers": "Pittsburgh",
-    "Tampa Bay Buccaneers": "Tampa Bay", "Tampa Bay Lightning": "Tampa Bay", "Tampa Bay Rays": "Tampa Bay",
-    "Houston Astros": "Houston", "Houston Rockets": "Houston", "Houston Texans": "Houston",
-    "Atlanta Braves": "Atlanta", "Atlanta Falcons": "Atlanta", "Atlanta Hawks": "Atlanta",
-    "Toronto Blue Jays": "Toronto", "Toronto Maple Leafs": "Toronto", "Toronto Raptors": "Toronto",
-    "Cleveland Browns": "Cleveland", "Cleveland Cavaliers": "Cleveland", "Cleveland Guardians": "Cleveland",
-    "Seattle Kraken": "Seattle", "Seattle Mariners": "Seattle", "Seattle Seahawks": "Seattle",
-    "Arizona Cardinals": "Phoenix", "Arizona Diamondbacks": "Phoenix", "Phoenix Suns": "Phoenix",
-    "St. Louis Blues": "St. Louis", "St. Louis Cardinals": "St. Louis",
-    "Milwaukee Brewers": "Milwaukee", "Milwaukee Bucks": "Milwaukee",
-    "Indianapolis Colts": "Indianapolis", "Indiana Pacers": "Indianapolis",
-    "Vegas Golden Knights": "Las Vegas", "Las Vegas Raiders": "Las Vegas",
-    "Kansas City Chiefs": "Kansas City", "Kansas City Royals": "Kansas City",
-    "Baltimore Orioles": "Baltimore", "Baltimore Ravens": "Baltimore",
-    "New Orleans Pelicans": "New Orleans", "New Orleans Saints": "New Orleans",
-    "Nashville Predators": "Nashville", "Tennessee Titans": "Nashville",
-    "Cincinnati Bengals": "Cincinnati", "Cincinnati Reds": "Cincinnati",
-    "Buffalo Bills": "Buffalo", "Buffalo Sabres": "Buffalo",
-    "Utah Jazz": "Salt Lake City", "Utah Mammoth": "Salt Lake City",
-    "Athletics": "Sacramento", "Sacramento Kings": "Sacramento",
-    "Charlotte Hornets": "Charlotte", "Carolina Panthers": "Charlotte",
-    "San Antonio Spurs": "San Antonio", "Green Bay Packers": "Green Bay", "Oklahoma City Thunder": "Oklahoma City",
-    "Carolina Hurricanes": "Raleigh", "Winnipeg Jets": "Winnipeg", "Portland Trail Blazers": "Portland",
-    "Calgary Flames": "Calgary", "Memphis Grizzlies": "Memphis", "Vancouver Canucks": "Vancouver",
-    "San Diego Padres": "San Diego", "Montreal Canadiens": "Montreal", "Orlando Magic": "Orlando",
-    "Ottawa Senators": "Ottawa", "Edmonton Oilers": "Edmonton", "Jacksonville Jaguars": "Jacksonville",
+    "Anaheim Ducks": "Los Angeles",
+    "Los Angeles Angels": "Los Angeles",
+    "Los Angeles Chargers": "Los Angeles",
+    "LA Clippers": "Los Angeles",
+    "Los Angeles Dodgers": "Los Angeles",
+    "Los Angeles Kings": "Los Angeles",
+    "Los Angeles Lakers": "Los Angeles",
+    "Los Angeles Rams": "Los Angeles",
+    "New Jersey Devils": "New York",
+    "New York Giants": "New York",
+    "New York Islanders": "New York",
+    "New York Jets": "New York",
+    "New York Knicks": "New York",
+    "New York Mets": "New York",
+    "Brooklyn Nets": "New York",
+    "New York Rangers": "New York",
+    "New York Yankees": "New York",
+    "Boston Bruins": "Boston",
+    "Boston Celtics": "Boston",
+    "New England Patriots": "Boston",
+    "Boston Red Sox": "Boston",
+    "Chicago Bears": "Chicago",
+    "Chicago Blackhawks": "Chicago",
+    "Chicago Bulls": "Chicago",
+    "Chicago Cubs": "Chicago",
+    "Chicago White Sox": "Chicago",
+    "Dallas Cowboys": "Dallas–Fort Worth",
+    "Dallas Mavericks": "Dallas–Fort Worth",
+    "Texas Rangers": "Dallas–Fort Worth",
+    "Dallas Stars": "Dallas–Fort Worth",
+    "San Francisco 49ers": "SF Bay Area",
+    "San Francisco Giants": "SF Bay Area",
+    "San Jose Sharks": "SF Bay Area",
+    "Golden State Warriors": "SF Bay Area",
+    "Colorado Avalanche": "Denver",
+    "Denver Broncos": "Denver",
+    "Denver Nuggets": "Denver",
+    "Colorado Rockies": "Denver",
+    "Philadelphia 76ers": "Philadelphia",
+    "Philadelphia Eagles": "Philadelphia",
+    "Philadelphia Flyers": "Philadelphia",
+    "Philadelphia Phillies": "Philadelphia",
+    "Miami Dolphins": "Miami",
+    "Miami Heat": "Miami",
+    "Miami Marlins": "Miami",
+    "Florida Panthers": "Miami",
+    "Minnesota Timberwolves": "Minneapolis–St. Paul",
+    "Minnesota Twins": "Minneapolis–St. Paul",
+    "Minnesota Vikings": "Minneapolis–St. Paul",
+    "Minnesota Wild": "Minneapolis–St. Paul",
+    "Washington Capitals": "Washington",
+    "Washington Commanders": "Washington",
+    "Washington Nationals": "Washington",
+    "Washington Wizards": "Washington",
+    "Detroit Lions": "Detroit",
+    "Detroit Pistons": "Detroit",
+    "Detroit Red Wings": "Detroit",
+    "Detroit Tigers": "Detroit",
+    "Pittsburgh Penguins": "Pittsburgh",
+    "Pittsburgh Pirates": "Pittsburgh",
+    "Pittsburgh Steelers": "Pittsburgh",
+    "Tampa Bay Buccaneers": "Tampa Bay",
+    "Tampa Bay Lightning": "Tampa Bay",
+    "Tampa Bay Rays": "Tampa Bay",
+    "Houston Astros": "Houston",
+    "Houston Rockets": "Houston",
+    "Houston Texans": "Houston",
+    "Atlanta Braves": "Atlanta",
+    "Atlanta Falcons": "Atlanta",
+    "Atlanta Hawks": "Atlanta",
+    "Toronto Blue Jays": "Toronto",
+    "Toronto Maple Leafs": "Toronto",
+    "Toronto Raptors": "Toronto",
+    "Cleveland Browns": "Cleveland",
+    "Cleveland Cavaliers": "Cleveland",
+    "Cleveland Guardians": "Cleveland",
+    "Seattle Kraken": "Seattle",
+    "Seattle Mariners": "Seattle",
+    "Seattle Seahawks": "Seattle",
+    "Arizona Cardinals": "Phoenix",
+    "Arizona Diamondbacks": "Phoenix",
+    "Phoenix Suns": "Phoenix",
+    "St. Louis Blues": "St. Louis",
+    "St. Louis Cardinals": "St. Louis",
+    "Milwaukee Brewers": "Milwaukee",
+    "Milwaukee Bucks": "Milwaukee",
+    "Indianapolis Colts": "Indianapolis",
+    "Indiana Pacers": "Indianapolis",
+    "Vegas Golden Knights": "Las Vegas",
+    "Las Vegas Raiders": "Las Vegas",
+    "Kansas City Chiefs": "Kansas City",
+    "Kansas City Royals": "Kansas City",
+    "Baltimore Orioles": "Baltimore",
+    "Baltimore Ravens": "Baltimore",
+    "New Orleans Pelicans": "New Orleans",
+    "New Orleans Saints": "New Orleans",
+    "Nashville Predators": "Nashville",
+    "Tennessee Titans": "Nashville",
+    "Cincinnati Bengals": "Cincinnati",
+    "Cincinnati Reds": "Cincinnati",
+    "Buffalo Bills": "Buffalo",
+    "Buffalo Sabres": "Buffalo",
+    "Utah Jazz": "Salt Lake City",
+    "Utah Mammoth": "Salt Lake City",
+    "Athletics": "Sacramento",
+    "Sacramento Kings": "Sacramento",
+    "Charlotte Hornets": "Charlotte",
+    "Carolina Panthers": "Charlotte",
+    "San Antonio Spurs": "San Antonio",
+    "Green Bay Packers": "Green Bay",
+    "Oklahoma City Thunder": "Oklahoma City",
+    "Carolina Hurricanes": "Raleigh",
+    "Winnipeg Jets": "Winnipeg",
+    "Portland Trail Blazers": "Portland",
+    "Calgary Flames": "Calgary",
+    "Memphis Grizzlies": "Memphis",
+    "Vancouver Canucks": "Vancouver",
+    "San Diego Padres": "San Diego",
+    "Montreal Canadiens": "Montreal",
+    "Orlando Magic": "Orlando",
+    "Ottawa Senators": "Ottawa",
+    "Edmonton Oilers": "Edmonton",
+    "Jacksonville Jaguars": "Jacksonville",
     "Columbus Blue Jackets": "Columbus"
   }
 }

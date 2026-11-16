@@ -12,7 +12,12 @@ export interface Team {
   alt: string;
   logo: string;
   logoDark: string;
+  /** Where the franchise plays now. */
   metro: string;
+  /** [first season, name then, metro then], oldest first. Present only for franchises that moved or were renamed. */
+  eras?: [number, string, string][];
+  /** A franchise that no longer plays but keeps its history, like the Arizona Coyotes. */
+  inactive?: boolean;
 }
 
 export interface Season {
@@ -26,6 +31,8 @@ export interface Season {
   decided?: boolean;
   champ?: string;
   runnerUp?: string;
+  /** A second championship decided that season: the AFL title games of 1960-65. */
+  also?: { champ?: string; runnerUp?: string }[];
   rows: Record<string, [number, number] | [number, number, number]>;
 }
 
@@ -65,6 +72,10 @@ export interface SeasonPoint {
   champ: boolean;
   runnerUp: boolean;
   live: boolean;
+  /** The franchise's name that season, when it was not today's name. */
+  as?: string;
+  /** The metro area it played in that season. */
+  metro: string;
 }
 
 export interface TeamStat {
@@ -88,12 +99,33 @@ export interface TeamStat {
   series: SeasonPoint[];
 }
 
+/** A franchise's time in one city: the Sonics' Seattle years, the Raiders' two stays in Oakland. */
+export interface CitySpell {
+  team: Team;
+  stat: TeamStat;
+  metro: string;
+  /** What the club was called when it last played there. */
+  name: string;
+  first: number;
+  last: number;
+  seasons: number;
+  w: number;
+  l: number;
+  pct: number;
+  titles: number;
+  finalsLost: number;
+  composite: number;
+  index: number;
+  /** Still playing there today. */
+  current: boolean;
+}
+
 export interface MetroStat {
   name: string;
   lat: number;
   lon: number;
   region: string;
-  teams: TeamStat[];
+  teams: CitySpell[];
   composite: number;
   index: number;
   pct: number;

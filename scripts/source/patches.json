@@ -194,6 +194,98 @@
         0
       ]
     },
+    "1924": {
+      "defunct:Cleveland Bulldogs": [
+        7,
+        1,
+        1
+      ],
+      "Chicago Bears": [
+        6,
+        1,
+        4
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        11,
+        2,
+        1
+      ],
+      "defunct:Duluth Kelleys": [
+        5,
+        1,
+        0
+      ],
+      "defunct:Rock Island Independents": [
+        5,
+        2,
+        2
+      ],
+      "Green Bay Packers": [
+        7,
+        4,
+        0
+      ],
+      "defunct:Racine Legion": [
+        4,
+        3,
+        3
+      ],
+      "Arizona Cardinals": [
+        5,
+        4,
+        1
+      ],
+      "defunct:Buffalo Bisons": [
+        6,
+        5,
+        0
+      ],
+      "defunct:Columbus Tigers": [
+        4,
+        4,
+        0
+      ],
+      "defunct:Hammond Pros": [
+        2,
+        2,
+        1
+      ],
+      "defunct:Milwaukee Badgers": [
+        5,
+        8,
+        0
+      ],
+      "defunct:Akron Pros": [
+        2,
+        6,
+        0
+      ],
+      "defunct:Dayton Triangles": [
+        2,
+        6,
+        0
+      ],
+      "defunct:Kansas City Blues": [
+        2,
+        7,
+        0
+      ],
+      "defunct:Kenosha Maroons": [
+        0,
+        4,
+        1
+      ],
+      "defunct:Minneapolis Marines": [
+        0,
+        6,
+        0
+      ],
+      "defunct:Rochester Jeffersons": [
+        0,
+        7,
+        0
+      ]
+    },
     "1925": {
       "Arizona Cardinals": [
         11,
@@ -293,6 +385,118 @@
       "defunct:Columbus Tigers": [
         0,
         9,
+        0
+      ]
+    },
+    "1926": {
+      "defunct:Frankford Yellow Jackets": [
+        14,
+        1,
+        2
+      ],
+      "Chicago Bears": [
+        12,
+        1,
+        3
+      ],
+      "defunct:Pottsville Maroons": [
+        10,
+        2,
+        2
+      ],
+      "defunct:Kansas City Cowboys": [
+        8,
+        3,
+        0
+      ],
+      "Green Bay Packers": [
+        7,
+        3,
+        3
+      ],
+      "New York Giants": [
+        8,
+        4,
+        1
+      ],
+      "defunct:Los Angeles Buccaneers": [
+        6,
+        3,
+        1
+      ],
+      "defunct:Duluth Eskimos": [
+        6,
+        5,
+        3
+      ],
+      "defunct:Buffalo Rangers": [
+        4,
+        4,
+        2
+      ],
+      "Arizona Cardinals": [
+        5,
+        6,
+        1
+      ],
+      "defunct:Providence Steam Roller": [
+        5,
+        7,
+        1
+      ],
+      "defunct:Detroit Panthers": [
+        4,
+        6,
+        2
+      ],
+      "defunct:Hartford Blues": [
+        3,
+        7,
+        0
+      ],
+      "defunct:Brooklyn Lions": [
+        3,
+        8,
+        0
+      ],
+      "defunct:Milwaukee Badgers": [
+        2,
+        7,
+        0
+      ],
+      "defunct:Dayton Triangles": [
+        1,
+        4,
+        1
+      ],
+      "defunct:Akron Indians": [
+        1,
+        4,
+        3
+      ],
+      "defunct:Racine Tornadoes": [
+        1,
+        4,
+        0
+      ],
+      "defunct:Columbus Tigers": [
+        1,
+        6,
+        0
+      ],
+      "defunct:Canton Bulldogs": [
+        1,
+        9,
+        3
+      ],
+      "defunct:Hammond Pros": [
+        0,
+        4,
+        0
+      ],
+      "defunct:Louisville Colonels": [
+        0,
+        4,
         0
       ]
     },
@@ -583,7 +787,7 @@
     },
     "1932": {
       "Chicago Bears": [
-        7,
+        6,
         1,
         6
       ],
@@ -594,7 +798,7 @@
       ],
       "Detroit Lions": [
         6,
-        2,
+        1,
         4
       ],
       "Washington Commanders": [
@@ -621,6 +825,58 @@
         2,
         7,
         3
+      ]
+    },
+    "1933": {
+      "New York Giants": [
+        11,
+        3,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        5,
+        4,
+        1
+      ],
+      "Washington Commanders": [
+        5,
+        5,
+        2
+      ],
+      "Philadelphia Eagles": [
+        3,
+        5,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        3,
+        6,
+        2
+      ],
+      "Chicago Bears": [
+        10,
+        2,
+        1
+      ],
+      "Detroit Lions": [
+        6,
+        5,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        7,
+        1
+      ],
+      "defunct:Cincinnati Reds": [
+        3,
+        6,
+        1
+      ],
+      "Arizona Cardinals": [
+        1,
+        9,
+        1
       ]
     },
     "1934": {
@@ -678,6 +934,53 @@
         0,
         8,
         0
+      ]
+    },
+    "1935": {
+      "New York Giants": [
+        9,
+        3,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        5,
+        6,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        8,
+        0
+      ],
+      "Washington Commanders": [
+        2,
+        8,
+        1
+      ],
+      "Philadelphia Eagles": [
+        2,
+        9,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        3,
+        2
+      ],
+      "Green Bay Packers": [
+        8,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        6,
+        4,
+        2
+      ],
+      "Chicago Bears": [
+        6,
+        4,
+        2
       ]
     },
     "1936": {
@@ -774,6 +1077,110 @@
         1
       ],
       "Los Angeles Rams": [
+        1,
+        10,
+        0
+      ]
+    },
+    "1938": {
+      "New York Giants": [
+        8,
+        2,
+        1
+      ],
+      "Washington Commanders": [
+        6,
+        3,
+        2
+      ],
+      "defunct:Brooklyn Dodgers": [
+        4,
+        4,
+        3
+      ],
+      "Philadelphia Eagles": [
+        5,
+        6,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        9,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        3,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        4,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        5,
+        0
+      ],
+      "Los Angeles Rams": [
+        4,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        2,
+        9,
+        0
+      ]
+    },
+    "1939": {
+      "New York Giants": [
+        9,
+        1,
+        1
+      ],
+      "Washington Commanders": [
+        8,
+        2,
+        1
+      ],
+      "defunct:Brooklyn Dodgers": [
+        4,
+        6,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        1,
+        9,
+        1
+      ],
+      "Philadelphia Eagles": [
+        1,
+        9,
+        1
+      ],
+      "Green Bay Packers": [
+        9,
+        2,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        3,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        5,
+        0
+      ],
+      "Los Angeles Rams": [
+        5,
+        5,
+        1
+      ],
+      "Arizona Cardinals": [
         1,
         10,
         0
@@ -974,6 +1381,385 @@
       "Arizona Cardinals": [
         0,
         10,
+        0
+      ]
+    },
+    "1944": {
+      "New York Giants": [
+        8,
+        1,
+        1
+      ],
+      "Philadelphia Eagles": [
+        7,
+        1,
+        2
+      ],
+      "Washington Commanders": [
+        6,
+        3,
+        1
+      ],
+      "defunct:Boston Yanks": [
+        2,
+        8,
+        0
+      ],
+      "defunct:Brooklyn Tigers": [
+        0,
+        10,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        2,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        3,
+        1
+      ],
+      "Detroit Lions": [
+        6,
+        3,
+        1
+      ],
+      "Los Angeles Rams": [
+        4,
+        6,
+        0
+      ],
+      "defunct:Card-Pitt": [
+        0,
+        10,
+        0
+      ]
+    },
+    "1945": {
+      "Washington Commanders": [
+        8,
+        2,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        3,
+        0
+      ],
+      "defunct:Boston Yanks": [
+        3,
+        6,
+        1
+      ],
+      "New York Giants": [
+        3,
+        6,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        8,
+        0
+      ],
+      "Los Angeles Rams": [
+        9,
+        1,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        3,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        4,
+        0
+      ],
+      "Chicago Bears": [
+        3,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        1,
+        9,
+        0
+      ]
+    },
+    "1946": {
+      "New York Giants": [
+        7,
+        3,
+        1
+      ],
+      "Philadelphia Eagles": [
+        6,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        5,
+        1
+      ],
+      "Washington Commanders": [
+        5,
+        5,
+        1
+      ],
+      "defunct:Boston Yanks": [
+        2,
+        8,
+        1
+      ],
+      "Chicago Bears": [
+        8,
+        2,
+        1
+      ],
+      "Los Angeles Rams": [
+        6,
+        4,
+        1
+      ],
+      "Arizona Cardinals": [
+        6,
+        5,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        5,
+        0
+      ],
+      "Detroit Lions": [
+        1,
+        10,
+        0
+      ]
+    },
+    "1947": {
+      "Philadelphia Eagles": [
+        8,
+        4,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        8,
+        4,
+        0
+      ],
+      "defunct:Boston Yanks": [
+        4,
+        7,
+        1
+      ],
+      "Washington Commanders": [
+        4,
+        8,
+        0
+      ],
+      "New York Giants": [
+        2,
+        8,
+        2
+      ],
+      "Arizona Cardinals": [
+        9,
+        3,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        4,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        5,
+        1
+      ],
+      "Los Angeles Rams": [
+        6,
+        6,
+        0
+      ],
+      "Detroit Lions": [
+        3,
+        9,
+        0
+      ]
+    },
+    "1948": {
+      "Philadelphia Eagles": [
+        9,
+        2,
+        1
+      ],
+      "Washington Commanders": [
+        7,
+        5,
+        0
+      ],
+      "New York Giants": [
+        4,
+        8,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        8,
+        0
+      ],
+      "defunct:Boston Yanks": [
+        3,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        11,
+        1,
+        0
+      ],
+      "Chicago Bears": [
+        10,
+        2,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        5,
+        1
+      ],
+      "Green Bay Packers": [
+        3,
+        9,
+        0
+      ],
+      "Detroit Lions": [
+        2,
+        10,
+        0
+      ]
+    },
+    "1949": {
+      "Philadelphia Eagles": [
+        11,
+        1,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        5,
+        1
+      ],
+      "New York Giants": [
+        6,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        4,
+        7,
+        1
+      ],
+      "defunct:New York Bulldogs": [
+        1,
+        10,
+        1
+      ],
+      "Los Angeles Rams": [
+        8,
+        2,
+        2
+      ],
+      "Chicago Bears": [
+        9,
+        3,
+        0
+      ],
+      "Arizona Cardinals": [
+        6,
+        5,
+        1
+      ],
+      "Detroit Lions": [
+        4,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        2,
+        10,
+        0
+      ]
+    },
+    "1950": {
+      "Cleveland Browns": [
+        10,
+        2,
+        0
+      ],
+      "New York Giants": [
+        10,
+        2,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        6,
+        0
+      ],
+      "Philadelphia Eagles": [
+        6,
+        6,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        3,
+        9,
+        0
+      ],
+      "Los Angeles Rams": [
+        9,
+        3,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        3,
+        0
+      ],
+      "defunct:New York Yanks": [
+        7,
+        5,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        6,
+        0
+      ],
+      "San Francisco 49ers": [
+        3,
+        9,
+        0
+      ],
+      "Green Bay Packers": [
+        3,
+        9,
+        0
+      ],
+      "defunct:Baltimore Colts": [
+        1,
+        11,
         0
       ]
     },
@@ -1225,6 +2011,192 @@
         0
       ]
     },
+    "1955": {
+      "Cleveland Browns": [
+        9,
+        2,
+        1
+      ],
+      "Washington Commanders": [
+        8,
+        4,
+        0
+      ],
+      "New York Giants": [
+        6,
+        5,
+        1
+      ],
+      "Philadelphia Eagles": [
+        4,
+        7,
+        1
+      ],
+      "Arizona Cardinals": [
+        4,
+        7,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        8,
+        0
+      ],
+      "Los Angeles Rams": [
+        8,
+        3,
+        1
+      ],
+      "Chicago Bears": [
+        8,
+        4,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        5,
+        6,
+        1
+      ],
+      "San Francisco 49ers": [
+        4,
+        8,
+        0
+      ],
+      "Detroit Lions": [
+        3,
+        9,
+        0
+      ]
+    },
+    "1956": {
+      "New York Giants": [
+        8,
+        3,
+        1
+      ],
+      "Arizona Cardinals": [
+        7,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        5,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        7,
+        0
+      ],
+      "Philadelphia Eagles": [
+        3,
+        8,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        2,
+        1
+      ],
+      "Detroit Lions": [
+        9,
+        3,
+        0
+      ],
+      "San Francisco 49ers": [
+        5,
+        6,
+        1
+      ],
+      "Indianapolis Colts": [
+        5,
+        7,
+        0
+      ],
+      "Los Angeles Rams": [
+        4,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        8,
+        0
+      ]
+    },
+    "1957": {
+      "Cleveland Browns": [
+        9,
+        2,
+        1
+      ],
+      "New York Giants": [
+        7,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        5,
+        6,
+        1
+      ],
+      "Philadelphia Eagles": [
+        4,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        3,
+        9,
+        0
+      ],
+      "Detroit Lions": [
+        8,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        8,
+        4,
+        0
+      ],
+      "Indianapolis Colts": [
+        7,
+        5,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        5,
+        7,
+        0
+      ],
+      "Green Bay Packers": [
+        3,
+        9,
+        0
+      ]
+    },
     "1958": {
       "New York Giants": [
         9,
@@ -1349,47 +2321,226 @@
         0
       ]
     },
-    "1962": {
+    "1960": {
+      "Philadelphia Eagles": [
+        10,
+        2,
+        0
+      ],
+      "Cleveland Browns": [
+        8,
+        3,
+        1
+      ],
+      "New York Giants": [
+        6,
+        4,
+        2
+      ],
+      "Arizona Cardinals": [
+        6,
+        5,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        6,
+        1
+      ],
+      "Washington Commanders": [
+        1,
+        9,
+        2
+      ],
+      "Green Bay Packers": [
+        8,
+        4,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        5,
+        0
+      ],
+      "Indianapolis Colts": [
+        6,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        5,
+        6,
+        1
+      ],
+      "Los Angeles Rams": [
+        4,
+        7,
+        1
+      ],
+      "Dallas Cowboys": [
+        0,
+        11,
+        1
+      ],
       "Tennessee Titans": [
+        10,
+        4,
+        0
+      ],
+      "New York Jets": [
+        7,
+        7,
+        0
+      ],
+      "Buffalo Bills": [
+        5,
+        8,
+        1
+      ],
+      "New England Patriots": [
+        5,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        10,
+        4,
+        0
+      ],
+      "Kansas City Chiefs": [
+        8,
+        6,
+        0
+      ],
+      "Las Vegas Raiders": [
+        6,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        4,
+        9,
+        1
+      ]
+    },
+    "1961": {
+      "New York Giants": [
+        10,
+        3,
+        1
+      ],
+      "Philadelphia Eagles": [
+        10,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        8,
+        5,
+        1
+      ],
+      "Arizona Cardinals": [
+        7,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        8,
+        0
+      ],
+      "Dallas Cowboys": [
+        4,
+        9,
+        1
+      ],
+      "Washington Commanders": [
+        1,
+        12,
+        1
+      ],
+      "Green Bay Packers": [
         11,
         3,
         0
+      ],
+      "Detroit Lions": [
+        8,
+        5,
+        1
+      ],
+      "Chicago Bears": [
+        8,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        8,
+        6,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        6,
+        1
+      ],
+      "Los Angeles Rams": [
+        4,
+        10,
+        0
+      ],
+      "Minnesota Vikings": [
+        3,
+        11,
+        0
+      ],
+      "Tennessee Titans": [
+        10,
+        3,
+        1
       ],
       "New England Patriots": [
         9,
         4,
         1
       ],
-      "Buffalo Bills": [
-        7,
-        6,
-        1
-      ],
       "New York Jets": [
-        5,
-        9,
-        0
-      ],
-      "Kansas City Chiefs": [
-        11,
-        3,
-        0
-      ],
-      "Denver Broncos": [
         7,
         7,
+        0
+      ],
+      "Buffalo Bills": [
+        6,
+        8,
         0
       ],
       "Los Angeles Chargers": [
-        4,
-        10,
+        12,
+        2,
+        0
+      ],
+      "Kansas City Chiefs": [
+        6,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        3,
+        11,
         0
       ],
       "Las Vegas Raiders": [
-        1,
-        13,
+        2,
+        12,
         0
-      ],
+      ]
+    },
+    "1962": {
       "New York Giants": [
         12,
         2,
@@ -1458,50 +2609,162 @@
       "Los Angeles Rams": [
         1,
         12,
+        1
+      ],
+      "Tennessee Titans": [
+        11,
+        3,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        4,
+        1
+      ],
+      "Buffalo Bills": [
+        7,
+        6,
+        1
+      ],
+      "New York Jets": [
+        5,
+        9,
+        0
+      ],
+      "Kansas City Chiefs": [
+        11,
+        3,
+        0
+      ],
+      "Denver Broncos": [
+        7,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        4,
+        10,
+        0
+      ],
+      "Las Vegas Raiders": [
+        1,
+        13,
+        0
+      ]
+    },
+    "1963": {
+      "New York Giants": [
+        11,
+        3,
+        0
+      ],
+      "Cleveland Browns": [
+        10,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        9,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        7,
+        4,
+        3
+      ],
+      "Dallas Cowboys": [
+        4,
+        10,
+        0
+      ],
+      "Washington Commanders": [
+        3,
+        11,
+        0
+      ],
+      "Philadelphia Eagles": [
+        2,
+        10,
+        2
+      ],
+      "Chicago Bears": [
+        11,
+        1,
+        2
+      ],
+      "Green Bay Packers": [
+        11,
+        2,
+        1
+      ],
+      "Indianapolis Colts": [
+        8,
+        6,
+        0
+      ],
+      "Detroit Lions": [
+        5,
+        8,
+        1
+      ],
+      "Minnesota Vikings": [
+        5,
+        8,
+        1
+      ],
+      "Los Angeles Rams": [
+        5,
+        9,
+        0
+      ],
+      "San Francisco 49ers": [
+        2,
+        12,
+        0
+      ],
+      "New England Patriots": [
+        7,
+        6,
+        1
+      ],
+      "Buffalo Bills": [
+        7,
+        6,
+        1
+      ],
+      "Tennessee Titans": [
+        6,
+        8,
+        0
+      ],
+      "New York Jets": [
+        5,
+        8,
+        1
+      ],
+      "Los Angeles Chargers": [
+        11,
+        3,
+        0
+      ],
+      "Las Vegas Raiders": [
+        10,
+        4,
+        0
+      ],
+      "Kansas City Chiefs": [
+        5,
+        7,
+        2
+      ],
+      "Denver Broncos": [
+        2,
+        11,
         1
       ]
     },
     "1964": {
-      "Buffalo Bills": [
-        12,
-        2,
-        0
-      ],
-      "New England Patriots": [
-        10,
-        3,
-        1
-      ],
-      "New York Jets": [
-        5,
-        8,
-        1
-      ],
-      "Tennessee Titans": [
-        4,
-        10,
-        0
-      ],
-      "Los Angeles Chargers": [
-        8,
-        5,
-        1
-      ],
-      "Kansas City Chiefs": [
-        7,
-        7,
-        0
-      ],
-      "Las Vegas Raiders": [
-        5,
-        7,
-        2
-      ],
-      "Denver Broncos": [
-        2,
-        11,
-        1
-      ],
       "Cleveland Browns": [
         10,
         3,
@@ -1571,9 +2834,119 @@
         4,
         10,
         0
+      ],
+      "Buffalo Bills": [
+        12,
+        2,
+        0
+      ],
+      "New England Patriots": [
+        10,
+        3,
+        1
+      ],
+      "New York Jets": [
+        5,
+        8,
+        1
+      ],
+      "Tennessee Titans": [
+        4,
+        10,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        5,
+        1
+      ],
+      "Kansas City Chiefs": [
+        7,
+        7,
+        0
+      ],
+      "Las Vegas Raiders": [
+        5,
+        7,
+        2
+      ],
+      "Denver Broncos": [
+        2,
+        11,
+        1
       ]
     },
     "1965": {
+      "Cleveland Browns": [
+        11,
+        3,
+        0
+      ],
+      "Dallas Cowboys": [
+        7,
+        7,
+        0
+      ],
+      "New York Giants": [
+        7,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        8,
+        0
+      ],
+      "Philadelphia Eagles": [
+        5,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        9,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        12,
+        0
+      ],
+      "Green Bay Packers": [
+        10,
+        3,
+        1
+      ],
+      "Indianapolis Colts": [
+        10,
+        3,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        6,
+        1
+      ],
+      "Minnesota Vikings": [
+        7,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        7,
+        1
+      ],
+      "Los Angeles Rams": [
+        4,
+        10,
+        0
+      ],
       "Buffalo Bills": [
         10,
         3,
@@ -1613,79 +2986,211 @@
         4,
         10,
         0
+      ]
+    },
+    "1966": {
+      "Dallas Cowboys": [
+        10,
+        3,
+        1
       ],
       "Cleveland Browns": [
-        11,
-        3,
-        0
-      ],
-      "Dallas Cowboys": [
-        7,
-        7,
-        0
-      ],
-      "New York Giants": [
-        7,
-        7,
-        0
-      ],
-      "Washington Commanders": [
-        6,
-        8,
+        9,
+        5,
         0
       ],
       "Philadelphia Eagles": [
-        5,
         9,
+        5,
         0
       ],
       "Arizona Cardinals": [
+        8,
         5,
-        9,
+        1
+      ],
+      "Washington Commanders": [
+        7,
+        7,
         0
       ],
       "Pittsburgh Steelers": [
-        2,
-        12,
+        5,
+        8,
+        1
+      ],
+      "Atlanta Falcons": [
+        3,
+        11,
         0
       ],
-      "Green Bay Packers": [
-        10,
-        3,
+      "New York Giants": [
+        1,
+        12,
         1
+      ],
+      "Green Bay Packers": [
+        12,
+        2,
+        0
       ],
       "Indianapolis Colts": [
-        10,
-        3,
-        1
-      ],
-      "Chicago Bears": [
         9,
         5,
         0
       ],
-      "San Francisco 49ers": [
-        7,
+      "Los Angeles Rams": [
+        8,
         6,
+        0
+      ],
+      "San Francisco 49ers": [
+        6,
+        6,
+        2
+      ],
+      "Chicago Bears": [
+        5,
+        7,
+        2
+      ],
+      "Detroit Lions": [
+        4,
+        9,
         1
       ],
       "Minnesota Vikings": [
-        7,
-        7,
-        0
-      ],
-      "Detroit Lions": [
-        6,
-        7,
+        4,
+        9,
         1
       ],
-      "Los Angeles Rams": [
+      "Buffalo Bills": [
+        9,
+        4,
+        1
+      ],
+      "New England Patriots": [
+        8,
+        4,
+        2
+      ],
+      "New York Jets": [
+        6,
+        6,
+        2
+      ],
+      "Tennessee Titans": [
+        3,
+        11,
+        0
+      ],
+      "Miami Dolphins": [
+        3,
+        11,
+        0
+      ],
+      "Kansas City Chiefs": [
+        11,
+        2,
+        1
+      ],
+      "Las Vegas Raiders": [
+        8,
+        5,
+        1
+      ],
+      "Los Angeles Chargers": [
+        7,
+        6,
+        1
+      ],
+      "Denver Broncos": [
         4,
         10,
         0
       ]
     },
     "1967": {
+      "Dallas Cowboys": [
+        9,
+        5,
+        0
+      ],
+      "Philadelphia Eagles": [
+        6,
+        7,
+        1
+      ],
+      "Washington Commanders": [
+        5,
+        6,
+        3
+      ],
+      "New Orleans Saints": [
+        3,
+        11,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        5,
+        0
+      ],
+      "New York Giants": [
+        7,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        6,
+        7,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        9,
+        1
+      ],
+      "Los Angeles Rams": [
+        11,
+        1,
+        2
+      ],
+      "Indianapolis Colts": [
+        11,
+        1,
+        2
+      ],
+      "San Francisco 49ers": [
+        7,
+        7,
+        0
+      ],
+      "Atlanta Falcons": [
+        1,
+        12,
+        1
+      ],
+      "Green Bay Packers": [
+        9,
+        4,
+        1
+      ],
+      "Chicago Bears": [
+        7,
+        6,
+        1
+      ],
+      "Detroit Lions": [
+        5,
+        7,
+        2
+      ],
+      "Minnesota Vikings": [
+        3,
+        8,
+        3
+      ],
       "Tennessee Titans": [
         9,
         4,
@@ -1730,139 +3235,9 @@
         3,
         11,
         0
-      ],
-      "Dallas Cowboys": [
-        9,
-        5,
-        0
-      ],
-      "Philadelphia Eagles": [
-        6,
-        7,
-        1
-      ],
-      "Washington Commanders": [
-        5,
-        6,
-        3
-      ],
-      "New Orleans Saints": [
-        3,
-        11,
-        0
-      ],
-      "Green Bay Packers": [
-        9,
-        4,
-        1
-      ],
-      "Chicago Bears": [
-        7,
-        6,
-        1
-      ],
-      "Detroit Lions": [
-        5,
-        7,
-        2
-      ],
-      "Minnesota Vikings": [
-        3,
-        8,
-        3
-      ],
-      "Cleveland Browns": [
-        9,
-        5,
-        0
-      ],
-      "New York Giants": [
-        7,
-        7,
-        0
-      ],
-      "Arizona Cardinals": [
-        6,
-        7,
-        1
-      ],
-      "Pittsburgh Steelers": [
-        4,
-        9,
-        1
-      ],
-      "Los Angeles Rams": [
-        11,
-        1,
-        2
-      ],
-      "Indianapolis Colts": [
-        11,
-        1,
-        2
-      ],
-      "San Francisco 49ers": [
-        7,
-        7,
-        0
-      ],
-      "Atlanta Falcons": [
-        1,
-        12,
-        1
       ]
     },
     "1968": {
-      "New York Jets": [
-        11,
-        3,
-        0
-      ],
-      "Tennessee Titans": [
-        7,
-        7,
-        0
-      ],
-      "Miami Dolphins": [
-        5,
-        8,
-        1
-      ],
-      "New England Patriots": [
-        4,
-        10,
-        0
-      ],
-      "Buffalo Bills": [
-        1,
-        12,
-        1
-      ],
-      "Las Vegas Raiders": [
-        12,
-        2,
-        0
-      ],
-      "Kansas City Chiefs": [
-        12,
-        2,
-        0
-      ],
-      "Los Angeles Chargers": [
-        9,
-        5,
-        0
-      ],
-      "Denver Broncos": [
-        5,
-        9,
-        0
-      ],
-      "Cincinnati Bengals": [
-        3,
-        11,
-        0
-      ],
       "Dallas Cowboys": [
         12,
         2,
@@ -1882,26 +3257,6 @@
         2,
         12,
         0
-      ],
-      "Minnesota Vikings": [
-        8,
-        6,
-        0
-      ],
-      "Chicago Bears": [
-        7,
-        7,
-        0
-      ],
-      "Green Bay Packers": [
-        6,
-        7,
-        1
-      ],
-      "Detroit Lions": [
-        4,
-        8,
-        2
       ],
       "Cleveland Browns": [
         10,
@@ -1942,29 +3297,211 @@
         2,
         12,
         0
-      ]
-    },
-    "1970": {
-      "Cincinnati Bengals": [
+      ],
+      "Minnesota Vikings": [
         8,
         6,
         0
       ],
-      "Cleveland Browns": [
+      "Chicago Bears": [
         7,
         7,
         0
       ],
-      "Pittsburgh Steelers": [
+      "Green Bay Packers": [
+        6,
+        7,
+        1
+      ],
+      "Detroit Lions": [
+        4,
+        8,
+        2
+      ],
+      "New York Jets": [
+        11,
+        3,
+        0
+      ],
+      "Tennessee Titans": [
+        7,
+        7,
+        0
+      ],
+      "Miami Dolphins": [
+        5,
+        8,
+        1
+      ],
+      "New England Patriots": [
+        4,
+        10,
+        0
+      ],
+      "Buffalo Bills": [
+        1,
+        12,
+        1
+      ],
+      "Las Vegas Raiders": [
+        12,
+        2,
+        0
+      ],
+      "Kansas City Chiefs": [
+        12,
+        2,
+        0
+      ],
+      "Los Angeles Chargers": [
+        9,
+        5,
+        0
+      ],
+      "Denver Broncos": [
         5,
         9,
         0
       ],
+      "Cincinnati Bengals": [
+        3,
+        11,
+        0
+      ]
+    },
+    "1969": {
+      "Dallas Cowboys": [
+        11,
+        2,
+        1
+      ],
+      "Washington Commanders": [
+        7,
+        5,
+        2
+      ],
+      "New Orleans Saints": [
+        5,
+        9,
+        0
+      ],
+      "Philadelphia Eagles": [
+        4,
+        9,
+        1
+      ],
+      "Cleveland Browns": [
+        10,
+        3,
+        1
+      ],
+      "New York Giants": [
+        6,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        9,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        1,
+        13,
+        0
+      ],
+      "Los Angeles Rams": [
+        11,
+        3,
+        0
+      ],
+      "Indianapolis Colts": [
+        8,
+        5,
+        1
+      ],
+      "Atlanta Falcons": [
+        6,
+        8,
+        0
+      ],
+      "San Francisco 49ers": [
+        4,
+        8,
+        2
+      ],
+      "Minnesota Vikings": [
+        12,
+        2,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        4,
+        1
+      ],
+      "Green Bay Packers": [
+        8,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        1,
+        13,
+        0
+      ],
+      "New York Jets": [
+        10,
+        4,
+        0
+      ],
       "Tennessee Titans": [
+        6,
+        6,
+        2
+      ],
+      "New England Patriots": [
+        4,
+        10,
+        0
+      ],
+      "Buffalo Bills": [
+        4,
+        10,
+        0
+      ],
+      "Miami Dolphins": [
         3,
         10,
         1
       ],
+      "Las Vegas Raiders": [
+        12,
+        1,
+        1
+      ],
+      "Kansas City Chiefs": [
+        11,
+        3,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        6,
+        0
+      ],
+      "Denver Broncos": [
+        5,
+        8,
+        1
+      ],
+      "Cincinnati Bengals": [
+        4,
+        9,
+        1
+      ]
+    },
+    "1970": {
       "Indianapolis Colts": [
         11,
         2,
@@ -1990,6 +3527,26 @@
         12,
         0
       ],
+      "Cincinnati Bengals": [
+        8,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        9,
+        0
+      ],
+      "Tennessee Titans": [
+        3,
+        10,
+        1
+      ],
       "Las Vegas Raiders": [
         8,
         4,
@@ -2009,26 +3566,6 @@
         5,
         8,
         1
-      ],
-      "Minnesota Vikings": [
-        12,
-        2,
-        0
-      ],
-      "Detroit Lions": [
-        10,
-        4,
-        0
-      ],
-      "Green Bay Packers": [
-        6,
-        8,
-        0
-      ],
-      "Chicago Bears": [
-        6,
-        8,
-        0
       ],
       "Dallas Cowboys": [
         10,
@@ -2055,6 +3592,26 @@
         10,
         1
       ],
+      "Minnesota Vikings": [
+        12,
+        2,
+        0
+      ],
+      "Detroit Lions": [
+        10,
+        4,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        8,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        8,
+        0
+      ],
       "San Francisco 49ers": [
         10,
         3,
@@ -2076,15 +3633,30 @@
         1
       ]
     },
-    "1976": {
-      "Pittsburgh Steelers": [
+    "1971": {
+      "Miami Dolphins": [
+        10,
+        3,
+        1
+      ],
+      "Indianapolis Colts": [
         10,
         4,
         0
       ],
-      "Cincinnati Bengals": [
-        10,
-        4,
+      "New England Patriots": [
+        6,
+        8,
+        0
+      ],
+      "New York Jets": [
+        6,
+        8,
+        0
+      ],
+      "Buffalo Bills": [
+        1,
+        13,
         0
       ],
       "Cleveland Browns": [
@@ -2092,11 +3664,636 @@
         5,
         0
       ],
+      "Pittsburgh Steelers": [
+        6,
+        8,
+        0
+      ],
       "Tennessee Titans": [
+        4,
+        9,
+        1
+      ],
+      "Cincinnati Bengals": [
+        4,
+        10,
+        0
+      ],
+      "Kansas City Chiefs": [
+        10,
+        3,
+        1
+      ],
+      "Las Vegas Raiders": [
+        8,
+        4,
+        2
+      ],
+      "Los Angeles Chargers": [
+        6,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        4,
+        9,
+        1
+      ],
+      "Dallas Cowboys": [
+        11,
+        3,
+        0
+      ],
+      "Washington Commanders": [
+        9,
+        4,
+        1
+      ],
+      "Philadelphia Eagles": [
+        6,
+        7,
+        1
+      ],
+      "Arizona Cardinals": [
+        4,
+        9,
+        1
+      ],
+      "New York Giants": [
+        4,
+        10,
+        0
+      ],
+      "Minnesota Vikings": [
+        11,
+        3,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        6,
+        1
+      ],
+      "Chicago Bears": [
+        6,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        8,
+        2
+      ],
+      "San Francisco 49ers": [
+        9,
+        5,
+        0
+      ],
+      "Los Angeles Rams": [
+        8,
+        5,
+        1
+      ],
+      "Atlanta Falcons": [
+        7,
+        6,
+        1
+      ],
+      "New Orleans Saints": [
+        4,
+        8,
+        2
+      ]
+    },
+    "1972": {
+      "Miami Dolphins": [
+        14,
+        0,
+        0
+      ],
+      "New York Jets": [
+        7,
+        7,
+        0
+      ],
+      "Indianapolis Colts": [
         5,
         9,
         0
       ],
+      "Buffalo Bills": [
+        4,
+        9,
+        1
+      ],
+      "New England Patriots": [
+        3,
+        11,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        11,
+        3,
+        0
+      ],
+      "Cleveland Browns": [
+        10,
+        4,
+        0
+      ],
+      "Cincinnati Bengals": [
+        8,
+        6,
+        0
+      ],
+      "Tennessee Titans": [
+        1,
+        13,
+        0
+      ],
+      "Las Vegas Raiders": [
+        10,
+        3,
+        1
+      ],
+      "Kansas City Chiefs": [
+        8,
+        6,
+        0
+      ],
+      "Denver Broncos": [
+        5,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        4,
+        9,
+        1
+      ],
+      "Washington Commanders": [
+        11,
+        3,
+        0
+      ],
+      "Dallas Cowboys": [
+        10,
+        4,
+        0
+      ],
+      "New York Giants": [
+        8,
+        6,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        9,
+        1
+      ],
+      "Philadelphia Eagles": [
+        2,
+        11,
+        1
+      ],
+      "Green Bay Packers": [
+        10,
+        4,
+        0
+      ],
+      "Detroit Lions": [
+        8,
+        5,
+        1
+      ],
+      "Minnesota Vikings": [
+        7,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        4,
+        9,
+        1
+      ],
+      "San Francisco 49ers": [
+        8,
+        5,
+        1
+      ],
+      "Atlanta Falcons": [
+        7,
+        7,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        7,
+        1
+      ],
+      "New Orleans Saints": [
+        2,
+        11,
+        1
+      ]
+    },
+    "1973": {
+      "Miami Dolphins": [
+        12,
+        2,
+        0
+      ],
+      "Buffalo Bills": [
+        9,
+        5,
+        0
+      ],
+      "New England Patriots": [
+        5,
+        9,
+        0
+      ],
+      "New York Jets": [
+        4,
+        10,
+        0
+      ],
+      "Indianapolis Colts": [
+        4,
+        10,
+        0
+      ],
+      "Cincinnati Bengals": [
+        10,
+        4,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        10,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        5,
+        2
+      ],
+      "Tennessee Titans": [
+        1,
+        13,
+        0
+      ],
+      "Las Vegas Raiders": [
+        9,
+        4,
+        1
+      ],
+      "Kansas City Chiefs": [
+        7,
+        5,
+        2
+      ],
+      "Denver Broncos": [
+        7,
+        5,
+        2
+      ],
+      "Los Angeles Chargers": [
+        2,
+        11,
+        1
+      ],
+      "Dallas Cowboys": [
+        10,
+        4,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        5,
+        8,
+        1
+      ],
+      "Arizona Cardinals": [
+        4,
+        9,
+        1
+      ],
+      "New York Giants": [
+        2,
+        11,
+        1
+      ],
+      "Minnesota Vikings": [
+        12,
+        2,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        7,
+        1
+      ],
+      "Green Bay Packers": [
+        5,
+        7,
+        2
+      ],
+      "Chicago Bears": [
+        3,
+        11,
+        0
+      ],
+      "Los Angeles Rams": [
+        12,
+        2,
+        0
+      ],
+      "Atlanta Falcons": [
+        9,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        5,
+        9,
+        0
+      ],
+      "New Orleans Saints": [
+        5,
+        9,
+        0
+      ]
+    },
+    "1974": {
+      "Miami Dolphins": [
+        11,
+        3,
+        0
+      ],
+      "Buffalo Bills": [
+        9,
+        5,
+        0
+      ],
+      "New York Jets": [
+        7,
+        7,
+        0
+      ],
+      "New England Patriots": [
+        7,
+        7,
+        0
+      ],
+      "Indianapolis Colts": [
+        2,
+        12,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        10,
+        3,
+        1
+      ],
+      "Tennessee Titans": [
+        7,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        7,
+        7,
+        0
+      ],
+      "Cleveland Browns": [
+        4,
+        10,
+        0
+      ],
+      "Las Vegas Raiders": [
+        12,
+        2,
+        0
+      ],
+      "Denver Broncos": [
+        7,
+        6,
+        1
+      ],
+      "Kansas City Chiefs": [
+        5,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        5,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        10,
+        4,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        4,
+        0
+      ],
+      "Dallas Cowboys": [
+        8,
+        6,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        7,
+        0
+      ],
+      "New York Giants": [
+        2,
+        12,
+        0
+      ],
+      "Minnesota Vikings": [
+        10,
+        4,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        7,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        8,
+        0
+      ],
+      "Chicago Bears": [
+        4,
+        10,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        6,
+        8,
+        0
+      ],
+      "New Orleans Saints": [
+        5,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        3,
+        11,
+        0
+      ]
+    },
+    "1975": {
+      "Indianapolis Colts": [
+        10,
+        4,
+        0
+      ],
+      "Miami Dolphins": [
+        10,
+        4,
+        0
+      ],
+      "Buffalo Bills": [
+        8,
+        6,
+        0
+      ],
+      "New York Jets": [
+        3,
+        11,
+        0
+      ],
+      "New England Patriots": [
+        3,
+        11,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        12,
+        2,
+        0
+      ],
+      "Cincinnati Bengals": [
+        11,
+        3,
+        0
+      ],
+      "Tennessee Titans": [
+        10,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        3,
+        11,
+        0
+      ],
+      "Las Vegas Raiders": [
+        11,
+        3,
+        0
+      ],
+      "Denver Broncos": [
+        6,
+        8,
+        0
+      ],
+      "Kansas City Chiefs": [
+        5,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        2,
+        12,
+        0
+      ],
+      "Arizona Cardinals": [
+        11,
+        3,
+        0
+      ],
+      "Dallas Cowboys": [
+        10,
+        4,
+        0
+      ],
+      "Washington Commanders": [
+        8,
+        6,
+        0
+      ],
+      "New York Giants": [
+        5,
+        9,
+        0
+      ],
+      "Philadelphia Eagles": [
+        4,
+        10,
+        0
+      ],
+      "Minnesota Vikings": [
+        12,
+        2,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        4,
+        10,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        10,
+        0
+      ],
+      "Los Angeles Rams": [
+        12,
+        2,
+        0
+      ],
+      "San Francisco 49ers": [
+        5,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        4,
+        10,
+        0
+      ],
+      "New Orleans Saints": [
+        2,
+        12,
+        0
+      ]
+    },
+    "1976": {
       "Indianapolis Colts": [
         11,
         3,
@@ -2120,6 +4317,26 @@
       "Buffalo Bills": [
         2,
         12,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        10,
+        4,
+        0
+      ],
+      "Cincinnati Bengals": [
+        10,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        5,
+        9,
         0
       ],
       "Las Vegas Raiders": [
@@ -2147,26 +4364,6 @@
         14,
         0
       ],
-      "Minnesota Vikings": [
-        11,
-        2,
-        1
-      ],
-      "Chicago Bears": [
-        7,
-        7,
-        0
-      ],
-      "Detroit Lions": [
-        6,
-        8,
-        0
-      ],
-      "Green Bay Packers": [
-        5,
-        9,
-        0
-      ],
       "Dallas Cowboys": [
         11,
         3,
@@ -2190,6 +4387,26 @@
       "New York Giants": [
         3,
         11,
+        0
+      ],
+      "Minnesota Vikings": [
+        11,
+        2,
+        1
+      ],
+      "Chicago Bears": [
+        7,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        9,
         0
       ],
       "Los Angeles Rams": [
@@ -2219,26 +4436,6 @@
       ]
     },
     "1977": {
-      "Pittsburgh Steelers": [
-        9,
-        5,
-        0
-      ],
-      "Tennessee Titans": [
-        8,
-        6,
-        0
-      ],
-      "Cincinnati Bengals": [
-        8,
-        6,
-        0
-      ],
-      "Cleveland Browns": [
-        6,
-        8,
-        0
-      ],
       "Indianapolis Colts": [
         10,
         4,
@@ -2262,6 +4459,26 @@
       "Buffalo Bills": [
         3,
         11,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        8,
+        6,
+        0
+      ],
+      "Cincinnati Bengals": [
+        8,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        6,
+        8,
         0
       ],
       "Denver Broncos": [
@@ -2289,31 +4506,6 @@
         12,
         0
       ],
-      "Minnesota Vikings": [
-        9,
-        5,
-        0
-      ],
-      "Chicago Bears": [
-        9,
-        5,
-        0
-      ],
-      "Detroit Lions": [
-        6,
-        8,
-        0
-      ],
-      "Green Bay Packers": [
-        4,
-        10,
-        0
-      ],
-      "Tampa Bay Buccaneers": [
-        2,
-        12,
-        0
-      ],
       "Dallas Cowboys": [
         12,
         2,
@@ -2337,6 +4529,31 @@
       "New York Giants": [
         5,
         9,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        5,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        5,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        10,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        2,
+        12,
         0
       ],
       "Los Angeles Rams": [
@@ -2360,20 +4577,45 @@
         0
       ]
     },
-    "1979": {
-      "Pittsburgh Steelers": [
-        12,
-        4,
-        0
-      ],
-      "Tennessee Titans": [
+    "1978": {
+      "New England Patriots": [
         11,
         5,
         0
       ],
+      "Miami Dolphins": [
+        11,
+        5,
+        0
+      ],
+      "New York Jets": [
+        8,
+        8,
+        0
+      ],
+      "Buffalo Bills": [
+        5,
+        11,
+        0
+      ],
+      "Indianapolis Colts": [
+        5,
+        11,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        14,
+        2,
+        0
+      ],
+      "Tennessee Titans": [
+        10,
+        6,
+        0
+      ],
       "Cleveland Browns": [
-        9,
-        7,
+        8,
+        8,
         0
       ],
       "Cincinnati Bengals": [
@@ -2381,6 +4623,103 @@
         12,
         0
       ],
+      "Denver Broncos": [
+        10,
+        6,
+        0
+      ],
+      "Las Vegas Raiders": [
+        9,
+        7,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        9,
+        7,
+        0
+      ],
+      "Kansas City Chiefs": [
+        4,
+        12,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        9,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        8,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        6,
+        10,
+        0
+      ],
+      "New York Giants": [
+        6,
+        10,
+        0
+      ],
+      "Minnesota Vikings": [
+        8,
+        7,
+        1
+      ],
+      "Green Bay Packers": [
+        8,
+        7,
+        1
+      ],
+      "Detroit Lions": [
+        7,
+        9,
+        0
+      ],
+      "Chicago Bears": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        11,
+        0
+      ],
+      "Los Angeles Rams": [
+        12,
+        4,
+        0
+      ],
+      "Atlanta Falcons": [
+        9,
+        7,
+        0
+      ],
+      "New Orleans Saints": [
+        7,
+        9,
+        0
+      ],
+      "San Francisco 49ers": [
+        2,
+        14,
+        0
+      ]
+    },
+    "1979": {
       "Miami Dolphins": [
         10,
         6,
@@ -2404,6 +4743,26 @@
       "Indianapolis Colts": [
         5,
         11,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        12,
+        4,
+        0
+      ],
+      "Tennessee Titans": [
+        11,
+        5,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        4,
+        12,
         0
       ],
       "Los Angeles Chargers": [
@@ -2431,31 +4790,6 @@
         9,
         0
       ],
-      "Tampa Bay Buccaneers": [
-        10,
-        6,
-        0
-      ],
-      "Chicago Bears": [
-        10,
-        6,
-        0
-      ],
-      "Minnesota Vikings": [
-        7,
-        9,
-        0
-      ],
-      "Green Bay Packers": [
-        5,
-        11,
-        0
-      ],
-      "Detroit Lions": [
-        2,
-        14,
-        0
-      ],
       "Dallas Cowboys": [
         11,
         5,
@@ -2481,6 +4815,31 @@
         11,
         0
       ],
+      "Tampa Bay Buccaneers": [
+        10,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        10,
+        6,
+        0
+      ],
+      "Minnesota Vikings": [
+        7,
+        9,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        11,
+        0
+      ],
+      "Detroit Lions": [
+        2,
+        14,
+        0
+      ],
       "Los Angeles Rams": [
         9,
         7,
@@ -2499,6 +4858,8354 @@
       "San Francisco 49ers": [
         2,
         14,
+        0
+      ]
+    },
+    "1980": {
+      "Buffalo Bills": [
+        11,
+        5,
+        0
+      ],
+      "New England Patriots": [
+        10,
+        6,
+        0
+      ],
+      "Miami Dolphins": [
+        8,
+        8,
+        0
+      ],
+      "Indianapolis Colts": [
+        7,
+        9,
+        0
+      ],
+      "New York Jets": [
+        4,
+        12,
+        0
+      ],
+      "Cleveland Browns": [
+        11,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        11,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Chargers": [
+        11,
+        5,
+        0
+      ],
+      "Las Vegas Raiders": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        8,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        8,
+        8,
+        0
+      ],
+      "Seattle Seahawks": [
+        4,
+        12,
+        0
+      ],
+      "Philadelphia Eagles": [
+        12,
+        4,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        10,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        11,
+        0
+      ],
+      "New York Giants": [
+        4,
+        12,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        10,
+        1
+      ],
+      "Green Bay Packers": [
+        5,
+        10,
+        1
+      ],
+      "Atlanta Falcons": [
+        12,
+        4,
+        0
+      ],
+      "Los Angeles Rams": [
+        11,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        6,
+        10,
+        0
+      ],
+      "New Orleans Saints": [
+        1,
+        15,
+        0
+      ]
+    },
+    "1981": {
+      "Miami Dolphins": [
+        11,
+        4,
+        1
+      ],
+      "New York Jets": [
+        10,
+        5,
+        1
+      ],
+      "Buffalo Bills": [
+        10,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        2,
+        14,
+        0
+      ],
+      "New England Patriots": [
+        2,
+        14,
+        0
+      ],
+      "Cincinnati Bengals": [
+        12,
+        4,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        8,
+        8,
+        0
+      ],
+      "Tennessee Titans": [
+        7,
+        9,
+        0
+      ],
+      "Cleveland Browns": [
+        5,
+        11,
+        0
+      ],
+      "Los Angeles Chargers": [
+        10,
+        6,
+        0
+      ],
+      "Denver Broncos": [
+        10,
+        6,
+        0
+      ],
+      "Kansas City Chiefs": [
+        9,
+        7,
+        0
+      ],
+      "Las Vegas Raiders": [
+        7,
+        9,
+        0
+      ],
+      "Seattle Seahawks": [
+        6,
+        10,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        10,
+        6,
+        0
+      ],
+      "New York Giants": [
+        9,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        8,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        9,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        8,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        8,
+        0
+      ],
+      "Minnesota Vikings": [
+        7,
+        9,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        10,
+        0
+      ],
+      "San Francisco 49ers": [
+        13,
+        3,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        9,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        10,
+        0
+      ],
+      "New Orleans Saints": [
+        4,
+        12,
+        0
+      ]
+    },
+    "1982": {
+      "Las Vegas Raiders": [
+        8,
+        1,
+        0
+      ],
+      "Miami Dolphins": [
+        7,
+        2,
+        0
+      ],
+      "Cincinnati Bengals": [
+        7,
+        2,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        3,
+        0
+      ],
+      "Los Angeles Chargers": [
+        6,
+        3,
+        0
+      ],
+      "New York Jets": [
+        6,
+        3,
+        0
+      ],
+      "New England Patriots": [
+        5,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        4,
+        5,
+        0
+      ],
+      "Buffalo Bills": [
+        4,
+        5,
+        0
+      ],
+      "Seattle Seahawks": [
+        4,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        3,
+        6,
+        0
+      ],
+      "Denver Broncos": [
+        2,
+        7,
+        0
+      ],
+      "Tennessee Titans": [
+        1,
+        8,
+        0
+      ],
+      "Indianapolis Colts": [
+        0,
+        8,
+        1
+      ],
+      "Washington Commanders": [
+        8,
+        1,
+        0
+      ],
+      "Dallas Cowboys": [
+        6,
+        3,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        3,
+        1
+      ],
+      "Minnesota Vikings": [
+        5,
+        4,
+        0
+      ],
+      "Atlanta Falcons": [
+        5,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        4,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        4,
+        0
+      ],
+      "Detroit Lions": [
+        4,
+        5,
+        0
+      ],
+      "New Orleans Saints": [
+        4,
+        5,
+        0
+      ],
+      "New York Giants": [
+        4,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        3,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        3,
+        6,
+        0
+      ],
+      "Philadelphia Eagles": [
+        3,
+        6,
+        0
+      ],
+      "Los Angeles Rams": [
+        2,
+        7,
+        0
+      ]
+    },
+    "1983": {
+      "Miami Dolphins": [
+        12,
+        4,
+        0
+      ],
+      "New England Patriots": [
+        8,
+        8,
+        0
+      ],
+      "Buffalo Bills": [
+        8,
+        8,
+        0
+      ],
+      "Indianapolis Colts": [
+        7,
+        9,
+        0
+      ],
+      "New York Jets": [
+        7,
+        9,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        10,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        7,
+        9,
+        0
+      ],
+      "Tennessee Titans": [
+        2,
+        14,
+        0
+      ],
+      "Las Vegas Raiders": [
+        12,
+        4,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Denver Broncos": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        6,
+        10,
+        0
+      ],
+      "Kansas City Chiefs": [
+        6,
+        10,
+        0
+      ],
+      "Washington Commanders": [
+        14,
+        2,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        8,
+        7,
+        1
+      ],
+      "Philadelphia Eagles": [
+        5,
+        11,
+        0
+      ],
+      "New York Giants": [
+        3,
+        12,
+        1
+      ],
+      "Detroit Lions": [
+        9,
+        7,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        8,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        8,
+        0
+      ],
+      "Minnesota Vikings": [
+        8,
+        8,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        2,
+        14,
+        0
+      ],
+      "San Francisco 49ers": [
+        10,
+        6,
+        0
+      ],
+      "Los Angeles Rams": [
+        9,
+        7,
+        0
+      ],
+      "New Orleans Saints": [
+        8,
+        8,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        9,
+        0
+      ]
+    },
+    "1984": {
+      "Miami Dolphins": [
+        14,
+        2,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        7,
+        9,
+        0
+      ],
+      "Indianapolis Colts": [
+        4,
+        12,
+        0
+      ],
+      "Buffalo Bills": [
+        2,
+        14,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        8,
+        8,
+        0
+      ],
+      "Cleveland Browns": [
+        5,
+        11,
+        0
+      ],
+      "Tennessee Titans": [
+        3,
+        13,
+        0
+      ],
+      "Denver Broncos": [
+        13,
+        3,
+        0
+      ],
+      "Seattle Seahawks": [
+        12,
+        4,
+        0
+      ],
+      "Las Vegas Raiders": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        8,
+        8,
+        0
+      ],
+      "Los Angeles Chargers": [
+        7,
+        9,
+        0
+      ],
+      "Washington Commanders": [
+        11,
+        5,
+        0
+      ],
+      "New York Giants": [
+        9,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        9,
+        7,
+        0
+      ],
+      "Dallas Cowboys": [
+        9,
+        7,
+        0
+      ],
+      "Philadelphia Eagles": [
+        6,
+        9,
+        1
+      ],
+      "Chicago Bears": [
+        10,
+        6,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        8,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        6,
+        10,
+        0
+      ],
+      "Detroit Lions": [
+        4,
+        11,
+        1
+      ],
+      "Minnesota Vikings": [
+        3,
+        13,
+        0
+      ],
+      "San Francisco 49ers": [
+        15,
+        1,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        6,
+        0
+      ],
+      "New Orleans Saints": [
+        7,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        4,
+        12,
+        0
+      ]
+    },
+    "1985": {
+      "Miami Dolphins": [
+        12,
+        4,
+        0
+      ],
+      "New York Jets": [
+        11,
+        5,
+        0
+      ],
+      "New England Patriots": [
+        11,
+        5,
+        0
+      ],
+      "Indianapolis Colts": [
+        5,
+        11,
+        0
+      ],
+      "Buffalo Bills": [
+        2,
+        14,
+        0
+      ],
+      "Cleveland Browns": [
+        8,
+        8,
+        0
+      ],
+      "Cincinnati Bengals": [
+        7,
+        9,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        7,
+        9,
+        0
+      ],
+      "Tennessee Titans": [
+        5,
+        11,
+        0
+      ],
+      "Las Vegas Raiders": [
+        12,
+        4,
+        0
+      ],
+      "Denver Broncos": [
+        11,
+        5,
+        0
+      ],
+      "Seattle Seahawks": [
+        8,
+        8,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        8,
+        0
+      ],
+      "Kansas City Chiefs": [
+        6,
+        10,
+        0
+      ],
+      "Dallas Cowboys": [
+        10,
+        6,
+        0
+      ],
+      "New York Giants": [
+        10,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        6,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        11,
+        0
+      ],
+      "Chicago Bears": [
+        15,
+        1,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        8,
+        0
+      ],
+      "Minnesota Vikings": [
+        7,
+        9,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        2,
+        14,
+        0
+      ],
+      "Los Angeles Rams": [
+        11,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        10,
+        6,
+        0
+      ],
+      "New Orleans Saints": [
+        5,
+        11,
+        0
+      ],
+      "Atlanta Falcons": [
+        4,
+        12,
+        0
+      ]
+    },
+    "1986": {
+      "New England Patriots": [
+        11,
+        5,
+        0
+      ],
+      "New York Jets": [
+        10,
+        6,
+        0
+      ],
+      "Miami Dolphins": [
+        8,
+        8,
+        0
+      ],
+      "Buffalo Bills": [
+        4,
+        12,
+        0
+      ],
+      "Indianapolis Colts": [
+        3,
+        13,
+        0
+      ],
+      "Cleveland Browns": [
+        12,
+        4,
+        0
+      ],
+      "Cincinnati Bengals": [
+        10,
+        6,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        10,
+        0
+      ],
+      "Tennessee Titans": [
+        5,
+        11,
+        0
+      ],
+      "Denver Broncos": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        10,
+        6,
+        0
+      ],
+      "Seattle Seahawks": [
+        10,
+        6,
+        0
+      ],
+      "Las Vegas Raiders": [
+        8,
+        8,
+        0
+      ],
+      "Los Angeles Chargers": [
+        4,
+        12,
+        0
+      ],
+      "New York Giants": [
+        14,
+        2,
+        0
+      ],
+      "Washington Commanders": [
+        12,
+        4,
+        0
+      ],
+      "Dallas Cowboys": [
+        7,
+        9,
+        0
+      ],
+      "Philadelphia Eagles": [
+        5,
+        10,
+        1
+      ],
+      "Arizona Cardinals": [
+        4,
+        11,
+        1
+      ],
+      "Chicago Bears": [
+        14,
+        2,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        5,
+        11,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        12,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        2,
+        14,
+        0
+      ],
+      "San Francisco 49ers": [
+        10,
+        5,
+        1
+      ],
+      "Los Angeles Rams": [
+        10,
+        6,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        8,
+        1
+      ],
+      "New Orleans Saints": [
+        7,
+        9,
+        0
+      ]
+    },
+    "1987": {
+      "Indianapolis Colts": [
+        9,
+        6,
+        0
+      ],
+      "New England Patriots": [
+        8,
+        7,
+        0
+      ],
+      "Miami Dolphins": [
+        8,
+        7,
+        0
+      ],
+      "Buffalo Bills": [
+        7,
+        8,
+        0
+      ],
+      "New York Jets": [
+        6,
+        9,
+        0
+      ],
+      "Cleveland Browns": [
+        10,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        9,
+        6,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        8,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        4,
+        11,
+        0
+      ],
+      "Denver Broncos": [
+        10,
+        4,
+        1
+      ],
+      "Seattle Seahawks": [
+        9,
+        6,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        7,
+        0
+      ],
+      "Las Vegas Raiders": [
+        5,
+        10,
+        0
+      ],
+      "Kansas City Chiefs": [
+        4,
+        11,
+        0
+      ],
+      "Washington Commanders": [
+        11,
+        4,
+        0
+      ],
+      "Dallas Cowboys": [
+        7,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        8,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        8,
+        0
+      ],
+      "New York Giants": [
+        6,
+        9,
+        0
+      ],
+      "Chicago Bears": [
+        11,
+        4,
+        0
+      ],
+      "Minnesota Vikings": [
+        8,
+        7,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        9,
+        1
+      ],
+      "Tampa Bay Buccaneers": [
+        4,
+        11,
+        0
+      ],
+      "Detroit Lions": [
+        4,
+        11,
+        0
+      ],
+      "San Francisco 49ers": [
+        13,
+        2,
+        0
+      ],
+      "New Orleans Saints": [
+        12,
+        3,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        3,
+        12,
+        0
+      ]
+    },
+    "1988": {
+      "Buffalo Bills": [
+        12,
+        4,
+        0
+      ],
+      "Indianapolis Colts": [
+        9,
+        7,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        8,
+        7,
+        1
+      ],
+      "Miami Dolphins": [
+        6,
+        10,
+        0
+      ],
+      "Cincinnati Bengals": [
+        12,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        10,
+        6,
+        0
+      ],
+      "Tennessee Titans": [
+        10,
+        6,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        11,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Denver Broncos": [
+        8,
+        8,
+        0
+      ],
+      "Las Vegas Raiders": [
+        7,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        6,
+        10,
+        0
+      ],
+      "Kansas City Chiefs": [
+        4,
+        11,
+        1
+      ],
+      "Philadelphia Eagles": [
+        10,
+        6,
+        0
+      ],
+      "New York Giants": [
+        10,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        7,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        9,
+        0
+      ],
+      "Dallas Cowboys": [
+        3,
+        13,
+        0
+      ],
+      "Chicago Bears": [
+        12,
+        4,
+        0
+      ],
+      "Minnesota Vikings": [
+        11,
+        5,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        11,
+        0
+      ],
+      "Detroit Lions": [
+        4,
+        12,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        12,
+        0
+      ],
+      "San Francisco 49ers": [
+        10,
+        6,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        6,
+        0
+      ],
+      "New Orleans Saints": [
+        10,
+        6,
+        0
+      ],
+      "Atlanta Falcons": [
+        5,
+        11,
+        0
+      ]
+    },
+    "1989": {
+      "Buffalo Bills": [
+        9,
+        7,
+        0
+      ],
+      "Indianapolis Colts": [
+        8,
+        8,
+        0
+      ],
+      "Miami Dolphins": [
+        8,
+        8,
+        0
+      ],
+      "New England Patriots": [
+        5,
+        11,
+        0
+      ],
+      "New York Jets": [
+        4,
+        12,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        6,
+        1
+      ],
+      "Tennessee Titans": [
+        9,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        8,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        8,
+        7,
+        1
+      ],
+      "Las Vegas Raiders": [
+        8,
+        8,
+        0
+      ],
+      "Seattle Seahawks": [
+        7,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        6,
+        10,
+        0
+      ],
+      "New York Giants": [
+        12,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        11,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        6,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        11,
+        0
+      ],
+      "Dallas Cowboys": [
+        1,
+        15,
+        0
+      ],
+      "Minnesota Vikings": [
+        10,
+        6,
+        0
+      ],
+      "Green Bay Packers": [
+        10,
+        6,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        9,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        10,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        11,
+        0
+      ],
+      "San Francisco 49ers": [
+        14,
+        2,
+        0
+      ],
+      "Los Angeles Rams": [
+        11,
+        5,
+        0
+      ],
+      "New Orleans Saints": [
+        9,
+        7,
+        0
+      ],
+      "Atlanta Falcons": [
+        3,
+        13,
+        0
+      ]
+    },
+    "1990": {
+      "Buffalo Bills": [
+        13,
+        3,
+        0
+      ],
+      "Miami Dolphins": [
+        12,
+        4,
+        0
+      ],
+      "Indianapolis Colts": [
+        7,
+        9,
+        0
+      ],
+      "New York Jets": [
+        6,
+        10,
+        0
+      ],
+      "New England Patriots": [
+        1,
+        15,
+        0
+      ],
+      "Cincinnati Bengals": [
+        9,
+        7,
+        0
+      ],
+      "Tennessee Titans": [
+        9,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        7,
+        0
+      ],
+      "Cleveland Browns": [
+        3,
+        13,
+        0
+      ],
+      "Las Vegas Raiders": [
+        12,
+        4,
+        0
+      ],
+      "Kansas City Chiefs": [
+        11,
+        5,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        6,
+        10,
+        0
+      ],
+      "Denver Broncos": [
+        5,
+        11,
+        0
+      ],
+      "New York Giants": [
+        13,
+        3,
+        0
+      ],
+      "Philadelphia Eagles": [
+        10,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        6,
+        0
+      ],
+      "Dallas Cowboys": [
+        7,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        11,
+        0
+      ],
+      "Chicago Bears": [
+        11,
+        5,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        6,
+        10,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        10,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        10,
+        0
+      ],
+      "Minnesota Vikings": [
+        6,
+        10,
+        0
+      ],
+      "San Francisco 49ers": [
+        14,
+        2,
+        0
+      ],
+      "New Orleans Saints": [
+        8,
+        8,
+        0
+      ],
+      "Los Angeles Rams": [
+        5,
+        11,
+        0
+      ],
+      "Atlanta Falcons": [
+        5,
+        11,
+        0
+      ]
+    },
+    "1991": {
+      "Buffalo Bills": [
+        13,
+        3,
+        0
+      ],
+      "New York Jets": [
+        8,
+        8,
+        0
+      ],
+      "Miami Dolphins": [
+        8,
+        8,
+        0
+      ],
+      "New England Patriots": [
+        6,
+        10,
+        0
+      ],
+      "Indianapolis Colts": [
+        1,
+        15,
+        0
+      ],
+      "Tennessee Titans": [
+        11,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        7,
+        9,
+        0
+      ],
+      "Cleveland Browns": [
+        6,
+        10,
+        0
+      ],
+      "Cincinnati Bengals": [
+        3,
+        13,
+        0
+      ],
+      "Denver Broncos": [
+        12,
+        4,
+        0
+      ],
+      "Kansas City Chiefs": [
+        10,
+        6,
+        0
+      ],
+      "Las Vegas Raiders": [
+        9,
+        7,
+        0
+      ],
+      "Seattle Seahawks": [
+        7,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        4,
+        12,
+        0
+      ],
+      "Washington Commanders": [
+        14,
+        2,
+        0
+      ],
+      "Dallas Cowboys": [
+        11,
+        5,
+        0
+      ],
+      "Philadelphia Eagles": [
+        10,
+        6,
+        0
+      ],
+      "New York Giants": [
+        8,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        12,
+        0
+      ],
+      "Detroit Lions": [
+        12,
+        4,
+        0
+      ],
+      "Chicago Bears": [
+        11,
+        5,
+        0
+      ],
+      "Minnesota Vikings": [
+        8,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        12,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        3,
+        13,
+        0
+      ],
+      "New Orleans Saints": [
+        11,
+        5,
+        0
+      ],
+      "Atlanta Falcons": [
+        10,
+        6,
+        0
+      ],
+      "San Francisco 49ers": [
+        10,
+        6,
+        0
+      ],
+      "Los Angeles Rams": [
+        3,
+        13,
+        0
+      ]
+    },
+    "1992": {
+      "Miami Dolphins": [
+        11,
+        5,
+        0
+      ],
+      "Buffalo Bills": [
+        11,
+        5,
+        0
+      ],
+      "Indianapolis Colts": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        4,
+        12,
+        0
+      ],
+      "New England Patriots": [
+        2,
+        14,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        11,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        10,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        9,
+        0
+      ],
+      "Cincinnati Bengals": [
+        5,
+        11,
+        0
+      ],
+      "Los Angeles Chargers": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        10,
+        6,
+        0
+      ],
+      "Denver Broncos": [
+        8,
+        8,
+        0
+      ],
+      "Las Vegas Raiders": [
+        7,
+        9,
+        0
+      ],
+      "Seattle Seahawks": [
+        2,
+        14,
+        0
+      ],
+      "Dallas Cowboys": [
+        13,
+        3,
+        0
+      ],
+      "Philadelphia Eagles": [
+        11,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        9,
+        7,
+        0
+      ],
+      "New York Giants": [
+        6,
+        10,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        12,
+        0
+      ],
+      "Minnesota Vikings": [
+        11,
+        5,
+        0
+      ],
+      "Green Bay Packers": [
+        9,
+        7,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        11,
+        0
+      ],
+      "Chicago Bears": [
+        5,
+        11,
+        0
+      ],
+      "Detroit Lions": [
+        5,
+        11,
+        0
+      ],
+      "San Francisco 49ers": [
+        14,
+        2,
+        0
+      ],
+      "New Orleans Saints": [
+        12,
+        4,
+        0
+      ],
+      "Atlanta Falcons": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        10,
+        0
+      ]
+    },
+    "1993": {
+      "Buffalo Bills": [
+        12,
+        4,
+        0
+      ],
+      "Miami Dolphins": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        8,
+        8,
+        0
+      ],
+      "New England Patriots": [
+        5,
+        11,
+        0
+      ],
+      "Indianapolis Colts": [
+        4,
+        12,
+        0
+      ],
+      "Tennessee Titans": [
+        12,
+        4,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        7,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        9,
+        0
+      ],
+      "Cincinnati Bengals": [
+        3,
+        13,
+        0
+      ],
+      "Kansas City Chiefs": [
+        11,
+        5,
+        0
+      ],
+      "Las Vegas Raiders": [
+        10,
+        6,
+        0
+      ],
+      "Denver Broncos": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        8,
+        0
+      ],
+      "Seattle Seahawks": [
+        6,
+        10,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "New York Giants": [
+        11,
+        5,
+        0
+      ],
+      "Philadelphia Eagles": [
+        8,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        9,
+        0
+      ],
+      "Washington Commanders": [
+        4,
+        12,
+        0
+      ],
+      "Detroit Lions": [
+        10,
+        6,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        7,
+        0
+      ],
+      "Green Bay Packers": [
+        9,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        5,
+        11,
+        0
+      ],
+      "San Francisco 49ers": [
+        10,
+        6,
+        0
+      ],
+      "New Orleans Saints": [
+        8,
+        8,
+        0
+      ],
+      "Atlanta Falcons": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Rams": [
+        5,
+        11,
+        0
+      ]
+    },
+    "1994": {
+      "Miami Dolphins": [
+        10,
+        6,
+        0
+      ],
+      "New England Patriots": [
+        10,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        8,
+        8,
+        0
+      ],
+      "Buffalo Bills": [
+        7,
+        9,
+        0
+      ],
+      "New York Jets": [
+        6,
+        10,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        12,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        11,
+        5,
+        0
+      ],
+      "Cincinnati Bengals": [
+        3,
+        13,
+        0
+      ],
+      "Tennessee Titans": [
+        2,
+        14,
+        0
+      ],
+      "Los Angeles Chargers": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        9,
+        7,
+        0
+      ],
+      "Las Vegas Raiders": [
+        9,
+        7,
+        0
+      ],
+      "Denver Broncos": [
+        7,
+        9,
+        0
+      ],
+      "Seattle Seahawks": [
+        6,
+        10,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "New York Giants": [
+        9,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        8,
+        8,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        9,
+        0
+      ],
+      "Washington Commanders": [
+        3,
+        13,
+        0
+      ],
+      "Minnesota Vikings": [
+        10,
+        6,
+        0
+      ],
+      "Green Bay Packers": [
+        9,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        7,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        6,
+        10,
+        0
+      ],
+      "San Francisco 49ers": [
+        13,
+        3,
+        0
+      ],
+      "New Orleans Saints": [
+        7,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        9,
+        0
+      ],
+      "Los Angeles Rams": [
+        4,
+        12,
+        0
+      ]
+    },
+    "1995": {
+      "Buffalo Bills": [
+        10,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        9,
+        7,
+        0
+      ],
+      "Miami Dolphins": [
+        9,
+        7,
+        0
+      ],
+      "New England Patriots": [
+        6,
+        10,
+        0
+      ],
+      "New York Jets": [
+        3,
+        13,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        11,
+        5,
+        0
+      ],
+      "Cincinnati Bengals": [
+        7,
+        9,
+        0
+      ],
+      "Tennessee Titans": [
+        7,
+        9,
+        0
+      ],
+      "Cleveland Browns": [
+        5,
+        11,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        4,
+        12,
+        0
+      ],
+      "Kansas City Chiefs": [
+        13,
+        3,
+        0
+      ],
+      "Los Angeles Chargers": [
+        9,
+        7,
+        0
+      ],
+      "Seattle Seahawks": [
+        8,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        8,
+        8,
+        0
+      ],
+      "Las Vegas Raiders": [
+        8,
+        8,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        10,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        10,
+        0
+      ],
+      "New York Giants": [
+        5,
+        11,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        12,
+        0
+      ],
+      "Green Bay Packers": [
+        11,
+        5,
+        0
+      ],
+      "Detroit Lions": [
+        10,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        7,
+        0
+      ],
+      "Minnesota Vikings": [
+        8,
+        8,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        7,
+        9,
+        0
+      ],
+      "San Francisco 49ers": [
+        11,
+        5,
+        0
+      ],
+      "Atlanta Falcons": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Rams": [
+        7,
+        9,
+        0
+      ],
+      "Carolina Panthers": [
+        7,
+        9,
+        0
+      ],
+      "New Orleans Saints": [
+        7,
+        9,
+        0
+      ]
+    },
+    "1996": {
+      "New England Patriots": [
+        11,
+        5,
+        0
+      ],
+      "Buffalo Bills": [
+        10,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        9,
+        7,
+        0
+      ],
+      "Miami Dolphins": [
+        8,
+        8,
+        0
+      ],
+      "New York Jets": [
+        1,
+        15,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        10,
+        6,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        8,
+        8,
+        0
+      ],
+      "Tennessee Titans": [
+        8,
+        8,
+        0
+      ],
+      "Baltimore Ravens": [
+        4,
+        12,
+        0
+      ],
+      "Denver Broncos": [
+        13,
+        3,
+        0
+      ],
+      "Kansas City Chiefs": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        8,
+        0
+      ],
+      "Las Vegas Raiders": [
+        7,
+        9,
+        0
+      ],
+      "Seattle Seahawks": [
+        7,
+        9,
+        0
+      ],
+      "Dallas Cowboys": [
+        10,
+        6,
+        0
+      ],
+      "Philadelphia Eagles": [
+        10,
+        6,
+        0
+      ],
+      "Washington Commanders": [
+        9,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        9,
+        0
+      ],
+      "New York Giants": [
+        6,
+        10,
+        0
+      ],
+      "Green Bay Packers": [
+        13,
+        3,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        6,
+        10,
+        0
+      ],
+      "Detroit Lions": [
+        5,
+        11,
+        0
+      ],
+      "Carolina Panthers": [
+        12,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        12,
+        4,
+        0
+      ],
+      "Los Angeles Rams": [
+        6,
+        10,
+        0
+      ],
+      "Atlanta Falcons": [
+        3,
+        13,
+        0
+      ],
+      "New Orleans Saints": [
+        3,
+        13,
+        0
+      ]
+    },
+    "1997": {
+      "New England Patriots": [
+        10,
+        6,
+        0
+      ],
+      "Miami Dolphins": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        9,
+        7,
+        0
+      ],
+      "Buffalo Bills": [
+        6,
+        10,
+        0
+      ],
+      "Indianapolis Colts": [
+        3,
+        13,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        11,
+        5,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        11,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        8,
+        8,
+        0
+      ],
+      "Cincinnati Bengals": [
+        7,
+        9,
+        0
+      ],
+      "Baltimore Ravens": [
+        6,
+        9,
+        1
+      ],
+      "Kansas City Chiefs": [
+        13,
+        3,
+        0
+      ],
+      "Denver Broncos": [
+        12,
+        4,
+        0
+      ],
+      "Seattle Seahawks": [
+        8,
+        8,
+        0
+      ],
+      "Las Vegas Raiders": [
+        4,
+        12,
+        0
+      ],
+      "Los Angeles Chargers": [
+        4,
+        12,
+        0
+      ],
+      "New York Giants": [
+        10,
+        5,
+        1
+      ],
+      "Washington Commanders": [
+        8,
+        7,
+        1
+      ],
+      "Philadelphia Eagles": [
+        6,
+        9,
+        1
+      ],
+      "Dallas Cowboys": [
+        6,
+        10,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        12,
+        0
+      ],
+      "Green Bay Packers": [
+        13,
+        3,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        10,
+        6,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        7,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        4,
+        12,
+        0
+      ],
+      "San Francisco 49ers": [
+        13,
+        3,
+        0
+      ],
+      "Carolina Panthers": [
+        7,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        9,
+        0
+      ],
+      "New Orleans Saints": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Rams": [
+        5,
+        11,
+        0
+      ]
+    },
+    "1998": {
+      "New York Jets": [
+        12,
+        4,
+        0
+      ],
+      "Miami Dolphins": [
+        10,
+        6,
+        0
+      ],
+      "Buffalo Bills": [
+        10,
+        6,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        7,
+        0
+      ],
+      "Indianapolis Colts": [
+        3,
+        13,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        11,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        8,
+        8,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        7,
+        9,
+        0
+      ],
+      "Baltimore Ravens": [
+        6,
+        10,
+        0
+      ],
+      "Cincinnati Bengals": [
+        3,
+        13,
+        0
+      ],
+      "Denver Broncos": [
+        14,
+        2,
+        0
+      ],
+      "Las Vegas Raiders": [
+        8,
+        8,
+        0
+      ],
+      "Seattle Seahawks": [
+        8,
+        8,
+        0
+      ],
+      "Kansas City Chiefs": [
+        7,
+        9,
+        0
+      ],
+      "Los Angeles Chargers": [
+        5,
+        11,
+        0
+      ],
+      "Dallas Cowboys": [
+        10,
+        6,
+        0
+      ],
+      "Arizona Cardinals": [
+        9,
+        7,
+        0
+      ],
+      "New York Giants": [
+        8,
+        8,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        10,
+        0
+      ],
+      "Philadelphia Eagles": [
+        3,
+        13,
+        0
+      ],
+      "Minnesota Vikings": [
+        15,
+        1,
+        0
+      ],
+      "Green Bay Packers": [
+        11,
+        5,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        8,
+        8,
+        0
+      ],
+      "Detroit Lions": [
+        5,
+        11,
+        0
+      ],
+      "Chicago Bears": [
+        4,
+        12,
+        0
+      ],
+      "Atlanta Falcons": [
+        14,
+        2,
+        0
+      ],
+      "San Francisco 49ers": [
+        12,
+        4,
+        0
+      ],
+      "New Orleans Saints": [
+        6,
+        10,
+        0
+      ],
+      "Carolina Panthers": [
+        4,
+        12,
+        0
+      ],
+      "Los Angeles Rams": [
+        4,
+        12,
+        0
+      ]
+    },
+    "1999": {
+      "Indianapolis Colts": [
+        13,
+        3,
+        0
+      ],
+      "Buffalo Bills": [
+        11,
+        5,
+        0
+      ],
+      "Miami Dolphins": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        8,
+        8,
+        0
+      ],
+      "New England Patriots": [
+        8,
+        8,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        14,
+        2,
+        0
+      ],
+      "Tennessee Titans": [
+        13,
+        3,
+        0
+      ],
+      "Baltimore Ravens": [
+        8,
+        8,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        10,
+        0
+      ],
+      "Cincinnati Bengals": [
+        4,
+        12,
+        0
+      ],
+      "Cleveland Browns": [
+        2,
+        14,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Kansas City Chiefs": [
+        9,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        8,
+        0
+      ],
+      "Las Vegas Raiders": [
+        8,
+        8,
+        0
+      ],
+      "Denver Broncos": [
+        6,
+        10,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        6,
+        0
+      ],
+      "Dallas Cowboys": [
+        8,
+        8,
+        0
+      ],
+      "New York Giants": [
+        7,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        6,
+        10,
+        0
+      ],
+      "Philadelphia Eagles": [
+        5,
+        11,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        11,
+        5,
+        0
+      ],
+      "Minnesota Vikings": [
+        10,
+        6,
+        0
+      ],
+      "Detroit Lions": [
+        8,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        8,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Rams": [
+        13,
+        3,
+        0
+      ],
+      "Carolina Panthers": [
+        8,
+        8,
+        0
+      ],
+      "Atlanta Falcons": [
+        5,
+        11,
+        0
+      ],
+      "San Francisco 49ers": [
+        4,
+        12,
+        0
+      ],
+      "New Orleans Saints": [
+        3,
+        13,
+        0
+      ]
+    },
+    "2000": {
+      "Miami Dolphins": [
+        11,
+        5,
+        0
+      ],
+      "Indianapolis Colts": [
+        10,
+        6,
+        0
+      ],
+      "New York Jets": [
+        9,
+        7,
+        0
+      ],
+      "Buffalo Bills": [
+        8,
+        8,
+        0
+      ],
+      "New England Patriots": [
+        5,
+        11,
+        0
+      ],
+      "Tennessee Titans": [
+        13,
+        3,
+        0
+      ],
+      "Baltimore Ravens": [
+        12,
+        4,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        7,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        7,
+        9,
+        0
+      ],
+      "Cincinnati Bengals": [
+        4,
+        12,
+        0
+      ],
+      "Cleveland Browns": [
+        3,
+        13,
+        0
+      ],
+      "Las Vegas Raiders": [
+        12,
+        4,
+        0
+      ],
+      "Denver Broncos": [
+        11,
+        5,
+        0
+      ],
+      "Kansas City Chiefs": [
+        7,
+        9,
+        0
+      ],
+      "Seattle Seahawks": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Chargers": [
+        1,
+        15,
+        0
+      ],
+      "New York Giants": [
+        12,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        11,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        8,
+        8,
+        0
+      ],
+      "Dallas Cowboys": [
+        5,
+        11,
+        0
+      ],
+      "Arizona Cardinals": [
+        3,
+        13,
+        0
+      ],
+      "Minnesota Vikings": [
+        11,
+        5,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        10,
+        6,
+        0
+      ],
+      "Green Bay Packers": [
+        9,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        5,
+        11,
+        0
+      ],
+      "New Orleans Saints": [
+        10,
+        6,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        6,
+        0
+      ],
+      "Carolina Panthers": [
+        7,
+        9,
+        0
+      ],
+      "San Francisco 49ers": [
+        6,
+        10,
+        0
+      ],
+      "Atlanta Falcons": [
+        4,
+        12,
+        0
+      ]
+    },
+    "2001": {
+      "New England Patriots": [
+        11,
+        5,
+        0
+      ],
+      "Miami Dolphins": [
+        11,
+        5,
+        0
+      ],
+      "New York Jets": [
+        10,
+        6,
+        0
+      ],
+      "Indianapolis Colts": [
+        6,
+        10,
+        0
+      ],
+      "Buffalo Bills": [
+        3,
+        13,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        13,
+        3,
+        0
+      ],
+      "Baltimore Ravens": [
+        10,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        9,
+        0
+      ],
+      "Tennessee Titans": [
+        7,
+        9,
+        0
+      ],
+      "Jacksonville Jaguars": [
+        6,
+        10,
+        0
+      ],
+      "Cincinnati Bengals": [
+        6,
+        10,
+        0
+      ],
+      "Las Vegas Raiders": [
+        10,
+        6,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Denver Broncos": [
+        8,
+        8,
+        0
+      ],
+      "Kansas City Chiefs": [
+        6,
+        10,
+        0
+      ],
+      "Los Angeles Chargers": [
+        5,
+        11,
+        0
+      ],
+      "Philadelphia Eagles": [
+        11,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        8,
+        8,
+        0
+      ],
+      "New York Giants": [
+        7,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        9,
+        0
+      ],
+      "Dallas Cowboys": [
+        5,
+        11,
+        0
+      ],
+      "Chicago Bears": [
+        13,
+        3,
+        0
+      ],
+      "Green Bay Packers": [
+        12,
+        4,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        9,
+        7,
+        0
+      ],
+      "Minnesota Vikings": [
+        5,
+        11,
+        0
+      ],
+      "Detroit Lions": [
+        2,
+        14,
+        0
+      ],
+      "Los Angeles Rams": [
+        14,
+        2,
+        0
+      ],
+      "San Francisco 49ers": [
+        12,
+        4,
+        0
+      ],
+      "New Orleans Saints": [
+        7,
+        9,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        9,
+        0
+      ],
+      "Carolina Panthers": [
+        1,
+        15,
+        0
+      ]
+    }
+  },
+  "NBA": {
+    "1946": {
+      "defunct:Washington Capitols": [
+        49,
+        11,
+        0
+      ],
+      "Golden State Warriors": [
+        35,
+        25,
+        0
+      ],
+      "New York Knicks": [
+        33,
+        27,
+        0
+      ],
+      "defunct:Providence Steamrollers": [
+        28,
+        32,
+        0
+      ],
+      "Boston Celtics": [
+        22,
+        38,
+        0
+      ],
+      "defunct:Toronto Huskies": [
+        22,
+        38,
+        0
+      ],
+      "defunct:Chicago Stags": [
+        39,
+        22,
+        0
+      ],
+      "defunct:St. Louis Bombers": [
+        38,
+        23,
+        0
+      ],
+      "defunct:Cleveland Rebels": [
+        30,
+        30,
+        0
+      ],
+      "defunct:Detroit Falcons": [
+        20,
+        40,
+        0
+      ],
+      "defunct:Pittsburgh Ironmen": [
+        15,
+        45,
+        0
+      ]
+    },
+    "1947": {
+      "Golden State Warriors": [
+        27,
+        21,
+        0
+      ],
+      "New York Knicks": [
+        26,
+        22,
+        0
+      ],
+      "Boston Celtics": [
+        20,
+        28,
+        0
+      ],
+      "defunct:Providence Steamrollers": [
+        6,
+        42,
+        0
+      ],
+      "defunct:St. Louis Bombers": [
+        29,
+        19,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        28,
+        20,
+        0
+      ],
+      "defunct:Chicago Stags": [
+        28,
+        20,
+        0
+      ],
+      "defunct:Washington Capitols": [
+        28,
+        20,
+        0
+      ]
+    },
+    "1948": {
+      "defunct:Washington Capitols": [
+        38,
+        22,
+        0
+      ],
+      "New York Knicks": [
+        32,
+        28,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        29,
+        31,
+        0
+      ],
+      "Golden State Warriors": [
+        28,
+        32,
+        0
+      ],
+      "Boston Celtics": [
+        25,
+        35,
+        0
+      ],
+      "defunct:Providence Steamrollers": [
+        12,
+        48,
+        0
+      ],
+      "Sacramento Kings": [
+        45,
+        15,
+        0
+      ],
+      "Los Angeles Lakers": [
+        44,
+        16,
+        0
+      ],
+      "defunct:Chicago Stags": [
+        38,
+        22,
+        0
+      ],
+      "defunct:St. Louis Bombers": [
+        29,
+        31,
+        0
+      ],
+      "Detroit Pistons": [
+        22,
+        38,
+        0
+      ],
+      "defunct:Indianapolis Jets": [
+        18,
+        42,
+        0
+      ]
+    },
+    "1949": {
+      "Philadelphia 76ers": [
+        51,
+        13,
+        0
+      ],
+      "New York Knicks": [
+        40,
+        28,
+        0
+      ],
+      "defunct:Washington Capitols": [
+        32,
+        36,
+        0
+      ],
+      "Golden State Warriors": [
+        26,
+        42,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        25,
+        43,
+        0
+      ],
+      "Boston Celtics": [
+        22,
+        46,
+        0
+      ],
+      "Los Angeles Lakers": [
+        51,
+        17,
+        0
+      ],
+      "Sacramento Kings": [
+        51,
+        17,
+        0
+      ],
+      "Detroit Pistons": [
+        40,
+        28,
+        0
+      ],
+      "defunct:Chicago Stags": [
+        40,
+        28,
+        0
+      ],
+      "defunct:St. Louis Bombers": [
+        26,
+        42,
+        0
+      ],
+      "defunct:Indianapolis Olympians": [
+        39,
+        25,
+        0
+      ],
+      "defunct:Anderson Packers": [
+        37,
+        27,
+        0
+      ],
+      "Atlanta Hawks": [
+        29,
+        35,
+        0
+      ],
+      "defunct:Sheboygan Red Skins": [
+        22,
+        40,
+        0
+      ],
+      "defunct:Waterloo Hawks": [
+        19,
+        43,
+        0
+      ],
+      "defunct:Denver Nuggets": [
+        11,
+        51,
+        0
+      ]
+    },
+    "1950": {
+      "Golden State Warriors": [
+        40,
+        26,
+        0
+      ],
+      "Boston Celtics": [
+        39,
+        30,
+        0
+      ],
+      "New York Knicks": [
+        36,
+        30,
+        0
+      ],
+      "Philadelphia 76ers": [
+        32,
+        34,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        24,
+        42,
+        0
+      ],
+      "defunct:Washington Capitols": [
+        10,
+        25,
+        0
+      ],
+      "Los Angeles Lakers": [
+        44,
+        24,
+        0
+      ],
+      "Sacramento Kings": [
+        41,
+        27,
+        0
+      ],
+      "Detroit Pistons": [
+        32,
+        36,
+        0
+      ],
+      "defunct:Indianapolis Olympians": [
+        31,
+        37,
+        0
+      ],
+      "Atlanta Hawks": [
+        25,
+        43,
+        0
+      ]
+    },
+    "1951": {
+      "Philadelphia 76ers": [
+        40,
+        26,
+        0
+      ],
+      "Boston Celtics": [
+        39,
+        27,
+        0
+      ],
+      "New York Knicks": [
+        37,
+        29,
+        0
+      ],
+      "Golden State Warriors": [
+        33,
+        33,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        20,
+        46,
+        0
+      ],
+      "Sacramento Kings": [
+        41,
+        25,
+        0
+      ],
+      "Los Angeles Lakers": [
+        40,
+        26,
+        0
+      ],
+      "defunct:Indianapolis Olympians": [
+        34,
+        32,
+        0
+      ],
+      "Detroit Pistons": [
+        29,
+        37,
+        0
+      ],
+      "Atlanta Hawks": [
+        17,
+        49,
+        0
+      ]
+    },
+    "1952": {
+      "New York Knicks": [
+        47,
+        23,
+        0
+      ],
+      "Philadelphia 76ers": [
+        47,
+        24,
+        0
+      ],
+      "Boston Celtics": [
+        46,
+        25,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        16,
+        54,
+        0
+      ],
+      "Golden State Warriors": [
+        12,
+        57,
+        0
+      ],
+      "Los Angeles Lakers": [
+        48,
+        22,
+        0
+      ],
+      "Sacramento Kings": [
+        44,
+        26,
+        0
+      ],
+      "Detroit Pistons": [
+        36,
+        33,
+        0
+      ],
+      "defunct:Indianapolis Olympians": [
+        28,
+        43,
+        0
+      ],
+      "Atlanta Hawks": [
+        27,
+        44,
+        0
+      ]
+    },
+    "1953": {
+      "New York Knicks": [
+        44,
+        28,
+        0
+      ],
+      "Boston Celtics": [
+        42,
+        30,
+        0
+      ],
+      "Philadelphia 76ers": [
+        42,
+        30,
+        0
+      ],
+      "Golden State Warriors": [
+        29,
+        43,
+        0
+      ],
+      "defunct:Baltimore Bullets": [
+        16,
+        56,
+        0
+      ],
+      "Los Angeles Lakers": [
+        46,
+        26,
+        0
+      ],
+      "Sacramento Kings": [
+        44,
+        28,
+        0
+      ],
+      "Detroit Pistons": [
+        40,
+        32,
+        0
+      ],
+      "Atlanta Hawks": [
+        21,
+        51,
+        0
+      ]
+    },
+    "1954": {
+      "Philadelphia 76ers": [
+        43,
+        29,
+        0
+      ],
+      "New York Knicks": [
+        38,
+        34,
+        0
+      ],
+      "Boston Celtics": [
+        36,
+        36,
+        0
+      ],
+      "Golden State Warriors": [
+        33,
+        39,
+        0
+      ],
+      "Detroit Pistons": [
+        43,
+        29,
+        0
+      ],
+      "Los Angeles Lakers": [
+        40,
+        32,
+        0
+      ],
+      "Sacramento Kings": [
+        29,
+        43,
+        0
+      ],
+      "Atlanta Hawks": [
+        26,
+        46,
+        0
+      ]
+    },
+    "1955": {
+      "Golden State Warriors": [
+        45,
+        27,
+        0
+      ],
+      "Boston Celtics": [
+        39,
+        33,
+        0
+      ],
+      "Philadelphia 76ers": [
+        35,
+        37,
+        0
+      ],
+      "New York Knicks": [
+        35,
+        37,
+        0
+      ],
+      "Detroit Pistons": [
+        37,
+        35,
+        0
+      ],
+      "Los Angeles Lakers": [
+        33,
+        39,
+        0
+      ],
+      "Atlanta Hawks": [
+        33,
+        39,
+        0
+      ],
+      "Sacramento Kings": [
+        31,
+        41,
+        0
+      ]
+    },
+    "1956": {
+      "Boston Celtics": [
+        44,
+        28,
+        0
+      ],
+      "Philadelphia 76ers": [
+        38,
+        34,
+        0
+      ],
+      "Golden State Warriors": [
+        37,
+        35,
+        0
+      ],
+      "New York Knicks": [
+        36,
+        36,
+        0
+      ],
+      "Atlanta Hawks": [
+        34,
+        38,
+        0
+      ],
+      "Los Angeles Lakers": [
+        34,
+        38,
+        0
+      ],
+      "Detroit Pistons": [
+        34,
+        38,
+        0
+      ],
+      "Sacramento Kings": [
+        31,
+        41,
+        0
+      ]
+    },
+    "1957": {
+      "Boston Celtics": [
+        49,
+        23,
+        0
+      ],
+      "Philadelphia 76ers": [
+        41,
+        31,
+        0
+      ],
+      "Golden State Warriors": [
+        37,
+        35,
+        0
+      ],
+      "New York Knicks": [
+        35,
+        37,
+        0
+      ],
+      "Atlanta Hawks": [
+        41,
+        31,
+        0
+      ],
+      "Detroit Pistons": [
+        33,
+        39,
+        0
+      ],
+      "Sacramento Kings": [
+        33,
+        39,
+        0
+      ],
+      "Los Angeles Lakers": [
+        19,
+        53,
+        0
+      ]
+    },
+    "1958": {
+      "Boston Celtics": [
+        52,
+        20,
+        0
+      ],
+      "New York Knicks": [
+        40,
+        32,
+        0
+      ],
+      "Philadelphia 76ers": [
+        35,
+        37,
+        0
+      ],
+      "Golden State Warriors": [
+        32,
+        40,
+        0
+      ],
+      "Atlanta Hawks": [
+        49,
+        23,
+        0
+      ],
+      "Los Angeles Lakers": [
+        33,
+        39,
+        0
+      ],
+      "Detroit Pistons": [
+        28,
+        44,
+        0
+      ],
+      "Sacramento Kings": [
+        19,
+        53,
+        0
+      ]
+    },
+    "1959": {
+      "Boston Celtics": [
+        59,
+        16,
+        0
+      ],
+      "Golden State Warriors": [
+        49,
+        26,
+        0
+      ],
+      "Philadelphia 76ers": [
+        45,
+        30,
+        0
+      ],
+      "New York Knicks": [
+        27,
+        48,
+        0
+      ],
+      "Atlanta Hawks": [
+        46,
+        29,
+        0
+      ],
+      "Detroit Pistons": [
+        30,
+        45,
+        0
+      ],
+      "Los Angeles Lakers": [
+        25,
+        50,
+        0
+      ],
+      "Sacramento Kings": [
+        19,
+        56,
+        0
+      ]
+    },
+    "1960": {
+      "Boston Celtics": [
+        57,
+        22,
+        0
+      ],
+      "Golden State Warriors": [
+        46,
+        33,
+        0
+      ],
+      "Philadelphia 76ers": [
+        38,
+        41,
+        0
+      ],
+      "New York Knicks": [
+        21,
+        58,
+        0
+      ],
+      "Atlanta Hawks": [
+        51,
+        28,
+        0
+      ],
+      "Los Angeles Lakers": [
+        36,
+        43,
+        0
+      ],
+      "Detroit Pistons": [
+        34,
+        45,
+        0
+      ],
+      "Sacramento Kings": [
+        33,
+        46,
+        0
+      ]
+    },
+    "1961": {
+      "Boston Celtics": [
+        60,
+        20,
+        0
+      ],
+      "Golden State Warriors": [
+        49,
+        31,
+        0
+      ],
+      "Philadelphia 76ers": [
+        41,
+        39,
+        0
+      ],
+      "New York Knicks": [
+        29,
+        51,
+        0
+      ],
+      "Los Angeles Lakers": [
+        54,
+        26,
+        0
+      ],
+      "Sacramento Kings": [
+        43,
+        37,
+        0
+      ],
+      "Detroit Pistons": [
+        37,
+        43,
+        0
+      ],
+      "Atlanta Hawks": [
+        29,
+        51,
+        0
+      ],
+      "Washington Wizards": [
+        18,
+        62,
+        0
+      ]
+    },
+    "1962": {
+      "Boston Celtics": [
+        58,
+        22,
+        0
+      ],
+      "Philadelphia 76ers": [
+        48,
+        32,
+        0
+      ],
+      "Sacramento Kings": [
+        42,
+        38,
+        0
+      ],
+      "New York Knicks": [
+        21,
+        59,
+        0
+      ],
+      "Los Angeles Lakers": [
+        53,
+        27,
+        0
+      ],
+      "Atlanta Hawks": [
+        48,
+        32,
+        0
+      ],
+      "Detroit Pistons": [
+        34,
+        46,
+        0
+      ],
+      "Golden State Warriors": [
+        31,
+        49,
+        0
+      ],
+      "Washington Wizards": [
+        25,
+        55,
+        0
+      ]
+    },
+    "1963": {
+      "Boston Celtics": [
+        59,
+        21,
+        0
+      ],
+      "Sacramento Kings": [
+        55,
+        25,
+        0
+      ],
+      "Philadelphia 76ers": [
+        34,
+        46,
+        0
+      ],
+      "New York Knicks": [
+        22,
+        58,
+        0
+      ],
+      "Golden State Warriors": [
+        48,
+        32,
+        0
+      ],
+      "Atlanta Hawks": [
+        46,
+        34,
+        0
+      ],
+      "Los Angeles Lakers": [
+        42,
+        38,
+        0
+      ],
+      "Washington Wizards": [
+        31,
+        49,
+        0
+      ],
+      "Detroit Pistons": [
+        23,
+        57,
+        0
+      ]
+    },
+    "1964": {
+      "Boston Celtics": [
+        62,
+        18,
+        0
+      ],
+      "Sacramento Kings": [
+        48,
+        32,
+        0
+      ],
+      "Philadelphia 76ers": [
+        40,
+        40,
+        0
+      ],
+      "New York Knicks": [
+        31,
+        49,
+        0
+      ],
+      "Los Angeles Lakers": [
+        49,
+        31,
+        0
+      ],
+      "Atlanta Hawks": [
+        45,
+        35,
+        0
+      ],
+      "Washington Wizards": [
+        37,
+        43,
+        0
+      ],
+      "Detroit Pistons": [
+        31,
+        49,
+        0
+      ],
+      "Golden State Warriors": [
+        17,
+        63,
+        0
+      ]
+    },
+    "1965": {
+      "Philadelphia 76ers": [
+        55,
+        25,
+        0
+      ],
+      "Boston Celtics": [
+        54,
+        26,
+        0
+      ],
+      "Sacramento Kings": [
+        45,
+        35,
+        0
+      ],
+      "New York Knicks": [
+        30,
+        50,
+        0
+      ],
+      "Los Angeles Lakers": [
+        45,
+        35,
+        0
+      ],
+      "Washington Wizards": [
+        38,
+        42,
+        0
+      ],
+      "Atlanta Hawks": [
+        36,
+        44,
+        0
+      ],
+      "Golden State Warriors": [
+        35,
+        45,
+        0
+      ],
+      "Detroit Pistons": [
+        22,
+        58,
+        0
+      ]
+    },
+    "1966": {
+      "Philadelphia 76ers": [
+        68,
+        13,
+        0
+      ],
+      "Boston Celtics": [
+        60,
+        21,
+        0
+      ],
+      "Sacramento Kings": [
+        39,
+        42,
+        0
+      ],
+      "New York Knicks": [
+        36,
+        45,
+        0
+      ],
+      "Washington Wizards": [
+        20,
+        61,
+        0
+      ],
+      "Golden State Warriors": [
+        44,
+        37,
+        0
+      ],
+      "Atlanta Hawks": [
+        39,
+        42,
+        0
+      ],
+      "Los Angeles Lakers": [
+        36,
+        45,
+        0
+      ],
+      "Chicago Bulls": [
+        33,
+        48,
+        0
+      ],
+      "Detroit Pistons": [
+        30,
+        51,
+        0
+      ]
+    },
+    "1967": {
+      "Philadelphia 76ers": [
+        62,
+        20,
+        0
+      ],
+      "Boston Celtics": [
+        54,
+        28,
+        0
+      ],
+      "New York Knicks": [
+        43,
+        39,
+        0
+      ],
+      "Detroit Pistons": [
+        40,
+        42,
+        0
+      ],
+      "Sacramento Kings": [
+        39,
+        43,
+        0
+      ],
+      "Washington Wizards": [
+        36,
+        46,
+        0
+      ],
+      "Atlanta Hawks": [
+        56,
+        26,
+        0
+      ],
+      "Los Angeles Lakers": [
+        52,
+        30,
+        0
+      ],
+      "Golden State Warriors": [
+        43,
+        39,
+        0
+      ],
+      "Chicago Bulls": [
+        29,
+        53,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        23,
+        59,
+        0
+      ],
+      "Houston Rockets": [
+        15,
+        67,
+        0
+      ]
+    },
+    "1968": {
+      "Washington Wizards": [
+        57,
+        25,
+        0
+      ],
+      "Philadelphia 76ers": [
+        55,
+        27,
+        0
+      ],
+      "New York Knicks": [
+        54,
+        28,
+        0
+      ],
+      "Boston Celtics": [
+        48,
+        34,
+        0
+      ],
+      "Sacramento Kings": [
+        41,
+        41,
+        0
+      ],
+      "Detroit Pistons": [
+        32,
+        50,
+        0
+      ],
+      "Milwaukee Bucks": [
+        27,
+        55,
+        0
+      ],
+      "Los Angeles Lakers": [
+        55,
+        27,
+        0
+      ],
+      "Atlanta Hawks": [
+        48,
+        34,
+        0
+      ],
+      "Golden State Warriors": [
+        41,
+        41,
+        0
+      ],
+      "Houston Rockets": [
+        37,
+        45,
+        0
+      ],
+      "Chicago Bulls": [
+        33,
+        49,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        30,
+        52,
+        0
+      ],
+      "Phoenix Suns": [
+        16,
+        66,
+        0
+      ]
+    },
+    "1969": {
+      "New York Knicks": [
+        60,
+        22,
+        0
+      ],
+      "Milwaukee Bucks": [
+        56,
+        26,
+        0
+      ],
+      "Washington Wizards": [
+        50,
+        32,
+        0
+      ],
+      "Philadelphia 76ers": [
+        42,
+        40,
+        0
+      ],
+      "Sacramento Kings": [
+        36,
+        46,
+        0
+      ],
+      "Boston Celtics": [
+        34,
+        48,
+        0
+      ],
+      "Detroit Pistons": [
+        31,
+        51,
+        0
+      ],
+      "Atlanta Hawks": [
+        48,
+        34,
+        0
+      ],
+      "Los Angeles Lakers": [
+        46,
+        36,
+        0
+      ],
+      "Chicago Bulls": [
+        39,
+        43,
+        0
+      ],
+      "Phoenix Suns": [
+        39,
+        43,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        36,
+        46,
+        0
+      ],
+      "Golden State Warriors": [
+        30,
+        52,
+        0
+      ],
+      "Houston Rockets": [
+        27,
+        55,
+        0
+      ]
+    },
+    "1970": {
+      "New York Knicks": [
+        52,
+        30,
+        0
+      ],
+      "Philadelphia 76ers": [
+        47,
+        35,
+        0
+      ],
+      "Boston Celtics": [
+        44,
+        38,
+        0
+      ],
+      "LA Clippers": [
+        22,
+        60,
+        0
+      ],
+      "Washington Wizards": [
+        42,
+        40,
+        0
+      ],
+      "Atlanta Hawks": [
+        36,
+        46,
+        0
+      ],
+      "Sacramento Kings": [
+        33,
+        49,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        15,
+        67,
+        0
+      ],
+      "Milwaukee Bucks": [
+        66,
+        16,
+        0
+      ],
+      "Chicago Bulls": [
+        51,
+        31,
+        0
+      ],
+      "Phoenix Suns": [
+        48,
+        34,
+        0
+      ],
+      "Detroit Pistons": [
+        45,
+        37,
+        0
+      ],
+      "Los Angeles Lakers": [
+        48,
+        34,
+        0
+      ],
+      "Golden State Warriors": [
+        41,
+        41,
+        0
+      ],
+      "Houston Rockets": [
+        40,
+        42,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        38,
+        44,
+        0
+      ],
+      "Portland Trail Blazers": [
+        29,
+        53,
+        0
+      ]
+    },
+    "1971": {
+      "Boston Celtics": [
+        56,
+        26,
+        0
+      ],
+      "New York Knicks": [
+        48,
+        34,
+        0
+      ],
+      "Philadelphia 76ers": [
+        30,
+        52,
+        0
+      ],
+      "LA Clippers": [
+        22,
+        60,
+        0
+      ],
+      "Washington Wizards": [
+        38,
+        44,
+        0
+      ],
+      "Atlanta Hawks": [
+        36,
+        46,
+        0
+      ],
+      "Sacramento Kings": [
+        30,
+        52,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        23,
+        59,
+        0
+      ],
+      "Milwaukee Bucks": [
+        63,
+        19,
+        0
+      ],
+      "Chicago Bulls": [
+        57,
+        25,
+        0
+      ],
+      "Phoenix Suns": [
+        49,
+        33,
+        0
+      ],
+      "Detroit Pistons": [
+        26,
+        56,
+        0
+      ],
+      "Los Angeles Lakers": [
+        69,
+        13,
+        0
+      ],
+      "Golden State Warriors": [
+        51,
+        31,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        47,
+        35,
+        0
+      ],
+      "Houston Rockets": [
+        34,
+        48,
+        0
+      ],
+      "Portland Trail Blazers": [
+        18,
+        64,
+        0
+      ]
+    },
+    "1972": {
+      "Boston Celtics": [
+        68,
+        14,
+        0
+      ],
+      "New York Knicks": [
+        57,
+        25,
+        0
+      ],
+      "LA Clippers": [
+        21,
+        61,
+        0
+      ],
+      "Philadelphia 76ers": [
+        9,
+        73,
+        0
+      ],
+      "Washington Wizards": [
+        52,
+        30,
+        0
+      ],
+      "Atlanta Hawks": [
+        46,
+        36,
+        0
+      ],
+      "Houston Rockets": [
+        33,
+        49,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        32,
+        50,
+        0
+      ],
+      "Milwaukee Bucks": [
+        60,
+        22,
+        0
+      ],
+      "Chicago Bulls": [
+        51,
+        31,
+        0
+      ],
+      "Detroit Pistons": [
+        40,
+        42,
+        0
+      ],
+      "Sacramento Kings": [
+        36,
+        46,
+        0
+      ],
+      "Los Angeles Lakers": [
+        60,
+        22,
+        0
+      ],
+      "Golden State Warriors": [
+        47,
+        35,
+        0
+      ],
+      "Phoenix Suns": [
+        38,
+        44,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        26,
+        56,
+        0
+      ],
+      "Portland Trail Blazers": [
+        21,
+        61,
+        0
+      ]
+    },
+    "1973": {
+      "Boston Celtics": [
+        56,
+        26,
+        0
+      ],
+      "New York Knicks": [
+        49,
+        33,
+        0
+      ],
+      "LA Clippers": [
+        42,
+        40,
+        0
+      ],
+      "Philadelphia 76ers": [
+        25,
+        57,
+        0
+      ],
+      "Washington Wizards": [
+        47,
+        35,
+        0
+      ],
+      "Atlanta Hawks": [
+        35,
+        47,
+        0
+      ],
+      "Houston Rockets": [
+        32,
+        50,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        29,
+        53,
+        0
+      ],
+      "Milwaukee Bucks": [
+        59,
+        23,
+        0
+      ],
+      "Chicago Bulls": [
+        54,
+        28,
+        0
+      ],
+      "Detroit Pistons": [
+        52,
+        30,
+        0
+      ],
+      "Sacramento Kings": [
+        33,
+        49,
+        0
+      ],
+      "Los Angeles Lakers": [
+        47,
+        35,
+        0
+      ],
+      "Golden State Warriors": [
+        44,
+        38,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        36,
+        46,
+        0
+      ],
+      "Phoenix Suns": [
+        30,
+        52,
+        0
+      ],
+      "Portland Trail Blazers": [
+        27,
+        55,
+        0
+      ]
+    },
+    "1974": {
+      "Boston Celtics": [
+        60,
+        22,
+        0
+      ],
+      "LA Clippers": [
+        49,
+        33,
+        0
+      ],
+      "New York Knicks": [
+        40,
+        42,
+        0
+      ],
+      "Philadelphia 76ers": [
+        34,
+        48,
+        0
+      ],
+      "Washington Wizards": [
+        60,
+        22,
+        0
+      ],
+      "Houston Rockets": [
+        41,
+        41,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        40,
+        42,
+        0
+      ],
+      "Atlanta Hawks": [
+        31,
+        51,
+        0
+      ],
+      "Utah Jazz": [
+        23,
+        59,
+        0
+      ],
+      "Chicago Bulls": [
+        47,
+        35,
+        0
+      ],
+      "Sacramento Kings": [
+        44,
+        38,
+        0
+      ],
+      "Detroit Pistons": [
+        40,
+        42,
+        0
+      ],
+      "Milwaukee Bucks": [
+        38,
+        44,
+        0
+      ],
+      "Golden State Warriors": [
+        48,
+        34,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        43,
+        39,
+        0
+      ],
+      "Portland Trail Blazers": [
+        38,
+        44,
+        0
+      ],
+      "Phoenix Suns": [
+        32,
+        50,
+        0
+      ],
+      "Los Angeles Lakers": [
+        30,
+        52,
+        0
+      ]
+    },
+    "1975": {
+      "Boston Celtics": [
+        54,
+        28,
+        0
+      ],
+      "Philadelphia 76ers": [
+        46,
+        36,
+        0
+      ],
+      "LA Clippers": [
+        46,
+        36,
+        0
+      ],
+      "New York Knicks": [
+        38,
+        44,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        49,
+        33,
+        0
+      ],
+      "Washington Wizards": [
+        48,
+        34,
+        0
+      ],
+      "Houston Rockets": [
+        40,
+        42,
+        0
+      ],
+      "Utah Jazz": [
+        38,
+        44,
+        0
+      ],
+      "Atlanta Hawks": [
+        29,
+        53,
+        0
+      ],
+      "Milwaukee Bucks": [
+        38,
+        44,
+        0
+      ],
+      "Detroit Pistons": [
+        36,
+        46,
+        0
+      ],
+      "Sacramento Kings": [
+        31,
+        51,
+        0
+      ],
+      "Chicago Bulls": [
+        24,
+        58,
+        0
+      ],
+      "Golden State Warriors": [
+        59,
+        23,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        43,
+        39,
+        0
+      ],
+      "Phoenix Suns": [
+        42,
+        40,
+        0
+      ],
+      "Los Angeles Lakers": [
+        40,
+        42,
+        0
+      ],
+      "Portland Trail Blazers": [
+        37,
+        45,
+        0
+      ]
+    },
+    "1976": {
+      "Philadelphia 76ers": [
+        50,
+        32,
+        0
+      ],
+      "Boston Celtics": [
+        44,
+        38,
+        0
+      ],
+      "New York Knicks": [
+        40,
+        42,
+        0
+      ],
+      "LA Clippers": [
+        30,
+        52,
+        0
+      ],
+      "Brooklyn Nets": [
+        22,
+        60,
+        0
+      ],
+      "Houston Rockets": [
+        49,
+        33,
+        0
+      ],
+      "Washington Wizards": [
+        48,
+        34,
+        0
+      ],
+      "San Antonio Spurs": [
+        44,
+        38,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        43,
+        39,
+        0
+      ],
+      "Utah Jazz": [
+        35,
+        47,
+        0
+      ],
+      "Atlanta Hawks": [
+        31,
+        51,
+        0
+      ],
+      "Denver Nuggets": [
+        50,
+        32,
+        0
+      ],
+      "Detroit Pistons": [
+        44,
+        38,
+        0
+      ],
+      "Chicago Bulls": [
+        44,
+        38,
+        0
+      ],
+      "Sacramento Kings": [
+        40,
+        42,
+        0
+      ],
+      "Indiana Pacers": [
+        36,
+        46,
+        0
+      ],
+      "Milwaukee Bucks": [
+        30,
+        52,
+        0
+      ],
+      "Los Angeles Lakers": [
+        53,
+        29,
+        0
+      ],
+      "Portland Trail Blazers": [
+        49,
+        33,
+        0
+      ],
+      "Golden State Warriors": [
+        46,
+        36,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        40,
+        42,
+        0
+      ],
+      "Phoenix Suns": [
+        34,
+        48,
+        0
+      ]
+    },
+    "1977": {
+      "Philadelphia 76ers": [
+        55,
+        27,
+        0
+      ],
+      "New York Knicks": [
+        43,
+        39,
+        0
+      ],
+      "Boston Celtics": [
+        32,
+        50,
+        0
+      ],
+      "LA Clippers": [
+        27,
+        55,
+        0
+      ],
+      "Brooklyn Nets": [
+        24,
+        58,
+        0
+      ],
+      "San Antonio Spurs": [
+        52,
+        30,
+        0
+      ],
+      "Washington Wizards": [
+        44,
+        38,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        43,
+        39,
+        0
+      ],
+      "Atlanta Hawks": [
+        41,
+        41,
+        0
+      ],
+      "Utah Jazz": [
+        39,
+        43,
+        0
+      ],
+      "Houston Rockets": [
+        28,
+        54,
+        0
+      ],
+      "Denver Nuggets": [
+        48,
+        34,
+        0
+      ],
+      "Milwaukee Bucks": [
+        44,
+        38,
+        0
+      ],
+      "Chicago Bulls": [
+        40,
+        42,
+        0
+      ],
+      "Detroit Pistons": [
+        38,
+        44,
+        0
+      ],
+      "Indiana Pacers": [
+        31,
+        51,
+        0
+      ],
+      "Sacramento Kings": [
+        31,
+        51,
+        0
+      ],
+      "Portland Trail Blazers": [
+        58,
+        24,
+        0
+      ],
+      "Phoenix Suns": [
+        49,
+        33,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        47,
+        35,
+        0
+      ],
+      "Los Angeles Lakers": [
+        45,
+        37,
+        0
+      ],
+      "Golden State Warriors": [
+        43,
+        39,
+        0
+      ]
+    },
+    "1978": {
+      "Washington Wizards": [
+        54,
+        28,
+        0
+      ],
+      "Philadelphia 76ers": [
+        47,
+        35,
+        0
+      ],
+      "Brooklyn Nets": [
+        37,
+        45,
+        0
+      ],
+      "New York Knicks": [
+        31,
+        51,
+        0
+      ],
+      "Boston Celtics": [
+        29,
+        53,
+        0
+      ],
+      "San Antonio Spurs": [
+        48,
+        34,
+        0
+      ],
+      "Houston Rockets": [
+        47,
+        35,
+        0
+      ],
+      "Atlanta Hawks": [
+        46,
+        36,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        30,
+        52,
+        0
+      ],
+      "Detroit Pistons": [
+        30,
+        52,
+        0
+      ],
+      "Utah Jazz": [
+        26,
+        56,
+        0
+      ],
+      "Sacramento Kings": [
+        48,
+        34,
+        0
+      ],
+      "Denver Nuggets": [
+        47,
+        35,
+        0
+      ],
+      "Indiana Pacers": [
+        38,
+        44,
+        0
+      ],
+      "Milwaukee Bucks": [
+        38,
+        44,
+        0
+      ],
+      "Chicago Bulls": [
+        31,
+        51,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        52,
+        30,
+        0
+      ],
+      "Phoenix Suns": [
+        50,
+        32,
+        0
+      ],
+      "Los Angeles Lakers": [
+        47,
+        35,
+        0
+      ],
+      "Portland Trail Blazers": [
+        45,
+        37,
+        0
+      ],
+      "LA Clippers": [
+        43,
+        39,
+        0
+      ],
+      "Golden State Warriors": [
+        38,
+        44,
+        0
+      ]
+    },
+    "1979": {
+      "Boston Celtics": [
+        61,
+        21,
+        0
+      ],
+      "Philadelphia 76ers": [
+        59,
+        23,
+        0
+      ],
+      "Washington Wizards": [
+        39,
+        43,
+        0
+      ],
+      "New York Knicks": [
+        39,
+        43,
+        0
+      ],
+      "Brooklyn Nets": [
+        34,
+        48,
+        0
+      ],
+      "Atlanta Hawks": [
+        50,
+        32,
+        0
+      ],
+      "Houston Rockets": [
+        41,
+        41,
+        0
+      ],
+      "San Antonio Spurs": [
+        41,
+        41,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        37,
+        45,
+        0
+      ],
+      "Indiana Pacers": [
+        37,
+        45,
+        0
+      ],
+      "Detroit Pistons": [
+        16,
+        66,
+        0
+      ],
+      "Milwaukee Bucks": [
+        49,
+        33,
+        0
+      ],
+      "Sacramento Kings": [
+        47,
+        35,
+        0
+      ],
+      "Chicago Bulls": [
+        30,
+        52,
+        0
+      ],
+      "Denver Nuggets": [
+        30,
+        52,
+        0
+      ],
+      "Utah Jazz": [
+        24,
+        58,
+        0
+      ],
+      "Los Angeles Lakers": [
+        60,
+        22,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        56,
+        26,
+        0
+      ],
+      "Phoenix Suns": [
+        55,
+        27,
+        0
+      ],
+      "Portland Trail Blazers": [
+        38,
+        44,
+        0
+      ],
+      "LA Clippers": [
+        35,
+        47,
+        0
+      ],
+      "Golden State Warriors": [
+        24,
+        58,
+        0
+      ]
+    },
+    "1980": {
+      "Boston Celtics": [
+        62,
+        20,
+        0
+      ],
+      "Philadelphia 76ers": [
+        62,
+        20,
+        0
+      ],
+      "New York Knicks": [
+        50,
+        32,
+        0
+      ],
+      "Washington Wizards": [
+        39,
+        43,
+        0
+      ],
+      "Brooklyn Nets": [
+        24,
+        58,
+        0
+      ],
+      "Milwaukee Bucks": [
+        60,
+        22,
+        0
+      ],
+      "Chicago Bulls": [
+        45,
+        37,
+        0
+      ],
+      "Indiana Pacers": [
+        44,
+        38,
+        0
+      ],
+      "Atlanta Hawks": [
+        31,
+        51,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        28,
+        54,
+        0
+      ],
+      "Detroit Pistons": [
+        21,
+        61,
+        0
+      ],
+      "San Antonio Spurs": [
+        52,
+        30,
+        0
+      ],
+      "Sacramento Kings": [
+        40,
+        42,
+        0
+      ],
+      "Houston Rockets": [
+        40,
+        42,
+        0
+      ],
+      "Denver Nuggets": [
+        37,
+        45,
+        0
+      ],
+      "Utah Jazz": [
+        28,
+        54,
+        0
+      ],
+      "Dallas Mavericks": [
+        15,
+        67,
+        0
+      ],
+      "Phoenix Suns": [
+        57,
+        25,
+        0
+      ],
+      "Los Angeles Lakers": [
+        54,
+        28,
+        0
+      ],
+      "Portland Trail Blazers": [
+        45,
+        37,
+        0
+      ],
+      "Golden State Warriors": [
+        39,
+        43,
+        0
+      ],
+      "LA Clippers": [
+        36,
+        46,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        34,
+        48,
+        0
+      ]
+    },
+    "1981": {
+      "Boston Celtics": [
+        63,
+        19,
+        0
+      ],
+      "Philadelphia 76ers": [
+        58,
+        24,
+        0
+      ],
+      "Brooklyn Nets": [
+        44,
+        38,
+        0
+      ],
+      "Washington Wizards": [
+        43,
+        39,
+        0
+      ],
+      "New York Knicks": [
+        33,
+        49,
+        0
+      ],
+      "Milwaukee Bucks": [
+        55,
+        27,
+        0
+      ],
+      "Atlanta Hawks": [
+        42,
+        40,
+        0
+      ],
+      "Detroit Pistons": [
+        39,
+        43,
+        0
+      ],
+      "Indiana Pacers": [
+        35,
+        47,
+        0
+      ],
+      "Chicago Bulls": [
+        34,
+        48,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        15,
+        67,
+        0
+      ],
+      "San Antonio Spurs": [
+        48,
+        34,
+        0
+      ],
+      "Denver Nuggets": [
+        46,
+        36,
+        0
+      ],
+      "Houston Rockets": [
+        46,
+        36,
+        0
+      ],
+      "Sacramento Kings": [
+        30,
+        52,
+        0
+      ],
+      "Dallas Mavericks": [
+        28,
+        54,
+        0
+      ],
+      "Utah Jazz": [
+        25,
+        57,
+        0
+      ],
+      "Los Angeles Lakers": [
+        57,
+        25,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        52,
+        30,
+        0
+      ],
+      "Phoenix Suns": [
+        46,
+        36,
+        0
+      ],
+      "Golden State Warriors": [
+        45,
+        37,
+        0
+      ],
+      "Portland Trail Blazers": [
+        42,
+        40,
+        0
+      ],
+      "LA Clippers": [
+        17,
+        65,
+        0
+      ]
+    },
+    "1982": {
+      "Philadelphia 76ers": [
+        65,
+        17,
+        0
+      ],
+      "Boston Celtics": [
+        56,
+        26,
+        0
+      ],
+      "Brooklyn Nets": [
+        49,
+        33,
+        0
+      ],
+      "New York Knicks": [
+        44,
+        38,
+        0
+      ],
+      "Washington Wizards": [
+        42,
+        40,
+        0
+      ],
+      "Milwaukee Bucks": [
+        51,
+        31,
+        0
+      ],
+      "Atlanta Hawks": [
+        43,
+        39,
+        0
+      ],
+      "Detroit Pistons": [
+        37,
+        45,
+        0
+      ],
+      "Chicago Bulls": [
+        28,
+        54,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        23,
+        59,
+        0
+      ],
+      "Indiana Pacers": [
+        20,
+        62,
+        0
+      ],
+      "San Antonio Spurs": [
+        53,
+        29,
+        0
+      ],
+      "Denver Nuggets": [
+        45,
+        37,
+        0
+      ],
+      "Sacramento Kings": [
+        45,
+        37,
+        0
+      ],
+      "Dallas Mavericks": [
+        38,
+        44,
+        0
+      ],
+      "Utah Jazz": [
+        30,
+        52,
+        0
+      ],
+      "Houston Rockets": [
+        14,
+        68,
+        0
+      ],
+      "Los Angeles Lakers": [
+        58,
+        24,
+        0
+      ],
+      "Phoenix Suns": [
+        53,
+        29,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        48,
+        34,
+        0
+      ],
+      "Portland Trail Blazers": [
+        46,
+        36,
+        0
+      ],
+      "Golden State Warriors": [
+        30,
+        52,
+        0
+      ],
+      "LA Clippers": [
+        25,
+        57,
+        0
+      ]
+    },
+    "1983": {
+      "Boston Celtics": [
+        62,
+        20,
+        0
+      ],
+      "Philadelphia 76ers": [
+        52,
+        30,
+        0
+      ],
+      "New York Knicks": [
+        47,
+        35,
+        0
+      ],
+      "Brooklyn Nets": [
+        45,
+        37,
+        0
+      ],
+      "Washington Wizards": [
+        35,
+        47,
+        0
+      ],
+      "Milwaukee Bucks": [
+        50,
+        32,
+        0
+      ],
+      "Detroit Pistons": [
+        49,
+        33,
+        0
+      ],
+      "Atlanta Hawks": [
+        40,
+        42,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        28,
+        54,
+        0
+      ],
+      "Chicago Bulls": [
+        27,
+        55,
+        0
+      ],
+      "Indiana Pacers": [
+        26,
+        56,
+        0
+      ],
+      "Utah Jazz": [
+        45,
+        37,
+        0
+      ],
+      "Dallas Mavericks": [
+        43,
+        39,
+        0
+      ],
+      "Denver Nuggets": [
+        38,
+        44,
+        0
+      ],
+      "Sacramento Kings": [
+        38,
+        44,
+        0
+      ],
+      "San Antonio Spurs": [
+        37,
+        45,
+        0
+      ],
+      "Houston Rockets": [
+        29,
+        53,
+        0
+      ],
+      "Los Angeles Lakers": [
+        54,
+        28,
+        0
+      ],
+      "Portland Trail Blazers": [
+        48,
+        34,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        42,
+        40,
+        0
+      ],
+      "Phoenix Suns": [
+        41,
+        41,
+        0
+      ],
+      "Golden State Warriors": [
+        37,
+        45,
+        0
+      ],
+      "LA Clippers": [
+        30,
+        52,
+        0
+      ]
+    },
+    "1984": {
+      "Boston Celtics": [
+        63,
+        19,
+        0
+      ],
+      "Philadelphia 76ers": [
+        58,
+        24,
+        0
+      ],
+      "Brooklyn Nets": [
+        42,
+        40,
+        0
+      ],
+      "Washington Wizards": [
+        40,
+        42,
+        0
+      ],
+      "New York Knicks": [
+        24,
+        58,
+        0
+      ],
+      "Milwaukee Bucks": [
+        59,
+        23,
+        0
+      ],
+      "Detroit Pistons": [
+        46,
+        36,
+        0
+      ],
+      "Chicago Bulls": [
+        38,
+        44,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        36,
+        46,
+        0
+      ],
+      "Atlanta Hawks": [
+        34,
+        48,
+        0
+      ],
+      "Indiana Pacers": [
+        22,
+        60,
+        0
+      ],
+      "Denver Nuggets": [
+        52,
+        30,
+        0
+      ],
+      "Houston Rockets": [
+        48,
+        34,
+        0
+      ],
+      "Dallas Mavericks": [
+        44,
+        38,
+        0
+      ],
+      "Utah Jazz": [
+        41,
+        41,
+        0
+      ],
+      "San Antonio Spurs": [
+        41,
+        41,
+        0
+      ],
+      "Sacramento Kings": [
+        31,
+        51,
+        0
+      ],
+      "Los Angeles Lakers": [
+        62,
+        20,
+        0
+      ],
+      "Portland Trail Blazers": [
+        42,
+        40,
+        0
+      ],
+      "Phoenix Suns": [
+        36,
+        46,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        31,
+        51,
+        0
+      ],
+      "LA Clippers": [
+        31,
+        51,
+        0
+      ],
+      "Golden State Warriors": [
+        22,
+        60,
+        0
+      ]
+    },
+    "1985": {
+      "Boston Celtics": [
+        67,
+        15,
+        0
+      ],
+      "Philadelphia 76ers": [
+        54,
+        28,
+        0
+      ],
+      "Washington Wizards": [
+        39,
+        43,
+        0
+      ],
+      "Brooklyn Nets": [
+        39,
+        43,
+        0
+      ],
+      "New York Knicks": [
+        23,
+        59,
+        0
+      ],
+      "Milwaukee Bucks": [
+        57,
+        25,
+        0
+      ],
+      "Atlanta Hawks": [
+        50,
+        32,
+        0
+      ],
+      "Detroit Pistons": [
+        46,
+        36,
+        0
+      ],
+      "Chicago Bulls": [
+        30,
+        52,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        29,
+        53,
+        0
+      ],
+      "Indiana Pacers": [
+        26,
+        56,
+        0
+      ],
+      "Houston Rockets": [
+        51,
+        31,
+        0
+      ],
+      "Denver Nuggets": [
+        47,
+        35,
+        0
+      ],
+      "Dallas Mavericks": [
+        44,
+        38,
+        0
+      ],
+      "Utah Jazz": [
+        42,
+        40,
+        0
+      ],
+      "Sacramento Kings": [
+        37,
+        45,
+        0
+      ],
+      "San Antonio Spurs": [
+        35,
+        47,
+        0
+      ],
+      "Los Angeles Lakers": [
+        62,
+        20,
+        0
+      ],
+      "Portland Trail Blazers": [
+        40,
+        42,
+        0
+      ],
+      "Phoenix Suns": [
+        32,
+        50,
+        0
+      ],
+      "LA Clippers": [
+        32,
+        50,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        31,
+        51,
+        0
+      ],
+      "Golden State Warriors": [
+        30,
+        52,
+        0
+      ]
+    },
+    "1986": {
+      "Boston Celtics": [
+        59,
+        23,
+        0
+      ],
+      "Philadelphia 76ers": [
+        45,
+        37,
+        0
+      ],
+      "Washington Wizards": [
+        42,
+        40,
+        0
+      ],
+      "Brooklyn Nets": [
+        24,
+        58,
+        0
+      ],
+      "New York Knicks": [
+        24,
+        58,
+        0
+      ],
+      "Atlanta Hawks": [
+        57,
+        25,
+        0
+      ],
+      "Detroit Pistons": [
+        52,
+        30,
+        0
+      ],
+      "Milwaukee Bucks": [
+        50,
+        32,
+        0
+      ],
+      "Indiana Pacers": [
+        41,
+        41,
+        0
+      ],
+      "Chicago Bulls": [
+        40,
+        42,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        31,
+        51,
+        0
+      ],
+      "Dallas Mavericks": [
+        55,
+        27,
+        0
+      ],
+      "Utah Jazz": [
+        44,
+        38,
+        0
+      ],
+      "Houston Rockets": [
+        42,
+        40,
+        0
+      ],
+      "Denver Nuggets": [
+        37,
+        45,
+        0
+      ],
+      "Sacramento Kings": [
+        29,
+        53,
+        0
+      ],
+      "San Antonio Spurs": [
+        28,
+        54,
+        0
+      ],
+      "Los Angeles Lakers": [
+        65,
+        17,
+        0
+      ],
+      "Portland Trail Blazers": [
+        49,
+        33,
+        0
+      ],
+      "Golden State Warriors": [
+        42,
+        40,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        39,
+        43,
+        0
+      ],
+      "Phoenix Suns": [
+        36,
+        46,
+        0
+      ],
+      "LA Clippers": [
+        12,
+        70,
+        0
+      ]
+    },
+    "1987": {
+      "Boston Celtics": [
+        57,
+        25,
+        0
+      ],
+      "Washington Wizards": [
+        38,
+        44,
+        0
+      ],
+      "New York Knicks": [
+        38,
+        44,
+        0
+      ],
+      "Philadelphia 76ers": [
+        36,
+        46,
+        0
+      ],
+      "Brooklyn Nets": [
+        19,
+        63,
+        0
+      ],
+      "Detroit Pistons": [
+        54,
+        28,
+        0
+      ],
+      "Chicago Bulls": [
+        50,
+        32,
+        0
+      ],
+      "Atlanta Hawks": [
+        50,
+        32,
+        0
+      ],
+      "Milwaukee Bucks": [
+        42,
+        40,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        42,
+        40,
+        0
+      ],
+      "Indiana Pacers": [
+        38,
+        44,
+        0
+      ],
+      "Denver Nuggets": [
+        54,
+        28,
+        0
+      ],
+      "Dallas Mavericks": [
+        53,
+        29,
+        0
+      ],
+      "Utah Jazz": [
+        47,
+        35,
+        0
+      ],
+      "Houston Rockets": [
+        46,
+        36,
+        0
+      ],
+      "San Antonio Spurs": [
+        31,
+        51,
+        0
+      ],
+      "Sacramento Kings": [
+        24,
+        58,
+        0
+      ],
+      "Los Angeles Lakers": [
+        62,
+        20,
+        0
+      ],
+      "Portland Trail Blazers": [
+        53,
+        29,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        44,
+        38,
+        0
+      ],
+      "Phoenix Suns": [
+        28,
+        54,
+        0
+      ],
+      "Golden State Warriors": [
+        20,
+        62,
+        0
+      ],
+      "LA Clippers": [
+        17,
+        65,
+        0
+      ]
+    },
+    "1988": {
+      "New York Knicks": [
+        52,
+        30,
+        0
+      ],
+      "Philadelphia 76ers": [
+        46,
+        36,
+        0
+      ],
+      "Boston Celtics": [
+        42,
+        40,
+        0
+      ],
+      "Washington Wizards": [
+        40,
+        42,
+        0
+      ],
+      "Brooklyn Nets": [
+        26,
+        56,
+        0
+      ],
+      "Charlotte Hornets": [
+        20,
+        62,
+        0
+      ],
+      "Detroit Pistons": [
+        63,
+        19,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        57,
+        25,
+        0
+      ],
+      "Atlanta Hawks": [
+        52,
+        30,
+        0
+      ],
+      "Milwaukee Bucks": [
+        49,
+        33,
+        0
+      ],
+      "Chicago Bulls": [
+        47,
+        35,
+        0
+      ],
+      "Indiana Pacers": [
+        28,
+        54,
+        0
+      ],
+      "Utah Jazz": [
+        51,
+        31,
+        0
+      ],
+      "Houston Rockets": [
+        45,
+        37,
+        0
+      ],
+      "Denver Nuggets": [
+        44,
+        38,
+        0
+      ],
+      "Dallas Mavericks": [
+        38,
+        44,
+        0
+      ],
+      "San Antonio Spurs": [
+        21,
+        61,
+        0
+      ],
+      "Miami Heat": [
+        15,
+        67,
+        0
+      ],
+      "Los Angeles Lakers": [
+        57,
+        25,
+        0
+      ],
+      "Phoenix Suns": [
+        55,
+        27,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        47,
+        35,
+        0
+      ],
+      "Golden State Warriors": [
+        43,
+        39,
+        0
+      ],
+      "Portland Trail Blazers": [
+        39,
+        43,
+        0
+      ],
+      "Sacramento Kings": [
+        27,
+        55,
+        0
+      ],
+      "LA Clippers": [
+        21,
+        61,
+        0
+      ]
+    },
+    "1989": {
+      "Philadelphia 76ers": [
+        53,
+        29,
+        0
+      ],
+      "Boston Celtics": [
+        52,
+        30,
+        0
+      ],
+      "New York Knicks": [
+        45,
+        37,
+        0
+      ],
+      "Washington Wizards": [
+        31,
+        51,
+        0
+      ],
+      "Miami Heat": [
+        18,
+        64,
+        0
+      ],
+      "Brooklyn Nets": [
+        17,
+        65,
+        0
+      ],
+      "Detroit Pistons": [
+        59,
+        23,
+        0
+      ],
+      "Chicago Bulls": [
+        55,
+        27,
+        0
+      ],
+      "Milwaukee Bucks": [
+        44,
+        38,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        42,
+        40,
+        0
+      ],
+      "Indiana Pacers": [
+        42,
+        40,
+        0
+      ],
+      "Atlanta Hawks": [
+        41,
+        41,
+        0
+      ],
+      "Orlando Magic": [
+        18,
+        64,
+        0
+      ],
+      "San Antonio Spurs": [
+        56,
+        26,
+        0
+      ],
+      "Utah Jazz": [
+        55,
+        27,
+        0
+      ],
+      "Dallas Mavericks": [
+        47,
+        35,
+        0
+      ],
+      "Denver Nuggets": [
+        43,
+        39,
+        0
+      ],
+      "Houston Rockets": [
+        41,
+        41,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        22,
+        60,
+        0
+      ],
+      "Charlotte Hornets": [
+        19,
+        63,
+        0
+      ],
+      "Los Angeles Lakers": [
+        63,
+        19,
+        0
+      ],
+      "Portland Trail Blazers": [
+        59,
+        23,
+        0
+      ],
+      "Phoenix Suns": [
+        54,
+        28,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        41,
+        41,
+        0
+      ],
+      "Golden State Warriors": [
+        37,
+        45,
+        0
+      ],
+      "LA Clippers": [
+        30,
+        52,
+        0
+      ],
+      "Sacramento Kings": [
+        23,
+        59,
+        0
+      ]
+    },
+    "1990": {
+      "Boston Celtics": [
+        56,
+        26,
+        0
+      ],
+      "Philadelphia 76ers": [
+        44,
+        38,
+        0
+      ],
+      "New York Knicks": [
+        39,
+        43,
+        0
+      ],
+      "Washington Wizards": [
+        30,
+        52,
+        0
+      ],
+      "Brooklyn Nets": [
+        26,
+        56,
+        0
+      ],
+      "Miami Heat": [
+        24,
+        58,
+        0
+      ],
+      "Chicago Bulls": [
+        61,
+        21,
+        0
+      ],
+      "Detroit Pistons": [
+        50,
+        32,
+        0
+      ],
+      "Milwaukee Bucks": [
+        48,
+        34,
+        0
+      ],
+      "Atlanta Hawks": [
+        43,
+        39,
+        0
+      ],
+      "Indiana Pacers": [
+        41,
+        41,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        33,
+        49,
+        0
+      ],
+      "Charlotte Hornets": [
+        26,
+        56,
+        0
+      ],
+      "San Antonio Spurs": [
+        55,
+        27,
+        0
+      ],
+      "Utah Jazz": [
+        54,
+        28,
+        0
+      ],
+      "Houston Rockets": [
+        52,
+        30,
+        0
+      ],
+      "Orlando Magic": [
+        31,
+        51,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        29,
+        53,
+        0
+      ],
+      "Dallas Mavericks": [
+        28,
+        54,
+        0
+      ],
+      "Denver Nuggets": [
+        20,
+        62,
+        0
+      ],
+      "Portland Trail Blazers": [
+        63,
+        19,
+        0
+      ],
+      "Los Angeles Lakers": [
+        58,
+        24,
+        0
+      ],
+      "Phoenix Suns": [
+        55,
+        27,
+        0
+      ],
+      "Golden State Warriors": [
+        44,
+        38,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        41,
+        41,
+        0
+      ],
+      "LA Clippers": [
+        31,
+        51,
+        0
+      ],
+      "Sacramento Kings": [
+        25,
+        57,
+        0
+      ]
+    },
+    "1991": {
+      "Boston Celtics": [
+        51,
+        31,
+        0
+      ],
+      "New York Knicks": [
+        51,
+        31,
+        0
+      ],
+      "Brooklyn Nets": [
+        40,
+        42,
+        0
+      ],
+      "Miami Heat": [
+        38,
+        44,
+        0
+      ],
+      "Philadelphia 76ers": [
+        35,
+        47,
+        0
+      ],
+      "Washington Wizards": [
+        25,
+        57,
+        0
+      ],
+      "Orlando Magic": [
+        21,
+        61,
+        0
+      ],
+      "Chicago Bulls": [
+        67,
+        15,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        57,
+        25,
+        0
+      ],
+      "Detroit Pistons": [
+        48,
+        34,
+        0
+      ],
+      "Indiana Pacers": [
+        40,
+        42,
+        0
+      ],
+      "Atlanta Hawks": [
+        38,
+        44,
+        0
+      ],
+      "Milwaukee Bucks": [
+        31,
+        51,
+        0
+      ],
+      "Charlotte Hornets": [
+        31,
+        51,
+        0
+      ],
+      "Utah Jazz": [
+        55,
+        27,
+        0
+      ],
+      "San Antonio Spurs": [
+        47,
+        35,
+        0
+      ],
+      "Houston Rockets": [
+        42,
+        40,
+        0
+      ],
+      "Denver Nuggets": [
+        24,
+        58,
+        0
+      ],
+      "Dallas Mavericks": [
+        22,
+        60,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        15,
+        67,
+        0
+      ],
+      "Portland Trail Blazers": [
+        57,
+        25,
+        0
+      ],
+      "Golden State Warriors": [
+        55,
+        27,
+        0
+      ],
+      "Phoenix Suns": [
+        53,
+        29,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        47,
+        35,
+        0
+      ],
+      "LA Clippers": [
+        45,
+        37,
+        0
+      ],
+      "Los Angeles Lakers": [
+        43,
+        39,
+        0
+      ],
+      "Sacramento Kings": [
+        29,
+        53,
+        0
+      ]
+    },
+    "1992": {
+      "New York Knicks": [
+        60,
+        22,
+        0
+      ],
+      "Boston Celtics": [
+        48,
+        34,
+        0
+      ],
+      "Brooklyn Nets": [
+        43,
+        39,
+        0
+      ],
+      "Orlando Magic": [
+        41,
+        41,
+        0
+      ],
+      "Miami Heat": [
+        36,
+        46,
+        0
+      ],
+      "Philadelphia 76ers": [
+        26,
+        56,
+        0
+      ],
+      "Washington Wizards": [
+        22,
+        60,
+        0
+      ],
+      "Chicago Bulls": [
+        57,
+        25,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        54,
+        28,
+        0
+      ],
+      "Charlotte Hornets": [
+        44,
+        38,
+        0
+      ],
+      "Atlanta Hawks": [
+        43,
+        39,
+        0
+      ],
+      "Indiana Pacers": [
+        41,
+        41,
+        0
+      ],
+      "Detroit Pistons": [
+        40,
+        42,
+        0
+      ],
+      "Milwaukee Bucks": [
+        28,
+        54,
+        0
+      ],
+      "Houston Rockets": [
+        55,
+        27,
+        0
+      ],
+      "San Antonio Spurs": [
+        49,
+        33,
+        0
+      ],
+      "Utah Jazz": [
+        47,
+        35,
+        0
+      ],
+      "Denver Nuggets": [
+        36,
+        46,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        19,
+        63,
+        0
+      ],
+      "Dallas Mavericks": [
+        11,
+        71,
+        0
+      ],
+      "Phoenix Suns": [
+        62,
+        20,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        55,
+        27,
+        0
+      ],
+      "Portland Trail Blazers": [
+        51,
+        31,
+        0
+      ],
+      "LA Clippers": [
+        41,
+        41,
+        0
+      ],
+      "Los Angeles Lakers": [
+        39,
+        43,
+        0
+      ],
+      "Golden State Warriors": [
+        34,
+        48,
+        0
+      ],
+      "Sacramento Kings": [
+        25,
+        57,
+        0
+      ]
+    },
+    "1993": {
+      "New York Knicks": [
+        57,
+        25,
+        0
+      ],
+      "Orlando Magic": [
+        50,
+        32,
+        0
+      ],
+      "Brooklyn Nets": [
+        45,
+        37,
+        0
+      ],
+      "Miami Heat": [
+        42,
+        40,
+        0
+      ],
+      "Boston Celtics": [
+        32,
+        50,
+        0
+      ],
+      "Philadelphia 76ers": [
+        25,
+        57,
+        0
+      ],
+      "Washington Wizards": [
+        24,
+        58,
+        0
+      ],
+      "Atlanta Hawks": [
+        57,
+        25,
+        0
+      ],
+      "Chicago Bulls": [
+        55,
+        27,
+        0
+      ],
+      "Indiana Pacers": [
+        47,
+        35,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        47,
+        35,
+        0
+      ],
+      "Charlotte Hornets": [
+        41,
+        41,
+        0
+      ],
+      "Detroit Pistons": [
+        20,
+        62,
+        0
+      ],
+      "Milwaukee Bucks": [
+        20,
+        62,
+        0
+      ],
+      "Houston Rockets": [
+        58,
+        24,
+        0
+      ],
+      "San Antonio Spurs": [
+        55,
+        27,
+        0
+      ],
+      "Utah Jazz": [
+        53,
+        29,
+        0
+      ],
+      "Denver Nuggets": [
+        42,
+        40,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        20,
+        62,
+        0
+      ],
+      "Dallas Mavericks": [
+        13,
+        69,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        63,
+        19,
+        0
+      ],
+      "Phoenix Suns": [
+        56,
+        26,
+        0
+      ],
+      "Golden State Warriors": [
+        50,
+        32,
+        0
+      ],
+      "Portland Trail Blazers": [
+        47,
+        35,
+        0
+      ],
+      "Los Angeles Lakers": [
+        33,
+        49,
+        0
+      ],
+      "Sacramento Kings": [
+        28,
+        54,
+        0
+      ],
+      "LA Clippers": [
+        27,
+        55,
+        0
+      ]
+    },
+    "1994": {
+      "Orlando Magic": [
+        57,
+        25,
+        0
+      ],
+      "New York Knicks": [
+        55,
+        27,
+        0
+      ],
+      "Boston Celtics": [
+        35,
+        47,
+        0
+      ],
+      "Miami Heat": [
+        32,
+        50,
+        0
+      ],
+      "Brooklyn Nets": [
+        30,
+        52,
+        0
+      ],
+      "Philadelphia 76ers": [
+        24,
+        58,
+        0
+      ],
+      "Washington Wizards": [
+        21,
+        61,
+        0
+      ],
+      "Indiana Pacers": [
+        52,
+        30,
+        0
+      ],
+      "Charlotte Hornets": [
+        50,
+        32,
+        0
+      ],
+      "Chicago Bulls": [
+        47,
+        35,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        43,
+        39,
+        0
+      ],
+      "Atlanta Hawks": [
+        42,
+        40,
+        0
+      ],
+      "Milwaukee Bucks": [
+        34,
+        48,
+        0
+      ],
+      "Detroit Pistons": [
+        28,
+        54,
+        0
+      ],
+      "San Antonio Spurs": [
+        62,
+        20,
+        0
+      ],
+      "Utah Jazz": [
+        60,
+        22,
+        0
+      ],
+      "Houston Rockets": [
+        47,
+        35,
+        0
+      ],
+      "Denver Nuggets": [
+        41,
+        41,
+        0
+      ],
+      "Dallas Mavericks": [
+        36,
+        46,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        21,
+        61,
+        0
+      ],
+      "Phoenix Suns": [
+        59,
+        23,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        57,
+        25,
+        0
+      ],
+      "Los Angeles Lakers": [
+        48,
+        34,
+        0
+      ],
+      "Portland Trail Blazers": [
+        44,
+        38,
+        0
+      ],
+      "Sacramento Kings": [
+        39,
+        43,
+        0
+      ],
+      "Golden State Warriors": [
+        26,
+        56,
+        0
+      ],
+      "LA Clippers": [
+        17,
+        65,
+        0
+      ]
+    },
+    "1995": {
+      "San Antonio Spurs": [
+        59,
+        23,
+        0
+      ],
+      "Utah Jazz": [
+        55,
+        27,
+        0
+      ],
+      "Houston Rockets": [
+        48,
+        34,
+        0
+      ],
+      "Denver Nuggets": [
+        35,
+        47,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        26,
+        56,
+        0
+      ],
+      "Dallas Mavericks": [
+        26,
+        56,
+        0
+      ],
+      "Memphis Grizzlies": [
+        15,
+        67,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        64,
+        18,
+        0
+      ],
+      "Los Angeles Lakers": [
+        53,
+        29,
+        0
+      ],
+      "Portland Trail Blazers": [
+        44,
+        38,
+        0
+      ],
+      "Phoenix Suns": [
+        41,
+        41,
+        0
+      ],
+      "Sacramento Kings": [
+        39,
+        43,
+        0
+      ],
+      "Golden State Warriors": [
+        36,
+        46,
+        0
+      ],
+      "LA Clippers": [
+        29,
+        53,
+        0
+      ],
+      "Chicago Bulls": [
+        72,
+        10,
+        0
+      ],
+      "Orlando Magic": [
+        60,
+        22,
+        0
+      ],
+      "Indiana Pacers": [
+        52,
+        30,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        47,
+        35,
+        0
+      ],
+      "New York Knicks": [
+        47,
+        35,
+        0
+      ],
+      "Atlanta Hawks": [
+        46,
+        36,
+        0
+      ],
+      "Detroit Pistons": [
+        46,
+        36,
+        0
+      ],
+      "Miami Heat": [
+        42,
+        40,
+        0
+      ],
+      "Charlotte Hornets": [
+        41,
+        41,
+        0
+      ],
+      "Washington Wizards": [
+        39,
+        43,
+        0
+      ],
+      "Boston Celtics": [
+        33,
+        49,
+        0
+      ],
+      "Brooklyn Nets": [
+        30,
+        52,
+        0
+      ],
+      "Milwaukee Bucks": [
+        25,
+        57,
+        0
+      ],
+      "Toronto Raptors": [
+        21,
+        61,
+        0
+      ],
+      "Philadelphia 76ers": [
+        18,
+        64,
+        0
+      ]
+    },
+    "1996": {
+      "Miami Heat": [
+        61,
+        21,
+        0
+      ],
+      "New York Knicks": [
+        57,
+        25,
+        0
+      ],
+      "Orlando Magic": [
+        45,
+        37,
+        0
+      ],
+      "Washington Wizards": [
+        44,
+        38,
+        0
+      ],
+      "Brooklyn Nets": [
+        26,
+        56,
+        0
+      ],
+      "Philadelphia 76ers": [
+        22,
+        60,
+        0
+      ],
+      "Boston Celtics": [
+        15,
+        67,
+        0
+      ],
+      "Chicago Bulls": [
+        69,
+        13,
+        0
+      ],
+      "Atlanta Hawks": [
+        56,
+        26,
+        0
+      ],
+      "Detroit Pistons": [
+        54,
+        28,
+        0
+      ],
+      "Charlotte Hornets": [
+        54,
+        28,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        42,
+        40,
+        0
+      ],
+      "Indiana Pacers": [
+        39,
+        43,
+        0
+      ],
+      "Milwaukee Bucks": [
+        33,
+        49,
+        0
+      ],
+      "Toronto Raptors": [
+        30,
+        52,
+        0
+      ],
+      "Utah Jazz": [
+        64,
+        18,
+        0
+      ],
+      "Houston Rockets": [
+        57,
+        25,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        40,
+        42,
+        0
+      ],
+      "Dallas Mavericks": [
+        24,
+        58,
+        0
+      ],
+      "Denver Nuggets": [
+        21,
+        61,
+        0
+      ],
+      "San Antonio Spurs": [
+        20,
+        62,
+        0
+      ],
+      "Memphis Grizzlies": [
+        14,
+        68,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        57,
+        25,
+        0
+      ],
+      "Los Angeles Lakers": [
+        56,
+        26,
+        0
+      ],
+      "Portland Trail Blazers": [
+        49,
+        33,
+        0
+      ],
+      "Phoenix Suns": [
+        40,
+        42,
+        0
+      ],
+      "LA Clippers": [
+        36,
+        46,
+        0
+      ],
+      "Sacramento Kings": [
+        34,
+        48,
+        0
+      ],
+      "Golden State Warriors": [
+        30,
+        52,
+        0
+      ]
+    },
+    "1997": {
+      "Miami Heat": [
+        55,
+        27,
+        0
+      ],
+      "New York Knicks": [
+        43,
+        39,
+        0
+      ],
+      "Brooklyn Nets": [
+        43,
+        39,
+        0
+      ],
+      "Washington Wizards": [
+        42,
+        40,
+        0
+      ],
+      "Orlando Magic": [
+        41,
+        41,
+        0
+      ],
+      "Boston Celtics": [
+        36,
+        46,
+        0
+      ],
+      "Philadelphia 76ers": [
+        31,
+        51,
+        0
+      ],
+      "Chicago Bulls": [
+        62,
+        20,
+        0
+      ],
+      "Indiana Pacers": [
+        58,
+        24,
+        0
+      ],
+      "Charlotte Hornets": [
+        51,
+        31,
+        0
+      ],
+      "Atlanta Hawks": [
+        50,
+        32,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        47,
+        35,
+        0
+      ],
+      "Detroit Pistons": [
+        37,
+        45,
+        0
+      ],
+      "Milwaukee Bucks": [
+        36,
+        46,
+        0
+      ],
+      "Toronto Raptors": [
+        16,
+        66,
+        0
+      ],
+      "Utah Jazz": [
+        62,
+        20,
+        0
+      ],
+      "San Antonio Spurs": [
+        56,
+        26,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        45,
+        37,
+        0
+      ],
+      "Houston Rockets": [
+        41,
+        41,
+        0
+      ],
+      "Dallas Mavericks": [
+        20,
+        62,
+        0
+      ],
+      "Memphis Grizzlies": [
+        19,
+        63,
+        0
+      ],
+      "Denver Nuggets": [
+        11,
+        71,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        61,
+        21,
+        0
+      ],
+      "Los Angeles Lakers": [
+        61,
+        21,
+        0
+      ],
+      "Phoenix Suns": [
+        56,
+        26,
+        0
+      ],
+      "Portland Trail Blazers": [
+        46,
+        36,
+        0
+      ],
+      "Sacramento Kings": [
+        27,
+        55,
+        0
+      ],
+      "Golden State Warriors": [
+        19,
+        63,
+        0
+      ],
+      "LA Clippers": [
+        17,
+        65,
+        0
+      ]
+    },
+    "1998": {
+      "San Antonio Spurs": [
+        37,
+        13,
+        0
+      ],
+      "Utah Jazz": [
+        37,
+        13,
+        0
+      ],
+      "Houston Rockets": [
+        31,
+        19,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        25,
+        25,
+        0
+      ],
+      "Dallas Mavericks": [
+        19,
+        31,
+        0
+      ],
+      "Denver Nuggets": [
+        14,
+        36,
+        0
+      ],
+      "Memphis Grizzlies": [
+        8,
+        42,
+        0
+      ],
+      "Portland Trail Blazers": [
+        35,
+        15,
+        0
+      ],
+      "Los Angeles Lakers": [
+        31,
+        19,
+        0
+      ],
+      "Sacramento Kings": [
+        27,
+        23,
+        0
+      ],
+      "Phoenix Suns": [
+        27,
+        23,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        25,
+        25,
+        0
+      ],
+      "Golden State Warriors": [
+        21,
+        29,
+        0
+      ],
+      "LA Clippers": [
+        9,
+        41,
+        0
+      ],
+      "Miami Heat": [
+        33,
+        17,
+        0
+      ],
+      "Indiana Pacers": [
+        33,
+        17,
+        0
+      ],
+      "Orlando Magic": [
+        33,
+        17,
+        0
+      ],
+      "Atlanta Hawks": [
+        31,
+        19,
+        0
+      ],
+      "Detroit Pistons": [
+        29,
+        21,
+        0
+      ],
+      "Philadelphia 76ers": [
+        28,
+        22,
+        0
+      ],
+      "Milwaukee Bucks": [
+        28,
+        22,
+        0
+      ],
+      "New York Knicks": [
+        27,
+        23,
+        0
+      ],
+      "Charlotte Hornets": [
+        26,
+        24,
+        0
+      ],
+      "Toronto Raptors": [
+        23,
+        27,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        22,
+        28,
+        0
+      ],
+      "Boston Celtics": [
+        19,
+        31,
+        0
+      ],
+      "Washington Wizards": [
+        18,
+        32,
+        0
+      ],
+      "Brooklyn Nets": [
+        16,
+        34,
+        0
+      ],
+      "Chicago Bulls": [
+        13,
+        37,
+        0
+      ]
+    },
+    "1999": {
+      "Miami Heat": [
+        52,
+        30,
+        0
+      ],
+      "New York Knicks": [
+        50,
+        32,
+        0
+      ],
+      "Philadelphia 76ers": [
+        49,
+        33,
+        0
+      ],
+      "Orlando Magic": [
+        41,
+        41,
+        0
+      ],
+      "Boston Celtics": [
+        35,
+        47,
+        0
+      ],
+      "Brooklyn Nets": [
+        31,
+        51,
+        0
+      ],
+      "Washington Wizards": [
+        29,
+        53,
+        0
+      ],
+      "Indiana Pacers": [
+        56,
+        26,
+        0
+      ],
+      "Charlotte Hornets": [
+        49,
+        33,
+        0
+      ],
+      "Toronto Raptors": [
+        45,
+        37,
+        0
+      ],
+      "Detroit Pistons": [
+        42,
+        40,
+        0
+      ],
+      "Milwaukee Bucks": [
+        42,
+        40,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        32,
+        50,
+        0
+      ],
+      "Atlanta Hawks": [
+        28,
+        54,
+        0
+      ],
+      "Chicago Bulls": [
+        17,
+        65,
+        0
+      ],
+      "Utah Jazz": [
+        55,
+        27,
+        0
+      ],
+      "San Antonio Spurs": [
+        53,
+        29,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        50,
+        32,
+        0
+      ],
+      "Dallas Mavericks": [
+        40,
+        42,
+        0
+      ],
+      "Denver Nuggets": [
+        35,
+        47,
+        0
+      ],
+      "Houston Rockets": [
+        34,
+        48,
+        0
+      ],
+      "Memphis Grizzlies": [
+        22,
+        60,
+        0
+      ],
+      "Los Angeles Lakers": [
+        67,
+        15,
+        0
+      ],
+      "Portland Trail Blazers": [
+        59,
+        23,
+        0
+      ],
+      "Phoenix Suns": [
+        53,
+        29,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        45,
+        37,
+        0
+      ],
+      "Sacramento Kings": [
+        44,
+        38,
+        0
+      ],
+      "Golden State Warriors": [
+        19,
+        63,
+        0
+      ],
+      "LA Clippers": [
+        15,
+        67,
+        0
+      ]
+    },
+    "2000": {
+      "Philadelphia 76ers": [
+        56,
+        26,
+        0
+      ],
+      "Miami Heat": [
+        50,
+        32,
+        0
+      ],
+      "New York Knicks": [
+        48,
+        34,
+        0
+      ],
+      "Orlando Magic": [
+        43,
+        39,
+        0
+      ],
+      "Boston Celtics": [
+        36,
+        46,
+        0
+      ],
+      "Brooklyn Nets": [
+        26,
+        56,
+        0
+      ],
+      "Washington Wizards": [
+        19,
+        63,
+        0
+      ],
+      "Milwaukee Bucks": [
+        52,
+        30,
+        0
+      ],
+      "Toronto Raptors": [
+        47,
+        35,
+        0
+      ],
+      "Charlotte Hornets": [
+        46,
+        36,
+        0
+      ],
+      "Indiana Pacers": [
+        41,
+        41,
+        0
+      ],
+      "Detroit Pistons": [
+        32,
+        50,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        30,
+        52,
+        0
+      ],
+      "Atlanta Hawks": [
+        25,
+        57,
+        0
+      ],
+      "Chicago Bulls": [
+        15,
+        67,
+        0
+      ],
+      "San Antonio Spurs": [
+        58,
+        24,
+        0
+      ],
+      "Utah Jazz": [
+        53,
+        29,
+        0
+      ],
+      "Dallas Mavericks": [
+        53,
+        29,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        47,
+        35,
+        0
+      ],
+      "Houston Rockets": [
+        45,
+        37,
+        0
+      ],
+      "Denver Nuggets": [
+        40,
+        42,
+        0
+      ],
+      "Memphis Grizzlies": [
+        23,
+        59,
+        0
+      ],
+      "Los Angeles Lakers": [
+        56,
+        26,
+        0
+      ],
+      "Sacramento Kings": [
+        55,
+        27,
+        0
+      ],
+      "Phoenix Suns": [
+        51,
+        31,
+        0
+      ],
+      "Portland Trail Blazers": [
+        50,
+        32,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        44,
+        38,
+        0
+      ],
+      "LA Clippers": [
+        31,
+        51,
+        0
+      ],
+      "Golden State Warriors": [
+        17,
+        65,
+        0
+      ]
+    },
+    "2001": {
+      "Brooklyn Nets": [
+        52,
+        30,
+        0
+      ],
+      "Boston Celtics": [
+        49,
+        33,
+        0
+      ],
+      "Orlando Magic": [
+        44,
+        38,
+        0
+      ],
+      "Philadelphia 76ers": [
+        43,
+        39,
+        0
+      ],
+      "Washington Wizards": [
+        37,
+        45,
+        0
+      ],
+      "Miami Heat": [
+        36,
+        46,
+        0
+      ],
+      "New York Knicks": [
+        30,
+        52,
+        0
+      ],
+      "Detroit Pistons": [
+        50,
+        32,
+        0
+      ],
+      "Charlotte Hornets": [
+        44,
+        38,
+        0
+      ],
+      "Toronto Raptors": [
+        42,
+        40,
+        0
+      ],
+      "Indiana Pacers": [
+        42,
+        40,
+        0
+      ],
+      "Milwaukee Bucks": [
+        41,
+        41,
+        0
+      ],
+      "Atlanta Hawks": [
+        33,
+        49,
+        0
+      ],
+      "Cleveland Cavaliers": [
+        29,
+        53,
+        0
+      ],
+      "Chicago Bulls": [
+        21,
+        61,
+        0
+      ],
+      "San Antonio Spurs": [
+        58,
+        24,
+        0
+      ],
+      "Dallas Mavericks": [
+        57,
+        25,
+        0
+      ],
+      "Minnesota Timberwolves": [
+        50,
+        32,
+        0
+      ],
+      "Utah Jazz": [
+        44,
+        38,
+        0
+      ],
+      "Houston Rockets": [
+        28,
+        54,
+        0
+      ],
+      "Denver Nuggets": [
+        27,
+        55,
+        0
+      ],
+      "Memphis Grizzlies": [
+        23,
+        59,
+        0
+      ],
+      "Sacramento Kings": [
+        61,
+        21,
+        0
+      ],
+      "Los Angeles Lakers": [
+        58,
+        24,
+        0
+      ],
+      "Portland Trail Blazers": [
+        49,
+        33,
+        0
+      ],
+      "Oklahoma City Thunder": [
+        45,
+        37,
+        0
+      ],
+      "LA Clippers": [
+        39,
+        43,
+        0
+      ],
+      "Phoenix Suns": [
+        36,
+        46,
+        0
+      ],
+      "Golden State Warriors": [
+        21,
+        61,
         0
       ]
     }

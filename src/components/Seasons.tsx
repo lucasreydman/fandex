@@ -33,7 +33,7 @@ export function Seasons({ result, picks }: { result: Result; picks: string[] }) 
       <p className="num mt-4 h-5 text-[13px] leading-5 text-ink-2">
         {hover ? (
           <>
-            <span className="text-ink">{hover.s.team.name}</span> · {seasonLabel(league, hover.p.y)} · {record(hover.p.w, hover.p.l, hover.p.t)} · {pct(hover.p.pct)} · {signed(hover.p.z, 1)}σ
+            <span className="text-ink">{hover.p.as ?? hover.s.team.name}</span> · {seasonLabel(league, hover.p.y)} · {record(hover.p.w, hover.p.l, hover.p.t)} · {pct(hover.p.pct)} · {signed(hover.p.z, 1)}σ
             {hover.p.champ ? " · champions" : hover.p.runnerUp ? " · lost the final" : ""}
           </>
         ) : (

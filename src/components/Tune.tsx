@@ -127,7 +127,7 @@ export function Tune({
               Short histories are pulled toward average, since nine seasons prove less than thirty. That keeps a young expansion team from outranking decades of winning.
             </p>
             <p>
-              Relocated teams keep their history: the Sonics count for the Thunder, the Coyotes for Utah. Records come from ESPN and the NHL, and are checked every night.
+              History follows each league’s official record. The Sonics’ seasons belong to the Thunder, the 1988 to 2002 Hornets to today’s Hornets, the Browns keep everything before their three missing years, and the Coyotes stay their own inactive franchise while Utah starts fresh in 2024. Cities are scored on the seasons actually played there, so Seattle keeps the Sonics’ years. Records come from ESPN and the NHL, and are checked every night.
             </p>
           </div>
         </div>

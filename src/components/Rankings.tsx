@@ -10,6 +10,11 @@ import type { League, Result, TeamStat } from "@/lib/types";
 import { Tape } from "./Tape";
 import { EASE, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
 
+/** Earlier names this franchise carried inside the span, oldest first. */
+function formerNames(s: TeamStat): string {
+  return [...new Set(s.series.map((p) => p.as).filter(Boolean))].join(", ");
+}
+
 type SortKey = "rank" | "pct" | "z" | "avgZ" | "elite" | "dud" | "titles" | "finalsLost" | "seasons";
 type Filter = "all" | League;
 
@@ -124,7 +129,7 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
                     <span className="min-w-0">
                       <span className="block truncate text-[14px] leading-5 text-ink"><span className="sm:hidden">{s.team.nick}</span><span className="max-sm:hidden">{s.team.name}</span></span>
                       <span className="num block truncate text-[12px] leading-4 text-ink-3">
-                        {s.team.league} · {s.team.metro}
+                        {s.team.league} · {s.team.metro}{s.team.inactive ? " · inactive" : ""}
                       </span>
                     </span>
                   </span>
@@ -159,6 +164,7 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
                       <Tape league={s.team.league} series={s.series} first={first} last={last} />
                       <p className="num mt-2 text-[12px] leading-4 text-ink-3">
                         {record(s.w, s.l, s.t)} over {s.seasons} seasons · #{s.leagueRank} in the {s.team.league} · {s.elite} great, {s.dud} awful · {s.finalsLost} finals lost
+                        {formerNames(s) && <> · includes {formerNames(s)}</>}
                       </p>
                     </motion.div>
                   )}

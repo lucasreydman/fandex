@@ -63,7 +63,7 @@ export function Tape({
         <div className="num mt-1 flex h-4 justify-between text-[12px] leading-4 text-ink-3">
           {shown ? (
             <span className="text-ink-2">
-              {seasonLabel(league, shown.y)} · {record(shown.w, shown.l, shown.t)} · {pct(shown.pct)} · {signed(shown.z, 1)}σ
+              {seasonLabel(league, shown.y)}{shown.as ? ` · ${shown.as}` : ""} · {record(shown.w, shown.l, shown.t)} · {pct(shown.pct)} · {signed(shown.z, 1)}σ
               {shown.champ ? " · champions" : shown.runnerUp ? " · lost the final" : ""}
               {shown.live ? " · in progress" : ""}
             </span>

@@ -30,7 +30,20 @@ All of it lives in `src/lib/engine.ts`.
 - NFL, NBA and MLB standings come from ESPN's public standings feed; NHL from the league's stats API (ESPN's hockey history has seasons with playoff games mixed in).
 - Champions and losing finalists are in `scripts/source/champions.json`, compiled from Wikipedia. Seasons newer than that file are read off the postseason scoreboard automatically.
 - A few old NFL seasons are missing clubs in the feed; `scripts/source/patches.json` fills them.
-- Relocated franchises keep their history through team ids.
+- `scripts/source/patches.json` holds reference standings for the older NFL and NBA seasons, compiled from Wikipedia. ESPN's history silently omits clubs (most Baltimore Colts seasons, several Bengals seasons, the 1974 Steelers) and has a few wrong records, so where the reference covers a season it is the record and the feed is only compared against it.
+
+## Franchise history
+
+Lineage follows each league's official record, and `src/lib/history.test.ts` pins it down for all teams: first season, every season since, and the known gaps.
+
+- A relocated or renamed franchise keeps its seasons. `scripts/source/eras.json` records what it was called and where it played each year, so the Thunder's 1979 title shows as the Seattle SuperSonics and the Dodgers' 1955 as Brooklyn.
+- Cities are scored on the seasons actually played there. Seattle keeps the Sonics' years, Montreal the Expos', and former homes such as Hartford and Quebec City appear on the map when the span reaches back to them.
+- The 1988 to 2002 Charlotte Hornets belong to today's Hornets (the NBA reassigned them); the Pelicans begin in 2002.
+- The Browns keep their pre-1996 history and sit out 1996 to 1998; the Ravens begin in 1996.
+- The Arizona Coyotes are kept as an inactive franchise ending in 2024, and Utah starts as a new club that year, as the NHL has it. The first Winnipeg Jets' seasons sit with today's Jets, following the NHL's own records feed.
+- The wartime merged teams (Phil-Pitt 1943, Card-Pitt 1944) count for both clubs.
+- The AFL's 1960 to 1969 seasons count for its clubs, and the AFL title games of 1960 to 1965 count as championships. From 1966 the Super Bowl is the title.
+- Not counted: the ABA, WHA and AAFC, the Federal League of 1914 to 1915, and anything before each league's first season in the data.
 
 `pnpm data` refreshes it. Finished seasons are kept as they are and only the recent ones are refetched; every request retries; a season that fails or does not add up (wins must equal losses) keeps its last good copy; and the file is only rewritten when something actually changed. `pnpm data:full` refetches everything.
 

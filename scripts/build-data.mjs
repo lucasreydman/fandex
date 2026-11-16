@@ -31,11 +31,34 @@ const LEAGUES = {
   NHL: { path: "hockey/nhl", first: 1917, offset: 1, size: 32, sched: 84 },
 };
 
-// Old identities that the feeds keep under a separate id but that belong to a
-// current franchise. Arizona Coyotes (and the original Winnipeg Jets before
-// them) are rolled into Utah: same organisation, new name.
-const ESPN_ALIAS = { NHL: { "Arizona Coyotes": "Utah Mammoth", "Phoenix Coyotes": "Utah Mammoth", "Utah Hockey Club": "Utah Mammoth" } };
-const NHL_FRANCHISE_ALIAS = { "Arizona Coyotes": "Utah Mammoth", "Montréal Canadiens": "Montreal Canadiens" };
+// Where the feeds differ from each league's official lineage.
+const NHL_FRANCHISE_ALIAS = { "Montr\u00e9al Canadiens": "Montreal Canadiens" };
+
+// ESPN files the 1988-2002 Charlotte Hornets under the Pelicans. The NBA gave
+// those seasons to today's Hornets when the name returned to Charlotte.
+const REASSIGN = { NBA: [{ from: "New Orleans Pelicans", to: "Charlotte Hornets", before: 2002 }] };
+
+// Two wartime mergers count for both clubs, as each franchise's own records have it.
+const MERGED = {
+  NFL: {
+    1943: { match: /phil-pitt|steagles/i, clubs: ["Philadelphia Eagles", "Pittsburgh Steelers"] },
+    1944: { match: /card-pitt/i, clubs: ["Arizona Cardinals", "Pittsburgh Steelers"] },
+  },
+};
+
+// The Federal League of 1914-15 appears in baseball's standings but was a rival league.
+const RIVAL_LEAGUE = { MLB: [1914, 1915] };
+
+// An inactive franchise, kept so its fans and its city keep their history. The
+// NHL made Utah a new team in 2024 and left the Coyotes' record with Arizona.
+const LEGACY = [
+  {
+    key: "nhl-ari", espnId: "legacy", league: "NHL", name: "Arizona Coyotes", nick: "Coyotes", place: "Arizona", abbr: "ARI",
+    color: "#8c2633", alt: "#e2d6b5",
+    logo: "https://a.espncdn.com/i/teamlogos/nhl/500/ari.png", logoDark: "https://a.espncdn.com/i/teamlogos/nhl/500-dark/ari.png",
+    metro: "Phoenix", inactive: true,
+  },
+];
 
 const PATCH_FILE = path.join(ROOT, "scripts", "source", "patches.json");
 const PATCHES = existsSync(PATCH_FILE) ? JSON.parse(await readFile(PATCH_FILE, "utf8")) : {};
@@ -115,6 +138,21 @@ async function loadTeams() {
       });
     }
   }
+  teams.push(...LEGACY);
+  const eras = JSON.parse(await readFile(path.join(ROOT, "scripts", "source", "eras.json"), "utf8"));
+  for (const t of teams) {
+    if (!metros.metros[t.metro]) throw new Error(`Unknown metro "${t.metro}" for ${t.name}`);
+    const list = eras[t.league]?.[t.name];
+    if (!list) continue;
+    for (const [, , metro] of list) if (!metros.metros[metro]) throw new Error(`eras.json: unknown metro "${metro}" for ${t.name}`);
+    const last = list[list.length - 1];
+    if (last[1] !== t.name && !t.inactive) throw new Error(`eras.json: ${t.name} should end with its current name, found "${last[1]}"`);
+    t.eras = list;
+  }
+  for (const [league, byTeam] of Object.entries(eras)) {
+    if (league.startsWith("_")) continue;
+    for (const name of Object.keys(byTeam)) if (!teams.some((t) => t.league === league && t.name === name)) throw new Error(`eras.json: no ${league} team called "${name}"`);
+  }
   return { teams, metros: metros.metros };
 }
 
@@ -128,8 +166,9 @@ async function espnSeason(league, y, teamByEspn, teamByName, currentTeams) {
   const rows = [];
   for (const e of st.entries ?? []) {
     const name = clean(e.team.displayName);
-    const alias = ESPN_ALIAS[league]?.[name];
-    const team = alias ? teamByName.get(`${league}:${alias}`) : teamByEspn.get(`${league}:${e.team.id}`);
+    let team = teamByEspn.get(`${league}:${e.team.id}`);
+    const move = team && REASSIGN[league]?.find((r) => r.from === team.name && y < r.before);
+    if (move) team = teamByName.get(`${league}:${move.to}`);
     const w = stat(e, "wins");
     const l = stat(e, "losses") + (league === "NHL" ? stat(e, "otLosses", "overtimeLosses") : 0);
     const t = stat(e, "ties");
@@ -137,33 +176,36 @@ async function espnSeason(league, y, teamByEspn, teamByName, currentTeams) {
     rows.push([team?.key ?? null, name, w, l, t]);
   }
   if (!rows.length) return null;
-  // Older standings sometimes leave a club out, which shows up as wins and losses
-  // not adding up. Fill from the hand-kept patch file first, then ask the
-  // per-team record endpoint, keeping only records that move the season toward balance.
   const gap = () => rows.reduce((a, r) => a + r[2] - r[3], 0);
+  if (RIVAL_LEAGUE[league]?.includes(y)) {
+    const own = rows.filter((r) => r[0]);
+    rows.length = 0;
+    rows.push(...own);
+  }
+  // Older standings in the feed leave clubs out. Where the reference standings
+  // (scripts/source/patches.json) cover a season they are the record, and the
+  // feed is only compared against them.
   const patch = PATCHES[league]?.[y];
   if (patch) {
-    const have = new Set(rows.map((r) => r[0] ?? `defunct:${r[1]}`));
-    const before = rows.length;
+    const feed = new Map(rows.filter((r) => r[0]).map((r) => [r[0], r]));
+    const next = [];
+    const notes = [];
     for (const [name, rec] of Object.entries(patch)) {
-      if (name.startsWith("defunct:")) continue;
-      const t = teamByName.get(`${league}:${name}`);
-      if (!t) { warn(`patches.json: unknown ${league} team "${name}"`); continue; }
-      if (!have.has(t.key)) rows.push([t.key, t.name, rec[0], rec[1], rec[2] ?? 0]);
-    }
-    // Defunct clubs only matter for the season's spread; add them when the feed has fewer clubs than the patch.
-    const missing = Object.keys(patch).length - rows.length;
-    if (missing > 0) {
-      const names = new Set(rows.map((r) => r[1].toLowerCase()));
-      for (const [name, rec] of Object.entries(patch)) {
-        if (!name.startsWith("defunct:")) continue;
-        const plain = name.slice(8);
-        if (names.has(plain.toLowerCase())) continue;
-        const sameRecord = rows.some((r) => !r[0] && r[2] === rec[0] && r[3] === rec[1]);
-        if (!sameRecord) rows.push([null, plain, rec[0], rec[1], rec[2] ?? 0]);
+      const row = [null, name.replace(/^defunct:/, ""), rec[0], rec[1], rec[2] ?? 0];
+      if (!name.startsWith("defunct:")) {
+        const t = teamByName.get(`${league}:${name}`);
+        if (!t) { warn(`patches.json: unknown ${league} team "${name}" in ${y}`); continue; }
+        row[0] = t.key;
+        const f = feed.get(t.key);
+        if (!f) notes.push(`+${t.abbr}`);
+        else if (f[2] !== row[2] || f[3] !== row[3] || (f[4] || 0) !== row[4]) notes.push(`${t.abbr} ${f[2]}-${f[3]}-${f[4] || 0} to ${row[2]}-${row[3]}-${row[4]}`);
       }
+      next.push(row);
     }
-    if (rows.length !== before) console.log(`${league} ${y}: patched ${rows.length - before} club(s)`);
+    for (const key of feed.keys()) if (!next.some((r) => r[0] === key)) notes.push(`-${key}`);
+    if (notes.length) console.log(`${league} ${y}: reference standings differ from the feed: ${notes.join(", ")}`);
+    rows.length = 0;
+    rows.push(...next);
   }
   if (Math.abs(gap()) > 1) {
     const have = new Set(rows.map((r) => r[0]));
@@ -224,7 +266,7 @@ function validateSeason(league, s) {
   const problems = [];
   // Every game has one winner and one loser. Early records have a few holes, so allow a little slack there.
   const recent = s.y >= NOW.getUTCFullYear() - 2;
-  const tol = recent ? 1 : Math.max(2, 0.04 * W);
+  const tol = recent ? 1 : Math.max(2, 0.01 * W);
   if (Math.abs(W - L) > tol) problems.push(`wins ${W} != losses ${L}`);
   for (const r of s.rows) {
     if (r[2] + r[3] + r[4] > cfg.sched + 8) problems.push(`${r[1]} has ${r[2] + r[3] + r[4]} games`);
@@ -235,12 +277,17 @@ function validateSeason(league, s) {
   return problems;
 }
 
-function pack(league, s) {
+function pack(league, s, teamByName) {
   // RMS distance from .500 across every team that played that season, current or not.
   const pcts = s.rows.filter((r) => r[2] + r[3] > 0).map((r) => r[2] / (r[2] + r[3]));
   const sd = Math.sqrt(pcts.reduce((a, p) => a + (p - 0.5) ** 2, 0) / pcts.length);
   const rows = {};
-  for (const [key, , w, l, t] of s.rows) if (key) rows[key] = t ? [w, l, t] : [w, l];
+  const merged = MERGED[league]?.[s.y];
+  for (const [key, name, w, l, t] of s.rows) {
+    const rec = t ? [w, l, t] : [w, l];
+    if (key) rows[key] = rec;
+    else if (merged?.match.test(name)) for (const club of merged.clubs) rows[teamByName.get(`${league}:${club}`).key] = rec;
+  }
   return { y: s.y, n: s.rows.length, sd: +sd.toFixed(5), live: s.live || undefined, postEnd: s.postEnd || undefined, rows };
 }
 
@@ -324,7 +371,7 @@ async function main() {
           warn(`${league} ${y}: ${problems.join("; ")} - accepted with a gap`);
         }
         for (const r of s.rows) if (!r[0]) unmatched.set(`${league}:${r[1]}`, (unmatched.get(`${league}:${r[1]}`) ?? 0) + 1);
-        return { y, fresh: pack(league, s) };
+        return { y, fresh: pack(league, s, teamByName) };
       } catch (e) {
         warn(`${league} ${y}: ${e.message}${old ? " - kept previous copy" : " - season missing"}`);
         return { y, keep: old ?? null };
@@ -332,6 +379,7 @@ async function main() {
     });
 
     const champByYear = new Map((champs[league] ?? []).map((c) => [c.season, c]));
+    const alsoByYear = new Map((league === "NFL" ? champs.AFL ?? [] : []).map((c) => [c.season, c]));
     const seasons = [];
     for (const f of fetched) {
       const s = f.fresh ?? f.keep;
@@ -352,6 +400,8 @@ async function main() {
           } catch (e) { warn(`${league} ${s.y}: champion lookup failed (${e.message})`); }
         }
       }
+      const extra = alsoByYear.get(s.y);
+      if (extra) s.also = [{ champ: resolve(league, extra.champion) ?? undefined, runnerUp: resolve(league, extra.runnerUp) ?? undefined }];
       seasons.push(s);
     }
     seasons.sort((a, b) => a.y - b.y);

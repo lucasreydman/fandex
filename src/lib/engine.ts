@@ -1,5 +1,5 @@
 import { LEAGUES } from "./types";
-import type { Dataset, FanSummary, League, MetroStat, Options, Result, SeasonPoint, TeamStat, Weights } from "./types";
+import type { CitySpell, Dataset, FanSummary, League, MetroStat, Options, Result, SeasonPoint, Team, TeamStat, Weights } from "./types";
 
 export const DEFAULT_WEIGHTS: Weights = { record: 50, consistency: 30, titles: 20 };
 
@@ -14,6 +14,14 @@ const PRIOR_SEASONS = 4;
 
 export function seasonLabel(league: League, y: number): string {
   return league === "NBA" || league === "NHL" ? `${y}-${String((y + 1) % 100).padStart(2, "0")}` : String(y);
+}
+
+/** What the franchise was called, and where it played, in the season that started in year y. */
+export function eraAt(team: Team, y: number): { name: string; metro: string } {
+  if (!team.eras?.length) return { name: team.name, metro: team.metro };
+  let era = team.eras[0];
+  for (const e of team.eras) if (e[0] <= y) era = e;
+  return { name: era[1], metro: era[2] };
 }
 
 export function bounds(data: Dataset): { min: number; max: number } {
@@ -34,6 +42,25 @@ function std(values: number[]): { mean: number; sd: number } {
   return { mean, sd };
 }
 
+/** One season with the weights the scoring needs, kept private to this file. */
+type Scored = SeasonPoint & { k: number; surplus: number };
+
+interface Totals { seasons: number; w: number; l: number; t: number; pct: number; avgZ: number; titleRate: number; titles: number; finalsLost: number; elite: number; dud: number }
+
+function total(points: Scored[]): Totals {
+  let w = 0, l = 0, t = 0, ww = 0, wl = 0, zSum = 0, kSum = 0, surplus = 0, titles = 0, finalsLost = 0, elite = 0, dud = 0;
+  for (const p of points) {
+    w += p.w; l += p.l; t += p.t;
+    ww += p.k * p.w; wl += p.k * p.l;
+    zSum += p.k * p.z; kSum += p.k; surplus += p.surplus;
+    if (p.champ) titles++;
+    if (p.runnerUp) finalsLost++;
+    if (p.z >= 1) elite++;
+    if (p.z <= -1) dud++;
+  }
+  return { seasons: points.length, w, l, t, pct: ww / (ww + wl), avgZ: zSum / kSum, titleRate: surplus / kSum, titles, finalsLost, elite, dud };
+}
+
 export function compute(data: Dataset, opts: Options): Result {
   const wSum = opts.weights.record + opts.weights.consistency + opts.weights.titles || 1;
   const wRecord = opts.weights.record / wSum;
@@ -41,6 +68,7 @@ export function compute(data: Dataset, opts: Options): Result {
   const wTitles = opts.weights.titles / wSum;
 
   const stats: TeamStat[] = [];
+  const spells: CitySpell[] = [];
   const span = {} as Result["span"];
 
   for (const league of LEAGUES) {
@@ -52,52 +80,78 @@ export function compute(data: Dataset, opts: Options): Result {
     const latest = seasons[seasons.length - 1].y;
     const weightOf = (y: number) => (opts.halfLife > 0 ? 0.5 ** ((latest - y) / opts.halfLife) : 1);
 
-    const leagueStats: (TeamStat & { titleRate: number })[] = [];
+    const rows: { stat: TeamStat; points: Scored[]; totals: Totals }[] = [];
     for (const team of data.teams) {
       if (team.league !== league) continue;
-      const series: SeasonPoint[] = [];
-      let w = 0, l = 0, t = 0, ww = 0, wl = 0, zSum = 0, kSum = 0, elite = 0, dud = 0, titles = 0, finalsLost = 0, surplus = 0;
+      const points: Scored[] = [];
       for (const s of seasons) {
         const row = s.rows[team.key];
         if (!row) continue;
         const games = row[0] + row[1];
         if (!games) continue;
         const pct = row[0] / games;
-        const z = s.sd > 0 ? (pct - 0.5) / s.sd : 0;
         const k = weightOf(s.y);
-        const champ = s.champ === team.key;
-        const runnerUp = s.runnerUp === team.key;
-        w += row[0]; l += row[1]; t += row[2] ?? 0;
-        ww += k * row[0]; wl += k * row[1];
-        zSum += k * z; kSum += k;
-        if (z >= 1) elite++;
-        if (z <= -1) dud++;
-        if (champ) titles++;
-        if (runnerUp) finalsLost++;
-        // Titles against what an average club would expect that year: 1 in n.
-        // A live season has no champion yet, so it adds nothing either way.
-        if (s.decided) surplus += k * ((champ ? 1 : 0) - 1 / s.n);
-        series.push({ y: s.y, w: row[0], l: row[1], t: row[2] ?? 0, pct, z, champ, runnerUp, live: !!s.live });
+        const champ = s.champ === team.key || !!s.also?.some((a) => a.champ === team.key);
+        const runnerUp = s.runnerUp === team.key || !!s.also?.some((a) => a.runnerUp === team.key);
+        const era = eraAt(team, s.y);
+        // Titles against what an average club would expect that year. The AFL years
+        // of 1960-65 had two championships on offer; a live season has none yet.
+        const available = 1 + (s.also?.length ?? 0);
+        points.push({
+          y: s.y, w: row[0], l: row[1], t: row[2] ?? 0, pct,
+          z: s.sd > 0 ? (pct - 0.5) / s.sd : 0,
+          champ, runnerUp, live: !!s.live,
+          as: era.name !== team.name ? era.name : undefined,
+          metro: era.metro,
+          k, surplus: s.decided ? k * ((champ ? 1 : 0) - available / s.n) : 0,
+        });
       }
-      if (!series.length) continue;
-      leagueStats.push({
-        team, seasons: series.length, w, l, t,
-        pct: ww / (ww + wl), z: 0, avgZ: zSum / kSum, elite, dud, titles, finalsLost,
-        titleZ: 0, titleRate: surplus / kSum, composite: 0, index: 0, rank: 0, leagueRank: 0, series,
+      if (!points.length) continue;
+      const totals = total(points);
+      rows.push({
+        totals, points,
+        stat: {
+          team, seasons: totals.seasons, w: totals.w, l: totals.l, t: totals.t, pct: totals.pct, z: 0, avgZ: totals.avgZ,
+          elite: totals.elite, dud: totals.dud, titles: totals.titles, finalsLost: totals.finalsLost,
+          titleZ: 0, composite: 0, index: 0, rank: 0, leagueRank: 0, series: points,
+        },
       });
     }
 
     // How spread out this league is over the span: RMS distance of franchise records from .500.
-    const leagueSd = Math.sqrt(leagueStats.reduce((a, s) => a + (s.pct - 0.5) ** 2, 0) / leagueStats.length);
-    const title = std(leagueStats.map((s) => s.titleRate));
-    for (const s of leagueStats) {
-      s.z = leagueSd > 0 ? (s.pct - 0.5) / leagueSd : 0;
-      s.titleZ = title.sd > 0 ? (s.titleRate - title.mean) / title.sd : 0;
-      const blend = wRecord * s.z + wConsistency * s.avgZ * SEASON_Z_SCALE + wTitles * s.titleZ;
-      s.composite = blend * (s.seasons / (s.seasons + PRIOR_SEASONS));
+    const leagueSd = Math.sqrt(rows.reduce((a, r) => a + (r.totals.pct - 0.5) ** 2, 0) / rows.length);
+    const title = std(rows.map((r) => r.totals.titleRate));
+    const score = (t: Totals) => {
+      const z = leagueSd > 0 ? (t.pct - 0.5) / leagueSd : 0;
+      const titleZ = title.sd > 0 ? (t.titleRate - title.mean) / title.sd : 0;
+      const blend = wRecord * z + wConsistency * t.avgZ * SEASON_Z_SCALE + wTitles * titleZ;
+      return { z, titleZ, composite: blend * (t.seasons / (t.seasons + PRIOR_SEASONS)) };
+    };
+
+    for (const r of rows) {
+      Object.assign(r.stat, score(r.totals));
+      // A franchise's seasons count toward the city it was playing in at the time.
+      const byMetro = new Map<string, Scored[]>();
+      for (const p of r.points) {
+        const g = byMetro.get(p.metro);
+        if (g) g.push(p); else byMetro.set(p.metro, [p]);
+      }
+      const home = eraAt(r.stat.team, r.points[r.points.length - 1].y).metro;
+      for (const [metro, points] of byMetro) {
+        const t = byMetro.size === 1 ? r.totals : total(points);
+        const last = points[points.length - 1];
+        spells.push({
+          team: r.stat.team, stat: r.stat, metro,
+          name: last.as ?? r.stat.team.name,
+          first: points[0].y, last: last.y,
+          seasons: t.seasons, w: t.w, l: t.l, pct: t.pct, titles: t.titles, finalsLost: t.finalsLost,
+          composite: score(t).composite, index: 0,
+          current: metro === home && metro === r.stat.team.metro && !r.stat.team.inactive,
+        });
+      }
     }
-    leagueStats.sort((a, b) => b.composite - a.composite).forEach((s, i) => (s.leagueRank = i + 1));
-    stats.push(...leagueStats);
+    rows.map((r) => r.stat).sort((a, b) => b.composite - a.composite).forEach((s, i) => (s.leagueRank = i + 1));
+    stats.push(...rows.map((r) => r.stat));
   }
 
   stats.sort((a, b) => b.composite - a.composite);
@@ -106,18 +160,23 @@ export function compute(data: Dataset, opts: Options): Result {
   const toIndex = (c: number) => (max > min ? ((c - min) / (max - min)) * 100 : 50);
   stats.forEach((s, i) => { s.rank = i + 1; s.index = toIndex(s.composite); });
 
-  const groups = new Map<string, TeamStat[]>();
-  for (const s of stats) {
-    const g = groups.get(s.team.metro);
-    if (g) g.push(s); else groups.set(s.team.metro, [s]);
+  const groups = new Map<string, CitySpell[]>();
+  for (const s of spells) {
+    // A short stay can score outside the range set by whole franchises, so keep it on the scale.
+    s.index = Math.max(0, Math.min(100, toIndex(s.composite)));
+    const g = groups.get(s.metro);
+    if (g) g.push(s); else groups.set(s.metro, [s]);
   }
   const metros: MetroStat[] = [...groups].map(([name, teams]) => {
-    const composite = teams.reduce((a, s) => a + s.composite, 0) / teams.length;
+    // Weighted by seasons, so a two-year stopover doesn't count like a sixty-year stay.
+    const n = teams.reduce((a, s) => a + s.seasons, 0);
+    const composite = teams.reduce((a, s) => a + s.composite * s.seasons, 0) / n;
     const w = teams.reduce((a, s) => a + s.w, 0);
     const l = teams.reduce((a, s) => a + s.l, 0);
     const m = data.metros[name];
+    teams.sort((a, b) => Number(b.current) - Number(a.current) || b.composite - a.composite);
     return {
-      name, lat: m.lat, lon: m.lon, region: m.region, teams, composite, index: toIndex(composite),
+      name, lat: m.lat, lon: m.lon, region: m.region, teams, composite, index: Math.max(0, Math.min(100, toIndex(composite))),
       pct: w / (w + l), titles: teams.reduce((a, s) => a + s.titles, 0),
       finalsLost: teams.reduce((a, s) => a + s.finalsLost, 0), rank: 0,
     };
