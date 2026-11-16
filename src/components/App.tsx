@@ -101,7 +101,6 @@ export function App() {
     return s?.live ? [`${l} ${seasonLabel(l, s.y)}`] : [];
   });
   const liveNote = live.length ? `Under way now: ${list(live)}. Unfinished seasons are left out unless you switch this on` : "No season is in progress right now";
-  const checked = new Date(data.generatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
   const top = result.teams[0];
   const bottom = result.teams[result.teams.length - 1];
 
@@ -205,12 +204,6 @@ export function App() {
             </section>
           </main>
 
-          <footer className="border-t border-line">
-            <div className="mx-auto flex max-w-[1280px] flex-col gap-2 px-4 py-8 text-[13px] leading-5 text-ink-3 sm:px-8 md:flex-row md:items-center md:justify-between">
-              <p>Regular season records from ESPN and the NHL, updated {checked}</p>
-              <p>A fan project, not affiliated with any league or team. Logos belong to their owners</p>
-            </div>
-          </footer>
 
           <Welcome open={welcome} teams={data.teams} state={state} set={set} min={MIN} max={MAX} onDone={finishWelcome} />
           <Tune open={tuning} onClose={() => setTuning(false)} state={state} set={set} liveNote={liveNote} />
