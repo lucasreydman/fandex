@@ -1,7 +1,7 @@
 "use client";
 
-import NumberFlow from "@number-flow/react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
+import { useState } from "react";
 import type { Mode, State } from "@/lib/state";
 import { Segmented, Switch } from "./ui";
 
@@ -43,23 +43,53 @@ export function Ruler({ min, max, value, onChange, label }: { min: number; max: 
   );
 }
 
+/**
+ * The year itself is the control: click it and type. The minus and plus keys
+ * beside it nudge one year, and so do the arrow keys while typing.
+ */
 export function Stepper({ value, min, max, onChange, label }: { value: number; min: number; max: number; onChange: (v: number) => void; label: string }) {
-  const btn = "grid size-9 place-items-center rounded-[10px] text-ink-2 transition-[background-color,color,transform] duration-150 hover:bg-raised hover:text-ink active:scale-[0.97] disabled:opacity-30";
+  const [draft, setDraft] = useState<string | null>(null);
+  const clamp = (v: number) => Math.max(min, Math.min(max, v));
+  const commit = (text: string) => {
+    const n = Number(text);
+    if (text.length === 4 && Number.isFinite(n)) onChange(clamp(n));
+  };
+  const btn = "grid size-9 place-items-center rounded-[10px] border border-line-2 bg-card text-ink-2 transition-[background-color,color,transform] duration-150 hover:bg-raised hover:text-ink active:scale-[0.97] disabled:opacity-30";
   return (
-    <div className="flex items-center gap-1">
-      <button type="button" aria-label={`${label}: one year earlier`} className={btn} disabled={value <= min} onClick={() => onChange(value - 1)}>
-        <ChevronLeft size={18} strokeWidth={1.5} />
-      </button>
-      <NumberFlow
-        value={value}
-        format={{ useGrouping: false }}
-        className="display h-[72px] text-[72px] text-ink [--number-flow-mask-height:0.1em] sm:h-[88px] sm:text-[88px]"
-        style={{ lineHeight: 1 }}
+    <div className="flex items-center gap-4">
+      <input
+        type="text"
+        inputMode="numeric"
+        maxLength={4}
         aria-label={label}
+        title="Type a year"
+        value={draft ?? String(value)}
+        onFocus={(e) => e.currentTarget.select()}
+        onChange={(e) => {
+          const text = e.target.value.replace(/\D/g, "").slice(0, 4);
+          setDraft(text);
+          commit(text);
+        }}
+        onBlur={() => setDraft(null)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") e.currentTarget.blur();
+          if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+            e.preventDefault();
+            setDraft(null);
+            onChange(clamp(value + (e.key === "ArrowUp" ? 1 : -1)));
+          }
+        }}
+        className="display w-[4.1ch] cursor-text rounded-none border-b-2 border-dashed border-line-2 bg-transparent text-[72px] text-ink outline-none transition-colors duration-150 hover:border-ink-3 focus:border-solid focus:border-ink sm:text-[88px]"
+        style={{ lineHeight: 1.05 }}
       />
-      <button type="button" aria-label={`${label}: one year later`} className={btn} disabled={value >= max} onClick={() => onChange(value + 1)}>
-        <ChevronRight size={18} strokeWidth={1.5} />
-      </button>
+      <div className="flex gap-2">
+        <button type="button" aria-label={`${label}: one year earlier`} className={btn} disabled={value <= min} onClick={() => onChange(value - 1)}>
+          <Minus size={16} strokeWidth={1.5} />
+        </button>
+        <button type="button" aria-label={`${label}: one year later`} className={btn} disabled={value >= max} onClick={() => onChange(value + 1)}>
+          <Plus size={16} strokeWidth={1.5} />
+        </button>
+      </div>
     </div>
   );
 }
@@ -101,7 +131,7 @@ export function YearDial({
         </div>
       ) : (
         <div className="mt-4">
-          <div className="-ml-2 flex flex-wrap items-center gap-x-2">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <Stepper value={year} min={min} max={mode === "custom" ? to : max} onChange={(v) => set({ year: clampYear(v) })} label={mode === "birth" ? "Birth year" : "First season"} />
             {mode === "custom" && (
               <>

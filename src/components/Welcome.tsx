@@ -70,7 +70,7 @@ export function Welcome({
             <p className="mt-3 max-w-[32rem] text-[15px] leading-[22px] text-ink-2">
               Fandex scores every NFL, NBA, MLB and NHL season on one scale. Start with your own lifetime; you can switch to all time or any era later
             </p>
-            <div className="-ml-2 mt-6">
+            <div className="mt-6">
               <Stepper value={state.year} min={min} max={max} onChange={(v) => set({ mode: "birth", year: Math.max(min, Math.min(max, v)) })} label="Birth year" />
             </div>
             <div className="mt-2">
