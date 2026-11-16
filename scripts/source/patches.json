@@ -1,0 +1,2506 @@
+{
+  "NFL": {
+    "1922": {
+      "defunct:Canton Bulldogs": [
+        10,
+        0,
+        2
+      ],
+      "Chicago Bears": [
+        9,
+        3,
+        0
+      ],
+      "Arizona Cardinals": [
+        8,
+        3,
+        0
+      ],
+      "defunct:Toledo Maroons": [
+        5,
+        2,
+        2
+      ],
+      "defunct:Rock Island Independents": [
+        4,
+        2,
+        1
+      ],
+      "defunct:Racine Legion": [
+        6,
+        4,
+        1
+      ],
+      "defunct:Dayton Triangles": [
+        4,
+        3,
+        1
+      ],
+      "Green Bay Packers": [
+        4,
+        3,
+        3
+      ],
+      "defunct:Buffalo All-Americans": [
+        5,
+        4,
+        1
+      ],
+      "defunct:Akron Pros": [
+        3,
+        5,
+        2
+      ],
+      "defunct:Milwaukee Badgers": [
+        2,
+        4,
+        3
+      ],
+      "defunct:Oorang Indians": [
+        3,
+        6,
+        0
+      ],
+      "defunct:Minneapolis Marines": [
+        1,
+        3,
+        0
+      ],
+      "defunct:Louisville Brecks": [
+        1,
+        3,
+        0
+      ],
+      "defunct:Evansville Crimson Giants": [
+        0,
+        3,
+        0
+      ],
+      "defunct:Rochester Jeffersons": [
+        0,
+        4,
+        1
+      ],
+      "defunct:Hammond Pros": [
+        0,
+        5,
+        1
+      ],
+      "defunct:Columbus Panhandles": [
+        0,
+        8,
+        0
+      ]
+    },
+    "1923": {
+      "defunct:Canton Bulldogs": [
+        11,
+        0,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        2,
+        1
+      ],
+      "Green Bay Packers": [
+        7,
+        2,
+        1
+      ],
+      "defunct:Milwaukee Badgers": [
+        7,
+        2,
+        3
+      ],
+      "defunct:Cleveland Indians": [
+        3,
+        1,
+        3
+      ],
+      "Arizona Cardinals": [
+        8,
+        4,
+        0
+      ],
+      "defunct:Duluth Kelleys": [
+        4,
+        3,
+        0
+      ],
+      "defunct:Buffalo All-Americans": [
+        5,
+        4,
+        3
+      ],
+      "defunct:Columbus Tigers": [
+        5,
+        4,
+        1
+      ],
+      "defunct:Toledo Maroons": [
+        3,
+        3,
+        2
+      ],
+      "defunct:Racine Legion": [
+        4,
+        4,
+        2
+      ],
+      "defunct:Rock Island Independents": [
+        2,
+        3,
+        3
+      ],
+      "defunct:Minneapolis Marines": [
+        2,
+        5,
+        2
+      ],
+      "defunct:St. Louis All-Stars": [
+        1,
+        4,
+        2
+      ],
+      "defunct:Hammond Pros": [
+        1,
+        5,
+        1
+      ],
+      "defunct:Akron Pros": [
+        1,
+        6,
+        0
+      ],
+      "defunct:Dayton Triangles": [
+        1,
+        6,
+        1
+      ],
+      "defunct:Oorang Indians": [
+        1,
+        10,
+        0
+      ],
+      "defunct:Louisville Brecks": [
+        0,
+        3,
+        0
+      ],
+      "defunct:Rochester Jeffersons": [
+        0,
+        4,
+        0
+      ]
+    },
+    "1925": {
+      "Arizona Cardinals": [
+        11,
+        2,
+        1
+      ],
+      "defunct:Pottsville Maroons": [
+        10,
+        2,
+        0
+      ],
+      "defunct:Detroit Panthers": [
+        8,
+        2,
+        2
+      ],
+      "defunct:Akron Pros": [
+        4,
+        2,
+        2
+      ],
+      "New York Giants": [
+        8,
+        4,
+        0
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        13,
+        7,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        5,
+        3
+      ],
+      "defunct:Rock Island Independents": [
+        5,
+        3,
+        3
+      ],
+      "Green Bay Packers": [
+        8,
+        5,
+        0
+      ],
+      "defunct:Providence Steam Roller": [
+        6,
+        5,
+        1
+      ],
+      "defunct:Canton Bulldogs": [
+        4,
+        4,
+        0
+      ],
+      "defunct:Cleveland Bulldogs": [
+        5,
+        8,
+        1
+      ],
+      "defunct:Kansas City Cowboys": [
+        2,
+        5,
+        1
+      ],
+      "defunct:Hammond Pros": [
+        1,
+        4,
+        0
+      ],
+      "defunct:Buffalo Bisons": [
+        1,
+        6,
+        2
+      ],
+      "defunct:Duluth Kelleys": [
+        0,
+        3,
+        0
+      ],
+      "defunct:Rochester Jeffersons": [
+        0,
+        6,
+        1
+      ],
+      "defunct:Milwaukee Badgers": [
+        0,
+        6,
+        0
+      ],
+      "defunct:Dayton Triangles": [
+        0,
+        7,
+        1
+      ],
+      "defunct:Columbus Tigers": [
+        0,
+        9,
+        0
+      ]
+    },
+    "1927": {
+      "New York Giants": [
+        11,
+        1,
+        1
+      ],
+      "Green Bay Packers": [
+        7,
+        2,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        3,
+        2
+      ],
+      "defunct:Cleveland Bulldogs": [
+        8,
+        4,
+        1
+      ],
+      "defunct:Providence Steam Roller": [
+        8,
+        5,
+        1
+      ],
+      "defunct:New York Yankees": [
+        7,
+        8,
+        1
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        6,
+        9,
+        3
+      ],
+      "defunct:Pottsville Maroons": [
+        5,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        3,
+        7,
+        1
+      ],
+      "defunct:Dayton Triangles": [
+        1,
+        6,
+        1
+      ],
+      "defunct:Duluth Eskimos": [
+        1,
+        8,
+        0
+      ],
+      "defunct:Buffalo Bisons": [
+        0,
+        5,
+        0
+      ]
+    },
+    "1928": {
+      "defunct:Providence Steam Roller": [
+        8,
+        1,
+        2
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        11,
+        3,
+        2
+      ],
+      "defunct:Detroit Wolverines": [
+        7,
+        2,
+        1
+      ],
+      "Green Bay Packers": [
+        6,
+        4,
+        3
+      ],
+      "Chicago Bears": [
+        7,
+        5,
+        1
+      ],
+      "New York Giants": [
+        4,
+        7,
+        2
+      ],
+      "defunct:New York Yankees": [
+        4,
+        8,
+        1
+      ],
+      "defunct:Pottsville Maroons": [
+        2,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        1,
+        5,
+        0
+      ],
+      "defunct:Dayton Triangles": [
+        0,
+        7,
+        0
+      ]
+    },
+    "1929": {
+      "Green Bay Packers": [
+        12,
+        0,
+        1
+      ],
+      "New York Giants": [
+        13,
+        1,
+        1
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        10,
+        4,
+        5
+      ],
+      "Arizona Cardinals": [
+        6,
+        6,
+        1
+      ],
+      "defunct:Boston Bulldogs": [
+        4,
+        4,
+        0
+      ],
+      "defunct:Staten Island Stapletons": [
+        3,
+        4,
+        3
+      ],
+      "defunct:Providence Steam Roller": [
+        4,
+        6,
+        2
+      ],
+      "defunct:Orange Tornadoes": [
+        3,
+        5,
+        4
+      ],
+      "Chicago Bears": [
+        4,
+        9,
+        2
+      ],
+      "defunct:Buffalo Bisons": [
+        1,
+        7,
+        1
+      ],
+      "defunct:Minneapolis Red Jackets": [
+        1,
+        9,
+        0
+      ],
+      "defunct:Dayton Triangles": [
+        0,
+        6,
+        0
+      ]
+    },
+    "1930": {
+      "Green Bay Packers": [
+        10,
+        3,
+        1
+      ],
+      "New York Giants": [
+        13,
+        4,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        4,
+        1
+      ],
+      "defunct:Brooklyn Dodgers": [
+        7,
+        4,
+        1
+      ],
+      "defunct:Providence Steam Roller": [
+        6,
+        4,
+        1
+      ],
+      "defunct:Staten Island Stapletons": [
+        5,
+        5,
+        2
+      ],
+      "Arizona Cardinals": [
+        5,
+        6,
+        2
+      ],
+      "Detroit Lions": [
+        5,
+        6,
+        3
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        4,
+        13,
+        1
+      ],
+      "defunct:Minneapolis Red Jackets": [
+        1,
+        7,
+        1
+      ],
+      "defunct:Newark Tornadoes": [
+        1,
+        10,
+        1
+      ]
+    },
+    "1931": {
+      "Green Bay Packers": [
+        12,
+        2,
+        0
+      ],
+      "Detroit Lions": [
+        11,
+        3,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        5,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        4,
+        0
+      ],
+      "New York Giants": [
+        7,
+        6,
+        1
+      ],
+      "defunct:Providence Steam Roller": [
+        4,
+        4,
+        3
+      ],
+      "defunct:Staten Island Stapletons": [
+        4,
+        6,
+        1
+      ],
+      "defunct:Cleveland Indians": [
+        2,
+        8,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        2,
+        12,
+        0
+      ],
+      "defunct:Frankford Yellow Jackets": [
+        1,
+        6,
+        1
+      ]
+    },
+    "1932": {
+      "Chicago Bears": [
+        7,
+        1,
+        6
+      ],
+      "Green Bay Packers": [
+        10,
+        3,
+        1
+      ],
+      "Detroit Lions": [
+        6,
+        2,
+        4
+      ],
+      "Washington Commanders": [
+        4,
+        4,
+        2
+      ],
+      "New York Giants": [
+        4,
+        6,
+        2
+      ],
+      "defunct:Brooklyn Dodgers": [
+        3,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        2,
+        6,
+        2
+      ],
+      "defunct:Staten Island Stapletons": [
+        2,
+        7,
+        3
+      ]
+    },
+    "1934": {
+      "New York Giants": [
+        8,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        6,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        4,
+        7,
+        0
+      ],
+      "Philadelphia Eagles": [
+        4,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        10,
+        0
+      ],
+      "Chicago Bears": [
+        13,
+        0,
+        0
+      ],
+      "Detroit Lions": [
+        10,
+        3,
+        0
+      ],
+      "Green Bay Packers": [
+        7,
+        6,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        6,
+        0
+      ],
+      "defunct:St. Louis Gunners": [
+        1,
+        2,
+        0
+      ],
+      "defunct:Cincinnati Reds": [
+        0,
+        8,
+        0
+      ]
+    },
+    "1936": {
+      "Washington Commanders": [
+        7,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        6,
+        0
+      ],
+      "New York Giants": [
+        5,
+        6,
+        1
+      ],
+      "defunct:Brooklyn Dodgers": [
+        3,
+        8,
+        1
+      ],
+      "Philadelphia Eagles": [
+        1,
+        11,
+        0
+      ],
+      "Green Bay Packers": [
+        10,
+        1,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        3,
+        0
+      ],
+      "Detroit Lions": [
+        8,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        3,
+        8,
+        1
+      ]
+    },
+    "1937": {
+      "Washington Commanders": [
+        8,
+        3,
+        0
+      ],
+      "New York Giants": [
+        6,
+        3,
+        2
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        7,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        3,
+        7,
+        1
+      ],
+      "Philadelphia Eagles": [
+        2,
+        8,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        1,
+        1
+      ],
+      "Green Bay Packers": [
+        7,
+        4,
+        0
+      ],
+      "Detroit Lions": [
+        7,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        5,
+        1
+      ],
+      "Los Angeles Rams": [
+        1,
+        10,
+        0
+      ]
+    },
+    "1940": {
+      "Washington Commanders": [
+        9,
+        2,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        8,
+        3,
+        0
+      ],
+      "New York Giants": [
+        6,
+        4,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        7,
+        2
+      ],
+      "Philadelphia Eagles": [
+        1,
+        10,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        3,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        4,
+        1
+      ],
+      "Detroit Lions": [
+        5,
+        5,
+        1
+      ],
+      "Los Angeles Rams": [
+        4,
+        6,
+        1
+      ],
+      "Arizona Cardinals": [
+        2,
+        7,
+        2
+      ]
+    },
+    "1941": {
+      "New York Giants": [
+        8,
+        3,
+        0
+      ],
+      "defunct:Brooklyn Dodgers": [
+        7,
+        4,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        5,
+        0
+      ],
+      "Philadelphia Eagles": [
+        2,
+        8,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        1,
+        9,
+        1
+      ],
+      "Chicago Bears": [
+        10,
+        1,
+        0
+      ],
+      "Green Bay Packers": [
+        10,
+        1,
+        0
+      ],
+      "Detroit Lions": [
+        4,
+        6,
+        1
+      ],
+      "Arizona Cardinals": [
+        3,
+        7,
+        1
+      ],
+      "Los Angeles Rams": [
+        2,
+        9,
+        0
+      ]
+    },
+    "1942": {
+      "Washington Commanders": [
+        10,
+        1,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        7,
+        4,
+        0
+      ],
+      "New York Giants": [
+        5,
+        5,
+        1
+      ],
+      "defunct:Brooklyn Dodgers": [
+        3,
+        8,
+        0
+      ],
+      "Philadelphia Eagles": [
+        2,
+        9,
+        0
+      ],
+      "Chicago Bears": [
+        11,
+        0,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        2,
+        1
+      ],
+      "Los Angeles Rams": [
+        5,
+        6,
+        0
+      ],
+      "Arizona Cardinals": [
+        3,
+        8,
+        0
+      ],
+      "Detroit Lions": [
+        0,
+        11,
+        0
+      ]
+    },
+    "1943": {
+      "Washington Commanders": [
+        6,
+        3,
+        1
+      ],
+      "New York Giants": [
+        6,
+        3,
+        1
+      ],
+      "defunct:Phil-Pitt Steagles": [
+        5,
+        4,
+        1
+      ],
+      "defunct:Brooklyn Dodgers": [
+        2,
+        8,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        1,
+        1
+      ],
+      "Green Bay Packers": [
+        7,
+        2,
+        1
+      ],
+      "Detroit Lions": [
+        3,
+        6,
+        1
+      ],
+      "Arizona Cardinals": [
+        0,
+        10,
+        0
+      ]
+    },
+    "1951": {
+      "Cleveland Browns": [
+        11,
+        1,
+        0
+      ],
+      "New York Giants": [
+        9,
+        2,
+        1
+      ],
+      "Washington Commanders": [
+        5,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        7,
+        1
+      ],
+      "Philadelphia Eagles": [
+        4,
+        8,
+        0
+      ],
+      "Arizona Cardinals": [
+        3,
+        9,
+        0
+      ],
+      "Los Angeles Rams": [
+        8,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        4,
+        1
+      ],
+      "Detroit Lions": [
+        7,
+        4,
+        1
+      ],
+      "Chicago Bears": [
+        7,
+        5,
+        0
+      ],
+      "Green Bay Packers": [
+        3,
+        9,
+        0
+      ],
+      "defunct:New York Yanks": [
+        1,
+        9,
+        2
+      ]
+    },
+    "1952": {
+      "Cleveland Browns": [
+        8,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        5,
+        0
+      ],
+      "New York Giants": [
+        7,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        4,
+        8,
+        0
+      ],
+      "Washington Commanders": [
+        4,
+        8,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        3,
+        0
+      ],
+      "Los Angeles Rams": [
+        9,
+        3,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        5,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        5,
+        7,
+        0
+      ],
+      "defunct:Dallas Texans": [
+        1,
+        11,
+        0
+      ]
+    },
+    "1953": {
+      "Cleveland Browns": [
+        11,
+        1,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        4,
+        1
+      ],
+      "Washington Commanders": [
+        6,
+        5,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        6,
+        0
+      ],
+      "New York Giants": [
+        3,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        1,
+        10,
+        1
+      ],
+      "Detroit Lions": [
+        10,
+        2,
+        0
+      ],
+      "San Francisco 49ers": [
+        9,
+        3,
+        0
+      ],
+      "Los Angeles Rams": [
+        8,
+        3,
+        1
+      ],
+      "Chicago Bears": [
+        3,
+        8,
+        1
+      ],
+      "Indianapolis Colts": [
+        3,
+        9,
+        0
+      ],
+      "Green Bay Packers": [
+        2,
+        9,
+        1
+      ]
+    },
+    "1954": {
+      "Cleveland Browns": [
+        9,
+        3,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        4,
+        1
+      ],
+      "New York Giants": [
+        7,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        3,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        2,
+        10,
+        0
+      ],
+      "Detroit Lions": [
+        9,
+        2,
+        1
+      ],
+      "Chicago Bears": [
+        8,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        4,
+        1
+      ],
+      "Los Angeles Rams": [
+        6,
+        5,
+        1
+      ],
+      "Green Bay Packers": [
+        4,
+        8,
+        0
+      ],
+      "Indianapolis Colts": [
+        3,
+        9,
+        0
+      ]
+    },
+    "1958": {
+      "New York Giants": [
+        9,
+        3,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        3,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        7,
+        4,
+        1
+      ],
+      "Washington Commanders": [
+        4,
+        7,
+        1
+      ],
+      "Arizona Cardinals": [
+        2,
+        9,
+        1
+      ],
+      "Philadelphia Eagles": [
+        2,
+        9,
+        1
+      ],
+      "Indianapolis Colts": [
+        9,
+        3,
+        0
+      ],
+      "Los Angeles Rams": [
+        8,
+        4,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        6,
+        6,
+        0
+      ],
+      "Detroit Lions": [
+        4,
+        7,
+        1
+      ],
+      "Green Bay Packers": [
+        1,
+        10,
+        1
+      ]
+    },
+    "1959": {
+      "New York Giants": [
+        10,
+        2,
+        0
+      ],
+      "Philadelphia Eagles": [
+        7,
+        5,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        5,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        6,
+        5,
+        1
+      ],
+      "Washington Commanders": [
+        3,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        2,
+        10,
+        0
+      ],
+      "Indianapolis Colts": [
+        9,
+        3,
+        0
+      ],
+      "Chicago Bears": [
+        8,
+        4,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        5,
+        0
+      ],
+      "Green Bay Packers": [
+        7,
+        5,
+        0
+      ],
+      "Detroit Lions": [
+        3,
+        8,
+        1
+      ],
+      "Los Angeles Rams": [
+        2,
+        10,
+        0
+      ]
+    },
+    "1962": {
+      "Tennessee Titans": [
+        11,
+        3,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        4,
+        1
+      ],
+      "Buffalo Bills": [
+        7,
+        6,
+        1
+      ],
+      "New York Jets": [
+        5,
+        9,
+        0
+      ],
+      "Kansas City Chiefs": [
+        11,
+        3,
+        0
+      ],
+      "Denver Broncos": [
+        7,
+        7,
+        0
+      ],
+      "Los Angeles Chargers": [
+        4,
+        10,
+        0
+      ],
+      "Las Vegas Raiders": [
+        1,
+        13,
+        0
+      ],
+      "New York Giants": [
+        12,
+        2,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        9,
+        5,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        6,
+        1
+      ],
+      "Washington Commanders": [
+        5,
+        7,
+        2
+      ],
+      "Dallas Cowboys": [
+        5,
+        8,
+        1
+      ],
+      "Arizona Cardinals": [
+        4,
+        9,
+        1
+      ],
+      "Philadelphia Eagles": [
+        3,
+        10,
+        1
+      ],
+      "Green Bay Packers": [
+        13,
+        1,
+        0
+      ],
+      "Detroit Lions": [
+        11,
+        3,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        5,
+        0
+      ],
+      "Indianapolis Colts": [
+        7,
+        7,
+        0
+      ],
+      "San Francisco 49ers": [
+        6,
+        8,
+        0
+      ],
+      "Minnesota Vikings": [
+        2,
+        11,
+        1
+      ],
+      "Los Angeles Rams": [
+        1,
+        12,
+        1
+      ]
+    },
+    "1964": {
+      "Buffalo Bills": [
+        12,
+        2,
+        0
+      ],
+      "New England Patriots": [
+        10,
+        3,
+        1
+      ],
+      "New York Jets": [
+        5,
+        8,
+        1
+      ],
+      "Tennessee Titans": [
+        4,
+        10,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        5,
+        1
+      ],
+      "Kansas City Chiefs": [
+        7,
+        7,
+        0
+      ],
+      "Las Vegas Raiders": [
+        5,
+        7,
+        2
+      ],
+      "Denver Broncos": [
+        2,
+        11,
+        1
+      ],
+      "Cleveland Browns": [
+        10,
+        3,
+        1
+      ],
+      "Arizona Cardinals": [
+        9,
+        3,
+        2
+      ],
+      "Philadelphia Eagles": [
+        6,
+        8,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        8,
+        0
+      ],
+      "Dallas Cowboys": [
+        5,
+        8,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        9,
+        0
+      ],
+      "New York Giants": [
+        2,
+        10,
+        2
+      ],
+      "Indianapolis Colts": [
+        12,
+        2,
+        0
+      ],
+      "Green Bay Packers": [
+        8,
+        5,
+        1
+      ],
+      "Minnesota Vikings": [
+        8,
+        5,
+        1
+      ],
+      "Detroit Lions": [
+        7,
+        5,
+        2
+      ],
+      "Los Angeles Rams": [
+        5,
+        7,
+        2
+      ],
+      "Chicago Bears": [
+        5,
+        9,
+        0
+      ],
+      "San Francisco 49ers": [
+        4,
+        10,
+        0
+      ]
+    },
+    "1965": {
+      "Buffalo Bills": [
+        10,
+        3,
+        1
+      ],
+      "New York Jets": [
+        5,
+        8,
+        1
+      ],
+      "New England Patriots": [
+        4,
+        8,
+        2
+      ],
+      "Tennessee Titans": [
+        4,
+        10,
+        0
+      ],
+      "Los Angeles Chargers": [
+        9,
+        2,
+        3
+      ],
+      "Las Vegas Raiders": [
+        8,
+        5,
+        1
+      ],
+      "Kansas City Chiefs": [
+        7,
+        5,
+        2
+      ],
+      "Denver Broncos": [
+        4,
+        10,
+        0
+      ],
+      "Cleveland Browns": [
+        11,
+        3,
+        0
+      ],
+      "Dallas Cowboys": [
+        7,
+        7,
+        0
+      ],
+      "New York Giants": [
+        7,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        6,
+        8,
+        0
+      ],
+      "Philadelphia Eagles": [
+        5,
+        9,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        9,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        12,
+        0
+      ],
+      "Green Bay Packers": [
+        10,
+        3,
+        1
+      ],
+      "Indianapolis Colts": [
+        10,
+        3,
+        1
+      ],
+      "Chicago Bears": [
+        9,
+        5,
+        0
+      ],
+      "San Francisco 49ers": [
+        7,
+        6,
+        1
+      ],
+      "Minnesota Vikings": [
+        7,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        7,
+        1
+      ],
+      "Los Angeles Rams": [
+        4,
+        10,
+        0
+      ]
+    },
+    "1967": {
+      "Tennessee Titans": [
+        9,
+        4,
+        1
+      ],
+      "New York Jets": [
+        8,
+        5,
+        1
+      ],
+      "Buffalo Bills": [
+        4,
+        10,
+        0
+      ],
+      "Miami Dolphins": [
+        4,
+        10,
+        0
+      ],
+      "New England Patriots": [
+        3,
+        10,
+        1
+      ],
+      "Las Vegas Raiders": [
+        13,
+        1,
+        0
+      ],
+      "Kansas City Chiefs": [
+        9,
+        5,
+        0
+      ],
+      "Los Angeles Chargers": [
+        8,
+        5,
+        1
+      ],
+      "Denver Broncos": [
+        3,
+        11,
+        0
+      ],
+      "Dallas Cowboys": [
+        9,
+        5,
+        0
+      ],
+      "Philadelphia Eagles": [
+        6,
+        7,
+        1
+      ],
+      "Washington Commanders": [
+        5,
+        6,
+        3
+      ],
+      "New Orleans Saints": [
+        3,
+        11,
+        0
+      ],
+      "Green Bay Packers": [
+        9,
+        4,
+        1
+      ],
+      "Chicago Bears": [
+        7,
+        6,
+        1
+      ],
+      "Detroit Lions": [
+        5,
+        7,
+        2
+      ],
+      "Minnesota Vikings": [
+        3,
+        8,
+        3
+      ],
+      "Cleveland Browns": [
+        9,
+        5,
+        0
+      ],
+      "New York Giants": [
+        7,
+        7,
+        0
+      ],
+      "Arizona Cardinals": [
+        6,
+        7,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        4,
+        9,
+        1
+      ],
+      "Los Angeles Rams": [
+        11,
+        1,
+        2
+      ],
+      "Indianapolis Colts": [
+        11,
+        1,
+        2
+      ],
+      "San Francisco 49ers": [
+        7,
+        7,
+        0
+      ],
+      "Atlanta Falcons": [
+        1,
+        12,
+        1
+      ]
+    },
+    "1968": {
+      "New York Jets": [
+        11,
+        3,
+        0
+      ],
+      "Tennessee Titans": [
+        7,
+        7,
+        0
+      ],
+      "Miami Dolphins": [
+        5,
+        8,
+        1
+      ],
+      "New England Patriots": [
+        4,
+        10,
+        0
+      ],
+      "Buffalo Bills": [
+        1,
+        12,
+        1
+      ],
+      "Las Vegas Raiders": [
+        12,
+        2,
+        0
+      ],
+      "Kansas City Chiefs": [
+        12,
+        2,
+        0
+      ],
+      "Los Angeles Chargers": [
+        9,
+        5,
+        0
+      ],
+      "Denver Broncos": [
+        5,
+        9,
+        0
+      ],
+      "Cincinnati Bengals": [
+        3,
+        11,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        2,
+        0
+      ],
+      "New York Giants": [
+        7,
+        7,
+        0
+      ],
+      "Washington Commanders": [
+        5,
+        9,
+        0
+      ],
+      "Philadelphia Eagles": [
+        2,
+        12,
+        0
+      ],
+      "Minnesota Vikings": [
+        8,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        7,
+        7,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        7,
+        1
+      ],
+      "Detroit Lions": [
+        4,
+        8,
+        2
+      ],
+      "Cleveland Browns": [
+        10,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        9,
+        4,
+        1
+      ],
+      "New Orleans Saints": [
+        4,
+        9,
+        1
+      ],
+      "Pittsburgh Steelers": [
+        2,
+        11,
+        1
+      ],
+      "Indianapolis Colts": [
+        13,
+        1,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        3,
+        1
+      ],
+      "San Francisco 49ers": [
+        7,
+        6,
+        1
+      ],
+      "Atlanta Falcons": [
+        2,
+        12,
+        0
+      ]
+    },
+    "1970": {
+      "Cincinnati Bengals": [
+        8,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        7,
+        7,
+        0
+      ],
+      "Pittsburgh Steelers": [
+        5,
+        9,
+        0
+      ],
+      "Tennessee Titans": [
+        3,
+        10,
+        1
+      ],
+      "Indianapolis Colts": [
+        11,
+        2,
+        1
+      ],
+      "Miami Dolphins": [
+        10,
+        4,
+        0
+      ],
+      "New York Jets": [
+        4,
+        10,
+        0
+      ],
+      "Buffalo Bills": [
+        3,
+        10,
+        1
+      ],
+      "New England Patriots": [
+        2,
+        12,
+        0
+      ],
+      "Las Vegas Raiders": [
+        8,
+        4,
+        2
+      ],
+      "Kansas City Chiefs": [
+        7,
+        5,
+        2
+      ],
+      "Los Angeles Chargers": [
+        5,
+        6,
+        3
+      ],
+      "Denver Broncos": [
+        5,
+        8,
+        1
+      ],
+      "Minnesota Vikings": [
+        12,
+        2,
+        0
+      ],
+      "Detroit Lions": [
+        10,
+        4,
+        0
+      ],
+      "Green Bay Packers": [
+        6,
+        8,
+        0
+      ],
+      "Chicago Bears": [
+        6,
+        8,
+        0
+      ],
+      "Dallas Cowboys": [
+        10,
+        4,
+        0
+      ],
+      "New York Giants": [
+        9,
+        5,
+        0
+      ],
+      "Arizona Cardinals": [
+        8,
+        5,
+        1
+      ],
+      "Washington Commanders": [
+        6,
+        8,
+        0
+      ],
+      "Philadelphia Eagles": [
+        3,
+        10,
+        1
+      ],
+      "San Francisco 49ers": [
+        10,
+        3,
+        1
+      ],
+      "Los Angeles Rams": [
+        9,
+        4,
+        1
+      ],
+      "Atlanta Falcons": [
+        4,
+        8,
+        2
+      ],
+      "New Orleans Saints": [
+        2,
+        11,
+        1
+      ]
+    },
+    "1976": {
+      "Pittsburgh Steelers": [
+        10,
+        4,
+        0
+      ],
+      "Cincinnati Bengals": [
+        10,
+        4,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        5,
+        9,
+        0
+      ],
+      "Indianapolis Colts": [
+        11,
+        3,
+        0
+      ],
+      "New England Patriots": [
+        11,
+        3,
+        0
+      ],
+      "Miami Dolphins": [
+        6,
+        8,
+        0
+      ],
+      "New York Jets": [
+        3,
+        11,
+        0
+      ],
+      "Buffalo Bills": [
+        2,
+        12,
+        0
+      ],
+      "Las Vegas Raiders": [
+        13,
+        1,
+        0
+      ],
+      "Denver Broncos": [
+        9,
+        5,
+        0
+      ],
+      "Los Angeles Chargers": [
+        6,
+        8,
+        0
+      ],
+      "Kansas City Chiefs": [
+        5,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        0,
+        14,
+        0
+      ],
+      "Minnesota Vikings": [
+        11,
+        2,
+        1
+      ],
+      "Chicago Bears": [
+        7,
+        7,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        9,
+        0
+      ],
+      "Dallas Cowboys": [
+        11,
+        3,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        4,
+        0
+      ],
+      "Arizona Cardinals": [
+        10,
+        4,
+        0
+      ],
+      "Philadelphia Eagles": [
+        4,
+        10,
+        0
+      ],
+      "New York Giants": [
+        3,
+        11,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        3,
+        1
+      ],
+      "San Francisco 49ers": [
+        8,
+        6,
+        0
+      ],
+      "New Orleans Saints": [
+        4,
+        10,
+        0
+      ],
+      "Atlanta Falcons": [
+        4,
+        10,
+        0
+      ],
+      "Seattle Seahawks": [
+        2,
+        12,
+        0
+      ]
+    },
+    "1977": {
+      "Pittsburgh Steelers": [
+        9,
+        5,
+        0
+      ],
+      "Tennessee Titans": [
+        8,
+        6,
+        0
+      ],
+      "Cincinnati Bengals": [
+        8,
+        6,
+        0
+      ],
+      "Cleveland Browns": [
+        6,
+        8,
+        0
+      ],
+      "Indianapolis Colts": [
+        10,
+        4,
+        0
+      ],
+      "Miami Dolphins": [
+        10,
+        4,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        5,
+        0
+      ],
+      "New York Jets": [
+        3,
+        11,
+        0
+      ],
+      "Buffalo Bills": [
+        3,
+        11,
+        0
+      ],
+      "Denver Broncos": [
+        12,
+        2,
+        0
+      ],
+      "Las Vegas Raiders": [
+        11,
+        3,
+        0
+      ],
+      "Los Angeles Chargers": [
+        7,
+        7,
+        0
+      ],
+      "Seattle Seahawks": [
+        5,
+        9,
+        0
+      ],
+      "Kansas City Chiefs": [
+        2,
+        12,
+        0
+      ],
+      "Minnesota Vikings": [
+        9,
+        5,
+        0
+      ],
+      "Chicago Bears": [
+        9,
+        5,
+        0
+      ],
+      "Detroit Lions": [
+        6,
+        8,
+        0
+      ],
+      "Green Bay Packers": [
+        4,
+        10,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        2,
+        12,
+        0
+      ],
+      "Dallas Cowboys": [
+        12,
+        2,
+        0
+      ],
+      "Washington Commanders": [
+        9,
+        5,
+        0
+      ],
+      "Arizona Cardinals": [
+        7,
+        7,
+        0
+      ],
+      "Philadelphia Eagles": [
+        5,
+        9,
+        0
+      ],
+      "New York Giants": [
+        5,
+        9,
+        0
+      ],
+      "Los Angeles Rams": [
+        10,
+        4,
+        0
+      ],
+      "Atlanta Falcons": [
+        7,
+        7,
+        0
+      ],
+      "San Francisco 49ers": [
+        5,
+        9,
+        0
+      ],
+      "New Orleans Saints": [
+        3,
+        11,
+        0
+      ]
+    },
+    "1979": {
+      "Pittsburgh Steelers": [
+        12,
+        4,
+        0
+      ],
+      "Tennessee Titans": [
+        11,
+        5,
+        0
+      ],
+      "Cleveland Browns": [
+        9,
+        7,
+        0
+      ],
+      "Cincinnati Bengals": [
+        4,
+        12,
+        0
+      ],
+      "Miami Dolphins": [
+        10,
+        6,
+        0
+      ],
+      "New England Patriots": [
+        9,
+        7,
+        0
+      ],
+      "New York Jets": [
+        8,
+        8,
+        0
+      ],
+      "Buffalo Bills": [
+        7,
+        9,
+        0
+      ],
+      "Indianapolis Colts": [
+        5,
+        11,
+        0
+      ],
+      "Los Angeles Chargers": [
+        12,
+        4,
+        0
+      ],
+      "Denver Broncos": [
+        10,
+        6,
+        0
+      ],
+      "Seattle Seahawks": [
+        9,
+        7,
+        0
+      ],
+      "Las Vegas Raiders": [
+        9,
+        7,
+        0
+      ],
+      "Kansas City Chiefs": [
+        7,
+        9,
+        0
+      ],
+      "Tampa Bay Buccaneers": [
+        10,
+        6,
+        0
+      ],
+      "Chicago Bears": [
+        10,
+        6,
+        0
+      ],
+      "Minnesota Vikings": [
+        7,
+        9,
+        0
+      ],
+      "Green Bay Packers": [
+        5,
+        11,
+        0
+      ],
+      "Detroit Lions": [
+        2,
+        14,
+        0
+      ],
+      "Dallas Cowboys": [
+        11,
+        5,
+        0
+      ],
+      "Philadelphia Eagles": [
+        11,
+        5,
+        0
+      ],
+      "Washington Commanders": [
+        10,
+        6,
+        0
+      ],
+      "New York Giants": [
+        6,
+        10,
+        0
+      ],
+      "Arizona Cardinals": [
+        5,
+        11,
+        0
+      ],
+      "Los Angeles Rams": [
+        9,
+        7,
+        0
+      ],
+      "New Orleans Saints": [
+        8,
+        8,
+        0
+      ],
+      "Atlanta Falcons": [
+        6,
+        10,
+        0
+      ],
+      "San Francisco 49ers": [
+        2,
+        14,
+        0
+      ]
+    }
+  }
+}

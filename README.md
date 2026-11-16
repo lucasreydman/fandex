@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Born Lucky
 
-## Getting Started
+How your teams have really done since the year you were born. Pick a birth year (or all time, or any span of years) and one team per league; the site scores every NFL, NBA, MLB and NHL season since on one scale, ranks all 124 franchises and 49 cities, and tells you how lucky a fan you have been.
 
-First, run the development server:
+It started as a spreadsheet (`big4_win_pct_since_2005.xlsx`). The engine reproduces that sheet's numbers and a test keeps it that way.
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # http://localhost:3000
+pnpm test         # engine against the original spreadsheet
+pnpm lint && pnpm typecheck
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How the score works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Win rate** is wins / (wins + losses), regular season only. Ties are left out; NHL overtime losses count as losses.
+- **Record** is that win rate measured from .500 in units of how spread out the league is, so baseball's tight records and football's wide ones are comparable.
+- **Typical season** averages each season's standing against that year's league.
+- **Championships** counts titles above what an average club would have won (1 in n each year), so a Cup in a six-team league is worth less than one in a 32-team league.
+- The three are blended (50 / 30 / 20 by default, adjustable in the Scoring panel), short histories are pulled toward average, and the result is put on a 0 to 100 line where the best franchise in the span is 100 and the worst is 0.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All of it lives in `src/lib/engine.ts`.
 
-## Learn More
+## Data
 
-To learn more about Next.js, take a look at the following resources:
+`src/data/data.json` holds every season: MLB from 1903, NHL from 1917, NFL from 1922, NBA from 1946.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- NFL, NBA and MLB standings come from ESPN's public standings feed; NHL from the league's stats API (ESPN's hockey history has seasons with playoff games mixed in).
+- Champions and losing finalists are in `scripts/source/champions.json`, compiled from Wikipedia. Seasons newer than that file are read off the postseason scoreboard automatically.
+- A few old NFL seasons are missing clubs in the feed; `scripts/source/patches.json` fills them.
+- Relocated franchises keep their history through team ids.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`pnpm data` refreshes it. Finished seasons are kept as they are and only the recent ones are refetched; every request retries; a season that fails or does not add up (wins must equal losses) keeps its last good copy; and the file is only rewritten when something actually changed. `pnpm data:full` refetches everything.
 
-## Deploy on Vercel
+A GitHub Action (`.github/workflows/refresh-data.yml`) runs this every morning, runs the tests, and commits the file only when both pass, which redeploys the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`pnpm map` redraws the base map (`src/data/map.json`) from Natural Earth shapes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Stack
+
+Next.js (App Router), Tailwind CSS, Motion for layout animation, NumberFlow for figures. No database and no API keys: the page is static and all scoring runs in the browser, so every control responds instantly and any view can be shared as a link.
+
+Not affiliated with any league or team. Logos are loaded from ESPN and belong to their owners.

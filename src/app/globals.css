@@ -1,26 +1,209 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f6f5f2;
+  --card: #fdfcfa;
+  --raised: #eeece7;
+  --text: #1b1a17;
+  --text-2: #57534c;
+  --text-3: #757067;
+  --line: rgb(27 26 23 / 0.1);
+  --line-2: rgb(27 26 23 / 0.18);
+  --accent: #c8361d;
+  --accent-ink: #ffffff;
+  --hot: #c8361d;
+  --cold: #2c5f8d;
+  --heat-0: #e6e3dc;
+  --shadow: 0 8px 24px rgb(0 0 0 / 0.08);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #131312;
+  --card: #1a1a18;
+  --raised: #252522;
+  --text: #eeece6;
+  --text-2: #aaa69d;
+  --text-3: #8a867d;
+  --line: rgb(238 236 230 / 0.09);
+  --line-2: rgb(238 236 230 / 0.18);
+  --accent: #ee6a4d;
+  --accent-ink: #16130f;
+  --hot: #ee6a4d;
+  --cold: #5b9bd1;
+  --heat-0: #2c2c29;
+  --shadow: 0 8px 24px rgb(0 0 0 / 0.4);
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-raised: var(--raised);
+  --color-ink: var(--text);
+  --color-ink-2: var(--text-2);
+  --color-ink-3: var(--text-3);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-hot: var(--hot);
+  --color-cold: var(--cold);
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex), ui-monospace, monospace;
+  --ease-out: var(--ease);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scoreboard figures: the condensed cut of the interface family. */
+.display {
+  font-stretch: 68%;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* The year ruler: a native range input drawn as a tick track. */
+.ruler {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 32px;
+  background: transparent;
+  cursor: grab;
+  touch-action: pan-y;
+}
+.ruler:active {
+  cursor: grabbing;
+}
+.ruler::-webkit-slider-runnable-track {
+  height: 32px;
+  background: transparent;
+}
+.ruler::-moz-range-track {
+  height: 32px;
+  background: transparent;
+}
+.ruler::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 4px;
+  height: 32px;
+  border-radius: 2px;
+  background: var(--accent);
+  border: 0;
+  box-shadow: 0 0 0 3px var(--card);
+}
+.ruler::-moz-range-thumb {
+  width: 4px;
+  height: 32px;
+  border-radius: 2px;
+  background: var(--accent);
+  border: 0;
+  box-shadow: 0 0 0 3px var(--card);
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+}
+.slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--text) var(--fill, 50%), var(--line-2) var(--fill, 50%));
+}
+.slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line-2);
+}
+.slider::-moz-range-progress {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--text);
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: -6px;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1.5px solid var(--text);
+}
+.slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1.5px solid var(--text);
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.35);
+}
+dialog[open] {
+  animation: rise 0.28s var(--ease);
+}
+dialog[open]::backdrop {
+  animation: fade 0.28s var(--ease);
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.scroll-quiet {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-2) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  dialog[open],
+  dialog[open]::backdrop {
+    animation: none;
+  }
 }

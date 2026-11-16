@@ -1,0 +1,49 @@
+name: Refresh data
+
+# Pulls the latest standings every morning. The data file is only committed when
+# the feeds return something new AND the checks pass, so a bad upstream day
+# leaves the site on its last good copy.
+on:
+  schedule:
+    - cron: "17 10 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Refetch every season, not just the recent ones
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Fetch standings
+        run: node scripts/build-data.mjs ${{ inputs.full && '--full' || '' }}
+      - name: Check the numbers
+        run: pnpm test
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- src/data/data.json; then
+            echo "No new results today"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/data.json
+          git commit -m "data: refresh standings $(date -u +%F)"
+          git push
