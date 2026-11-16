@@ -3,7 +3,7 @@
 import { Minus, Plus } from "lucide-react";
 import { useState } from "react";
 import type { Mode, State } from "@/lib/state";
-import { Segmented, Switch } from "./ui";
+import { Segmented } from "./ui";
 
 export function Ruler({ min, max, value, onChange, label }: { min: number; max: number; value: number; onChange: (v: number) => void; label: string }) {
   const decades: number[] = [];
@@ -102,7 +102,7 @@ export function YearDial({
   min: number;
   max: number;
 }) {
-  const { mode, year, to, memory } = state;
+  const { mode, year, to } = state;
   const clampYear = (v: number) => Math.max(min, Math.min(max, v));
   return (
     <div>
@@ -154,11 +154,6 @@ export function YearDial({
               </div>
             )}
           </div>
-          {mode === "birth" && (
-            <div className="mt-4">
-              <Switch checked={memory} onChange={(v) => set({ memory: v })} label={`Start at age six, the first seasons I remember (${Math.min(max, year + 6)})`} />
-            </div>
-          )}
         </div>
       )}
     </div>

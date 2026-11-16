@@ -84,12 +84,11 @@ export function App() {
   const fan = useMemo(() => summarize(result, picks), [result, picks]);
 
   // The birth-year curve does not depend on the dial, so dragging the dial never recomputes it.
-  const offset = state.memory ? 6 : 0;
-  const curveKey = useDeferredValue(useMemo(() => ({ picks, weights: state.weights, halfLife: state.halfLife, includeLive: state.includeLive, offset }), [picks, state.weights, state.halfLife, state.includeLive, offset]));
+  const curveKey = useDeferredValue(useMemo(() => ({ picks, weights: state.weights, halfLife: state.halfLife, includeLive: state.includeLive }), [picks, state.weights, state.halfLife, state.includeLive]));
   const points = useMemo(() => {
     if (!curveKey.picks.length) return [];
     const base = { from: MIN, to: MAX, includeLive: curveKey.includeLive, weights: curveKey.weights, halfLife: curveKey.halfLife };
-    return curve(data, base, curveKey.picks, MIN + curveKey.offset, MAX - 2).map((p) => ({ y: p.y - curveKey.offset, index: p.index }));
+    return curve(data, base, curveKey.picks, MIN, MAX - 2);
   }, [curveKey]);
 
   const lead = picks.length ? data.teams.find((t) => t.key === picks[0]) : undefined;

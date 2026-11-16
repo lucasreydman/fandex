@@ -11,8 +11,6 @@ export interface State {
   /** Birth year in "birth" mode, first season in "custom" mode. */
   year: number;
   to: number;
-  /** Start counting at age six, when a fan starts to remember. */
-  memory: boolean;
   picks: Picks;
   weights: Weights;
   halfLife: number;
@@ -25,13 +23,13 @@ export const EMPTY_PICKS: Picks = { NFL: null, NBA: null, MLB: null, NHL: null }
 
 export function defaults(max: number): State {
   return {
-    mode: "birth", year: 2005, to: max, memory: false, picks: { ...EMPTY_PICKS },
+    mode: "birth", year: 2005, to: max, picks: { ...EMPTY_PICKS },
     weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, teamColors: true, tab: "rankings",
   };
 }
 
 export function toOptions(s: State, min: number, max: number): Options {
-  const from = s.mode === "all" ? min : s.mode === "birth" ? Math.min(max, s.year + (s.memory ? 6 : 0)) : s.year;
+  const from = s.mode === "all" ? min : s.mode === "birth" ? s.year : s.year;
   const to = s.mode === "custom" ? Math.max(from, s.to) : max;
   return { from, to, includeLive: s.includeLive, weights: s.weights, halfLife: s.halfLife };
 }
@@ -42,7 +40,6 @@ export function encode(s: State, max: number): string {
   else {
     p.set("y", String(s.year));
     if (s.mode === "custom") p.set("to", String(s.to));
-    else if (s.memory) p.set("age", "6");
   }
   const picks = LEAGUES.map((l) => s.picks[l]).filter(Boolean);
   if (picks.length) p.set("t", picks.join("."));
@@ -63,14 +60,13 @@ const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n
 export function decode(search: string, base: State, data: Dataset, min: number, max: number): State {
   const p = new URLSearchParams(search);
   if (![...p.keys()].length) return base;
-  const s: State = { ...base, picks: { ...EMPTY_PICKS }, weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, memory: false, mode: "birth", tab: "rankings" };
+  const s: State = { ...base, picks: { ...EMPTY_PICKS }, weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, mode: "birth", tab: "rankings" };
   const y = Number(p.get("y"));
   if (p.get("era") === "all") s.mode = "all";
   else if (Number.isFinite(y) && y > 0) {
     s.year = clamp(Math.round(y), min, max);
     const to = Number(p.get("to"));
     if (p.has("to") && Number.isFinite(to)) { s.mode = "custom"; s.to = clamp(Math.round(to), s.year, max); }
-    else s.memory = p.get("age") === "6";
   }
   const byKey = new Map(data.teams.map((t) => [t.key, t]));
   for (const key of (p.get("t") ?? "").split(".")) {
