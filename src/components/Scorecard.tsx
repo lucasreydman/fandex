@@ -11,7 +11,6 @@ import { HeatLegend, Tape } from "./Tape";
 import { EASE, Logo, Pennant, pct, record, signed } from "./ui";
 
 const DOT = 8;
-const STEP = 10;
 
 /**
  * Where the fan lands among the cities, on one 0 to 100 line. Every city is a
@@ -34,20 +33,32 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
   }, []);
 
   const mine = useMemo(() => new Set(fan.picks.map((s) => s.team.metro)), [fan.picks]);
+  // Narrow strips get smaller dots, so the same cities take less room.
+  const dot = width < 420 ? 6 : DOT;
+  const step = dot + 2;
   const { dots, levels } = useMemo(() => {
     const sorted = [...result.metros].sort((a, b) => a.index - b.index);
-    const lastX: number[] = []; // right-most dot placed on each level
+    const placed: { x: number; level: number }[] = [];
+    const free = (x: number, level: number) => !placed.some((q) => q.level === level && Math.abs(q.x - x) < dot + 1);
+    // A crowd of near-equal scores would make one tall column. Let a dot sit one
+    // or two widths to the side before it climbs, which keeps the pile low and wide.
+    const nudges = [0, 1, -1, 2, -2].map((n) => n * (dot + 1));
     const out = sorted.map((m) => {
       const x = (m.index / 100) * width;
-      let level = 0;
-      while (lastX[level] !== undefined && x - lastX[level] < DOT + 1) level++;
-      lastX[level] = x;
-      return { m, x, level };
+      let spot: { x: number; level: number } | null = null;
+      for (let level = 0; !spot; level++) {
+        for (const n of level < 5 ? nudges : [0]) {
+          const tryX = Math.max(dot / 2, Math.min(width - dot / 2, x + n));
+          if (free(tryX, level)) { spot = { x: tryX, level }; break; }
+        }
+      }
+      placed.push(spot);
+      return { m, x: spot.x, level: spot.level };
     });
-    return { dots: out, levels: Math.max(1, lastX.length) };
-  }, [result.metros, width]);
+    return { dots: out, levels: Math.max(3, ...placed.map((q) => q.level + 1)) };
+  }, [result.metros, width, dot]);
 
-  const height = levels * STEP;
+  const height = levels * step;
   const active = dots.find((d) => d.m.name === hover) ?? null;
   const youX = (fan.index / 100) * width;
 
@@ -83,11 +94,11 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
               key={m.name}
               className="absolute rounded-full transition-[transform,opacity] duration-150 ease-out"
               style={{
-                width: DOT, height: DOT, left: x - DOT / 2, bottom: 3 + level * STEP,
+                width: dot, height: dot, left: x - dot / 2, bottom: 3 + level * step,
                 background: heatIndex(m.index),
-                boxShadow: on ? "0 0 0 2px var(--text)" : mine.has(m.name) ? "0 0 0 1.5px var(--accent)" : "0 0 0 1px var(--card)",
+                boxShadow: on ? "0 0 0 2px var(--text)" : mine.has(m.name) ? "0 0 0 1.5px var(--accent)" : "0 0 0 1px var(--line-2)",
                 transform: on ? "scale(1.5)" : undefined,
-                opacity: active && !on ? 0.55 : 1,
+                opacity: active && !on ? 0.7 : 1,
                 zIndex: on ? 2 : 1,
               }}
             />
