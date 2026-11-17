@@ -4,18 +4,16 @@ import NumberFlow from "@number-flow/react";
 import { Check, Link2 } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { heatIndex } from "@/lib/color";
 import { seasonLabel, verdict } from "@/lib/engine";
 import type { FanSummary, Result } from "@/lib/types";
 import { HeatLegend, Tape } from "./Tape";
 import { EASE, Logo, Pennant, pct, record, signed } from "./ui";
 
-const DOT = 8;
-
 /**
- * Where the fan lands among the cities, on one 0 to 100 line. Every city is a
- * dot coloured by its score; dots that would overlap stack upward. Moving the
- * pointer (or a finger) anywhere along the strip reads out the nearest city.
+ * Where the fan lands among the cities, on one 0 to 100 line. Each city is a
+ * thin mark at its score, and marks simply sit side by side where scores are
+ * close. Moving the pointer or a finger anywhere along the line reads out the
+ * nearest city, so there is nothing small to aim at.
  */
 function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,54 +30,28 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
     return () => ro.disconnect();
   }, []);
 
-  const mine = useMemo(() => new Set(fan.picks.map((s) => s.team.metro)), [fan.picks]);
-  // Narrow strips get smaller dots, so the same cities take less room.
-  const dot = width < 420 ? 6 : DOT;
-  const step = dot + 2;
-  const { dots, levels } = useMemo(() => {
-    const sorted = [...result.metros].sort((a, b) => a.index - b.index);
-    const placed: { x: number; level: number }[] = [];
-    const free = (x: number, level: number) => !placed.some((q) => q.level === level && Math.abs(q.x - x) < dot + 1);
-    // A crowd of near-equal scores would make one tall column. Let a dot sit one
-    // or two widths to the side before it climbs, which keeps the pile low and wide.
-    const nudges = [0, 1, -1, 2, -2].map((n) => n * (dot + 1));
-    const out = sorted.map((m) => {
-      const x = (m.index / 100) * width;
-      let spot: { x: number; level: number } | null = null;
-      for (let level = 0; !spot; level++) {
-        for (const n of level < 5 ? nudges : [0]) {
-          const tryX = Math.max(dot / 2, Math.min(width - dot / 2, x + n));
-          if (free(tryX, level)) { spot = { x: tryX, level }; break; }
-        }
-      }
-      placed.push(spot);
-      return { m, x: spot.x, level: spot.level };
-    });
-    return { dots: out, levels: Math.max(3, ...placed.map((q) => q.level + 1)) };
-  }, [result.metros, width, dot]);
-
-  const height = levels * step;
-  const active = dots.find((d) => d.m.name === hover) ?? null;
-  const youX = (fan.index / 100) * width;
+  const active = result.metros.find((m) => m.name === hover) ?? null;
+  const at = (index: number) => (index / 100) * width;
+  const youX = at(fan.index);
 
   const scrub = (clientX: number) => {
     const box = ref.current?.getBoundingClientRect();
-    if (!box || !dots.length) return;
-    const x = clientX - box.left;
-    let best = dots[0];
-    for (const d of dots) if (Math.abs(d.x - x) < Math.abs(best.x - x)) best = d;
-    setHover(best.m.name);
+    if (!box || !result.metros.length) return;
+    const score = ((clientX - box.left) / box.width) * 100;
+    let best = result.metros[0];
+    for (const m of result.metros) if (Math.abs(m.index - score) < Math.abs(best.index - score)) best = m;
+    setHover(best.name);
   };
 
-  // Keep the floating label inside the strip.
-  const labelX = active ? Math.max(70, Math.min(width - 70, active.x)) : 0;
+  // Keep the floating label inside the line, and step the "You" tag aside when the two would collide.
+  const labelX = active ? Math.max(64, Math.min(width - 64, at(active.index))) : 0;
+  const crowded = !!active && Math.abs(labelX - youX) < 88;
 
   return (
     <div>
       <div
         ref={ref}
-        className="relative cursor-crosshair touch-pan-y select-none"
-        style={{ height: height + 36 }}
+        className="relative h-[60px] cursor-crosshair touch-pan-y select-none"
         onPointerMove={(e) => scrub(e.clientX)}
         onPointerDown={(e) => scrub(e.clientX)}
         onPointerLeave={() => setHover(null)}
@@ -87,18 +59,17 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
         aria-label={`Your score of ${Math.round(fan.index)} against ${result.metros.length} cities. ${fan.sadder} are lower, ${fan.happier} higher.`}
       >
         <span className="absolute inset-x-0 bottom-0 h-px bg-line-2" />
-        {dots.map(({ m, x, level }) => {
-          const on = active?.m.name === m.name;
+        {result.metros.map((m) => {
+          const on = active?.name === m.name;
           return (
             <span
               key={m.name}
-              className="absolute rounded-full transition-[transform,opacity] duration-150 ease-out"
+              className="absolute bottom-0 w-[2px] origin-bottom rounded-t-[1px] transition-[transform,background-color] duration-150 ease-out"
               style={{
-                width: dot, height: dot, left: x - dot / 2, bottom: 3 + level * step,
-                background: heatIndex(m.index),
-                boxShadow: on ? "0 0 0 2px var(--text)" : mine.has(m.name) ? "0 0 0 1.5px var(--accent)" : "0 0 0 1px var(--line-2)",
-                transform: on ? "scale(1.5)" : undefined,
-                opacity: active && !on ? 0.7 : 1,
+                left: at(m.index) - 1,
+                height: 14,
+                background: on ? "var(--text)" : "var(--text-3)",
+                transform: on ? "scaleY(2)" : undefined,
                 zIndex: on ? 2 : 1,
               }}
             />
@@ -108,20 +79,20 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
         <motion.span
           className="pointer-events-none absolute bottom-0 top-0 flex flex-col items-center"
           initial={false}
-          animate={{ left: youX, opacity: active && Math.abs(labelX - youX) < 96 ? 0 : 1 }}
+          animate={{ left: youX, opacity: crowded ? 0.25 : 1 }}
           transition={{ duration: 0.4, ease: EASE }}
           style={{ x: "-50%" }}
         >
           <span className="num rounded-[4px] bg-accent px-1.5 text-[12px] leading-5 text-accent-ink">You</span>
-          <span className="w-[2px] flex-1 rounded-[1px] bg-accent" />
+          <span className="w-[2px] flex-1 rounded-t-[1px] bg-accent" />
         </motion.span>
 
         {active && (
           <span
-            className="num pointer-events-none absolute top-0 -translate-x-1/2 whitespace-nowrap rounded-[4px] bg-ink px-1.5 text-[12px] leading-5 text-bg"
+            className="num pointer-events-none absolute top-0 z-10 -translate-x-1/2 whitespace-nowrap rounded-[4px] bg-raised px-1.5 text-[12px] leading-5 text-ink ring-1 ring-line-2"
             style={{ left: labelX }}
           >
-            {active.m.name} · {Math.round(active.m.index)}
+            {active.name} · {Math.round(active.index)}
           </span>
         )}
       </div>
@@ -133,11 +104,11 @@ function CityScale({ result, fan }: { result: Result; fan: FanSummary }) {
       <p className="mt-3 min-h-5 text-[13px] leading-5 text-ink-2">
         {active ? (
           <>
-            <span className="text-ink">{active.m.name}</span> is #{active.m.rank} of {result.metros.length} cities · {active.m.teams.length} {active.m.teams.length === 1 ? "team" : "teams"} · {active.m.titles} {active.m.titles === 1 ? "title" : "titles"} · {pct(active.m.pct)}
+            <span className="text-ink">{active.name}</span> is #{active.rank} of {result.metros.length} cities · {active.teams.length} {active.teams.length === 1 ? "team" : "teams"} · {active.titles} {active.titles === 1 ? "title" : "titles"} · {pct(active.pct)}
           </>
         ) : (
           <>
-            Each dot is a city. {fan.sadder} had it worse than you, {fan.happier} had it better
+            Each mark is a city. {fan.sadder} had it worse than you, {fan.happier} had it better
             {fan.twin ? <>, and you’ve lived like <span className="text-ink">{fan.twin.name}</span></> : null}
           </>
         )}
