@@ -50,8 +50,8 @@ const FIRST: Partial<Record<League, Record<string, number>>> = {
     "Detroit Red Wings": 1926, "Dallas Stars": 1967, "Los Angeles Kings": 1967, "Philadelphia Flyers": 1967, "Pittsburgh Penguins": 1967,
     "St. Louis Blues": 1967, "Buffalo Sabres": 1970, "Vancouver Canucks": 1970, "Calgary Flames": 1972, "New York Islanders": 1972,
     "New Jersey Devils": 1974, "Washington Capitals": 1974, "Carolina Hurricanes": 1979, "Colorado Avalanche": 1979, "Edmonton Oilers": 1979,
-    "Winnipeg Jets": 1979, "San Jose Sharks": 1991, "Ottawa Senators": 1992, "Tampa Bay Lightning": 1992, "Anaheim Ducks": 1993,
-    "Florida Panthers": 1993, "Arizona Coyotes": 1996, "Nashville Predators": 1998, "Columbus Blue Jackets": 2000, "Minnesota Wild": 2000,
+    "Winnipeg Jets": 1999, "San Jose Sharks": 1991, "Ottawa Senators": 1992, "Tampa Bay Lightning": 1992, "Anaheim Ducks": 1993,
+    "Florida Panthers": 1993, "Arizona Coyotes": 1979, "Nashville Predators": 1998, "Columbus Blue Jackets": 2000, "Minnesota Wild": 2000,
     "Vegas Golden Knights": 2017, "Seattle Kraken": 2021, "Utah Mammoth": 2024,
   },
 };
@@ -61,7 +61,6 @@ const GAPS: Record<string, number[]> = {
   "Los Angeles Rams": [1943], // suspended for the war
   "Cleveland Browns": [1996, 1997, 1998], // between the move to Baltimore and the return
   "Charlotte Hornets": [2002, 2003], // between the move to New Orleans and the Bobcats
-  "Winnipeg Jets": [1996, 1997, 1998], // between the first Jets leaving and the Thrashers starting
 };
 
 describe("franchise histories", () => {
@@ -111,7 +110,9 @@ describe("franchise histories", () => {
     // The NBA gave the original Hornets' seasons to today's Hornets; the Pelicans begin in New Orleans.
     expect(years("Charlotte Hornets")).toContain(1995);
     expect(years("New Orleans Pelicans")[0]).toBe(2002);
-    // The NHL left the Coyotes' record in Arizona and made Utah a new club.
+    // The first Jets became the Coyotes; today's Jets are the former Thrashers. Utah is a new club.
+    expect(eraAt(team("Arizona Coyotes"), 1990)).toEqual({ name: "Winnipeg Jets", metro: "Winnipeg" });
+    expect(eraAt(team("Winnipeg Jets"), 2005)).toEqual({ name: "Atlanta Thrashers", metro: "Atlanta" });
     expect(years("Arizona Coyotes").at(-1)).toBe(2023);
     expect(years("Utah Mammoth")[0]).toBe(2024);
   });

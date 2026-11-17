@@ -35,6 +35,10 @@ const LEAGUES = {
 // Where the feeds differ from each league's official lineage.
 const NHL_FRANCHISE_ALIAS = { "Montr\u00e9al Canadiens": "Montreal Canadiens" };
 
+// The first Winnipeg Jets (1979-96) became the Coyotes. The NHL feed files them under
+// today's Jets, who are the former Atlanta Thrashers; the accepted lineage is the Coyotes'.
+const NHL_TEAM_ALIAS = { "Winnipeg Jets (1979)": "Arizona Coyotes" };
+
 // ESPN files the 1988-2002 Charlotte Hornets under the Pelicans. The NBA gave
 // those seasons to today's Hornets when the name returned to Charlotte.
 const REASSIGN = { NBA: [{ from: "New Orleans Pelicans", to: "Charlotte Hornets", before: 2002 }] };
@@ -245,7 +249,7 @@ async function nhlLegacy(teamByName) {
     const rows = [];
     for (const r of d.data ?? []) {
       const fname = franchiseName.get(teamFranchise.get(r.teamId)) ?? r.teamFullName;
-      const current = NHL_FRANCHISE_ALIAS[fname] ?? fname;
+      const current = NHL_TEAM_ALIAS[r.teamFullName] ?? NHL_FRANCHISE_ALIAS[fname] ?? fname;
       const team = teamByName.get(`NHL:${current}`);
       const w = r.wins ?? 0;
       const l = (r.losses ?? 0) + (r.otLosses ?? 0);

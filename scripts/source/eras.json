@@ -1,65 +1,879 @@
 {
   "_note": "Names and homes a franchise has had, by the year the season started. Each entry is [first season, name at the time, metro area]. Only franchises that moved or were renamed are listed; lineage follows each league's official record.",
   "NFL": {
-    "Arizona Cardinals": [[1920, "Chicago Cardinals", "Chicago"], [1960, "St. Louis Cardinals", "St. Louis"], [1988, "Phoenix Cardinals", "Phoenix"], [1994, "Arizona Cardinals", "Phoenix"]],
-    "Detroit Lions": [[1930, "Portsmouth Spartans", "Portsmouth"], [1934, "Detroit Lions", "Detroit"]],
-    "Washington Commanders": [[1932, "Boston Braves", "Boston"], [1933, "Boston Redskins", "Boston"], [1937, "Washington Redskins", "Washington"], [2020, "Washington Football Team", "Washington"], [2022, "Washington Commanders", "Washington"]],
-    "Pittsburgh Steelers": [[1933, "Pittsburgh Pirates", "Pittsburgh"], [1940, "Pittsburgh Steelers", "Pittsburgh"]],
-    "Los Angeles Rams": [[1937, "Cleveland Rams", "Cleveland"], [1946, "Los Angeles Rams", "Los Angeles"], [1995, "St. Louis Rams", "St. Louis"], [2016, "Los Angeles Rams", "Los Angeles"]],
-    "Indianapolis Colts": [[1953, "Baltimore Colts", "Baltimore"], [1984, "Indianapolis Colts", "Indianapolis"]],
-    "Los Angeles Chargers": [[1960, "Los Angeles Chargers", "Los Angeles"], [1961, "San Diego Chargers", "San Diego"], [2017, "Los Angeles Chargers", "Los Angeles"]],
-    "Tennessee Titans": [[1960, "Houston Oilers", "Houston"], [1997, "Tennessee Oilers", "Memphis"], [1998, "Tennessee Oilers", "Nashville"], [1999, "Tennessee Titans", "Nashville"]],
-    "Kansas City Chiefs": [[1960, "Dallas Texans", "Dallas–Fort Worth"], [1963, "Kansas City Chiefs", "Kansas City"]],
-    "New England Patriots": [[1960, "Boston Patriots", "Boston"], [1971, "New England Patriots", "Boston"]],
-    "New York Jets": [[1960, "Titans of New York", "New York"], [1963, "New York Jets", "New York"]],
-    "Las Vegas Raiders": [[1960, "Oakland Raiders", "SF Bay Area"], [1982, "Los Angeles Raiders", "Los Angeles"], [1995, "Oakland Raiders", "SF Bay Area"], [2020, "Las Vegas Raiders", "Las Vegas"]]
+    "Arizona Cardinals": [
+      [
+        1920,
+        "Chicago Cardinals",
+        "Chicago"
+      ],
+      [
+        1960,
+        "St. Louis Cardinals",
+        "St. Louis"
+      ],
+      [
+        1988,
+        "Phoenix Cardinals",
+        "Phoenix"
+      ],
+      [
+        1994,
+        "Arizona Cardinals",
+        "Phoenix"
+      ]
+    ],
+    "Detroit Lions": [
+      [
+        1930,
+        "Portsmouth Spartans",
+        "Portsmouth"
+      ],
+      [
+        1934,
+        "Detroit Lions",
+        "Detroit"
+      ]
+    ],
+    "Washington Commanders": [
+      [
+        1932,
+        "Boston Braves",
+        "Boston"
+      ],
+      [
+        1933,
+        "Boston Redskins",
+        "Boston"
+      ],
+      [
+        1937,
+        "Washington Redskins",
+        "Washington"
+      ],
+      [
+        2020,
+        "Washington Football Team",
+        "Washington"
+      ],
+      [
+        2022,
+        "Washington Commanders",
+        "Washington"
+      ]
+    ],
+    "Pittsburgh Steelers": [
+      [
+        1933,
+        "Pittsburgh Pirates",
+        "Pittsburgh"
+      ],
+      [
+        1940,
+        "Pittsburgh Steelers",
+        "Pittsburgh"
+      ]
+    ],
+    "Los Angeles Rams": [
+      [
+        1937,
+        "Cleveland Rams",
+        "Cleveland"
+      ],
+      [
+        1946,
+        "Los Angeles Rams",
+        "Los Angeles"
+      ],
+      [
+        1995,
+        "St. Louis Rams",
+        "St. Louis"
+      ],
+      [
+        2016,
+        "Los Angeles Rams",
+        "Los Angeles"
+      ]
+    ],
+    "Indianapolis Colts": [
+      [
+        1953,
+        "Baltimore Colts",
+        "Baltimore"
+      ],
+      [
+        1984,
+        "Indianapolis Colts",
+        "Indianapolis"
+      ]
+    ],
+    "Los Angeles Chargers": [
+      [
+        1960,
+        "Los Angeles Chargers",
+        "Los Angeles"
+      ],
+      [
+        1961,
+        "San Diego Chargers",
+        "San Diego"
+      ],
+      [
+        2017,
+        "Los Angeles Chargers",
+        "Los Angeles"
+      ]
+    ],
+    "Tennessee Titans": [
+      [
+        1960,
+        "Houston Oilers",
+        "Houston"
+      ],
+      [
+        1997,
+        "Tennessee Oilers",
+        "Memphis"
+      ],
+      [
+        1998,
+        "Tennessee Oilers",
+        "Nashville"
+      ],
+      [
+        1999,
+        "Tennessee Titans",
+        "Nashville"
+      ]
+    ],
+    "Kansas City Chiefs": [
+      [
+        1960,
+        "Dallas Texans",
+        "Dallas–Fort Worth"
+      ],
+      [
+        1963,
+        "Kansas City Chiefs",
+        "Kansas City"
+      ]
+    ],
+    "New England Patriots": [
+      [
+        1960,
+        "Boston Patriots",
+        "Boston"
+      ],
+      [
+        1971,
+        "New England Patriots",
+        "Boston"
+      ]
+    ],
+    "New York Jets": [
+      [
+        1960,
+        "Titans of New York",
+        "New York"
+      ],
+      [
+        1963,
+        "New York Jets",
+        "New York"
+      ]
+    ],
+    "Las Vegas Raiders": [
+      [
+        1960,
+        "Oakland Raiders",
+        "SF Bay Area"
+      ],
+      [
+        1982,
+        "Los Angeles Raiders",
+        "Los Angeles"
+      ],
+      [
+        1995,
+        "Oakland Raiders",
+        "SF Bay Area"
+      ],
+      [
+        2020,
+        "Las Vegas Raiders",
+        "Las Vegas"
+      ]
+    ]
   },
   "NBA": {
-    "Atlanta Hawks": [[1949, "Tri-Cities Blackhawks", "Tri-Cities"], [1951, "Milwaukee Hawks", "Milwaukee"], [1955, "St. Louis Hawks", "St. Louis"], [1968, "Atlanta Hawks", "Atlanta"]],
-    "Golden State Warriors": [[1946, "Philadelphia Warriors", "Philadelphia"], [1962, "San Francisco Warriors", "SF Bay Area"], [1971, "Golden State Warriors", "SF Bay Area"]],
-    "Sacramento Kings": [[1948, "Rochester Royals", "Rochester"], [1957, "Cincinnati Royals", "Cincinnati"], [1972, "Kansas City-Omaha Kings", "Kansas City"], [1975, "Kansas City Kings", "Kansas City"], [1985, "Sacramento Kings", "Sacramento"]],
-    "Los Angeles Lakers": [[1948, "Minneapolis Lakers", "Minneapolis–St. Paul"], [1960, "Los Angeles Lakers", "Los Angeles"]],
-    "Detroit Pistons": [[1948, "Fort Wayne Pistons", "Fort Wayne"], [1957, "Detroit Pistons", "Detroit"]],
-    "Philadelphia 76ers": [[1949, "Syracuse Nationals", "Syracuse"], [1963, "Philadelphia 76ers", "Philadelphia"]],
-    "Washington Wizards": [[1961, "Chicago Packers", "Chicago"], [1962, "Chicago Zephyrs", "Chicago"], [1963, "Baltimore Bullets", "Baltimore"], [1973, "Capital Bullets", "Washington"], [1974, "Washington Bullets", "Washington"], [1997, "Washington Wizards", "Washington"]],
-    "Houston Rockets": [[1967, "San Diego Rockets", "San Diego"], [1971, "Houston Rockets", "Houston"]],
-    "Oklahoma City Thunder": [[1967, "Seattle SuperSonics", "Seattle"], [2008, "Oklahoma City Thunder", "Oklahoma City"]],
-    "LA Clippers": [[1970, "Buffalo Braves", "Buffalo"], [1978, "San Diego Clippers", "San Diego"], [1984, "Los Angeles Clippers", "Los Angeles"], [2015, "LA Clippers", "Los Angeles"]],
-    "Utah Jazz": [[1974, "New Orleans Jazz", "New Orleans"], [1979, "Utah Jazz", "Salt Lake City"]],
-    "Brooklyn Nets": [[1976, "New York Nets", "New York"], [1977, "New Jersey Nets", "New York"], [2012, "Brooklyn Nets", "New York"]],
-    "Charlotte Hornets": [[1988, "Charlotte Hornets", "Charlotte"], [2004, "Charlotte Bobcats", "Charlotte"], [2014, "Charlotte Hornets", "Charlotte"]],
-    "New Orleans Pelicans": [[2002, "New Orleans Hornets", "New Orleans"], [2013, "New Orleans Pelicans", "New Orleans"]],
-    "Memphis Grizzlies": [[1995, "Vancouver Grizzlies", "Vancouver"], [2001, "Memphis Grizzlies", "Memphis"]]
+    "Atlanta Hawks": [
+      [
+        1949,
+        "Tri-Cities Blackhawks",
+        "Tri-Cities"
+      ],
+      [
+        1951,
+        "Milwaukee Hawks",
+        "Milwaukee"
+      ],
+      [
+        1955,
+        "St. Louis Hawks",
+        "St. Louis"
+      ],
+      [
+        1968,
+        "Atlanta Hawks",
+        "Atlanta"
+      ]
+    ],
+    "Golden State Warriors": [
+      [
+        1946,
+        "Philadelphia Warriors",
+        "Philadelphia"
+      ],
+      [
+        1962,
+        "San Francisco Warriors",
+        "SF Bay Area"
+      ],
+      [
+        1971,
+        "Golden State Warriors",
+        "SF Bay Area"
+      ]
+    ],
+    "Sacramento Kings": [
+      [
+        1948,
+        "Rochester Royals",
+        "Rochester"
+      ],
+      [
+        1957,
+        "Cincinnati Royals",
+        "Cincinnati"
+      ],
+      [
+        1972,
+        "Kansas City-Omaha Kings",
+        "Kansas City"
+      ],
+      [
+        1975,
+        "Kansas City Kings",
+        "Kansas City"
+      ],
+      [
+        1985,
+        "Sacramento Kings",
+        "Sacramento"
+      ]
+    ],
+    "Los Angeles Lakers": [
+      [
+        1948,
+        "Minneapolis Lakers",
+        "Minneapolis–St. Paul"
+      ],
+      [
+        1960,
+        "Los Angeles Lakers",
+        "Los Angeles"
+      ]
+    ],
+    "Detroit Pistons": [
+      [
+        1948,
+        "Fort Wayne Pistons",
+        "Fort Wayne"
+      ],
+      [
+        1957,
+        "Detroit Pistons",
+        "Detroit"
+      ]
+    ],
+    "Philadelphia 76ers": [
+      [
+        1949,
+        "Syracuse Nationals",
+        "Syracuse"
+      ],
+      [
+        1963,
+        "Philadelphia 76ers",
+        "Philadelphia"
+      ]
+    ],
+    "Washington Wizards": [
+      [
+        1961,
+        "Chicago Packers",
+        "Chicago"
+      ],
+      [
+        1962,
+        "Chicago Zephyrs",
+        "Chicago"
+      ],
+      [
+        1963,
+        "Baltimore Bullets",
+        "Baltimore"
+      ],
+      [
+        1973,
+        "Capital Bullets",
+        "Washington"
+      ],
+      [
+        1974,
+        "Washington Bullets",
+        "Washington"
+      ],
+      [
+        1997,
+        "Washington Wizards",
+        "Washington"
+      ]
+    ],
+    "Houston Rockets": [
+      [
+        1967,
+        "San Diego Rockets",
+        "San Diego"
+      ],
+      [
+        1971,
+        "Houston Rockets",
+        "Houston"
+      ]
+    ],
+    "Oklahoma City Thunder": [
+      [
+        1967,
+        "Seattle SuperSonics",
+        "Seattle"
+      ],
+      [
+        2008,
+        "Oklahoma City Thunder",
+        "Oklahoma City"
+      ]
+    ],
+    "LA Clippers": [
+      [
+        1970,
+        "Buffalo Braves",
+        "Buffalo"
+      ],
+      [
+        1978,
+        "San Diego Clippers",
+        "San Diego"
+      ],
+      [
+        1984,
+        "Los Angeles Clippers",
+        "Los Angeles"
+      ],
+      [
+        2015,
+        "LA Clippers",
+        "Los Angeles"
+      ]
+    ],
+    "Utah Jazz": [
+      [
+        1974,
+        "New Orleans Jazz",
+        "New Orleans"
+      ],
+      [
+        1979,
+        "Utah Jazz",
+        "Salt Lake City"
+      ]
+    ],
+    "Brooklyn Nets": [
+      [
+        1976,
+        "New York Nets",
+        "New York"
+      ],
+      [
+        1977,
+        "New Jersey Nets",
+        "New York"
+      ],
+      [
+        2012,
+        "Brooklyn Nets",
+        "New York"
+      ]
+    ],
+    "Charlotte Hornets": [
+      [
+        1988,
+        "Charlotte Hornets",
+        "Charlotte"
+      ],
+      [
+        2004,
+        "Charlotte Bobcats",
+        "Charlotte"
+      ],
+      [
+        2014,
+        "Charlotte Hornets",
+        "Charlotte"
+      ]
+    ],
+    "New Orleans Pelicans": [
+      [
+        2002,
+        "New Orleans Hornets",
+        "New Orleans"
+      ],
+      [
+        2013,
+        "New Orleans Pelicans",
+        "New Orleans"
+      ]
+    ],
+    "Memphis Grizzlies": [
+      [
+        1995,
+        "Vancouver Grizzlies",
+        "Vancouver"
+      ],
+      [
+        2001,
+        "Memphis Grizzlies",
+        "Memphis"
+      ]
+    ]
   },
   "MLB": {
-    "Atlanta Braves": [[1903, "Boston Beaneaters", "Boston"], [1907, "Boston Doves", "Boston"], [1911, "Boston Rustlers", "Boston"], [1912, "Boston Braves", "Boston"], [1936, "Boston Bees", "Boston"], [1941, "Boston Braves", "Boston"], [1953, "Milwaukee Braves", "Milwaukee"], [1966, "Atlanta Braves", "Atlanta"]],
-    "Minnesota Twins": [[1903, "Washington Senators", "Washington"], [1961, "Minnesota Twins", "Minneapolis–St. Paul"]],
-    "Los Angeles Dodgers": [[1903, "Brooklyn Superbas", "New York"], [1911, "Brooklyn Dodgers", "New York"], [1914, "Brooklyn Robins", "New York"], [1932, "Brooklyn Dodgers", "New York"], [1958, "Los Angeles Dodgers", "Los Angeles"]],
-    "Baltimore Orioles": [[1903, "St. Louis Browns", "St. Louis"], [1954, "Baltimore Orioles", "Baltimore"]],
-    "Cleveland Guardians": [[1903, "Cleveland Naps", "Cleveland"], [1915, "Cleveland Indians", "Cleveland"], [2022, "Cleveland Guardians", "Cleveland"]],
-    "New York Yankees": [[1903, "New York Highlanders", "New York"], [1913, "New York Yankees", "New York"]],
-    "Boston Red Sox": [[1903, "Boston Americans", "Boston"], [1908, "Boston Red Sox", "Boston"]],
-    "San Francisco Giants": [[1903, "New York Giants", "New York"], [1958, "San Francisco Giants", "SF Bay Area"]],
-    "Athletics": [[1903, "Philadelphia Athletics", "Philadelphia"], [1955, "Kansas City Athletics", "Kansas City"], [1968, "Oakland Athletics", "SF Bay Area"], [2025, "Athletics", "Sacramento"]],
-    "Houston Astros": [[1962, "Houston Colt .45s", "Houston"], [1965, "Houston Astros", "Houston"]],
-    "Texas Rangers": [[1961, "Washington Senators", "Washington"], [1972, "Texas Rangers", "Dallas–Fort Worth"]],
-    "Los Angeles Angels": [[1961, "Los Angeles Angels", "Los Angeles"], [1965, "California Angels", "Los Angeles"], [1997, "Anaheim Angels", "Los Angeles"], [2005, "Los Angeles Angels", "Los Angeles"]],
-    "Milwaukee Brewers": [[1969, "Seattle Pilots", "Seattle"], [1970, "Milwaukee Brewers", "Milwaukee"]],
-    "Washington Nationals": [[1969, "Montreal Expos", "Montreal"], [2005, "Washington Nationals", "Washington"]],
-    "Miami Marlins": [[1993, "Florida Marlins", "Miami"], [2012, "Miami Marlins", "Miami"]],
-    "Tampa Bay Rays": [[1998, "Tampa Bay Devil Rays", "Tampa Bay"], [2008, "Tampa Bay Rays", "Tampa Bay"]]
+    "Atlanta Braves": [
+      [
+        1903,
+        "Boston Beaneaters",
+        "Boston"
+      ],
+      [
+        1907,
+        "Boston Doves",
+        "Boston"
+      ],
+      [
+        1911,
+        "Boston Rustlers",
+        "Boston"
+      ],
+      [
+        1912,
+        "Boston Braves",
+        "Boston"
+      ],
+      [
+        1936,
+        "Boston Bees",
+        "Boston"
+      ],
+      [
+        1941,
+        "Boston Braves",
+        "Boston"
+      ],
+      [
+        1953,
+        "Milwaukee Braves",
+        "Milwaukee"
+      ],
+      [
+        1966,
+        "Atlanta Braves",
+        "Atlanta"
+      ]
+    ],
+    "Minnesota Twins": [
+      [
+        1903,
+        "Washington Senators",
+        "Washington"
+      ],
+      [
+        1961,
+        "Minnesota Twins",
+        "Minneapolis–St. Paul"
+      ]
+    ],
+    "Los Angeles Dodgers": [
+      [
+        1903,
+        "Brooklyn Superbas",
+        "New York"
+      ],
+      [
+        1911,
+        "Brooklyn Dodgers",
+        "New York"
+      ],
+      [
+        1914,
+        "Brooklyn Robins",
+        "New York"
+      ],
+      [
+        1932,
+        "Brooklyn Dodgers",
+        "New York"
+      ],
+      [
+        1958,
+        "Los Angeles Dodgers",
+        "Los Angeles"
+      ]
+    ],
+    "Baltimore Orioles": [
+      [
+        1903,
+        "St. Louis Browns",
+        "St. Louis"
+      ],
+      [
+        1954,
+        "Baltimore Orioles",
+        "Baltimore"
+      ]
+    ],
+    "Cleveland Guardians": [
+      [
+        1903,
+        "Cleveland Naps",
+        "Cleveland"
+      ],
+      [
+        1915,
+        "Cleveland Indians",
+        "Cleveland"
+      ],
+      [
+        2022,
+        "Cleveland Guardians",
+        "Cleveland"
+      ]
+    ],
+    "New York Yankees": [
+      [
+        1903,
+        "New York Highlanders",
+        "New York"
+      ],
+      [
+        1913,
+        "New York Yankees",
+        "New York"
+      ]
+    ],
+    "Boston Red Sox": [
+      [
+        1903,
+        "Boston Americans",
+        "Boston"
+      ],
+      [
+        1908,
+        "Boston Red Sox",
+        "Boston"
+      ]
+    ],
+    "San Francisco Giants": [
+      [
+        1903,
+        "New York Giants",
+        "New York"
+      ],
+      [
+        1958,
+        "San Francisco Giants",
+        "SF Bay Area"
+      ]
+    ],
+    "Athletics": [
+      [
+        1903,
+        "Philadelphia Athletics",
+        "Philadelphia"
+      ],
+      [
+        1955,
+        "Kansas City Athletics",
+        "Kansas City"
+      ],
+      [
+        1968,
+        "Oakland Athletics",
+        "SF Bay Area"
+      ],
+      [
+        2025,
+        "Athletics",
+        "Sacramento"
+      ]
+    ],
+    "Houston Astros": [
+      [
+        1962,
+        "Houston Colt .45s",
+        "Houston"
+      ],
+      [
+        1965,
+        "Houston Astros",
+        "Houston"
+      ]
+    ],
+    "Texas Rangers": [
+      [
+        1961,
+        "Washington Senators",
+        "Washington"
+      ],
+      [
+        1972,
+        "Texas Rangers",
+        "Dallas–Fort Worth"
+      ]
+    ],
+    "Los Angeles Angels": [
+      [
+        1961,
+        "Los Angeles Angels",
+        "Los Angeles"
+      ],
+      [
+        1965,
+        "California Angels",
+        "Los Angeles"
+      ],
+      [
+        1997,
+        "Anaheim Angels",
+        "Los Angeles"
+      ],
+      [
+        2005,
+        "Los Angeles Angels",
+        "Los Angeles"
+      ]
+    ],
+    "Milwaukee Brewers": [
+      [
+        1969,
+        "Seattle Pilots",
+        "Seattle"
+      ],
+      [
+        1970,
+        "Milwaukee Brewers",
+        "Milwaukee"
+      ]
+    ],
+    "Washington Nationals": [
+      [
+        1969,
+        "Montreal Expos",
+        "Montreal"
+      ],
+      [
+        2005,
+        "Washington Nationals",
+        "Washington"
+      ]
+    ],
+    "Miami Marlins": [
+      [
+        1993,
+        "Florida Marlins",
+        "Miami"
+      ],
+      [
+        2012,
+        "Miami Marlins",
+        "Miami"
+      ]
+    ],
+    "Tampa Bay Rays": [
+      [
+        1998,
+        "Tampa Bay Devil Rays",
+        "Tampa Bay"
+      ],
+      [
+        2008,
+        "Tampa Bay Rays",
+        "Tampa Bay"
+      ]
+    ]
   },
   "NHL": {
-    "Toronto Maple Leafs": [[1917, "Toronto Arenas", "Toronto"], [1919, "Toronto St. Patricks", "Toronto"], [1927, "Toronto Maple Leafs", "Toronto"]],
-    "Detroit Red Wings": [[1926, "Detroit Cougars", "Detroit"], [1930, "Detroit Falcons", "Detroit"], [1932, "Detroit Red Wings", "Detroit"]],
-    "Dallas Stars": [[1967, "Minnesota North Stars", "Minneapolis–St. Paul"], [1993, "Dallas Stars", "Dallas–Fort Worth"]],
-    "Calgary Flames": [[1972, "Atlanta Flames", "Atlanta"], [1980, "Calgary Flames", "Calgary"]],
-    "New Jersey Devils": [[1974, "Kansas City Scouts", "Kansas City"], [1976, "Colorado Rockies", "Denver"], [1982, "New Jersey Devils", "New York"]],
-    "Winnipeg Jets": [[1979, "Winnipeg Jets", "Winnipeg"], [1999, "Atlanta Thrashers", "Atlanta"], [2011, "Winnipeg Jets", "Winnipeg"]],
-    "Colorado Avalanche": [[1979, "Quebec Nordiques", "Quebec City"], [1995, "Colorado Avalanche", "Denver"]],
-    "Carolina Hurricanes": [[1979, "Hartford Whalers", "Hartford"], [1997, "Carolina Hurricanes", "Raleigh"]],
-    "Arizona Coyotes": [[1996, "Phoenix Coyotes", "Phoenix"], [2014, "Arizona Coyotes", "Phoenix"]],
-    "Utah Mammoth": [[2024, "Utah Hockey Club", "Salt Lake City"], [2025, "Utah Mammoth", "Salt Lake City"]],
-    "Anaheim Ducks": [[1993, "Mighty Ducks of Anaheim", "Los Angeles"], [2006, "Anaheim Ducks", "Los Angeles"]]
+    "Toronto Maple Leafs": [
+      [
+        1917,
+        "Toronto Arenas",
+        "Toronto"
+      ],
+      [
+        1919,
+        "Toronto St. Patricks",
+        "Toronto"
+      ],
+      [
+        1927,
+        "Toronto Maple Leafs",
+        "Toronto"
+      ]
+    ],
+    "Detroit Red Wings": [
+      [
+        1926,
+        "Detroit Cougars",
+        "Detroit"
+      ],
+      [
+        1930,
+        "Detroit Falcons",
+        "Detroit"
+      ],
+      [
+        1932,
+        "Detroit Red Wings",
+        "Detroit"
+      ]
+    ],
+    "Dallas Stars": [
+      [
+        1967,
+        "Minnesota North Stars",
+        "Minneapolis–St. Paul"
+      ],
+      [
+        1993,
+        "Dallas Stars",
+        "Dallas–Fort Worth"
+      ]
+    ],
+    "Calgary Flames": [
+      [
+        1972,
+        "Atlanta Flames",
+        "Atlanta"
+      ],
+      [
+        1980,
+        "Calgary Flames",
+        "Calgary"
+      ]
+    ],
+    "New Jersey Devils": [
+      [
+        1974,
+        "Kansas City Scouts",
+        "Kansas City"
+      ],
+      [
+        1976,
+        "Colorado Rockies",
+        "Denver"
+      ],
+      [
+        1982,
+        "New Jersey Devils",
+        "New York"
+      ]
+    ],
+    "Winnipeg Jets": [
+      [
+        1999,
+        "Atlanta Thrashers",
+        "Atlanta"
+      ],
+      [
+        2011,
+        "Winnipeg Jets",
+        "Winnipeg"
+      ]
+    ],
+    "Colorado Avalanche": [
+      [
+        1979,
+        "Quebec Nordiques",
+        "Quebec City"
+      ],
+      [
+        1995,
+        "Colorado Avalanche",
+        "Denver"
+      ]
+    ],
+    "Carolina Hurricanes": [
+      [
+        1979,
+        "Hartford Whalers",
+        "Hartford"
+      ],
+      [
+        1997,
+        "Carolina Hurricanes",
+        "Raleigh"
+      ]
+    ],
+    "Arizona Coyotes": [
+      [
+        1979,
+        "Winnipeg Jets",
+        "Winnipeg"
+      ],
+      [
+        1996,
+        "Phoenix Coyotes",
+        "Phoenix"
+      ],
+      [
+        2014,
+        "Arizona Coyotes",
+        "Phoenix"
+      ]
+    ],
+    "Utah Mammoth": [
+      [
+        2024,
+        "Utah Hockey Club",
+        "Salt Lake City"
+      ],
+      [
+        2025,
+        "Utah Mammoth",
+        "Salt Lake City"
+      ]
+    ],
+    "Anaheim Ducks": [
+      [
+        1993,
+        "Mighty Ducks of Anaheim",
+        "Los Angeles"
+      ],
+      [
+        2006,
+        "Anaheim Ducks",
+        "Los Angeles"
+      ]
+    ]
   }
 }
