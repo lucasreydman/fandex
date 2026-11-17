@@ -116,7 +116,7 @@ export function TeamBrowser({
                 onClick={() => chooseCity(ts)}
                 className="flex h-11 items-center gap-3 rounded-[8px] px-3 text-left transition-colors duration-150 hover:bg-raised"
               >
-                <span className="min-w-0 flex-1 truncate text-[14px]">{name}</span>
+                <span className="min-w-0 flex-1 text-[14px] leading-5">{name}</span>
                 <span className="flex -space-x-1">
                   {ts.slice(0, 6).map((t) => <Logo key={t.key} team={t} size={22} />)}
                 </span>
@@ -134,12 +134,12 @@ export function TeamBrowser({
                   aria-pressed={on}
                   onClick={() => choose(t)}
                   className={clsx(
-                    "flex h-[88px] flex-col items-center justify-center gap-2 rounded-[8px] px-1 transition-[background-color,transform] duration-150 active:scale-[0.97]",
+                    "flex min-h-[96px] flex-col items-center justify-start gap-2 rounded-[8px] px-1 py-3 transition-[background-color,transform] duration-150 active:scale-[0.97]",
                     on ? "bg-raised ring-1 ring-ink" : "hover:bg-raised",
                   )}
                 >
                   <Logo team={t} size={40} />
-                  <span className="w-full truncate text-center text-[12px] leading-4 text-ink-2">
+                  <span className="w-full text-balance break-words text-center text-[12px] leading-4 text-ink-2">
                     {t.nick}
                     {t.inactive && <span className="block text-ink-3">inactive</span>}
                   </span>
@@ -196,7 +196,7 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
               type="button"
               onClick={() => open(l)}
               className={clsx(
-                "group flex h-[124px] flex-col items-center justify-center gap-2 rounded-[12px] border text-center transition-[background-color,border-color,transform] duration-150 active:scale-[0.98]",
+                "group flex min-h-[124px] min-w-0 flex-col items-center justify-center gap-2 rounded-[12px] border py-3 text-center transition-[background-color,border-color,transform] duration-150 active:scale-[0.98]",
                 t ? "border-line bg-card hover:border-line-2" : "border-dashed border-line-2 hover:bg-raised",
               )}
             >
@@ -211,9 +211,9 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
                   {!LEAGUE_MARK[l] && <Plus size={18} strokeWidth={1.5} />}
                 </span>
               )}
-              <span className="px-2 text-[13px] leading-4">
+              <span className="w-full px-2 text-[13px] leading-4">
                 <span className="num block text-[12px] text-ink-3">{l}</span>
-                <span className={clsx("block truncate", t ? "text-ink" : "text-ink-2")}>{t ? t.nick : "Pick a team"}</span>
+                <span className={clsx("block text-balance break-words", t ? "text-ink" : "text-ink-2")}>{t ? t.nick : "Pick a team"}</span>
               </span>
             </button>
           );
@@ -229,21 +229,21 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
                 type="button"
                 onClick={() => open(l)}
                 className={clsx(
-                  "flex h-14 min-w-0 items-center gap-2 rounded-[12px] border px-2.5 text-left transition-[background-color,border-color,transform] duration-150 active:scale-[0.98]",
+                  "group flex min-h-[104px] min-w-0 flex-col items-center justify-center gap-2 rounded-[12px] border px-2 py-3 text-center transition-[background-color,border-color,transform] duration-150 active:scale-[0.98]",
                   t ? "border-line bg-card hover:border-line-2" : "border-dashed border-line-2 hover:bg-raised",
                 )}
               >
                 {t ? (
-                  <Logo team={t} size={28} />
+                  <Logo team={t} size={36} />
                 ) : (
-                  <span className="grid size-7 shrink-0 place-items-center rounded-full bg-raised text-ink-3">
-                    <LeagueMark league={l} size={18} className="opacity-70" />
-                    {!LEAGUE_MARK[l] && <Plus size={14} strokeWidth={1.5} />}
+                  <span className="grid size-9 shrink-0 place-items-center rounded-full bg-raised text-ink-3 transition-colors duration-150 group-hover:text-ink">
+                    <LeagueMark league={l} size={22} className="opacity-70 transition-opacity duration-150 group-hover:opacity-100" />
+                    {!LEAGUE_MARK[l] && <Plus size={16} strokeWidth={1.5} />}
                   </span>
                 )}
-                <span className="min-w-0 text-[13px] leading-4">
+                <span className="w-full text-[13px] leading-4">
                   <span className="num block text-[12px] text-ink-3">{l}</span>
-                  <span className={clsx("block truncate", t ? "text-ink" : "text-ink-2")}>{t ? t.nick : "Add"}</span>
+                  <span className={clsx("block text-balance break-words", t ? "text-ink" : "text-ink-2")}>{t ? t.nick : "Add"}</span>
                 </span>
               </button>
             );

@@ -51,7 +51,7 @@ export function LeagueMark({ league, size = 16, onInk = false, className }: { le
   const dark = (theme === "dark") !== onInk;
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img src={dark ? mark.dark : mark.light} alt="" width={size} height={size} loading="lazy" decoding="async" className={clsx("shrink-0 object-contain", className)} style={{ width: size, height: size }} />
+    <img src={dark ? mark.dark : mark.light} alt="" width={size} height={size} loading="lazy" decoding="async" className={clsx("shrink-0 object-contain", mark.white && !dark && "brightness-0", className)} style={{ width: size, height: size }} />
   );
 }
 
@@ -65,12 +65,16 @@ export function LeagueLabel({ league, onInk = false }: { league: League; onInk?:
   );
 }
 
-/** The title mark: a small pennant. Used wherever a championship is counted. */
-export function Pennant({ size = 10, className }: { size?: number; className?: string }) {
+/** The title mark: a small pennant, filled for a championship and hollow for a final that was lost. */
+export function Pennant({ size = 10, hollow = false, className }: { size?: number; hollow?: boolean; className?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 10 10" aria-hidden className={clsx("shrink-0", className)}>
       <path d="M1 0.5v9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-      <path d="M1.6 1.2 9.4 3.6 1.6 6z" fill="currentColor" />
+      {hollow ? (
+        <path d="M2 1.7 8.2 3.6 2 5.5z" fill="none" stroke="currentColor" strokeWidth="1" strokeLinejoin="round" />
+      ) : (
+        <path d="M1.6 1.2 9.4 3.6 1.6 6z" fill="currentColor" />
+      )}
     </svg>
   );
 }

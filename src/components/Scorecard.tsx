@@ -69,7 +69,7 @@ function Stat({ label, value, note, children }: { label: string; value?: number;
       <div className="display mt-2 flex h-10 items-center gap-2 text-[36px] text-ink">
         {children ?? <NumberFlow value={value ?? 0} className="[--number-flow-mask-height:0.06em]" style={{ lineHeight: 1 }} />}
       </div>
-      {note && <div className="mt-2 truncate text-[12px] leading-4 text-ink-3">{note}</div>}
+      {note && <div className="mt-2 text-[12px] leading-4 text-ink-3">{note}</div>}
     </div>
   );
 }
@@ -137,7 +137,7 @@ export function Scorecard({ result, fan, eraLabel }: { result: Result; fan: FanS
               <div className="flex min-w-0 items-center gap-3">
                 <Logo team={s.team} size={36} />
                 <div className="min-w-0">
-                  <div className="truncate text-[15px] leading-5 text-ink">{s.team.name}</div>
+                  <div className="text-[15px] leading-5 text-ink">{s.team.name}</div>
                   <div className="num text-[12px] leading-4 text-ink-3">
                     #{s.rank} · {record(s.w, s.l, s.t)} · {pct(s.pct)}
                   </div>

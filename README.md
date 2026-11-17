@@ -39,7 +39,7 @@ MLS (1996), the WNBA (1997), NWSL (2013), the PWHL (2023-24) and the CFL (1958) 
 - In soccer a draw counts as half a win.
 - Each league is scored against its own spread, so the nine share one scale.
 - Any league can be switched off in the Scoring panel.
-- CFL teams show a monogram in the club colour: no public feed carries their logos.
+- ESPN carries no CFL or PWHL league artwork and no CFL club logos, so those come from TheSportsDB.
 
 ## Franchise history
 

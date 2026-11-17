@@ -110,7 +110,7 @@ function CityRow({ m, on, mine, onPick, onHover }: { m: MetroStat; on: boolean; 
       >
         {mine && <span className="absolute inset-y-2 left-0 w-[3px] rounded-[2px] bg-accent" />}
         <span className="num text-right text-[12px] text-ink-3">{m.rank}</span>
-        <span className="truncate text-[14px] text-ink">{m.name}</span>
+        <span className="whitespace-nowrap text-[14px] text-ink">{m.name}</span>
         <span className="flex -space-x-1">
           {m.teams.slice(0, 5).map((s) => <Logo key={s.team.key} team={s.team} size={18} />)}
         </span>
@@ -131,11 +131,11 @@ function CityCard({ m, total }: { m: MetroStat; total: number }) {
       </div>
       <ul className="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2">
         {m.teams.map((s) => (
-          <li key={s.team.key} className="flex h-10 items-center gap-3">
+          <li key={s.team.key} className="flex min-h-10 items-center gap-3 py-1">
             <Logo team={s.team} size={28} className={s.current ? undefined : "opacity-60"} />
             <span className="min-w-0 flex-1">
-              <span className="block truncate text-[14px] leading-5 text-ink">{s.name}</span>
-              <span className="num block truncate text-[12px] leading-4 text-ink-3">
+              <span className="block text-[14px] leading-5 text-ink">{s.name}</span>
+              <span className="num block text-[12px] leading-4 text-ink-3">
                 {pct(s.pct)}{" · "}
                 {s.current
                   ? `#${s.stat.rank} of ${total}${s.seasons < s.stat.seasons ? ` · since ${s.first}` : ""}`

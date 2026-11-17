@@ -15,7 +15,7 @@
   "Naming: 'Ottawa Red Blacks' is the spelling required by the team feed; the club styles itself 'Ottawa REDBLACKS' / 'Redblacks'. 'BC Lions' is used for every season (formally the British Columbia Lions; never renamed). The Saskatchewan Roughriders play in Regina, hence metro 'Regina'.",
   "The CFL name dates from 1958, but the record book counts the 1958 clubs' earlier IRFU/WIFU seasons as part of the same franchises; this file starts at 1958 by design, and Grey Cups before 1958 are not included.",
   "Ottawa follows the CFL record book (2017 edition on): the Rough Riders, Renegades and Redblacks are one franchise with two breaks, 1997-2001 and 2006-2013.",
-  "No public feed carries CFL logos, so teams show as a monogram in the club colour (abbr, color and alt on each team)."
+  "ESPN carries no CFL artwork, so club badges come from TheSportsDB (logo on each team); abbr, color and alt are set here too."
  ],
  "teams": [
   {
@@ -24,7 +24,8 @@
    "metro": "Vancouver",
    "abbr": "BC",
    "color": "#f15a22",
-   "alt": "#000000"
+   "alt": "#000000",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/ysxssy1424732039.png/small"
   },
   {
    "name": "Calgary Stampeders",
@@ -32,7 +33,8 @@
    "metro": "Calgary",
    "abbr": "CGY",
    "color": "#c8102e",
-   "alt": "#000000"
+   "alt": "#000000",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/lksemj1565196917.png/small"
   },
   {
    "name": "Edmonton Elks",
@@ -40,7 +42,8 @@
    "metro": "Edmonton",
    "abbr": "EDM",
    "color": "#2b5134",
-   "alt": "#ffb819"
+   "alt": "#ffb819",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/ehy8wx1770834697.png/small"
   },
   {
    "name": "Hamilton Tiger-Cats",
@@ -48,7 +51,8 @@
    "metro": "Hamilton",
    "abbr": "HAM",
    "color": "#1a1a1a",
-   "alt": "#ffb81c"
+   "alt": "#ffb81c",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/qtwsuq1424727420.png/small"
   },
   {
    "name": "Montreal Alouettes",
@@ -56,7 +60,8 @@
    "metro": "Montreal",
    "abbr": "MTL",
    "color": "#c8102e",
-   "alt": "#002d62"
+   "alt": "#002d62",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/8m9v4n1770835125.png/small"
   },
   {
    "name": "Ottawa Red Blacks",
@@ -64,7 +69,8 @@
    "metro": "Ottawa",
    "abbr": "OTT",
    "color": "#1a1a1a",
-   "alt": "#c8102e"
+   "alt": "#c8102e",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/k8wjz71546002654.png/small"
   },
   {
    "name": "Saskatchewan Roughriders",
@@ -72,7 +78,8 @@
    "metro": "Regina",
    "abbr": "SSK",
    "color": "#006341",
-   "alt": "#ffffff"
+   "alt": "#ffffff",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/xrdull1630952245.png/small"
   },
   {
    "name": "Toronto Argonauts",
@@ -80,7 +87,8 @@
    "metro": "Toronto",
    "abbr": "TOR",
    "color": "#002d62",
-   "alt": "#5f8fb1"
+   "alt": "#5f8fb1",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/5a57ou1628555372.png/small"
   },
   {
    "name": "Winnipeg Blue Bombers",
@@ -88,7 +96,8 @@
    "metro": "Winnipeg",
    "abbr": "WPG",
    "color": "#1c3d7d",
-   "alt": "#b8974f"
+   "alt": "#b8974f",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/4bo4wj1561667273.png/small"
   }
  ],
  "eras": {

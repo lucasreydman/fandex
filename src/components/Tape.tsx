@@ -54,7 +54,7 @@ export function Tape({
               style={{ height, background: heat(p.z) }}
             >
               {p.champ && <Pennant size={9} className="absolute -top-[11px] left-1/2 -translate-x-1/2 text-ink" />}
-              {p.runnerUp && <span className="absolute -top-[5px] left-1/2 size-[3px] -translate-x-1/2 rounded-full bg-ink-3" />}
+              {p.runnerUp && !p.champ && <Pennant hollow size={9} className="absolute -top-[11px] left-1/2 -translate-x-1/2 text-ink-2" />}
             </span>
           );
         })}
@@ -94,8 +94,8 @@ export function HeatLegend() {
       <span className="flex items-center gap-1 text-ink-2">
         <Pennant size={9} /> title
       </span>
-      <span className="flex items-center gap-1">
-        <span className="size-[3px] rounded-full bg-ink-3" /> lost the final
+      <span className="flex items-center gap-1 text-ink-2">
+        <Pennant hollow size={9} /> lost the final
       </span>
     </div>
   );

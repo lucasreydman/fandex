@@ -126,9 +126,9 @@ export function Rankings({ result, picks, leagues }: { result: Result; picks: st
                   <span className="flex min-w-0 items-center gap-2 md:gap-3">
                     <Logo team={s.team} size={28} />
                     <span className="min-w-0">
-                      <span className="block truncate text-[14px] leading-5 text-ink"><span className="sm:hidden">{s.team.nick}</span><span className="max-sm:hidden">{s.team.name}</span></span>
-                      <span className="num block truncate text-[12px] leading-4 text-ink-3">
-                        {s.team.league} · {s.team.metro}{s.team.inactive ? " · inactive" : ""}
+                      <span className="block whitespace-nowrap text-[14px] leading-5 text-ink"><span className="sm:hidden">{s.team.nick}</span><span className="max-sm:hidden">{s.team.name}</span></span>
+                      <span className="num block whitespace-nowrap text-[12px] leading-4 text-ink-3">
+                        {s.team.league}<span className="max-sm:hidden"> · {s.team.metro}</span>{s.team.inactive ? " · inactive" : ""}
                       </span>
                     </span>
                   </span>
