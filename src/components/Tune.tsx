@@ -4,7 +4,7 @@ import { RotateCcw, X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { DEFAULT_WEIGHTS } from "@/lib/engine";
 import type { State } from "@/lib/state";
-import type { Weights } from "@/lib/types";
+import type { League, Weights } from "@/lib/types";
 import { Segmented, Switch } from "./ui";
 
 const PARTS: { key: keyof Weights; label: string; note: string }[] = [
@@ -14,9 +14,10 @@ const PARTS: { key: keyof Weights; label: string; note: string }[] = [
 ];
 
 export function Tune({
-  open, onClose, state, set, liveNote,
+  open, onClose, state, set, liveNote, leagues,
 }: {
   open: boolean;
+  leagues: League[];
   onClose: () => void;
   state: State;
   set: (patch: Partial<State>) => void;
@@ -40,7 +41,7 @@ export function Tune({
 
   const w = state.weights;
   const sum = w.record + w.consistency + w.titles || 1;
-  const isDefault = w.record === DEFAULT_WEIGHTS.record && w.consistency === DEFAULT_WEIGHTS.consistency && w.titles === DEFAULT_WEIGHTS.titles && !state.halfLife && !state.includeLive;
+  const isDefault = w.record === DEFAULT_WEIGHTS.record && w.consistency === DEFAULT_WEIGHTS.consistency && w.titles === DEFAULT_WEIGHTS.titles && !state.halfLife && !state.includeLive && !state.off.length;
 
   return (
     <dialog
@@ -83,6 +84,31 @@ export function Tune({
             })}
           </div>
 
+          <h3 className="mt-8 text-[13px] text-ink-2">Leagues counted</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {leagues.map((l) => {
+              const on = !state.off.includes(l);
+              const lastOn = on && leagues.filter((x) => !state.off.includes(x)).length === 1;
+              return (
+                <button
+                  key={l}
+                  type="button"
+                  aria-pressed={on}
+                  disabled={lastOn}
+                  onClick={() => set({ off: on ? [...state.off, l] : state.off.filter((x) => x !== l) })}
+                  className={
+                    on
+                      ? "num h-8 rounded-[8px] bg-ink px-3 text-[13px] text-bg transition-[background-color,color,transform] duration-150 active:scale-[0.97]"
+                      : "num h-8 rounded-[8px] border border-line-2 px-3 text-[13px] text-ink-3 line-through transition-[background-color,color,transform] duration-150 hover:text-ink active:scale-[0.97]"
+                  }
+                >
+                  {l}
+                </button>
+              );
+            })}
+          </div>
+          <p className="mt-2 text-[12px] leading-4 text-ink-3">Switch a league off to leave it out of the rankings, the cities and your number</p>
+
           <h3 className="mt-8 text-[13px] text-ink-2">Recency</h3>
           <div className="mt-3">
             <Segmented<string>
@@ -115,7 +141,7 @@ export function Tune({
           <h3 className="mt-8 text-[13px] text-ink-2">How the number is made</h3>
           <div className="mt-3 grid gap-3 text-[13px] leading-5 text-ink-2">
             <p>
-              Win rate is wins over wins plus losses, regular season only. Ties are left out and NHL overtime losses count as losses, so all four leagues sit on one scale.
+              Win rate is wins over wins plus losses, regular season only. Ties are left out and overtime losses in hockey count as losses. In soccer, where draws are part of the game, a draw counts as half a win.
             </p>
             <p>
               Baseball records bunch up near .500 and football records spread wide, so every record is measured in units of how spread out its own league is. A .560 baseball team and a .620 basketball team come out about equally dominant.
@@ -135,7 +161,7 @@ export function Tune({
           <button
             type="button"
             disabled={isDefault}
-            onClick={() => set({ weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false })}
+            onClick={() => set({ weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, off: [] })}
             className="-ml-3 flex h-9 items-center gap-2 rounded-[10px] px-3 text-[14px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink disabled:opacity-40"
           >
             <RotateCcw size={16} strokeWidth={1.5} /> Reset

@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { motion } from "motion/react";
 import { createContext, useContext, useId } from "react";
 import type { ReactNode } from "react";
+import { contrast } from "@/lib/color";
 import type { Team } from "@/lib/types";
 
 export const EASE = [0.22, 1, 0.36, 1] as const;
@@ -11,11 +12,24 @@ export const ThemeContext = createContext<"light" | "dark">("light");
 
 export function Logo({ team, size = 24, className }: { team: Team; size?: number; className?: string }) {
   const theme = useContext(ThemeContext);
+  const src = theme === "dark" ? team.logoDark ?? team.logo : team.logo;
+  // No artwork in the feed for this club: a plain monogram in its place.
+  if (!src) {
+    return (
+      <span
+        aria-hidden
+        className={clsx("num grid shrink-0 place-items-center rounded-full font-medium", className)}
+        style={{ width: size, height: size, fontSize: Math.max(8, Math.round(size * 0.3)), background: team.color, color: contrast(team.color, "#ffffff") >= 4.5 ? "#ffffff" : "#16130f" }}
+      >
+        {team.abbr.slice(0, 3)}
+      </span>
+    );
+  }
   return (
     // Logos are served by the league data provider; plain img keeps them out of the image optimizer.
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={theme === "dark" ? team.logoDark : team.logo}
+      src={src}
       alt=""
       width={size}
       height={size}
@@ -57,7 +71,7 @@ export function Segmented<T extends string>({
 }) {
   const id = useId();
   return (
-    <div role="radiogroup" aria-label={label} className="inline-flex rounded-[10px] bg-raised p-1">
+    <div role="radiogroup" aria-label={label} className="inline-flex max-w-full overflow-x-auto rounded-[10px] bg-raised p-1 [scrollbar-width:none]">
       {options.map((o) => {
         const active = o.value === value;
         return (
@@ -68,7 +82,7 @@ export function Segmented<T extends string>({
             aria-checked={active}
             onClick={() => onChange(o.value)}
             className={clsx(
-              "relative rounded-[6px] px-3 font-medium transition-colors duration-150",
+              "relative shrink-0 rounded-[6px] px-3 font-medium transition-colors duration-150",
               size === "sm" ? "h-7 text-[13px]" : "h-8 text-[14px]",
               active ? "text-ink" : "text-ink-2 hover:text-ink",
             )}

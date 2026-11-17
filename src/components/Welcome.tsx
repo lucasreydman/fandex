@@ -3,8 +3,7 @@
 import { ArrowLeft, ArrowRight, Dices } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Picks, State } from "@/lib/state";
-import { LEAGUES } from "@/lib/types";
-import type { Team } from "@/lib/types";
+import type { League, Team } from "@/lib/types";
 import { randomPicks, TeamBrowser } from "./TeamPicker";
 import type { PickerView } from "./TeamPicker";
 import { Logo, Wordmark } from "./ui";
@@ -15,10 +14,11 @@ import { Ruler, Stepper } from "./YearDial";
  * Two short steps, and either can be skipped.
  */
 export function Welcome({
-  open, teams, state, set, min, max, onDone,
+  open, teams, leagues, state, set, min, max, onDone,
 }: {
   open: boolean;
   teams: Team[];
+  leagues: League[];
   state: State;
   set: (patch: Partial<State>) => void;
   min: number;
@@ -31,7 +31,7 @@ export function Welcome({
   const [step, setStep] = useState<1 | 2>(1);
   const [view, setView] = useState<PickerView>("NFL");
   const byKey = useMemo(() => new Map(teams.map((t) => [t.key, t])), [teams]);
-  const chosen = LEAGUES.map((l) => state.picks[l]).filter(Boolean) as string[];
+  const chosen = leagues.map((l) => state.picks[l]).filter(Boolean) as string[];
 
   useEffect(() => {
     const d = ref.current;
@@ -68,7 +68,7 @@ export function Welcome({
           <div className="px-6 pb-2 pt-8 sm:px-10">
             <h2 className="display text-[36px] leading-[1.05] text-ink sm:text-[44px]">What year were you born</h2>
             <p className="mt-3 max-w-[32rem] text-[15px] leading-[22px] text-ink-2">
-              Fandex scores every NFL, NBA, MLB and NHL season on one scale. Start with your own lifetime; you can switch to all time or any era later
+              Fandex scores every season of the big four, plus MLS, the WNBA, NWSL, PWHL and CFL, on one scale. Start with your own lifetime; you can switch to all time or any era later
             </p>
             <div className="mt-6">
               <Stepper value={state.year} min={min} max={max} onChange={(v) => set({ mode: "birth", year: Math.max(min, Math.min(max, v)) })} label="Birth year" />
@@ -82,7 +82,7 @@ export function Welcome({
             <div className="px-6 pb-4 pt-6 sm:px-10">
               <h2 className="display text-[36px] leading-[1.05] text-ink sm:text-[44px]">Who do you root for</h2>
               <div className="mt-3 flex min-h-8 flex-wrap items-center gap-x-4 gap-y-2">
-                <p className="text-[15px] leading-[22px] text-ink-2">One per league. Skip any you don’t follow</p>
+                <p className="text-[15px] leading-[22px] text-ink-2">One per league. Start with the big four and add any others you follow</p>
                 {chosen.length > 0 && (
                   <span className="flex items-center gap-2">
                     {chosen.map((k) => <Logo key={k} team={byKey.get(k)!} size={28} />)}
@@ -92,6 +92,7 @@ export function Welcome({
             </div>
             <TeamBrowser
               teams={teams}
+              leagues={leagues}
               picks={state.picks}
               onChange={(p: Picks) => set({ picks: p })}
               view={view}

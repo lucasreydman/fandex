@@ -1,5 +1,8 @@
-export type League = "NFL" | "NBA" | "MLB" | "NHL";
-export const LEAGUES: League[] = ["NFL", "NBA", "MLB", "NHL"];
+export type League = "NFL" | "NBA" | "MLB" | "NHL" | "MLS" | "WNBA" | "NWSL" | "PWHL" | "CFL";
+/** The big four, which every view leads with. */
+export const CORE: League[] = ["NFL", "NBA", "MLB", "NHL"];
+export const MORE: League[] = ["MLS", "WNBA", "NWSL", "PWHL", "CFL"];
+export const LEAGUES: League[] = [...CORE, ...MORE];
 
 export interface Team {
   key: string;
@@ -10,8 +13,8 @@ export interface Team {
   abbr: string;
   color: string;
   alt: string;
-  logo: string;
-  logoDark: string;
+  logo: string | null;
+  logoDark: string | null;
   /** Where the franchise plays now. */
   metro: string;
   /** [first season, name then, metro then], oldest first. Present only for franchises that moved or were renamed. */
@@ -36,12 +39,21 @@ export interface Season {
   rows: Record<string, [number, number] | [number, number, number]>;
 }
 
+export interface LeagueData {
+  seasons: Season[];
+  /** Draws are common and count as half a win (soccer). */
+  draws?: boolean;
+  /** Seasons span two calendar years and are labelled 2025-26. */
+  split?: boolean;
+}
+
 export interface Dataset {
   generatedAt: string;
   warnings: string[];
   teams: Team[];
   metros: Record<string, { lat: number; lon: number; region: string }>;
-  leagues: Record<League, { seasons: Season[] }>;
+  /** A league is absent when its reference data has not been built. */
+  leagues: Partial<Record<League, LeagueData>>;
 }
 
 export interface Weights {
@@ -60,6 +72,8 @@ export interface Options {
   weights: Weights;
   /** Half-life in seasons for weighting recent years more. 0 turns it off. */
   halfLife: number;
+  /** Leagues to score. All of them when left out. */
+  leagues?: League[];
 }
 
 export interface SeasonPoint {

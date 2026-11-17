@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://thefandex.vercel.app"),
   title: "Fandex: every season, every team, one scale",
   description:
-    "Every NFL, NBA, MLB and NHL season since 1903, scored on one scale. Rank all 124 franchises and 49 cities over any era, and see how good your own teams have been since you were born.",
+    "Every NFL, NBA, MLB and NHL season since 1903, plus MLS, the WNBA, NWSL, PWHL and CFL, scored on one scale. Rank every franchise and city over any era, and see how good your own teams have been since you were born.",
   openGraph: {
     title: "Fandex",
-    description: "Every NFL, NBA, MLB and NHL season on one scale. Pick your teams and your years.",
+    description: "Nine North American leagues on one scale. Pick your teams and your years.",
     type: "website",
   },
 };

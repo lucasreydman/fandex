@@ -1,10 +1,11 @@
 import { describe, expect, it } from "vitest";
 import raw from "../data/data.json";
 import { compute, DEFAULT_WEIGHTS, eraAt } from "./engine";
+import { CORE } from "./types";
 import type { Dataset, League } from "./types";
 
 const data = raw as unknown as Dataset;
-const all = compute(data, { from: 0, to: 9999, includeLive: false, weights: DEFAULT_WEIGHTS, halfLife: 0 });
+const all = compute(data, { from: 0, to: 9999, includeLive: false, weights: DEFAULT_WEIGHTS, halfLife: 0, leagues: CORE });
 const team = (name: string) => {
   const t = data.teams.find((x) => x.name === name);
   if (!t) throw new Error(`no team ${name}`);
@@ -12,13 +13,13 @@ const team = (name: string) => {
 };
 const years = (name: string) => {
   const t = team(name);
-  return data.leagues[t.league].seasons.filter((s) => s.rows[t.key]).map((s) => s.y);
+  return data.leagues[t.league]!.seasons.filter((s) => s.rows[t.key]).map((s) => s.y);
 };
 const stat = (name: string) => all.byKey.get(team(name).key)!;
 
 // First season in the league (by the year it started), following official
 // lineage. NFL data starts in 1922, so the three older clubs start there.
-const FIRST: Record<League, Record<string, number>> = {
+const FIRST: Partial<Record<League, Record<string, number>>> = {
   NFL: {
     "Arizona Cardinals": 1922, "Chicago Bears": 1922, "Green Bay Packers": 1922, "New York Giants": 1925, "Detroit Lions": 1930,
     "Washington Commanders": 1932, "Philadelphia Eagles": 1933, "Pittsburgh Steelers": 1933, "Los Angeles Rams": 1937,
@@ -67,15 +68,15 @@ describe("franchise histories", () => {
   it("has every franchise, with no one missing or extra", () => {
     for (const league of Object.keys(FIRST) as League[]) {
       const have = data.teams.filter((t) => t.league === league).map((t) => t.name).sort();
-      expect(have, league).toEqual(Object.keys(FIRST[league]).sort());
+      expect(have, league).toEqual(Object.keys(FIRST[league]!).sort());
     }
   });
 
   it("starts each franchise in the right season and plays every season since", () => {
     const off: string[] = [];
     for (const league of Object.keys(FIRST) as League[]) {
-      const played = data.leagues[league].seasons.map((s) => s.y);
-      for (const [name, first] of Object.entries(FIRST[league])) {
+      const played = data.leagues[league]!.seasons.map((s) => s.y);
+      for (const [name, first] of Object.entries(FIRST[league]!)) {
         const ys = years(name);
         if (ys[0] !== first) off.push(`${name} starts ${ys[0]}, expected ${first}`);
         const end = team(name).inactive ? ys[ys.length - 1] : played[played.length - 1];
@@ -90,7 +91,7 @@ describe("franchise histories", () => {
     // Uses the season's full field, which includes clubs that no longer exist, so check the modern era where all clubs are tracked.
     const off: string[] = [];
     for (const league of Object.keys(FIRST) as League[]) {
-      for (const s of data.leagues[league].seasons) {
+      for (const s of data.leagues[league]!.seasons) {
         if (s.y < 1980 || s.live) continue;
         const rows = Object.values(s.rows);
         const diff = rows.reduce((a, r) => a + r[0] - r[1], 0);
@@ -116,7 +117,7 @@ describe("franchise histories", () => {
   });
 
   it("credits the wartime merged teams to both clubs", () => {
-    const row = (name: string, y: number) => data.leagues.NFL.seasons.find((s) => s.y === y)!.rows[team(name).key];
+    const row = (name: string, y: number) => data.leagues.NFL!.seasons.find((s) => s.y === y)!.rows[team(name).key];
     expect(row("Philadelphia Eagles", 1943)).toEqual([5, 4, 1]);
     expect(row("Pittsburgh Steelers", 1943)).toEqual([5, 4, 1]);
     expect(row("Pittsburgh Steelers", 1944)).toEqual([0, 10]);

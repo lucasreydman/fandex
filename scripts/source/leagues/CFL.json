@@ -1,0 +1,3634 @@
+{
+ "league": "CFL",
+ "notes": [
+  "Source: regular-season standings tables scraped by script from Wikipedia's '<year> CFL season' pages (1958-2026); champions from Wikipedia 'List of Grey Cup champions'. Lineage statements checked against the CFL Guide & Record Book, 2025 edition (static.cfl.ca). Nothing was typed from memory.",
+  "Seasons covered: 1958-2026 except 2020 (cancelled, COVID-19; no Grey Cup awarded). 68 seasons, 68 champions.",
+  "2026: regular season ended 2026-10-24; the 113th Grey Cup was played 2026-11-15 in Calgary (Edmonton Elks 37, Montreal Alouettes 30) and IS included in champions. It was one day old when this file was compiled (2026-11-16), so re-verify once sources settle.",
+  "Records are [wins, losses, ties]. 2000-2002: the CFL gave one standings point for an overtime loss and Wikipedia lists OTL in a separate column from L; those overtime losses are folded into losses here so every season balances (5 OTL in 2000, 3 in 2001, 8 in 2002).",
+  "Schedule lengths differ by division before 1974 (West 16 games, East 14), then 16 for all 1974-85, 18 from 1986, and 14 in the shortened 2021 season, so teams in one early season do not all have the same games played.",
+  "League size: 9 teams 1958-86, 8 in 1987-92, 9 in 1993, 12 in 1994, 13 in 1995, 9 in 1996, 8 in 1997-2001, 9 in 2002-05, 8 in 2006-13, 9 from 2014.",
+  "LINEAGE - Ottawa (DISPUTED CALL): this file follows the maintainer's instruction: 'defunct:Ottawa Rough Riders' (1958-96), 'defunct:Ottawa Renegades' (2002-05), and 'Ottawa Red Blacks' from 2014 as three separate franchises. That is NOT what the current official record says: the CFL Guide & Record Book (since the 2017 edition per Wikipedia; confirmed directly in the 2025 edition, all-time standings historical note 5) states 'For historical record purposes, the Ottawa Football Clubs are considered to be a single entity with two intervals of non-participation (1997-2001 & 2006-2013)', and its franchise-history table lists Ottawa as one entry: CFL 1958-1996, 2002-05 (Renegades), 2014 on (REDBLACKS). To follow the official record instead: rename both defunct Ottawa keys to 'Ottawa Red Blacks' in seasons and champions and add eras 'Ottawa Red Blacks': [[1958,'Ottawa Rough Riders','Ottawa'],[2002,'Ottawa Renegades','Ottawa'],[2014,'Ottawa Red Blacks','Ottawa']]. That would move the Rough Riders' five CFL-era Grey Cups (1960, 1968, 1969, 1973, 1976) to the current club.",
+  "LINEAGE - Montreal: one franchise per the CFL (record book lists 'MONTREAL Alouettes-Concordes', CFL 1958-1986 and 1996 on). Alouettes 1958-81, Concordes 1982-85 (Alouettes suspended operations 1982-05-20, club re-formed the next day as the Concordes), renamed Alouettes for 1986, suspended operations 1987-06-24, franchise 'reactivated' 1996-02-02 with the Baltimore roster. All keyed 'Montreal Alouettes'; there are no Montreal rows 1987-1995. The eras format cannot express that gap: the last era entry starts in 1986.",
+  "LINEAGE - Baltimore: 'defunct:Baltimore Stallions' covers 1994 and 1995. The CFL counts it as a separate, dissolved franchise, not part of Alouettes history; its 1995 Grey Cup stays with the defunct club. In 1994 the club had no official nickname (franchise granted as 'Baltimore Football Club', commonly 'Baltimore CFLers', after an NFL injunction over the name Colts); it became the Stallions in 1995. Both years are keyed under the Stallions name.",
+  "LINEAGE - US clubs 1993-95 are all 'defunct:': Sacramento Gold Miners (1993-94), Las Vegas Posse (1994), Shreveport Pirates (1994-95), Baltimore (1994-95), Birmingham Barracudas (1995), Memphis Mad Dogs (1995), San Antonio Texans (1995). The CFL record book treats Sacramento and San Antonio as ONE franchise ('SACRAMENTO-SAN ANTONIO', 1993-1995: the Gold Miners relocated and became the Texans). They are kept under two defunct keys here, each under the name used that season, as instructed; merge them under 'defunct:San Antonio Texans' if one row per franchise is wanted.",
+  "LINEAGE - Edmonton: one continuous franchise ('EDMONTON Eskimos-Elks' in the record book). Eskimos through 2019; the name was dropped in July 2020 and the club was the 'Edmonton Football Team' for the cancelled 2020 season, so it never played a game under that name; Elks from 2021.",
+  "Naming: 'Ottawa Red Blacks' is the spelling required by the team feed; the club styles itself 'Ottawa REDBLACKS' / 'Redblacks'. 'BC Lions' is used for every season (formally the British Columbia Lions; never renamed). The Saskatchewan Roughriders play in Regina, hence metro 'Regina'.",
+  "The CFL name dates from 1958, but the record book counts the 1958 clubs' earlier IRFU/WIFU seasons as part of the same franchises; this file starts at 1958 by design, and Grey Cups before 1958 are not included.",
+  "Ottawa follows the CFL record book (2017 edition on): the Rough Riders, Renegades and Redblacks are one franchise with two breaks, 1997-2001 and 2006-2013.",
+  "No public feed carries CFL logos, so teams show as a monogram in the club colour (abbr, color and alt on each team)."
+ ],
+ "teams": [
+  {
+   "name": "BC Lions",
+   "nick": "Lions",
+   "metro": "Vancouver",
+   "abbr": "BC",
+   "color": "#f15a22",
+   "alt": "#000000"
+  },
+  {
+   "name": "Calgary Stampeders",
+   "nick": "Stampeders",
+   "metro": "Calgary",
+   "abbr": "CGY",
+   "color": "#c8102e",
+   "alt": "#000000"
+  },
+  {
+   "name": "Edmonton Elks",
+   "nick": "Elks",
+   "metro": "Edmonton",
+   "abbr": "EDM",
+   "color": "#2b5134",
+   "alt": "#ffb819"
+  },
+  {
+   "name": "Hamilton Tiger-Cats",
+   "nick": "Tiger-Cats",
+   "metro": "Hamilton",
+   "abbr": "HAM",
+   "color": "#1a1a1a",
+   "alt": "#ffb81c"
+  },
+  {
+   "name": "Montreal Alouettes",
+   "nick": "Alouettes",
+   "metro": "Montreal",
+   "abbr": "MTL",
+   "color": "#c8102e",
+   "alt": "#002d62"
+  },
+  {
+   "name": "Ottawa Red Blacks",
+   "nick": "Red Blacks",
+   "metro": "Ottawa",
+   "abbr": "OTT",
+   "color": "#1a1a1a",
+   "alt": "#c8102e"
+  },
+  {
+   "name": "Saskatchewan Roughriders",
+   "nick": "Roughriders",
+   "metro": "Regina",
+   "abbr": "SSK",
+   "color": "#006341",
+   "alt": "#ffffff"
+  },
+  {
+   "name": "Toronto Argonauts",
+   "nick": "Argonauts",
+   "metro": "Toronto",
+   "abbr": "TOR",
+   "color": "#002d62",
+   "alt": "#5f8fb1"
+  },
+  {
+   "name": "Winnipeg Blue Bombers",
+   "nick": "Blue Bombers",
+   "metro": "Winnipeg",
+   "abbr": "WPG",
+   "color": "#1c3d7d",
+   "alt": "#b8974f"
+  }
+ ],
+ "eras": {
+  "Edmonton Elks": [
+   [
+    1958,
+    "Edmonton Eskimos",
+    "Edmonton"
+   ],
+   [
+    2021,
+    "Edmonton Elks",
+    "Edmonton"
+   ]
+  ],
+  "Montreal Alouettes": [
+   [
+    1958,
+    "Montreal Alouettes",
+    "Montreal"
+   ],
+   [
+    1982,
+    "Montreal Concordes",
+    "Montreal"
+   ],
+   [
+    1986,
+    "Montreal Alouettes",
+    "Montreal"
+   ]
+  ],
+  "Ottawa Red Blacks": [
+   [
+    1958,
+    "Ottawa Rough Riders",
+    "Ottawa"
+   ],
+   [
+    2002,
+    "Ottawa Renegades",
+    "Ottawa"
+   ],
+   [
+    2014,
+    "Ottawa Red Blacks",
+    "Ottawa"
+   ]
+  ]
+ },
+ "seasons": {
+  "1958": {
+   "Winnipeg Blue Bombers": [
+    13,
+    3,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    6,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    7,
+    7,
+    2
+   ],
+   "Calgary Stampeders": [
+    6,
+    9,
+    1
+   ],
+   "BC Lions": [
+    3,
+    13,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    3,
+    1
+   ],
+   "Montreal Alouettes": [
+    7,
+    6,
+    1
+   ],
+   "Toronto Argonauts": [
+    4,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    6,
+    8,
+    0
+   ]
+  },
+  "1959": {
+   "Winnipeg Blue Bombers": [
+    12,
+    4,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    6,
+    0
+   ],
+   "BC Lions": [
+    9,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    8,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    1,
+    15,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    4,
+    0
+   ],
+   "Montreal Alouettes": [
+    6,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    4,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    6,
+    0
+   ]
+  },
+  "1960": {
+   "Winnipeg Blue Bombers": [
+    14,
+    2,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    8,
+    2
+   ],
+   "BC Lions": [
+    5,
+    9,
+    2
+   ],
+   "Saskatchewan Roughriders": [
+    2,
+    12,
+    2
+   ],
+   "Toronto Argonauts": [
+    10,
+    4,
+    0
+   ],
+   "Montreal Alouettes": [
+    5,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    4,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    5,
+    0
+   ]
+  },
+  "1961": {
+   "Winnipeg Blue Bombers": [
+    13,
+    3,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    5,
+    1
+   ],
+   "Calgary Stampeders": [
+    7,
+    9,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    10,
+    1
+   ],
+   "BC Lions": [
+    1,
+    13,
+    2
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    4,
+    0
+   ],
+   "Toronto Argonauts": [
+    7,
+    6,
+    1
+   ],
+   "Montreal Alouettes": [
+    4,
+    9,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    6,
+    0
+   ]
+  },
+  "1962": {
+   "Winnipeg Blue Bombers": [
+    11,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    9,
+    6,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    7,
+    1
+   ],
+   "BC Lions": [
+    7,
+    9,
+    0
+   ],
+   "Edmonton Elks": [
+    6,
+    9,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    4,
+    1
+   ],
+   "Montreal Alouettes": [
+    4,
+    7,
+    3
+   ],
+   "Toronto Argonauts": [
+    4,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    6,
+    7,
+    1
+   ]
+  },
+  "1963": {
+   "BC Lions": [
+    12,
+    4,
+    0
+   ],
+   "Calgary Stampeders": [
+    10,
+    4,
+    2
+   ],
+   "Saskatchewan Roughriders": [
+    7,
+    7,
+    2
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    9,
+    0
+   ],
+   "Edmonton Elks": [
+    2,
+    14,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    4,
+    0
+   ],
+   "Montreal Alouettes": [
+    6,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    3,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    5,
+    0
+   ]
+  },
+  "1964": {
+   "BC Lions": [
+    11,
+    2,
+    3
+   ],
+   "Calgary Stampeders": [
+    12,
+    4,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    4,
+    12,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    1,
+    14,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    3,
+    1
+   ],
+   "Montreal Alouettes": [
+    6,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    4,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    5,
+    1
+   ]
+  },
+  "1965": {
+   "Calgary Stampeders": [
+    12,
+    4,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    5,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    7,
+    1
+   ],
+   "BC Lions": [
+    6,
+    9,
+    1
+   ],
+   "Edmonton Elks": [
+    5,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    4,
+    0
+   ],
+   "Montreal Alouettes": [
+    5,
+    9,
+    0
+   ],
+   "Toronto Argonauts": [
+    3,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    7,
+    0
+   ]
+  },
+  "1966": {
+   "Saskatchewan Roughriders": [
+    9,
+    6,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    8,
+    7,
+    1
+   ],
+   "Edmonton Elks": [
+    6,
+    9,
+    1
+   ],
+   "Calgary Stampeders": [
+    6,
+    9,
+    1
+   ],
+   "BC Lions": [
+    5,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    5,
+    0
+   ],
+   "Montreal Alouettes": [
+    7,
+    7,
+    0
+   ],
+   "Toronto Argonauts": [
+    5,
+    9,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    11,
+    3,
+    0
+   ]
+  },
+  "1967": {
+   "Calgary Stampeders": [
+    12,
+    4,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    12,
+    4,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    6,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    4,
+    12,
+    0
+   ],
+   "BC Lions": [
+    3,
+    12,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    4,
+    0
+   ],
+   "Toronto Argonauts": [
+    5,
+    8,
+    1
+   ],
+   "Montreal Alouettes": [
+    2,
+    12,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    4,
+    1
+   ]
+  },
+  "1968": {
+   "Saskatchewan Roughriders": [
+    12,
+    3,
+    1
+   ],
+   "Calgary Stampeders": [
+    10,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    8,
+    7,
+    1
+   ],
+   "BC Lions": [
+    4,
+    11,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    3,
+    13,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    5,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    7,
+    1
+   ],
+   "Montreal Alouettes": [
+    3,
+    9,
+    2
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    3,
+    2
+   ]
+  },
+  "1969": {
+   "Saskatchewan Roughriders": [
+    13,
+    3,
+    0
+   ],
+   "Calgary Stampeders": [
+    9,
+    7,
+    0
+   ],
+   "BC Lions": [
+    5,
+    11,
+    0
+   ],
+   "Edmonton Elks": [
+    5,
+    11,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    3,
+    12,
+    1
+   ],
+   "Toronto Argonauts": [
+    10,
+    4,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    5,
+    1
+   ],
+   "Montreal Alouettes": [
+    2,
+    10,
+    2
+   ],
+   "Ottawa Red Blacks": [
+    11,
+    3,
+    0
+   ]
+  },
+  "1970": {
+   "Saskatchewan Roughriders": [
+    14,
+    2,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    9,
+    7,
+    0
+   ],
+   "BC Lions": [
+    6,
+    10,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    2,
+    14,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    5,
+    1
+   ],
+   "Toronto Argonauts": [
+    8,
+    6,
+    0
+   ],
+   "Montreal Alouettes": [
+    7,
+    6,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    10,
+    0
+   ]
+  },
+  "1971": {
+   "Calgary Stampeders": [
+    9,
+    6,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    6,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    8,
+    1
+   ],
+   "BC Lions": [
+    6,
+    9,
+    1
+   ],
+   "Edmonton Elks": [
+    6,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    10,
+    4,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    7,
+    0
+   ],
+   "Montreal Alouettes": [
+    6,
+    8,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    6,
+    8,
+    0
+   ]
+  },
+  "1972": {
+   "Winnipeg Blue Bombers": [
+    10,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    8,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    10,
+    0
+   ],
+   "BC Lions": [
+    5,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    11,
+    3,
+    0
+   ],
+   "Montreal Alouettes": [
+    4,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    3,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    11,
+    3,
+    0
+   ]
+  },
+  "1973": {
+   "Edmonton Elks": [
+    9,
+    5,
+    2
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    6,
+    0
+   ],
+   "BC Lions": [
+    5,
+    9,
+    2
+   ],
+   "Calgary Stampeders": [
+    6,
+    10,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    4,
+    11,
+    1
+   ],
+   "Toronto Argonauts": [
+    7,
+    5,
+    2
+   ],
+   "Montreal Alouettes": [
+    7,
+    6,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    7,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    5,
+    0
+   ]
+  },
+  "1974": {
+   "Edmonton Elks": [
+    10,
+    5,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    7,
+    0
+   ],
+   "BC Lions": [
+    8,
+    8,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    8,
+    8,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    10,
+    0
+   ],
+   "Montreal Alouettes": [
+    9,
+    5,
+    2
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    9,
+    0
+   ],
+   "Toronto Argonauts": [
+    6,
+    9,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    9,
+    0
+   ]
+  },
+  "1975": {
+   "Edmonton Elks": [
+    12,
+    4,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    5,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    6,
+    8,
+    2
+   ],
+   "Calgary Stampeders": [
+    6,
+    10,
+    0
+   ],
+   "BC Lions": [
+    6,
+    10,
+    0
+   ],
+   "Montreal Alouettes": [
+    9,
+    7,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    5,
+    10,
+    1
+   ],
+   "Toronto Argonauts": [
+    5,
+    10,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    10,
+    5,
+    1
+   ]
+  },
+  "1976": {
+   "Saskatchewan Roughriders": [
+    11,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    6,
+    1
+   ],
+   "BC Lions": [
+    5,
+    9,
+    2
+   ],
+   "Calgary Stampeders": [
+    2,
+    12,
+    2
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    8,
+    0
+   ],
+   "Montreal Alouettes": [
+    7,
+    8,
+    1
+   ],
+   "Toronto Argonauts": [
+    7,
+    8,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    6,
+    1
+   ]
+  },
+  "1977": {
+   "Edmonton Elks": [
+    10,
+    6,
+    0
+   ],
+   "BC Lions": [
+    10,
+    6,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    8,
+    0
+   ],
+   "Calgary Stampeders": [
+    4,
+    12,
+    0
+   ],
+   "Montreal Alouettes": [
+    11,
+    5,
+    0
+   ],
+   "Toronto Argonauts": [
+    6,
+    10,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    5,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    8,
+    0
+   ]
+  },
+  "1978": {
+   "Edmonton Elks": [
+    10,
+    4,
+    2
+   ],
+   "Calgary Stampeders": [
+    9,
+    4,
+    3
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    7,
+    0
+   ],
+   "BC Lions": [
+    7,
+    7,
+    2
+   ],
+   "Saskatchewan Roughriders": [
+    4,
+    11,
+    1
+   ],
+   "Montreal Alouettes": [
+    8,
+    7,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    5,
+    10,
+    1
+   ],
+   "Toronto Argonauts": [
+    4,
+    12,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    11,
+    5,
+    0
+   ]
+  },
+  "1979": {
+   "Edmonton Elks": [
+    12,
+    2,
+    2
+   ],
+   "Calgary Stampeders": [
+    12,
+    4,
+    0
+   ],
+   "BC Lions": [
+    9,
+    6,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    4,
+    12,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    2,
+    14,
+    0
+   ],
+   "Montreal Alouettes": [
+    11,
+    4,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    5,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    6,
+    2
+   ]
+  },
+  "1980": {
+   "Edmonton Elks": [
+    13,
+    3,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    9,
+    7,
+    0
+   ],
+   "BC Lions": [
+    8,
+    7,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    2,
+    14,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    7,
+    1
+   ],
+   "Montreal Alouettes": [
+    8,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    6,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    9,
+    0
+   ]
+  },
+  "1981": {
+   "Edmonton Elks": [
+    14,
+    1,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    5,
+    0
+   ],
+   "BC Lions": [
+    10,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    10,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    11,
+    4,
+    1
+   ],
+   "Montreal Alouettes": [
+    3,
+    13,
+    0
+   ],
+   "Toronto Argonauts": [
+    2,
+    14,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    5,
+    11,
+    0
+   ]
+  },
+  "1982": {
+   "Edmonton Elks": [
+    11,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    9,
+    6,
+    1
+   ],
+   "BC Lions": [
+    9,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    9,
+    1
+   ],
+   "Toronto Argonauts": [
+    9,
+    6,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    7,
+    1
+   ],
+   "Montreal Alouettes": [
+    2,
+    14,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    5,
+    11,
+    0
+   ]
+  },
+  "1983": {
+   "BC Lions": [
+    11,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    8,
+    8,
+    0
+   ],
+   "Calgary Stampeders": [
+    8,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    11,
+    0
+   ],
+   "Toronto Argonauts": [
+    12,
+    4,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    5,
+    10,
+    1
+   ],
+   "Montreal Alouettes": [
+    5,
+    10,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    8,
+    0
+   ]
+  },
+  "1984": {
+   "BC Lions": [
+    12,
+    3,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    4,
+    1
+   ],
+   "Edmonton Elks": [
+    9,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    9,
+    1
+   ],
+   "Calgary Stampeders": [
+    6,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    6,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    9,
+    1
+   ],
+   "Montreal Alouettes": [
+    6,
+    9,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    12,
+    0
+   ]
+  },
+  "1985": {
+   "BC Lions": [
+    13,
+    3,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    12,
+    4,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    11,
+    0
+   ],
+   "Calgary Stampeders": [
+    3,
+    13,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    8,
+    0
+   ],
+   "Montreal Alouettes": [
+    8,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    6,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    9,
+    0
+   ]
+  },
+  "1986": {
+   "Edmonton Elks": [
+    13,
+    4,
+    1
+   ],
+   "BC Lions": [
+    12,
+    6,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    11,
+    1
+   ],
+   "Toronto Argonauts": [
+    10,
+    8,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    8,
+    1
+   ],
+   "Montreal Alouettes": [
+    4,
+    14,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    3,
+    14,
+    1
+   ]
+  },
+  "1987": {
+   "BC Lions": [
+    12,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    11,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    12,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    12,
+    6,
+    0
+   ],
+   "Toronto Argonauts": [
+    11,
+    6,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    3,
+    15,
+    0
+   ]
+  },
+  "1988": {
+   "Edmonton Elks": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    11,
+    7,
+    0
+   ],
+   "BC Lions": [
+    10,
+    8,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    12,
+    0
+   ],
+   "Toronto Argonauts": [
+    14,
+    4,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    9,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    2,
+    16,
+    0
+   ]
+  },
+  "1989": {
+   "Edmonton Elks": [
+    16,
+    2,
+    0
+   ],
+   "Calgary Stampeders": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    9,
+    0
+   ],
+   "BC Lions": [
+    7,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    12,
+    6,
+    0
+   ],
+   "Toronto Argonauts": [
+    7,
+    11,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "1990": {
+   "Calgary Stampeders": [
+    11,
+    6,
+    1
+   ],
+   "Edmonton Elks": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    9,
+    0
+   ],
+   "BC Lions": [
+    6,
+    11,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    12,
+    6,
+    0
+   ],
+   "Toronto Argonauts": [
+    10,
+    8,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    12,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    11,
+    0
+   ]
+  },
+  "1991": {
+   "Edmonton Elks": [
+    12,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    11,
+    7,
+    0
+   ],
+   "BC Lions": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    12,
+    0
+   ],
+   "Toronto Argonauts": [
+    13,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    3,
+    15,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    11,
+    0
+   ]
+  },
+  "1992": {
+   "Calgary Stampeders": [
+    13,
+    5,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    9,
+    0
+   ],
+   "BC Lions": [
+    3,
+    15,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    7,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    11,
+    7,
+    0
+   ],
+   "Toronto Argonauts": [
+    6,
+    12,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    9,
+    0
+   ]
+  },
+  "1993": {
+   "Calgary Stampeders": [
+    15,
+    3,
+    0
+   ],
+   "Edmonton Elks": [
+    12,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    11,
+    7,
+    0
+   ],
+   "BC Lions": [
+    10,
+    8,
+    0
+   ],
+   "defunct:Sacramento Gold Miners": [
+    6,
+    12,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    14,
+    4,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    12,
+    0
+   ],
+   "Toronto Argonauts": [
+    3,
+    15,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "1994": {
+   "Calgary Stampeders": [
+    15,
+    3,
+    0
+   ],
+   "Edmonton Elks": [
+    13,
+    5,
+    0
+   ],
+   "BC Lions": [
+    11,
+    6,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    11,
+    7,
+    0
+   ],
+   "defunct:Sacramento Gold Miners": [
+    9,
+    8,
+    1
+   ],
+   "defunct:Las Vegas Posse": [
+    5,
+    13,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    13,
+    5,
+    0
+   ],
+   "defunct:Baltimore Stallions": [
+    12,
+    6,
+    0
+   ],
+   "Toronto Argonauts": [
+    7,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    4,
+    14,
+    0
+   ],
+   "defunct:Shreveport Pirates": [
+    3,
+    15,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "1995": {
+   "Calgary Stampeders": [
+    15,
+    3,
+    0
+   ],
+   "Edmonton Elks": [
+    13,
+    5,
+    0
+   ],
+   "BC Lions": [
+    10,
+    8,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    10,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    11,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    12,
+    0
+   ],
+   "Toronto Argonauts": [
+    4,
+    14,
+    0
+   ],
+   "defunct:Baltimore Stallions": [
+    15,
+    3,
+    0
+   ],
+   "defunct:San Antonio Texans": [
+    12,
+    6,
+    0
+   ],
+   "defunct:Birmingham Barracudas": [
+    10,
+    8,
+    0
+   ],
+   "defunct:Memphis Mad Dogs": [
+    9,
+    9,
+    0
+   ],
+   "defunct:Shreveport Pirates": [
+    5,
+    13,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    3,
+    15,
+    0
+   ]
+  },
+  "1996": {
+   "Calgary Stampeders": [
+    13,
+    5,
+    0
+   ],
+   "Edmonton Elks": [
+    11,
+    7,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    9,
+    0
+   ],
+   "BC Lions": [
+    5,
+    13,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    13,
+    0
+   ],
+   "Toronto Argonauts": [
+    15,
+    3,
+    0
+   ],
+   "Montreal Alouettes": [
+    12,
+    6,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    3,
+    15,
+    0
+   ]
+  },
+  "1997": {
+   "Edmonton Elks": [
+    12,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    10,
+    0
+   ],
+   "BC Lions": [
+    8,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    15,
+    3,
+    0
+   ],
+   "Montreal Alouettes": [
+    13,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    4,
+    14,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    2,
+    16,
+    0
+   ]
+  },
+  "1998": {
+   "Calgary Stampeders": [
+    12,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    9,
+    0
+   ],
+   "BC Lions": [
+    9,
+    9,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    13,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    12,
+    5,
+    1
+   ],
+   "Montreal Alouettes": [
+    12,
+    5,
+    1
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    3,
+    15,
+    0
+   ]
+  },
+  "1999": {
+   "BC Lions": [
+    13,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    12,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    6,
+    12,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    3,
+    15,
+    0
+   ],
+   "Montreal Alouettes": [
+    12,
+    6,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    11,
+    7,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    6,
+    12,
+    0
+   ]
+  },
+  "2000": {
+   "Calgary Stampeders": [
+    12,
+    5,
+    1
+   ],
+   "Edmonton Elks": [
+    10,
+    8,
+    0
+   ],
+   "BC Lions": [
+    8,
+    10,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    12,
+    1
+   ],
+   "Montreal Alouettes": [
+    12,
+    6,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    10,
+    1
+   ],
+   "Toronto Argonauts": [
+    7,
+    10,
+    1
+   ]
+  },
+  "2001": {
+   "Edmonton Elks": [
+    9,
+    9,
+    0
+   ],
+   "Calgary Stampeders": [
+    8,
+    10,
+    0
+   ],
+   "BC Lions": [
+    8,
+    10,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    12,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    14,
+    4,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    11,
+    7,
+    0
+   ],
+   "Montreal Alouettes": [
+    9,
+    9,
+    0
+   ],
+   "Toronto Argonauts": [
+    7,
+    11,
+    0
+   ]
+  },
+  "2002": {
+   "Edmonton Elks": [
+    13,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    12,
+    6,
+    0
+   ],
+   "BC Lions": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    10,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    12,
+    0
+   ],
+   "Montreal Alouettes": [
+    13,
+    5,
+    0
+   ],
+   "Toronto Argonauts": [
+    8,
+    10,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    11,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2003": {
+   "Edmonton Elks": [
+    13,
+    5,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    11,
+    7,
+    0
+   ],
+   "BC Lions": [
+    11,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    5,
+    13,
+    0
+   ],
+   "Montreal Alouettes": [
+    13,
+    5,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    1,
+    17,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    11,
+    0
+   ]
+  },
+  "2004": {
+   "BC Lions": [
+    13,
+    5,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    9,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    11,
+    0
+   ],
+   "Calgary Stampeders": [
+    4,
+    14,
+    0
+   ],
+   "Montreal Alouettes": [
+    14,
+    4,
+    0
+   ],
+   "Toronto Argonauts": [
+    10,
+    7,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    8,
+    1
+   ],
+   "Ottawa Red Blacks": [
+    5,
+    13,
+    0
+   ]
+  },
+  "2005": {
+   "BC Lions": [
+    12,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    11,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    5,
+    13,
+    0
+   ],
+   "Toronto Argonauts": [
+    11,
+    7,
+    0
+   ],
+   "Montreal Alouettes": [
+    10,
+    8,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    5,
+    13,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    7,
+    11,
+    0
+   ]
+  },
+  "2006": {
+   "BC Lions": [
+    13,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    9,
+    0
+   ],
+   "Edmonton Elks": [
+    7,
+    11,
+    0
+   ],
+   "Montreal Alouettes": [
+    10,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    10,
+    8,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2007": {
+   "BC Lions": [
+    14,
+    3,
+    1
+   ],
+   "Saskatchewan Roughriders": [
+    12,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    7,
+    10,
+    1
+   ],
+   "Edmonton Elks": [
+    5,
+    12,
+    1
+   ],
+   "Toronto Argonauts": [
+    11,
+    7,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    7,
+    1
+   ],
+   "Montreal Alouettes": [
+    8,
+    10,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    3,
+    15,
+    0
+   ]
+  },
+  "2008": {
+   "Calgary Stampeders": [
+    13,
+    5,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    12,
+    6,
+    0
+   ],
+   "BC Lions": [
+    11,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    8,
+    0
+   ],
+   "Montreal Alouettes": [
+    11,
+    7,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    8,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    4,
+    14,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    3,
+    15,
+    0
+   ]
+  },
+  "2009": {
+   "Montreal Alouettes": [
+    15,
+    3,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    11,
+    0
+   ],
+   "Toronto Argonauts": [
+    3,
+    15,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    7,
+    1
+   ],
+   "Calgary Stampeders": [
+    10,
+    7,
+    1
+   ],
+   "Edmonton Elks": [
+    9,
+    9,
+    0
+   ],
+   "BC Lions": [
+    8,
+    10,
+    0
+   ]
+  },
+  "2010": {
+   "Calgary Stampeders": [
+    13,
+    5,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    8,
+    0
+   ],
+   "BC Lions": [
+    8,
+    10,
+    0
+   ],
+   "Edmonton Elks": [
+    7,
+    11,
+    0
+   ],
+   "Montreal Alouettes": [
+    12,
+    6,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    9,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2011": {
+   "BC Lions": [
+    11,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    11,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    13,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    8,
+    0
+   ],
+   "Montreal Alouettes": [
+    10,
+    8,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    10,
+    0
+   ],
+   "Toronto Argonauts": [
+    6,
+    12,
+    0
+   ]
+  },
+  "2012": {
+   "BC Lions": [
+    13,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    12,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    8,
+    10,
+    0
+   ],
+   "Edmonton Elks": [
+    7,
+    11,
+    0
+   ],
+   "Montreal Alouettes": [
+    11,
+    7,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    6,
+    12,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    12,
+    0
+   ]
+  },
+  "2013": {
+   "Calgary Stampeders": [
+    14,
+    4,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    11,
+    7,
+    0
+   ],
+   "BC Lions": [
+    11,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    4,
+    14,
+    0
+   ],
+   "Toronto Argonauts": [
+    11,
+    7,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    8,
+    0
+   ],
+   "Montreal Alouettes": [
+    8,
+    10,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    3,
+    15,
+    0
+   ]
+  },
+  "2014": {
+   "Calgary Stampeders": [
+    15,
+    3,
+    0
+   ],
+   "Edmonton Elks": [
+    12,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    8,
+    0
+   ],
+   "BC Lions": [
+    9,
+    9,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    7,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    9,
+    9,
+    0
+   ],
+   "Montreal Alouettes": [
+    9,
+    9,
+    0
+   ],
+   "Toronto Argonauts": [
+    8,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    2,
+    16,
+    0
+   ]
+  },
+  "2015": {
+   "Edmonton Elks": [
+    14,
+    4,
+    0
+   ],
+   "Calgary Stampeders": [
+    14,
+    4,
+    0
+   ],
+   "BC Lions": [
+    7,
+    11,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    5,
+    13,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    3,
+    15,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    12,
+    6,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    10,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    10,
+    8,
+    0
+   ],
+   "Montreal Alouettes": [
+    6,
+    12,
+    0
+   ]
+  },
+  "2016": {
+   "Calgary Stampeders": [
+    15,
+    2,
+    1
+   ],
+   "BC Lions": [
+    12,
+    6,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    5,
+    13,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    9,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    11,
+    0
+   ],
+   "Montreal Alouettes": [
+    7,
+    11,
+    0
+   ],
+   "Toronto Argonauts": [
+    5,
+    13,
+    0
+   ]
+  },
+  "2017": {
+   "Calgary Stampeders": [
+    13,
+    4,
+    1
+   ],
+   "Winnipeg Blue Bombers": [
+    12,
+    6,
+    0
+   ],
+   "Edmonton Elks": [
+    12,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    8,
+    0
+   ],
+   "BC Lions": [
+    7,
+    11,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    8,
+    9,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    12,
+    0
+   ],
+   "Montreal Alouettes": [
+    3,
+    15,
+    0
+   ]
+  },
+  "2018": {
+   "Calgary Stampeders": [
+    13,
+    5,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    12,
+    6,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    8,
+    0
+   ],
+   "BC Lions": [
+    9,
+    9,
+    0
+   ],
+   "Edmonton Elks": [
+    9,
+    9,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    11,
+    7,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    10,
+    0
+   ],
+   "Montreal Alouettes": [
+    5,
+    13,
+    0
+   ],
+   "Toronto Argonauts": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2019": {
+   "Saskatchewan Roughriders": [
+    13,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    12,
+    6,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    11,
+    7,
+    0
+   ],
+   "Edmonton Elks": [
+    8,
+    10,
+    0
+   ],
+   "BC Lions": [
+    5,
+    13,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    15,
+    3,
+    0
+   ],
+   "Montreal Alouettes": [
+    10,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    4,
+    14,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    3,
+    15,
+    0
+   ]
+  },
+  "2021": {
+   "Winnipeg Blue Bombers": [
+    11,
+    3,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    5,
+    0
+   ],
+   "Calgary Stampeders": [
+    8,
+    6,
+    0
+   ],
+   "BC Lions": [
+    5,
+    9,
+    0
+   ],
+   "Edmonton Elks": [
+    3,
+    11,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    5,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    6,
+    0
+   ],
+   "Montreal Alouettes": [
+    7,
+    7,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    3,
+    11,
+    0
+   ]
+  },
+  "2022": {
+   "Winnipeg Blue Bombers": [
+    15,
+    3,
+    0
+   ],
+   "BC Lions": [
+    12,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    12,
+    6,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    12,
+    0
+   ],
+   "Edmonton Elks": [
+    4,
+    14,
+    0
+   ],
+   "Toronto Argonauts": [
+    11,
+    7,
+    0
+   ],
+   "Montreal Alouettes": [
+    9,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2023": {
+   "Winnipeg Blue Bombers": [
+    14,
+    4,
+    0
+   ],
+   "BC Lions": [
+    12,
+    6,
+    0
+   ],
+   "Calgary Stampeders": [
+    6,
+    12,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    6,
+    12,
+    0
+   ],
+   "Edmonton Elks": [
+    4,
+    14,
+    0
+   ],
+   "Toronto Argonauts": [
+    16,
+    2,
+    0
+   ],
+   "Montreal Alouettes": [
+    11,
+    7,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    8,
+    10,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2024": {
+   "Winnipeg Blue Bombers": [
+    11,
+    7,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    9,
+    8,
+    1
+   ],
+   "BC Lions": [
+    9,
+    9,
+    0
+   ],
+   "Edmonton Elks": [
+    7,
+    11,
+    0
+   ],
+   "Calgary Stampeders": [
+    5,
+    12,
+    1
+   ],
+   "Montreal Alouettes": [
+    12,
+    5,
+    1
+   ],
+   "Toronto Argonauts": [
+    10,
+    8,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    9,
+    8,
+    1
+   ],
+   "Hamilton Tiger-Cats": [
+    7,
+    11,
+    0
+   ]
+  },
+  "2025": {
+   "Saskatchewan Roughriders": [
+    12,
+    6,
+    0
+   ],
+   "BC Lions": [
+    11,
+    7,
+    0
+   ],
+   "Calgary Stampeders": [
+    11,
+    7,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    10,
+    8,
+    0
+   ],
+   "Edmonton Elks": [
+    7,
+    11,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    11,
+    7,
+    0
+   ],
+   "Montreal Alouettes": [
+    10,
+    8,
+    0
+   ],
+   "Toronto Argonauts": [
+    5,
+    13,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    4,
+    14,
+    0
+   ]
+  },
+  "2026": {
+   "Edmonton Elks": [
+    13,
+    5,
+    0
+   ],
+   "BC Lions": [
+    10,
+    8,
+    0
+   ],
+   "Saskatchewan Roughriders": [
+    10,
+    8,
+    0
+   ],
+   "Winnipeg Blue Bombers": [
+    9,
+    9,
+    0
+   ],
+   "Calgary Stampeders": [
+    9,
+    9,
+    0
+   ],
+   "Montreal Alouettes": [
+    14,
+    4,
+    0
+   ],
+   "Toronto Argonauts": [
+    9,
+    9,
+    0
+   ],
+   "Hamilton Tiger-Cats": [
+    6,
+    12,
+    0
+   ],
+   "Ottawa Red Blacks": [
+    1,
+    17,
+    0
+   ]
+  }
+ },
+ "champions": [
+  {
+   "season": 1958,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1959,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1960,
+   "champion": "Ottawa Red Blacks",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1961,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1962,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1963,
+   "champion": "Hamilton Tiger-Cats",
+   "runnerUp": "BC Lions"
+  },
+  {
+   "season": 1964,
+   "champion": "BC Lions",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1965,
+   "champion": "Hamilton Tiger-Cats",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 1966,
+   "champion": "Saskatchewan Roughriders",
+   "runnerUp": "Ottawa Red Blacks"
+  },
+  {
+   "season": 1967,
+   "champion": "Hamilton Tiger-Cats",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 1968,
+   "champion": "Ottawa Red Blacks",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 1969,
+   "champion": "Ottawa Red Blacks",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 1970,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 1971,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Toronto Argonauts"
+  },
+  {
+   "season": 1972,
+   "champion": "Hamilton Tiger-Cats",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 1973,
+   "champion": "Ottawa Red Blacks",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1974,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1975,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 1976,
+   "champion": "Ottawa Red Blacks",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 1977,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1978,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 1979,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 1980,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1981,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Ottawa Red Blacks"
+  },
+  {
+   "season": 1982,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Toronto Argonauts"
+  },
+  {
+   "season": 1983,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "BC Lions"
+  },
+  {
+   "season": 1984,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1985,
+   "champion": "BC Lions",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1986,
+   "champion": "Hamilton Tiger-Cats",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1987,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Toronto Argonauts"
+  },
+  {
+   "season": 1988,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "BC Lions"
+  },
+  {
+   "season": 1989,
+   "champion": "Saskatchewan Roughriders",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1990,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1991,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 1992,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 1993,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 1994,
+   "champion": "BC Lions",
+   "runnerUp": "defunct:Baltimore Stallions"
+  },
+  {
+   "season": 1995,
+   "champion": "defunct:Baltimore Stallions",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 1996,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 1997,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 1998,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 1999,
+   "champion": "Hamilton Tiger-Cats",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 2000,
+   "champion": "BC Lions",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 2001,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 2002,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Edmonton Elks"
+  },
+  {
+   "season": 2003,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 2004,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "BC Lions"
+  },
+  {
+   "season": 2005,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 2006,
+   "champion": "BC Lions",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 2007,
+   "champion": "Saskatchewan Roughriders",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 2008,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 2009,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 2010,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Saskatchewan Roughriders"
+  },
+  {
+   "season": 2011,
+   "champion": "BC Lions",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 2012,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 2013,
+   "champion": "Saskatchewan Roughriders",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 2014,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 2015,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Ottawa Red Blacks"
+  },
+  {
+   "season": 2016,
+   "champion": "Ottawa Red Blacks",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 2017,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Calgary Stampeders"
+  },
+  {
+   "season": 2018,
+   "champion": "Calgary Stampeders",
+   "runnerUp": "Ottawa Red Blacks"
+  },
+  {
+   "season": 2019,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 2021,
+   "champion": "Winnipeg Blue Bombers",
+   "runnerUp": "Hamilton Tiger-Cats"
+  },
+  {
+   "season": 2022,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 2023,
+   "champion": "Montreal Alouettes",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 2024,
+   "champion": "Toronto Argonauts",
+   "runnerUp": "Winnipeg Blue Bombers"
+  },
+  {
+   "season": 2025,
+   "champion": "Saskatchewan Roughriders",
+   "runnerUp": "Montreal Alouettes"
+  },
+  {
+   "season": 2026,
+   "champion": "Edmonton Elks",
+   "runnerUp": "Montreal Alouettes"
+  }
+ ],
+ "metros": {
+  "Regina": {
+   "lat": 50.445,
+   "lon": -104.618,
+   "region": "SK"
+  },
+  "Hamilton": {
+   "lat": 43.256,
+   "lon": -79.869,
+   "region": "ON"
+  }
+ }
+}

@@ -15,23 +15,25 @@ export interface State {
   weights: Weights;
   halfLife: number;
   includeLive: boolean;
+  /** Leagues switched off in Scoring. */
+  off: League[];
   teamColors: boolean;
   tab: Tab;
 }
 
-export const EMPTY_PICKS: Picks = { NFL: null, NBA: null, MLB: null, NHL: null };
+export const EMPTY_PICKS: Picks = { NFL: null, NBA: null, MLB: null, NHL: null, MLS: null, WNBA: null, NWSL: null, PWHL: null, CFL: null };
 
 export function defaults(max: number): State {
   return {
     mode: "birth", year: 2005, to: max, picks: { ...EMPTY_PICKS },
-    weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, teamColors: true, tab: "rankings",
+    weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, off: [], teamColors: true, tab: "rankings",
   };
 }
 
 export function toOptions(s: State, min: number, max: number): Options {
   const from = s.mode === "all" ? min : s.mode === "birth" ? s.year : s.year;
   const to = s.mode === "custom" ? Math.max(from, s.to) : max;
-  return { from, to, includeLive: s.includeLive, weights: s.weights, halfLife: s.halfLife };
+  return { from, to, includeLive: s.includeLive, weights: s.weights, halfLife: s.halfLife, leagues: s.off.length ? LEAGUES.filter((l) => !s.off.includes(l)) : undefined };
 }
 
 export function encode(s: State, max: number): string {
@@ -49,6 +51,7 @@ export function encode(s: State, max: number): string {
   }
   if (s.halfLife) p.set("r", String(s.halfLife));
   if (s.includeLive) p.set("live", "1");
+  if (s.off.length) p.set("x", s.off.join(".").toLowerCase());
   if (s.tab !== "rankings") p.set("tab", s.tab);
   void max;
   const q = p.toString();
@@ -60,7 +63,7 @@ const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n
 export function decode(search: string, base: State, data: Dataset, min: number, max: number): State {
   const p = new URLSearchParams(search);
   if (![...p.keys()].length) return base;
-  const s: State = { ...base, picks: { ...EMPTY_PICKS }, weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, mode: "birth", tab: "rankings" };
+  const s: State = { ...base, picks: { ...EMPTY_PICKS }, weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, off: [], mode: "birth", tab: "rankings" };
   const y = Number(p.get("y"));
   if (p.get("era") === "all") s.mode = "all";
   else if (Number.isFinite(y) && y > 0) {
@@ -80,6 +83,7 @@ export function decode(search: string, base: State, data: Dataset, min: number, 
   const r = Number(p.get("r"));
   if ([6, 15].includes(r)) s.halfLife = r;
   s.includeLive = p.get("live") === "1";
+  s.off = LEAGUES.filter((l) => (p.get("x") ?? "").split(".").includes(l.toLowerCase()));
   const tab = p.get("tab");
   if (tab === "seasons" || tab === "cities") s.tab = tab;
   return s;

@@ -7,7 +7,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { EMPTY_PICKS } from "@/lib/state";
 import type { Picks } from "@/lib/state";
-import { LEAGUES } from "@/lib/types";
+import { CORE, MORE } from "@/lib/types";
 import type { League, Team } from "@/lib/types";
 import { EASE, Logo, Segmented } from "./ui";
 
@@ -15,7 +15,7 @@ export type PickerView = League | "city";
 
 export function randomPicks(teams: Team[]): Picks {
   const next: Picks = { ...EMPTY_PICKS };
-  for (const l of LEAGUES) {
+  for (const l of CORE) {
     const pool = teams.filter((t) => t.league === l && !t.inactive);
     next[l] = pool[Math.floor(Math.random() * pool.length)].key;
   }
@@ -28,9 +28,11 @@ export function randomPicks(teams: Team[]): Picks {
  * needs one; onComplete fires once nothing is left to pick.
  */
 export function TeamBrowser({
-  teams, picks, onChange, view, setView, onComplete, trailing, className,
+  teams, leagues, picks, onChange, view, setView, onComplete, trailing, className,
 }: {
   teams: Team[];
+  /** Leagues that have data, in display order. */
+  leagues: League[];
   picks: Picks;
   onChange: (p: Picks) => void;
   view: PickerView;
@@ -55,7 +57,9 @@ export function TeamBrowser({
     const next = { ...picks, [t.league]: picks[t.league] === t.key ? null : t.key };
     onChange(next);
     if (!next[t.league]) return;
-    const todo = LEAGUES.find((l) => !next[l]);
+    // Move on within the same group: the big four first, the other leagues only once you are in them.
+    const group = (CORE.includes(t.league) ? CORE : MORE).filter((l) => leagues.includes(l));
+    const todo = group.find((l) => !next[l]);
     if (todo) go(todo);
     else onComplete?.();
   };
@@ -76,7 +80,7 @@ export function TeamBrowser({
           value={view}
           onChange={go}
           options={[
-            ...LEAGUES.map((l) => ({
+            ...leagues.map((l) => ({
               value: l as PickerView,
               label: (
                 <span className="flex items-center gap-1.5">
@@ -150,7 +154,7 @@ export function TeamBrowser({
   );
 }
 
-export function TeamPicker({ teams, picks, onChange }: { teams: Team[]; picks: Picks; onChange: (p: Picks) => void }) {
+export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[]; leagues: League[]; picks: Picks; onChange: (p: Picks) => void }) {
   const ref = useRef<HTMLDialogElement>(null);
   const [view, setView] = useState<PickerView>("NFL");
   const [session, setSession] = useState(0);
@@ -172,7 +176,8 @@ export function TeamPicker({ teams, picks, onChange }: { teams: Team[]; picks: P
     return () => d.removeEventListener("click", onClick);
   }, []);
 
-  const count = LEAGUES.filter((l) => picks[l]).length;
+  const count = leagues.filter((l) => picks[l]).length;
+  const more = MORE.filter((l) => leagues.includes(l));
 
   return (
     <div>
@@ -181,7 +186,7 @@ export function TeamPicker({ teams, picks, onChange }: { teams: Team[]; picks: P
         <span className="text-[13px] text-ink-3">One per league, skip any you don’t follow</span>
       </div>
       <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
-        {LEAGUES.map((l) => {
+        {CORE.map((l) => {
           const t = picks[l] ? byKey.get(picks[l]!) : undefined;
           return (
             <button
@@ -210,6 +215,36 @@ export function TeamPicker({ teams, picks, onChange }: { teams: Team[]; picks: P
           );
         })}
       </div>
+      {more.length > 0 && (
+        <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-5 lg:grid-cols-3 xl:grid-cols-5">
+          {more.map((l) => {
+            const t = picks[l] ? byKey.get(picks[l]!) : undefined;
+            return (
+              <button
+                key={l}
+                type="button"
+                onClick={() => open(l)}
+                className={clsx(
+                  "flex h-14 min-w-0 items-center gap-2 rounded-[12px] border px-2.5 text-left transition-[background-color,border-color,transform] duration-150 active:scale-[0.98]",
+                  t ? "border-line bg-card hover:border-line-2" : "border-dashed border-line-2 hover:bg-raised",
+                )}
+              >
+                {t ? (
+                  <Logo team={t} size={28} />
+                ) : (
+                  <span className="grid size-7 shrink-0 place-items-center rounded-full bg-raised text-ink-3">
+                    <Plus size={14} strokeWidth={1.5} />
+                  </span>
+                )}
+                <span className="min-w-0 text-[13px] leading-4">
+                  <span className="num block text-[12px] text-ink-3">{l}</span>
+                  <span className={clsx("block truncate", t ? "text-ink" : "text-ink-2")}>{t ? t.nick : "Add"}</span>
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      )}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-ink-2">
         <button type="button" onClick={() => open("city")} className="flex h-8 items-center gap-2 transition-colors duration-150 hover:text-ink">
           <MapPin size={16} strokeWidth={1.5} /> Pick a whole city
@@ -232,6 +267,7 @@ export function TeamPicker({ teams, picks, onChange }: { teams: Team[]; picks: P
         <TeamBrowser
           key={session}
           teams={teams}
+          leagues={leagues}
           picks={picks}
           onChange={onChange}
           view={view}

@@ -4,15 +4,16 @@ import clsx from "clsx";
 import { useMemo, useState } from "react";
 import { heat } from "@/lib/color";
 import { seasonLabel } from "@/lib/engine";
-import { LEAGUES } from "@/lib/types";
 import type { League, Result, SeasonPoint, TeamStat } from "@/lib/types";
 import { HeatLegend } from "./Tape";
 import { Logo, Pennant, pct, record, Segmented, signed } from "./ui";
 
 /** Every team in a league against every season: the whole era on one sheet. */
-export function Seasons({ result, picks }: { result: Result; picks: string[] }) {
+export function Seasons({ result, picks, leagues }: { result: Result; picks: string[]; leagues: League[] }) {
   const firstLeague = (result.byKey.get(picks[0])?.team.league ?? "NFL") as League;
-  const [league, setLeague] = useState<League>(firstLeague);
+  const [chosen, setLeague] = useState<League>(firstLeague);
+  // A league switched off in Scoring can no longer be shown; fall back to the first that can.
+  const league = leagues.includes(chosen) ? chosen : leagues[0] ?? "NFL";
   const [hover, setHover] = useState<{ s: TeamStat; p: SeasonPoint } | null>(null);
   const teams = useMemo(() => result.teams.filter((s) => s.team.league === league).sort((a, b) => a.leagueRank - b.leagueRank), [result, league]);
   const span = result.span[league];
@@ -27,7 +28,7 @@ export function Seasons({ result, picks }: { result: Result; picks: string[] }) 
   return (
     <div>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <Segmented<League> label="League" size="sm" value={league} onChange={(l) => { setLeague(l); setHover(null); }} options={LEAGUES.map((l) => ({ value: l, label: l }))} />
+        <Segmented<League> label="League" size="sm" value={league} onChange={(l) => { setLeague(l); setHover(null); }} options={leagues.map((l) => ({ value: l, label: l }))} />
         <HeatLegend />
       </div>
       <p className="num mt-4 h-5 text-[13px] leading-5 text-ink-2">

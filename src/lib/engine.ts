@@ -13,7 +13,7 @@ const SEASON_Z_SCALE = 1.6;
 const PRIOR_SEASONS = 4;
 
 export function seasonLabel(league: League, y: number): string {
-  return league === "NBA" || league === "NHL" ? `${y}-${String((y + 1) % 100).padStart(2, "0")}` : String(y);
+  return league === "NBA" || league === "NHL" || league === "PWHL" ? `${y}-${String((y + 1) % 100).padStart(2, "0")}` : String(y);
 }
 
 /** What the franchise was called, and where it played, in the season that started in year y. */
@@ -28,7 +28,8 @@ export function bounds(data: Dataset): { min: number; max: number } {
   let min = Infinity;
   let max = -Infinity;
   for (const lg of LEAGUES) {
-    const s = data.leagues[lg].seasons;
+    const s = data.leagues[lg]?.seasons;
+    if (!s?.length) continue;
     min = Math.min(min, s[0].y);
     max = Math.max(max, s[s.length - 1].y);
   }
@@ -47,18 +48,20 @@ type Scored = SeasonPoint & { k: number; surplus: number };
 
 interface Totals { seasons: number; w: number; l: number; t: number; pct: number; avgZ: number; titleRate: number; titles: number; finalsLost: number; elite: number; dud: number }
 
-function total(points: Scored[]): Totals {
-  let w = 0, l = 0, t = 0, ww = 0, wl = 0, zSum = 0, kSum = 0, surplus = 0, titles = 0, finalsLost = 0, elite = 0, dud = 0;
+function total(points: Scored[], draws: boolean): Totals {
+  let w = 0, l = 0, t = 0, ww = 0, wl = 0, wt = 0, zSum = 0, kSum = 0, surplus = 0, titles = 0, finalsLost = 0, elite = 0, dud = 0;
   for (const p of points) {
     w += p.w; l += p.l; t += p.t;
-    ww += p.k * p.w; wl += p.k * p.l;
+    ww += p.k * p.w; wl += p.k * p.l; wt += p.k * p.t;
     zSum += p.k * p.z; kSum += p.k; surplus += p.surplus;
     if (p.champ) titles++;
     if (p.runnerUp) finalsLost++;
     if (p.z >= 1) elite++;
     if (p.z <= -1) dud++;
   }
-  return { seasons: points.length, w, l, t, pct: ww / (ww + wl), avgZ: zSum / kSum, titleRate: surplus / kSum, titles, finalsLost, elite, dud };
+  // Where draws are part of the game they count as half a win; elsewhere the rare tie is left out.
+  const pct = draws ? (ww + wt / 2) / (ww + wl + wt) : ww / (ww + wl);
+  return { seasons: points.length, w, l, t, pct, avgZ: zSum / kSum, titleRate: surplus / kSum, titles, finalsLost, elite, dud };
 }
 
 export function compute(data: Dataset, opts: Options): Result {
@@ -72,7 +75,11 @@ export function compute(data: Dataset, opts: Options): Result {
   const span = {} as Result["span"];
 
   for (const league of LEAGUES) {
-    const seasons = data.leagues[league].seasons.filter(
+    const source = data.leagues[league];
+    span[league] = null;
+    if (!source || (opts.leagues && !opts.leagues.includes(league))) continue;
+    const draws = !!source.draws;
+    const seasons = source.seasons.filter(
       (s) => s.y >= opts.from && s.y <= opts.to && (opts.includeLive || !s.live),
     );
     span[league] = seasons.length ? { first: seasons[0].y, last: seasons[seasons.length - 1].y, count: seasons.length } : null;
@@ -87,9 +94,9 @@ export function compute(data: Dataset, opts: Options): Result {
       for (const s of seasons) {
         const row = s.rows[team.key];
         if (!row) continue;
-        const games = row[0] + row[1];
+        const games = row[0] + row[1] + (draws ? row[2] ?? 0 : 0);
         if (!games) continue;
-        const pct = row[0] / games;
+        const pct = (row[0] + (draws ? (row[2] ?? 0) / 2 : 0)) / games;
         const k = weightOf(s.y);
         const champ = s.champ === team.key || !!s.also?.some((a) => a.champ === team.key);
         const runnerUp = s.runnerUp === team.key || !!s.also?.some((a) => a.runnerUp === team.key);
@@ -107,7 +114,7 @@ export function compute(data: Dataset, opts: Options): Result {
         });
       }
       if (!points.length) continue;
-      const totals = total(points);
+      const totals = total(points, draws);
       rows.push({
         totals, points,
         stat: {
@@ -138,7 +145,7 @@ export function compute(data: Dataset, opts: Options): Result {
       }
       const home = eraAt(r.stat.team, r.points[r.points.length - 1].y).metro;
       for (const [metro, points] of byMetro) {
-        const t = byMetro.size === 1 ? r.totals : total(points);
+        const t = byMetro.size === 1 ? r.totals : total(points, draws);
         const last = points[points.length - 1];
         spells.push({
           team: r.stat.team, stat: r.stat, metro,

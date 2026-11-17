@@ -15,6 +15,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildExtraLeagues } from "./extra-leagues.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "src", "data", "data.json");
@@ -416,6 +417,8 @@ async function main() {
   }
 
   if (unmatched.size) console.log("teams with no current franchise:", [...unmatched].map(([k, n]) => `${k}×${n}`).join(", "));
+
+  await buildExtraLeagues({ ROOT, NOW, getJson, warn, prev, teams, metros, leagues: out.leagues });
 
   const body = { teams, metros, leagues: out.leagues };
   const changed = !prev || JSON.stringify({ teams: prev.teams, metros: prev.metros, leagues: prev.leagues }) !== JSON.stringify(body);

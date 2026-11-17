@@ -1,0 +1,2269 @@
+{
+ "league": "WNBA",
+ "notes": [
+  "Regular-season records parsed by script from the English Wikipedia standings templates (Template:<year> WNBA Eastern/Western Conference standings for 1997-2019, Template:<year> WNBA standings for 2020-2026); champions parsed from the table in the 'WNBA Finals' article. Retrieved 2026-11-16.",
+  "Seasons covered: 1997-2026 (30 seasons). The 1997 title was a single championship game. 2020 was a shortened 22-game bubble season.",
+  "15 teams played in 2026. The 15th team, missing from the 14-team feed list, is the Connecticut Sun (11-33), who played 2026 in Uncasville under that name.",
+  "PENDING CHANGE FOR 2027: the Sun were sold to the Fertitta family (WNBA/NBA Boards of Governors approval 2026-05-13) and move to Houston as the 'Houston Comets' from the 2027 season. This file still keys the franchise as 'Connecticut Sun' (metro Hartford) because that is the name it carried in every finished season and in the 2026 standings. When the team feed switches, rename the key 'Connecticut Sun' to 'Houston Comets' everywhere, set its metro to Houston and append [2027, \"Houston Comets\", \"Houston\"] to its eras.",
+  "The original Houston Comets (1997-2008, champions 1997-2000) folded in December 2008 and are keyed 'defunct:Houston Comets'. Per Wikipedia it is the Miracle/Sun franchise history, not the original Comets record, that follows the relocated club to Houston, so the two are kept separate; re-check the league's official record book before the 2027 season in case the WNBA assigns the 1997-2008 history to the new Comets.",
+  "Portland Fire: the 2000-2002 team folded and is keyed 'defunct:Portland Fire'. The 2026 Portland Fire is a new expansion franchise (awarded 2024) that revived the name only; it has just the 2026 season.",
+  "Lineages followed: Utah Starzz (1997-2002) -> San Antonio Silver Stars (2003-2013) -> San Antonio Stars (2014-2017) -> Las Vegas Aces (2018-); Detroit Shock (1998-2009) -> Tulsa Shock (2010-2015) -> Dallas Wings (2016-); Orlando Miracle (1999-2002) -> Connecticut Sun (2003-2026).",
+  "Defunct franchises: Houston Comets (1997-2008), Sacramento Monarchs (1997-2009), Charlotte Sting (1997-2006), Cleveland Rockers (1997-2003), Miami Sol (2000-2002), Portland Fire (2000-2002).",
+  "Metros: Connecticut Sun (Uncasville) use 'Hartford'; Golden State Valkyries 'SF Bay Area'; Indiana Fever 'Indianapolis'. 'Tulsa' is the only metro not in the existing list and is defined in 'metros'."
+ ],
+ "teams": [
+  {
+   "name": "Atlanta Dream",
+   "nick": "Dream",
+   "metro": "Atlanta"
+  },
+  {
+   "name": "Chicago Sky",
+   "nick": "Sky",
+   "metro": "Chicago"
+  },
+  {
+   "name": "Connecticut Sun",
+   "nick": "Sun",
+   "metro": "Hartford",
+   "abbr": "CONN",
+   "color": "#0a2240",
+   "alt": "#f05023",
+   "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/conn.png"
+  },
+  {
+   "name": "Dallas Wings",
+   "nick": "Wings",
+   "metro": "Dallas–Fort Worth"
+  },
+  {
+   "name": "Golden State Valkyries",
+   "nick": "Valkyries",
+   "metro": "SF Bay Area"
+  },
+  {
+   "name": "Indiana Fever",
+   "nick": "Fever",
+   "metro": "Indianapolis"
+  },
+  {
+   "name": "Las Vegas Aces",
+   "nick": "Aces",
+   "metro": "Las Vegas"
+  },
+  {
+   "name": "Los Angeles Sparks",
+   "nick": "Sparks",
+   "metro": "Los Angeles"
+  },
+  {
+   "name": "Minnesota Lynx",
+   "nick": "Lynx",
+   "metro": "Minneapolis–St. Paul"
+  },
+  {
+   "name": "New York Liberty",
+   "nick": "Liberty",
+   "metro": "New York"
+  },
+  {
+   "name": "Phoenix Mercury",
+   "nick": "Mercury",
+   "metro": "Phoenix"
+  },
+  {
+   "name": "Portland Fire",
+   "nick": "Fire",
+   "metro": "Portland"
+  },
+  {
+   "name": "Seattle Storm",
+   "nick": "Storm",
+   "metro": "Seattle"
+  },
+  {
+   "name": "Toronto Tempo",
+   "nick": "Tempo",
+   "metro": "Toronto"
+  },
+  {
+   "name": "Washington Mystics",
+   "nick": "Mystics",
+   "metro": "Washington"
+  }
+ ],
+ "eras": {
+  "Las Vegas Aces": [
+   [
+    1997,
+    "Utah Starzz",
+    "Salt Lake City"
+   ],
+   [
+    2003,
+    "San Antonio Silver Stars",
+    "San Antonio"
+   ],
+   [
+    2014,
+    "San Antonio Stars",
+    "San Antonio"
+   ],
+   [
+    2018,
+    "Las Vegas Aces",
+    "Las Vegas"
+   ]
+  ],
+  "Dallas Wings": [
+   [
+    1998,
+    "Detroit Shock",
+    "Detroit"
+   ],
+   [
+    2010,
+    "Tulsa Shock",
+    "Tulsa"
+   ],
+   [
+    2016,
+    "Dallas Wings",
+    "Dallas–Fort Worth"
+   ]
+  ],
+  "Connecticut Sun": [
+   [
+    1999,
+    "Orlando Miracle",
+    "Orlando"
+   ],
+   [
+    2003,
+    "Connecticut Sun",
+    "Hartford"
+   ]
+  ]
+ },
+ "seasons": {
+  "1997": {
+   "Las Vegas Aces": [
+    7,
+    21,
+    0
+   ],
+   "Los Angeles Sparks": [
+    14,
+    14,
+    0
+   ],
+   "New York Liberty": [
+    17,
+    11,
+    0
+   ],
+   "Phoenix Mercury": [
+    16,
+    12,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    15,
+    13,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    15,
+    13,
+    0
+   ],
+   "defunct:Houston Comets": [
+    18,
+    10,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    10,
+    18,
+    0
+   ]
+  },
+  "1998": {
+   "Dallas Wings": [
+    17,
+    13,
+    0
+   ],
+   "Las Vegas Aces": [
+    8,
+    22,
+    0
+   ],
+   "Los Angeles Sparks": [
+    12,
+    18,
+    0
+   ],
+   "New York Liberty": [
+    18,
+    12,
+    0
+   ],
+   "Phoenix Mercury": [
+    19,
+    11,
+    0
+   ],
+   "Washington Mystics": [
+    3,
+    27,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    18,
+    12,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    20,
+    10,
+    0
+   ],
+   "defunct:Houston Comets": [
+    27,
+    3,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    8,
+    22,
+    0
+   ]
+  },
+  "1999": {
+   "Connecticut Sun": [
+    15,
+    17,
+    0
+   ],
+   "Dallas Wings": [
+    15,
+    17,
+    0
+   ],
+   "Las Vegas Aces": [
+    15,
+    17,
+    0
+   ],
+   "Los Angeles Sparks": [
+    20,
+    12,
+    0
+   ],
+   "Minnesota Lynx": [
+    15,
+    17,
+    0
+   ],
+   "New York Liberty": [
+    18,
+    14,
+    0
+   ],
+   "Phoenix Mercury": [
+    15,
+    17,
+    0
+   ],
+   "Washington Mystics": [
+    12,
+    20,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    15,
+    17,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    7,
+    25,
+    0
+   ],
+   "defunct:Houston Comets": [
+    26,
+    6,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    19,
+    13,
+    0
+   ]
+  },
+  "2000": {
+   "Connecticut Sun": [
+    16,
+    16,
+    0
+   ],
+   "Dallas Wings": [
+    14,
+    18,
+    0
+   ],
+   "Indiana Fever": [
+    9,
+    23,
+    0
+   ],
+   "Las Vegas Aces": [
+    18,
+    14,
+    0
+   ],
+   "Los Angeles Sparks": [
+    28,
+    4,
+    0
+   ],
+   "Minnesota Lynx": [
+    15,
+    17,
+    0
+   ],
+   "New York Liberty": [
+    20,
+    12,
+    0
+   ],
+   "Phoenix Mercury": [
+    20,
+    12,
+    0
+   ],
+   "Seattle Storm": [
+    6,
+    26,
+    0
+   ],
+   "Washington Mystics": [
+    14,
+    18,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    8,
+    24,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    17,
+    15,
+    0
+   ],
+   "defunct:Houston Comets": [
+    27,
+    5,
+    0
+   ],
+   "defunct:Miami Sol": [
+    13,
+    19,
+    0
+   ],
+   "defunct:Portland Fire": [
+    10,
+    22,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    21,
+    11,
+    0
+   ]
+  },
+  "2001": {
+   "Connecticut Sun": [
+    13,
+    19,
+    0
+   ],
+   "Dallas Wings": [
+    10,
+    22,
+    0
+   ],
+   "Indiana Fever": [
+    10,
+    22,
+    0
+   ],
+   "Las Vegas Aces": [
+    19,
+    13,
+    0
+   ],
+   "Los Angeles Sparks": [
+    28,
+    4,
+    0
+   ],
+   "Minnesota Lynx": [
+    12,
+    20,
+    0
+   ],
+   "New York Liberty": [
+    21,
+    11,
+    0
+   ],
+   "Phoenix Mercury": [
+    13,
+    19,
+    0
+   ],
+   "Seattle Storm": [
+    10,
+    22,
+    0
+   ],
+   "Washington Mystics": [
+    10,
+    22,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    18,
+    14,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    22,
+    10,
+    0
+   ],
+   "defunct:Houston Comets": [
+    19,
+    13,
+    0
+   ],
+   "defunct:Miami Sol": [
+    20,
+    12,
+    0
+   ],
+   "defunct:Portland Fire": [
+    11,
+    21,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    20,
+    12,
+    0
+   ]
+  },
+  "2002": {
+   "Connecticut Sun": [
+    16,
+    16,
+    0
+   ],
+   "Dallas Wings": [
+    9,
+    23,
+    0
+   ],
+   "Indiana Fever": [
+    16,
+    16,
+    0
+   ],
+   "Las Vegas Aces": [
+    20,
+    12,
+    0
+   ],
+   "Los Angeles Sparks": [
+    25,
+    7,
+    0
+   ],
+   "Minnesota Lynx": [
+    10,
+    22,
+    0
+   ],
+   "New York Liberty": [
+    18,
+    14,
+    0
+   ],
+   "Phoenix Mercury": [
+    11,
+    21,
+    0
+   ],
+   "Seattle Storm": [
+    17,
+    15,
+    0
+   ],
+   "Washington Mystics": [
+    17,
+    15,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    18,
+    14,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    10,
+    22,
+    0
+   ],
+   "defunct:Houston Comets": [
+    24,
+    8,
+    0
+   ],
+   "defunct:Miami Sol": [
+    15,
+    17,
+    0
+   ],
+   "defunct:Portland Fire": [
+    16,
+    16,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    14,
+    18,
+    0
+   ]
+  },
+  "2003": {
+   "Connecticut Sun": [
+    18,
+    16,
+    0
+   ],
+   "Dallas Wings": [
+    25,
+    9,
+    0
+   ],
+   "Indiana Fever": [
+    16,
+    18,
+    0
+   ],
+   "Las Vegas Aces": [
+    12,
+    22,
+    0
+   ],
+   "Los Angeles Sparks": [
+    24,
+    10,
+    0
+   ],
+   "Minnesota Lynx": [
+    18,
+    16,
+    0
+   ],
+   "New York Liberty": [
+    16,
+    18,
+    0
+   ],
+   "Phoenix Mercury": [
+    8,
+    26,
+    0
+   ],
+   "Seattle Storm": [
+    18,
+    16,
+    0
+   ],
+   "Washington Mystics": [
+    9,
+    25,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    18,
+    16,
+    0
+   ],
+   "defunct:Cleveland Rockers": [
+    17,
+    17,
+    0
+   ],
+   "defunct:Houston Comets": [
+    20,
+    14,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    19,
+    15,
+    0
+   ]
+  },
+  "2004": {
+   "Connecticut Sun": [
+    18,
+    16,
+    0
+   ],
+   "Dallas Wings": [
+    17,
+    17,
+    0
+   ],
+   "Indiana Fever": [
+    15,
+    19,
+    0
+   ],
+   "Las Vegas Aces": [
+    9,
+    25,
+    0
+   ],
+   "Los Angeles Sparks": [
+    25,
+    9,
+    0
+   ],
+   "Minnesota Lynx": [
+    18,
+    16,
+    0
+   ],
+   "New York Liberty": [
+    18,
+    16,
+    0
+   ],
+   "Phoenix Mercury": [
+    17,
+    17,
+    0
+   ],
+   "Seattle Storm": [
+    20,
+    14,
+    0
+   ],
+   "Washington Mystics": [
+    17,
+    17,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    16,
+    18,
+    0
+   ],
+   "defunct:Houston Comets": [
+    13,
+    21,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    18,
+    16,
+    0
+   ]
+  },
+  "2005": {
+   "Connecticut Sun": [
+    26,
+    8,
+    0
+   ],
+   "Dallas Wings": [
+    16,
+    18,
+    0
+   ],
+   "Indiana Fever": [
+    21,
+    13,
+    0
+   ],
+   "Las Vegas Aces": [
+    7,
+    27,
+    0
+   ],
+   "Los Angeles Sparks": [
+    17,
+    17,
+    0
+   ],
+   "Minnesota Lynx": [
+    14,
+    20,
+    0
+   ],
+   "New York Liberty": [
+    18,
+    16,
+    0
+   ],
+   "Phoenix Mercury": [
+    16,
+    18,
+    0
+   ],
+   "Seattle Storm": [
+    20,
+    14,
+    0
+   ],
+   "Washington Mystics": [
+    16,
+    18,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    6,
+    28,
+    0
+   ],
+   "defunct:Houston Comets": [
+    19,
+    15,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    25,
+    9,
+    0
+   ]
+  },
+  "2006": {
+   "Chicago Sky": [
+    5,
+    29,
+    0
+   ],
+   "Connecticut Sun": [
+    26,
+    8,
+    0
+   ],
+   "Dallas Wings": [
+    23,
+    11,
+    0
+   ],
+   "Indiana Fever": [
+    21,
+    13,
+    0
+   ],
+   "Las Vegas Aces": [
+    13,
+    21,
+    0
+   ],
+   "Los Angeles Sparks": [
+    25,
+    9,
+    0
+   ],
+   "Minnesota Lynx": [
+    10,
+    24,
+    0
+   ],
+   "New York Liberty": [
+    11,
+    23,
+    0
+   ],
+   "Phoenix Mercury": [
+    18,
+    16,
+    0
+   ],
+   "Seattle Storm": [
+    18,
+    16,
+    0
+   ],
+   "Washington Mystics": [
+    18,
+    16,
+    0
+   ],
+   "defunct:Charlotte Sting": [
+    11,
+    23,
+    0
+   ],
+   "defunct:Houston Comets": [
+    18,
+    16,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    21,
+    13,
+    0
+   ]
+  },
+  "2007": {
+   "Chicago Sky": [
+    14,
+    20,
+    0
+   ],
+   "Connecticut Sun": [
+    18,
+    16,
+    0
+   ],
+   "Dallas Wings": [
+    24,
+    10,
+    0
+   ],
+   "Indiana Fever": [
+    21,
+    13,
+    0
+   ],
+   "Las Vegas Aces": [
+    20,
+    14,
+    0
+   ],
+   "Los Angeles Sparks": [
+    10,
+    24,
+    0
+   ],
+   "Minnesota Lynx": [
+    10,
+    24,
+    0
+   ],
+   "New York Liberty": [
+    16,
+    18,
+    0
+   ],
+   "Phoenix Mercury": [
+    23,
+    11,
+    0
+   ],
+   "Seattle Storm": [
+    17,
+    17,
+    0
+   ],
+   "Washington Mystics": [
+    16,
+    18,
+    0
+   ],
+   "defunct:Houston Comets": [
+    13,
+    21,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    19,
+    15,
+    0
+   ]
+  },
+  "2008": {
+   "Atlanta Dream": [
+    4,
+    30,
+    0
+   ],
+   "Chicago Sky": [
+    12,
+    22,
+    0
+   ],
+   "Connecticut Sun": [
+    21,
+    13,
+    0
+   ],
+   "Dallas Wings": [
+    22,
+    12,
+    0
+   ],
+   "Indiana Fever": [
+    17,
+    17,
+    0
+   ],
+   "Las Vegas Aces": [
+    24,
+    10,
+    0
+   ],
+   "Los Angeles Sparks": [
+    20,
+    14,
+    0
+   ],
+   "Minnesota Lynx": [
+    16,
+    18,
+    0
+   ],
+   "New York Liberty": [
+    19,
+    15,
+    0
+   ],
+   "Phoenix Mercury": [
+    16,
+    18,
+    0
+   ],
+   "Seattle Storm": [
+    22,
+    12,
+    0
+   ],
+   "Washington Mystics": [
+    10,
+    24,
+    0
+   ],
+   "defunct:Houston Comets": [
+    17,
+    17,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    18,
+    16,
+    0
+   ]
+  },
+  "2009": {
+   "Atlanta Dream": [
+    18,
+    16,
+    0
+   ],
+   "Chicago Sky": [
+    16,
+    18,
+    0
+   ],
+   "Connecticut Sun": [
+    16,
+    18,
+    0
+   ],
+   "Dallas Wings": [
+    18,
+    16,
+    0
+   ],
+   "Indiana Fever": [
+    22,
+    12,
+    0
+   ],
+   "Las Vegas Aces": [
+    15,
+    19,
+    0
+   ],
+   "Los Angeles Sparks": [
+    18,
+    16,
+    0
+   ],
+   "Minnesota Lynx": [
+    14,
+    20,
+    0
+   ],
+   "New York Liberty": [
+    13,
+    21,
+    0
+   ],
+   "Phoenix Mercury": [
+    23,
+    11,
+    0
+   ],
+   "Seattle Storm": [
+    20,
+    14,
+    0
+   ],
+   "Washington Mystics": [
+    16,
+    18,
+    0
+   ],
+   "defunct:Sacramento Monarchs": [
+    12,
+    22,
+    0
+   ]
+  },
+  "2010": {
+   "Atlanta Dream": [
+    19,
+    15,
+    0
+   ],
+   "Chicago Sky": [
+    14,
+    20,
+    0
+   ],
+   "Connecticut Sun": [
+    17,
+    17,
+    0
+   ],
+   "Dallas Wings": [
+    6,
+    28,
+    0
+   ],
+   "Indiana Fever": [
+    21,
+    13,
+    0
+   ],
+   "Las Vegas Aces": [
+    14,
+    20,
+    0
+   ],
+   "Los Angeles Sparks": [
+    13,
+    21,
+    0
+   ],
+   "Minnesota Lynx": [
+    13,
+    21,
+    0
+   ],
+   "New York Liberty": [
+    22,
+    12,
+    0
+   ],
+   "Phoenix Mercury": [
+    15,
+    19,
+    0
+   ],
+   "Seattle Storm": [
+    28,
+    6,
+    0
+   ],
+   "Washington Mystics": [
+    22,
+    12,
+    0
+   ]
+  },
+  "2011": {
+   "Atlanta Dream": [
+    20,
+    14,
+    0
+   ],
+   "Chicago Sky": [
+    14,
+    20,
+    0
+   ],
+   "Connecticut Sun": [
+    21,
+    13,
+    0
+   ],
+   "Dallas Wings": [
+    3,
+    31,
+    0
+   ],
+   "Indiana Fever": [
+    21,
+    13,
+    0
+   ],
+   "Las Vegas Aces": [
+    18,
+    16,
+    0
+   ],
+   "Los Angeles Sparks": [
+    15,
+    19,
+    0
+   ],
+   "Minnesota Lynx": [
+    27,
+    7,
+    0
+   ],
+   "New York Liberty": [
+    19,
+    15,
+    0
+   ],
+   "Phoenix Mercury": [
+    19,
+    15,
+    0
+   ],
+   "Seattle Storm": [
+    21,
+    13,
+    0
+   ],
+   "Washington Mystics": [
+    6,
+    28,
+    0
+   ]
+  },
+  "2012": {
+   "Atlanta Dream": [
+    19,
+    15,
+    0
+   ],
+   "Chicago Sky": [
+    14,
+    20,
+    0
+   ],
+   "Connecticut Sun": [
+    25,
+    9,
+    0
+   ],
+   "Dallas Wings": [
+    9,
+    25,
+    0
+   ],
+   "Indiana Fever": [
+    22,
+    12,
+    0
+   ],
+   "Las Vegas Aces": [
+    21,
+    13,
+    0
+   ],
+   "Los Angeles Sparks": [
+    24,
+    10,
+    0
+   ],
+   "Minnesota Lynx": [
+    27,
+    7,
+    0
+   ],
+   "New York Liberty": [
+    15,
+    19,
+    0
+   ],
+   "Phoenix Mercury": [
+    7,
+    27,
+    0
+   ],
+   "Seattle Storm": [
+    16,
+    18,
+    0
+   ],
+   "Washington Mystics": [
+    5,
+    29,
+    0
+   ]
+  },
+  "2013": {
+   "Atlanta Dream": [
+    17,
+    17,
+    0
+   ],
+   "Chicago Sky": [
+    24,
+    10,
+    0
+   ],
+   "Connecticut Sun": [
+    10,
+    24,
+    0
+   ],
+   "Dallas Wings": [
+    11,
+    23,
+    0
+   ],
+   "Indiana Fever": [
+    16,
+    18,
+    0
+   ],
+   "Las Vegas Aces": [
+    12,
+    22,
+    0
+   ],
+   "Los Angeles Sparks": [
+    24,
+    10,
+    0
+   ],
+   "Minnesota Lynx": [
+    26,
+    8,
+    0
+   ],
+   "New York Liberty": [
+    11,
+    23,
+    0
+   ],
+   "Phoenix Mercury": [
+    19,
+    15,
+    0
+   ],
+   "Seattle Storm": [
+    17,
+    17,
+    0
+   ],
+   "Washington Mystics": [
+    17,
+    17,
+    0
+   ]
+  },
+  "2014": {
+   "Atlanta Dream": [
+    19,
+    15,
+    0
+   ],
+   "Chicago Sky": [
+    15,
+    19,
+    0
+   ],
+   "Connecticut Sun": [
+    13,
+    21,
+    0
+   ],
+   "Dallas Wings": [
+    12,
+    22,
+    0
+   ],
+   "Indiana Fever": [
+    16,
+    18,
+    0
+   ],
+   "Las Vegas Aces": [
+    16,
+    18,
+    0
+   ],
+   "Los Angeles Sparks": [
+    16,
+    18,
+    0
+   ],
+   "Minnesota Lynx": [
+    25,
+    9,
+    0
+   ],
+   "New York Liberty": [
+    15,
+    19,
+    0
+   ],
+   "Phoenix Mercury": [
+    29,
+    5,
+    0
+   ],
+   "Seattle Storm": [
+    12,
+    22,
+    0
+   ],
+   "Washington Mystics": [
+    16,
+    18,
+    0
+   ]
+  },
+  "2015": {
+   "Atlanta Dream": [
+    15,
+    19,
+    0
+   ],
+   "Chicago Sky": [
+    21,
+    13,
+    0
+   ],
+   "Connecticut Sun": [
+    15,
+    19,
+    0
+   ],
+   "Dallas Wings": [
+    18,
+    16,
+    0
+   ],
+   "Indiana Fever": [
+    20,
+    14,
+    0
+   ],
+   "Las Vegas Aces": [
+    8,
+    26,
+    0
+   ],
+   "Los Angeles Sparks": [
+    14,
+    20,
+    0
+   ],
+   "Minnesota Lynx": [
+    22,
+    12,
+    0
+   ],
+   "New York Liberty": [
+    23,
+    11,
+    0
+   ],
+   "Phoenix Mercury": [
+    20,
+    14,
+    0
+   ],
+   "Seattle Storm": [
+    10,
+    24,
+    0
+   ],
+   "Washington Mystics": [
+    18,
+    16,
+    0
+   ]
+  },
+  "2016": {
+   "Atlanta Dream": [
+    17,
+    17,
+    0
+   ],
+   "Chicago Sky": [
+    18,
+    16,
+    0
+   ],
+   "Connecticut Sun": [
+    14,
+    20,
+    0
+   ],
+   "Dallas Wings": [
+    11,
+    23,
+    0
+   ],
+   "Indiana Fever": [
+    17,
+    17,
+    0
+   ],
+   "Las Vegas Aces": [
+    7,
+    27,
+    0
+   ],
+   "Los Angeles Sparks": [
+    26,
+    8,
+    0
+   ],
+   "Minnesota Lynx": [
+    28,
+    6,
+    0
+   ],
+   "New York Liberty": [
+    21,
+    13,
+    0
+   ],
+   "Phoenix Mercury": [
+    16,
+    18,
+    0
+   ],
+   "Seattle Storm": [
+    16,
+    18,
+    0
+   ],
+   "Washington Mystics": [
+    13,
+    21,
+    0
+   ]
+  },
+  "2017": {
+   "Atlanta Dream": [
+    12,
+    22,
+    0
+   ],
+   "Chicago Sky": [
+    12,
+    22,
+    0
+   ],
+   "Connecticut Sun": [
+    21,
+    13,
+    0
+   ],
+   "Dallas Wings": [
+    16,
+    18,
+    0
+   ],
+   "Indiana Fever": [
+    9,
+    25,
+    0
+   ],
+   "Las Vegas Aces": [
+    8,
+    26,
+    0
+   ],
+   "Los Angeles Sparks": [
+    26,
+    8,
+    0
+   ],
+   "Minnesota Lynx": [
+    27,
+    7,
+    0
+   ],
+   "New York Liberty": [
+    22,
+    12,
+    0
+   ],
+   "Phoenix Mercury": [
+    18,
+    16,
+    0
+   ],
+   "Seattle Storm": [
+    15,
+    19,
+    0
+   ],
+   "Washington Mystics": [
+    18,
+    16,
+    0
+   ]
+  },
+  "2018": {
+   "Atlanta Dream": [
+    23,
+    11,
+    0
+   ],
+   "Chicago Sky": [
+    13,
+    21,
+    0
+   ],
+   "Connecticut Sun": [
+    21,
+    13,
+    0
+   ],
+   "Dallas Wings": [
+    15,
+    19,
+    0
+   ],
+   "Indiana Fever": [
+    6,
+    28,
+    0
+   ],
+   "Las Vegas Aces": [
+    14,
+    20,
+    0
+   ],
+   "Los Angeles Sparks": [
+    19,
+    15,
+    0
+   ],
+   "Minnesota Lynx": [
+    18,
+    16,
+    0
+   ],
+   "New York Liberty": [
+    7,
+    27,
+    0
+   ],
+   "Phoenix Mercury": [
+    20,
+    14,
+    0
+   ],
+   "Seattle Storm": [
+    26,
+    8,
+    0
+   ],
+   "Washington Mystics": [
+    22,
+    12,
+    0
+   ]
+  },
+  "2019": {
+   "Atlanta Dream": [
+    8,
+    26,
+    0
+   ],
+   "Chicago Sky": [
+    20,
+    14,
+    0
+   ],
+   "Connecticut Sun": [
+    23,
+    11,
+    0
+   ],
+   "Dallas Wings": [
+    10,
+    24,
+    0
+   ],
+   "Indiana Fever": [
+    13,
+    21,
+    0
+   ],
+   "Las Vegas Aces": [
+    21,
+    13,
+    0
+   ],
+   "Los Angeles Sparks": [
+    22,
+    12,
+    0
+   ],
+   "Minnesota Lynx": [
+    18,
+    16,
+    0
+   ],
+   "New York Liberty": [
+    10,
+    24,
+    0
+   ],
+   "Phoenix Mercury": [
+    15,
+    19,
+    0
+   ],
+   "Seattle Storm": [
+    18,
+    16,
+    0
+   ],
+   "Washington Mystics": [
+    26,
+    8,
+    0
+   ]
+  },
+  "2020": {
+   "Atlanta Dream": [
+    7,
+    15,
+    0
+   ],
+   "Chicago Sky": [
+    12,
+    10,
+    0
+   ],
+   "Connecticut Sun": [
+    10,
+    12,
+    0
+   ],
+   "Dallas Wings": [
+    8,
+    14,
+    0
+   ],
+   "Indiana Fever": [
+    6,
+    16,
+    0
+   ],
+   "Las Vegas Aces": [
+    18,
+    4,
+    0
+   ],
+   "Los Angeles Sparks": [
+    15,
+    7,
+    0
+   ],
+   "Minnesota Lynx": [
+    14,
+    8,
+    0
+   ],
+   "New York Liberty": [
+    2,
+    20,
+    0
+   ],
+   "Phoenix Mercury": [
+    13,
+    9,
+    0
+   ],
+   "Seattle Storm": [
+    18,
+    4,
+    0
+   ],
+   "Washington Mystics": [
+    9,
+    13,
+    0
+   ]
+  },
+  "2021": {
+   "Atlanta Dream": [
+    8,
+    24,
+    0
+   ],
+   "Chicago Sky": [
+    16,
+    16,
+    0
+   ],
+   "Connecticut Sun": [
+    26,
+    6,
+    0
+   ],
+   "Dallas Wings": [
+    14,
+    18,
+    0
+   ],
+   "Indiana Fever": [
+    6,
+    26,
+    0
+   ],
+   "Las Vegas Aces": [
+    24,
+    8,
+    0
+   ],
+   "Los Angeles Sparks": [
+    12,
+    20,
+    0
+   ],
+   "Minnesota Lynx": [
+    22,
+    10,
+    0
+   ],
+   "New York Liberty": [
+    12,
+    20,
+    0
+   ],
+   "Phoenix Mercury": [
+    19,
+    13,
+    0
+   ],
+   "Seattle Storm": [
+    21,
+    11,
+    0
+   ],
+   "Washington Mystics": [
+    12,
+    20,
+    0
+   ]
+  },
+  "2022": {
+   "Atlanta Dream": [
+    14,
+    22,
+    0
+   ],
+   "Chicago Sky": [
+    26,
+    10,
+    0
+   ],
+   "Connecticut Sun": [
+    25,
+    11,
+    0
+   ],
+   "Dallas Wings": [
+    18,
+    18,
+    0
+   ],
+   "Indiana Fever": [
+    5,
+    31,
+    0
+   ],
+   "Las Vegas Aces": [
+    26,
+    10,
+    0
+   ],
+   "Los Angeles Sparks": [
+    13,
+    23,
+    0
+   ],
+   "Minnesota Lynx": [
+    14,
+    22,
+    0
+   ],
+   "New York Liberty": [
+    16,
+    20,
+    0
+   ],
+   "Phoenix Mercury": [
+    15,
+    21,
+    0
+   ],
+   "Seattle Storm": [
+    22,
+    14,
+    0
+   ],
+   "Washington Mystics": [
+    22,
+    14,
+    0
+   ]
+  },
+  "2023": {
+   "Atlanta Dream": [
+    19,
+    21,
+    0
+   ],
+   "Chicago Sky": [
+    18,
+    22,
+    0
+   ],
+   "Connecticut Sun": [
+    27,
+    13,
+    0
+   ],
+   "Dallas Wings": [
+    22,
+    18,
+    0
+   ],
+   "Indiana Fever": [
+    13,
+    27,
+    0
+   ],
+   "Las Vegas Aces": [
+    34,
+    6,
+    0
+   ],
+   "Los Angeles Sparks": [
+    17,
+    23,
+    0
+   ],
+   "Minnesota Lynx": [
+    19,
+    21,
+    0
+   ],
+   "New York Liberty": [
+    32,
+    8,
+    0
+   ],
+   "Phoenix Mercury": [
+    9,
+    31,
+    0
+   ],
+   "Seattle Storm": [
+    11,
+    29,
+    0
+   ],
+   "Washington Mystics": [
+    19,
+    21,
+    0
+   ]
+  },
+  "2024": {
+   "Atlanta Dream": [
+    15,
+    25,
+    0
+   ],
+   "Chicago Sky": [
+    13,
+    27,
+    0
+   ],
+   "Connecticut Sun": [
+    28,
+    12,
+    0
+   ],
+   "Dallas Wings": [
+    9,
+    31,
+    0
+   ],
+   "Indiana Fever": [
+    20,
+    20,
+    0
+   ],
+   "Las Vegas Aces": [
+    27,
+    13,
+    0
+   ],
+   "Los Angeles Sparks": [
+    8,
+    32,
+    0
+   ],
+   "Minnesota Lynx": [
+    30,
+    10,
+    0
+   ],
+   "New York Liberty": [
+    32,
+    8,
+    0
+   ],
+   "Phoenix Mercury": [
+    19,
+    21,
+    0
+   ],
+   "Seattle Storm": [
+    25,
+    15,
+    0
+   ],
+   "Washington Mystics": [
+    14,
+    26,
+    0
+   ]
+  },
+  "2025": {
+   "Atlanta Dream": [
+    30,
+    14,
+    0
+   ],
+   "Chicago Sky": [
+    10,
+    34,
+    0
+   ],
+   "Connecticut Sun": [
+    11,
+    33,
+    0
+   ],
+   "Dallas Wings": [
+    10,
+    34,
+    0
+   ],
+   "Golden State Valkyries": [
+    23,
+    21,
+    0
+   ],
+   "Indiana Fever": [
+    24,
+    20,
+    0
+   ],
+   "Las Vegas Aces": [
+    30,
+    14,
+    0
+   ],
+   "Los Angeles Sparks": [
+    21,
+    23,
+    0
+   ],
+   "Minnesota Lynx": [
+    34,
+    10,
+    0
+   ],
+   "New York Liberty": [
+    27,
+    17,
+    0
+   ],
+   "Phoenix Mercury": [
+    27,
+    17,
+    0
+   ],
+   "Seattle Storm": [
+    23,
+    21,
+    0
+   ],
+   "Washington Mystics": [
+    16,
+    28,
+    0
+   ]
+  },
+  "2026": {
+   "Atlanta Dream": [
+    30,
+    14,
+    0
+   ],
+   "Chicago Sky": [
+    16,
+    28,
+    0
+   ],
+   "Connecticut Sun": [
+    11,
+    33,
+    0
+   ],
+   "Dallas Wings": [
+    27,
+    17,
+    0
+   ],
+   "Golden State Valkyries": [
+    32,
+    12,
+    0
+   ],
+   "Indiana Fever": [
+    28,
+    16,
+    0
+   ],
+   "Las Vegas Aces": [
+    31,
+    13,
+    0
+   ],
+   "Los Angeles Sparks": [
+    16,
+    28,
+    0
+   ],
+   "Minnesota Lynx": [
+    33,
+    11,
+    0
+   ],
+   "New York Liberty": [
+    26,
+    18,
+    0
+   ],
+   "Phoenix Mercury": [
+    16,
+    28,
+    0
+   ],
+   "Portland Fire": [
+    17,
+    27,
+    0
+   ],
+   "Seattle Storm": [
+    8,
+    36,
+    0
+   ],
+   "Toronto Tempo": [
+    11,
+    33,
+    0
+   ],
+   "Washington Mystics": [
+    28,
+    16,
+    0
+   ]
+  }
+ },
+ "champions": [
+  {
+   "season": 1997,
+   "champion": "defunct:Houston Comets",
+   "runnerUp": "New York Liberty"
+  },
+  {
+   "season": 1998,
+   "champion": "defunct:Houston Comets",
+   "runnerUp": "Phoenix Mercury"
+  },
+  {
+   "season": 1999,
+   "champion": "defunct:Houston Comets",
+   "runnerUp": "New York Liberty"
+  },
+  {
+   "season": 2000,
+   "champion": "defunct:Houston Comets",
+   "runnerUp": "New York Liberty"
+  },
+  {
+   "season": 2001,
+   "champion": "Los Angeles Sparks",
+   "runnerUp": "defunct:Charlotte Sting"
+  },
+  {
+   "season": 2002,
+   "champion": "Los Angeles Sparks",
+   "runnerUp": "New York Liberty"
+  },
+  {
+   "season": 2003,
+   "champion": "Dallas Wings",
+   "runnerUp": "Los Angeles Sparks"
+  },
+  {
+   "season": 2004,
+   "champion": "Seattle Storm",
+   "runnerUp": "Connecticut Sun"
+  },
+  {
+   "season": 2005,
+   "champion": "defunct:Sacramento Monarchs",
+   "runnerUp": "Connecticut Sun"
+  },
+  {
+   "season": 2006,
+   "champion": "Dallas Wings",
+   "runnerUp": "defunct:Sacramento Monarchs"
+  },
+  {
+   "season": 2007,
+   "champion": "Phoenix Mercury",
+   "runnerUp": "Dallas Wings"
+  },
+  {
+   "season": 2008,
+   "champion": "Dallas Wings",
+   "runnerUp": "Las Vegas Aces"
+  },
+  {
+   "season": 2009,
+   "champion": "Phoenix Mercury",
+   "runnerUp": "Indiana Fever"
+  },
+  {
+   "season": 2010,
+   "champion": "Seattle Storm",
+   "runnerUp": "Atlanta Dream"
+  },
+  {
+   "season": 2011,
+   "champion": "Minnesota Lynx",
+   "runnerUp": "Atlanta Dream"
+  },
+  {
+   "season": 2012,
+   "champion": "Indiana Fever",
+   "runnerUp": "Minnesota Lynx"
+  },
+  {
+   "season": 2013,
+   "champion": "Minnesota Lynx",
+   "runnerUp": "Atlanta Dream"
+  },
+  {
+   "season": 2014,
+   "champion": "Phoenix Mercury",
+   "runnerUp": "Chicago Sky"
+  },
+  {
+   "season": 2015,
+   "champion": "Minnesota Lynx",
+   "runnerUp": "Indiana Fever"
+  },
+  {
+   "season": 2016,
+   "champion": "Los Angeles Sparks",
+   "runnerUp": "Minnesota Lynx"
+  },
+  {
+   "season": 2017,
+   "champion": "Minnesota Lynx",
+   "runnerUp": "Los Angeles Sparks"
+  },
+  {
+   "season": 2018,
+   "champion": "Seattle Storm",
+   "runnerUp": "Washington Mystics"
+  },
+  {
+   "season": 2019,
+   "champion": "Washington Mystics",
+   "runnerUp": "Connecticut Sun"
+  },
+  {
+   "season": 2020,
+   "champion": "Seattle Storm",
+   "runnerUp": "Las Vegas Aces"
+  },
+  {
+   "season": 2021,
+   "champion": "Chicago Sky",
+   "runnerUp": "Phoenix Mercury"
+  },
+  {
+   "season": 2022,
+   "champion": "Las Vegas Aces",
+   "runnerUp": "Connecticut Sun"
+  },
+  {
+   "season": 2023,
+   "champion": "Las Vegas Aces",
+   "runnerUp": "New York Liberty"
+  },
+  {
+   "season": 2024,
+   "champion": "New York Liberty",
+   "runnerUp": "Minnesota Lynx"
+  },
+  {
+   "season": 2025,
+   "champion": "Las Vegas Aces",
+   "runnerUp": "Phoenix Mercury"
+  },
+  {
+   "season": 2026,
+   "champion": "Golden State Valkyries",
+   "runnerUp": "Atlanta Dream"
+  }
+ ],
+ "metros": {
+  "Tulsa": {
+   "lat": 36.154,
+   "lon": -95.993,
+   "region": "OK"
+  }
+ }
+}

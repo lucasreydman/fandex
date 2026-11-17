@@ -1,0 +1,125 @@
+{
+  "league": "PWHL",
+  "notes": [
+    "Regular-season records parsed by script from the English Wikipedia standings templates (Template:2024 PWHL season standings, Template:2024–25 PWHL season standings, Template:2025–26 PWHL season standings, which cite thepwhl.com); champions parsed from the table in the 'Walter Cup' article. Retrieved 2026-11-16.",
+    "Seasons are keyed by the year the season started per its name: '2023' = 2023-24 (its games were all played January-May 2024), '2024' = 2024-25, '2025' = 2025-26. The 'season' field in 'champions' uses the same key, so the Walter Cup awarded in spring 2024 is season 2023, spring 2025 is season 2024 and spring 2026 is season 2025.",
+    "Wins = regulation wins + overtime wins + shootout wins; losses = regulation losses + overtime losses + shootout losses, so wins + losses = games played (24 in 2023-24, 30 in 2024-25 and 2025-26). The league's own table ranks by a 3-2-1-0 points system that is not represented here.",
+    "The six original clubs played 2023-24 without nicknames (PWHL Boston, PWHL Minnesota, PWHL Montreal, PWHL New York, PWHL Ottawa, PWHL Toronto); names were adopted in September 2024 for the 2024-25 season. No franchise has relocated. Seattle Torrent and Vancouver Goldeneyes are 2025-26 expansion teams.",
+    "'Montréal Victoire' is spelled with the acute accent as the league styles it (Wikipedia uses 'Montreal Victoire'); its metro uses the existing unaccented name 'Montreal'. Boston Fleet play in Lowell, MA (metro Boston); New York has played in Bridgeport, CT, on Long Island and in Newark, NJ (metro New York); Minnesota play in St. Paul.",
+    "Champions: 2023-24 Minnesota (then PWHL Minnesota) beat Boston (then PWHL Boston) 3-2; 2024-25 Minnesota Frost beat Ottawa Charge 3-1; 2025-26 Montréal Victoire beat Ottawa Charge 3-1."
+  ],
+  "teams": [
+    {
+      "name": "Boston Fleet",
+      "nick": "Fleet",
+      "metro": "Boston"
+    },
+    {
+      "name": "Minnesota Frost",
+      "nick": "Frost",
+      "metro": "Minneapolis–St. Paul"
+    },
+    {
+      "name": "Montréal Victoire",
+      "nick": "Victoire",
+      "metro": "Montreal"
+    },
+    {
+      "name": "New York Sirens",
+      "nick": "Sirens",
+      "metro": "New York"
+    },
+    {
+      "name": "Ottawa Charge",
+      "nick": "Charge",
+      "metro": "Ottawa"
+    },
+    {
+      "name": "Seattle Torrent",
+      "nick": "Torrent",
+      "metro": "Seattle"
+    },
+    {
+      "name": "Toronto Sceptres",
+      "nick": "Sceptres",
+      "metro": "Toronto"
+    },
+    {
+      "name": "Vancouver Goldeneyes",
+      "nick": "Goldeneyes",
+      "metro": "Vancouver"
+    }
+  ],
+  "eras": {
+    "Boston Fleet": [
+      [2023, "PWHL Boston", "Boston"],
+      [2024, "Boston Fleet", "Boston"]
+    ],
+    "Minnesota Frost": [
+      [2023, "PWHL Minnesota", "Minneapolis–St. Paul"],
+      [2024, "Minnesota Frost", "Minneapolis–St. Paul"]
+    ],
+    "Montréal Victoire": [
+      [2023, "PWHL Montreal", "Montreal"],
+      [2024, "Montréal Victoire", "Montreal"]
+    ],
+    "New York Sirens": [
+      [2023, "PWHL New York", "New York"],
+      [2024, "New York Sirens", "New York"]
+    ],
+    "Ottawa Charge": [
+      [2023, "PWHL Ottawa", "Ottawa"],
+      [2024, "Ottawa Charge", "Ottawa"]
+    ],
+    "Toronto Sceptres": [
+      [2023, "PWHL Toronto", "Toronto"],
+      [2024, "Toronto Sceptres", "Toronto"]
+    ]
+  },
+  "seasons": {
+    "2023": {
+      "Boston Fleet": [12, 12, 0],
+      "Minnesota Frost": [12, 12, 0],
+      "Montréal Victoire": [13, 11, 0],
+      "New York Sirens": [9, 15, 0],
+      "Ottawa Charge": [9, 15, 0],
+      "Toronto Sceptres": [17, 7, 0]
+    },
+    "2024": {
+      "Boston Fleet": [15, 15, 0],
+      "Minnesota Frost": [15, 15, 0],
+      "Montréal Victoire": [19, 11, 0],
+      "New York Sirens": [12, 18, 0],
+      "Ottawa Charge": [14, 16, 0],
+      "Toronto Sceptres": [15, 15, 0]
+    },
+    "2025": {
+      "Boston Fleet": [21, 9, 0],
+      "Minnesota Frost": [16, 14, 0],
+      "Montréal Victoire": [22, 8, 0],
+      "New York Sirens": [12, 18, 0],
+      "Ottawa Charge": [17, 13, 0],
+      "Seattle Torrent": [9, 21, 0],
+      "Toronto Sceptres": [11, 19, 0],
+      "Vancouver Goldeneyes": [12, 18, 0]
+    }
+  },
+  "champions": [
+    {
+      "season": 2023,
+      "champion": "Minnesota Frost",
+      "runnerUp": "Boston Fleet"
+    },
+    {
+      "season": 2024,
+      "champion": "Minnesota Frost",
+      "runnerUp": "Ottawa Charge"
+    },
+    {
+      "season": 2025,
+      "champion": "Montréal Victoire",
+      "runnerUp": "Ottawa Charge"
+    }
+  ],
+  "metros": {}
+}

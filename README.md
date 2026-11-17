@@ -32,6 +32,15 @@ All of it lives in `src/lib/engine.ts`.
 - A few old NFL seasons are missing clubs in the feed; `scripts/source/patches.json` fills them.
 - `scripts/source/patches.json` holds reference standings for the older NFL and NBA seasons, compiled from Wikipedia. ESPN's history silently omits clubs (most Baltimore Colts seasons, several Bengals seasons, the 1974 Steelers) and has a few wrong records, so where the reference covers a season it is the record and the feed is only compared against it.
 
+## More leagues
+
+MLS (1996), the WNBA (1997), NWSL (2013), the PWHL (2023-24) and the CFL (1958) sit alongside the big four. Each has a reference file in `scripts/source/leagues/` holding its teams, standings, champions and franchise lineage, compiled from Wikipedia; `scripts/extra-leagues.mjs` turns those into seasons. A live feed (ESPN for MLS, WNBA and NWSL; the league's own feed for the PWHL) only adds seasons newer than the reference file, and those count as in progress until the file records how they ended. The CFL has no public feed, so it updates only when its file does.
+
+- In soccer a draw counts as half a win.
+- Each league is scored against its own spread, so the nine share one scale.
+- Any league can be switched off in the Scoring panel.
+- CFL teams show a monogram in the club colour: no public feed carries their logos.
+
 ## Franchise history
 
 Lineage follows each league's official record, and `src/lib/history.test.ts` pins it down for all teams: first season, every season since, and the known gaps.

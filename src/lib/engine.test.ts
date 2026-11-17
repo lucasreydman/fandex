@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import raw from "../data/data.json";
 import sheet from "./__fixtures__/sheet-2005.json";
 import { compute, DEFAULT_WEIGHTS, summarize } from "./engine";
+import { CORE } from "./types";
 import type { Dataset } from "./types";
 
 const full = raw as unknown as Dataset;
@@ -10,13 +11,13 @@ const LAST = { NFL: 2025, MLB: 2026, NBA: 2025, NHL: 2025 } as const;
 const data: Dataset = {
   ...full,
   leagues: Object.fromEntries(
-    Object.entries(full.leagues).map(([lg, v]) => [lg, { seasons: v.seasons.filter((s) => s.y <= LAST[lg as keyof typeof LAST]) }]),
+    CORE.map((lg) => [lg, { seasons: full.leagues[lg]!.seasons.filter((s) => s.y <= LAST[lg as keyof typeof LAST]) }]),
   ) as Dataset["leagues"],
 };
 
 // The original spreadsheet covered the 2005 seasons through autumn 2026:
 // NFL to 2025, MLB to 2026, NBA and NHL to 2025-26.
-const result = compute(data, { from: 2005, to: 2026, includeLive: true, weights: DEFAULT_WEIGHTS, halfLife: 0 });
+const result = compute(data, { from: 2005, to: 2026, includeLive: true, weights: DEFAULT_WEIGHTS, halfLife: 0, leagues: CORE });
 const byName = new Map(result.teams.map((s) => [s.team.name, s]));
 const rows = Object.entries(sheet.teams) as [string, (typeof sheet.teams)[keyof typeof sheet.teams]][];
 

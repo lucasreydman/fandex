@@ -20,7 +20,8 @@ const [countries, lakes, lines, src] = await Promise.all([
   get("ne_50m_admin_0_countries.geojson"),
   get("ne_50m_lakes.geojson"),
   get("ne_50m_admin_1_states_provinces_lines.geojson"),
-  readFile(path.join(ROOT, "scripts", "source", "metros.json"), "utf8").then(JSON.parse),
+  // Every metro in the built dataset, including ones the extra leagues add.
+  readFile(path.join(ROOT, "src", "data", "data.json"), "utf8").then(JSON.parse),
 ]);
 
 const points = { type: "MultiPoint", coordinates: Object.values(src.metros).map((m) => [m.lon, m.lat]) };

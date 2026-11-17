@@ -5,7 +5,6 @@ import { ArrowDown, ArrowUp, ChevronDown, Search } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { heatIndex } from "@/lib/color";
-import { LEAGUES } from "@/lib/types";
 import type { League, Result, TeamStat } from "@/lib/types";
 import { Tape } from "./Tape";
 import { EASE, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
@@ -32,7 +31,7 @@ const COLS: { key: SortKey; label: string; title: string; hide?: string; get: (s
 
 const GRID = "grid grid-cols-[20px_minmax(0,1fr)_44px_40px_44px] md:grid-cols-[40px_minmax(0,1fr)_72px_64px_56px_96px] lg:grid-cols-[40px_minmax(0,1.4fr)_48px_72px_64px_80px_56px_56px_56px_112px] xl:grid-cols-[40px_minmax(0,1.4fr)_48px_72px_64px_80px_56px_56px_56px_80px_128px] items-center gap-x-2 md:gap-x-3";
 
-export function Rankings({ result, picks }: { result: Result; picks: string[] }) {
+export function Rankings({ result, picks, leagues }: { result: Result; picks: string[]; leagues: League[] }) {
   const [filter, setFilter] = useState<Filter>("all");
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: "rank", dir: -1 });
   const [query, setQuery] = useState("");
@@ -62,7 +61,7 @@ export function Rankings({ result, picks }: { result: Result; picks: string[] })
           size="sm"
           value={filter}
           onChange={setFilter}
-          options={[{ value: "all", label: "All" }, ...LEAGUES.map((l) => ({ value: l as Filter, label: l }))]}
+          options={[{ value: "all", label: "All" }, ...leagues.map((l) => ({ value: l as Filter, label: l }))]}
         />
         <label className="flex h-9 min-w-0 flex-1 items-center gap-2 rounded-[10px] bg-raised px-3 sm:max-w-[240px]">
           <Search size={16} strokeWidth={1.5} className="shrink-0 text-ink-3" />
