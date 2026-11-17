@@ -6,7 +6,7 @@ import { heat } from "@/lib/color";
 import { seasonLabel } from "@/lib/engine";
 import type { League, Result, SeasonPoint, TeamStat } from "@/lib/types";
 import { HeatLegend } from "./Tape";
-import { LeagueLabel, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
+import { LeagueLabel, Logo, Pennant, pct, rating, record, Segmented } from "./ui";
 
 /** Every team in a league against every season: the whole era on one sheet. */
 export function Seasons({ result, picks, leagues }: { result: Result; picks: string[]; leagues: League[] }) {
@@ -34,11 +34,11 @@ export function Seasons({ result, picks, leagues }: { result: Result; picks: str
       <p className="num mt-4 h-5 text-[13px] leading-5 text-ink-2">
         {hover ? (
           <>
-            <span className="text-ink">{hover.p.as ?? hover.s.team.name}</span> · {seasonLabel(league, hover.p.y)} · {record(hover.p.w, hover.p.l, hover.p.t)} · {pct(hover.p.pct)} · {signed(hover.p.z, 1)}σ
+            <span className="text-ink">{hover.p.as ?? hover.s.team.name}</span> · {seasonLabel(league, hover.p.y)} · {record(hover.p.w, hover.p.l, hover.p.t)} · {pct(hover.p.pct)}{rating(hover.p.z)}
             {hover.p.champ ? " · champions" : hover.p.runnerUp ? " · lost the final" : ""}
           </>
         ) : (
-          <span className="text-ink-3">Best to worst over the span. Point at a season for its record</span>
+          <span className="text-ink-3">Ranked best to worst over these years. Hover or tap a season for its record</span>
         )}
       </p>
       <div className="scroll-quiet mt-2 overflow-x-auto pb-2" onPointerLeave={() => setHover(null)}>

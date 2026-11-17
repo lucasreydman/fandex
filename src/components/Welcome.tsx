@@ -68,7 +68,7 @@ export function Welcome({
           <div className="px-6 pb-2 pt-8 sm:px-10">
             <h2 className="display text-[36px] leading-[1.05] text-ink sm:text-[44px]">What year were you born</h2>
             <p className="mt-3 max-w-[32rem] text-[15px] leading-[22px] text-ink-2">
-              Fandex scores every season of the big four, plus MLS, the WNBA, NWSL, PWHL and CFL, on one scale. Start with your own lifetime; you can switch to all time or any era later
+              Fandex adds up every season your teams have played since. You can switch to all time or any span of years afterwards
             </p>
             <div className="mt-6">
               <Stepper value={state.year} min={min} max={max} onChange={(v) => set({ mode: "birth", year: Math.max(min, Math.min(max, v)) })} label="Birth year" />
@@ -82,7 +82,7 @@ export function Welcome({
             <div className="px-6 pb-4 pt-6 sm:px-10">
               <h2 className="display text-[36px] leading-[1.05] text-ink sm:text-[44px]">Who do you root for</h2>
               <div className="mt-3 flex min-h-8 flex-wrap items-center gap-x-4 gap-y-2">
-                <p className="text-[15px] leading-[22px] text-ink-2">One per league. Start with the big four and add any others you follow</p>
+                <p className="text-[15px] leading-[22px] text-ink-2">One per league. Skip any you don’t follow</p>
                 {chosen.length > 0 && (
                   <span className="flex items-center gap-2">
                     {chosen.map((k) => <Logo key={k} team={byKey.get(k)!} size={28} />)}
@@ -119,7 +119,7 @@ export function Welcome({
                 <button type="button" className={quiet} onClick={() => setStep(1)}>
                   <ArrowLeft size={16} strokeWidth={1.5} /> Back
                 </button>
-                <button type="button" className={quiet} onClick={() => set({ picks: randomPicks(teams) })}>
+                <button type="button" className={quiet} onClick={() => set({ picks: randomPicks(teams, leagues) })}>
                   <Dices size={16} strokeWidth={1.5} /> Random
                 </button>
               </div>

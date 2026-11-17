@@ -141,19 +141,25 @@ export function Tune({
           <h3 className="mt-8 text-[13px] text-ink-2">How the number is made</h3>
           <div className="mt-3 grid gap-3 text-[13px] leading-5 text-ink-2">
             <p>
-              Win rate is wins over wins plus losses, regular season only. Ties are left out and overtime losses in hockey count as losses. In soccer, where draws are part of the game, a draw counts as half a win.
+              Win rate is wins divided by wins plus losses, regular season only. Overtime and shootout losses in hockey count as losses. A soccer draw counts as half a win; the rare tie elsewhere is left out.
             </p>
             <p>
-              Baseball records bunch up near .500 and football records spread wide, so every record is measured in units of how spread out its own league is. A .560 baseball team and a .620 basketball team come out about equally dominant.
+              Baseball records bunch up near .500 and football records spread wide, so each record is measured against how spread out its own league is. A .560 baseball team and a .620 basketball team come out about equally dominant. That is what lets nine leagues share one scale.
             </p>
             <p>
-              The three parts above are blended into one score. The best franchise in the span is 100 and the worst is 0. Your number is the average of your teams on that same line, and a city’s number is the average of its teams.
+              The three parts above are blended into one score. The best franchise in the years you chose is 100 and the worst is 0. Your number is the average of your teams on that line.
+            </p>
+            <p>
+              A city is scored on the seasons actually played there, weighted by how long each team stayed. Seattle keeps the Sonics’ years and Montreal the Expos’.
             </p>
             <p>
               Short histories are pulled toward average, since nine seasons prove less than thirty. That keeps a young expansion team from outranking decades of winning.
             </p>
             <p>
-              History follows each league’s official record. The Sonics’ seasons belong to the Thunder, the 1988 to 2002 Hornets to today’s Hornets, the Browns keep everything before their three missing years, and the Coyotes stay their own inactive franchise while Utah starts fresh in 2024. Cities are scored on the seasons actually played there, so Seattle keeps the Sonics’ years. Records come from ESPN and the NHL, and are checked every night.
+              Franchise history follows each league’s official record through moves and renames. The Sonics’ seasons belong to the Thunder, the 1988 to 2002 Hornets to today’s Hornets, and the first Winnipeg Jets to the Coyotes, who remain as an inactive franchise while Utah starts fresh in 2024. Rival leagues that later merged in, such as the ABA and WHA, are not counted; the AFL of the 1960s is.
+            </p>
+            <p>
+              Standings come from ESPN and from the NHL and PWHL, and refresh each night. Older NFL and NBA seasons and all MLS, WNBA, NWSL, PWHL and CFL history are checked against Wikipedia. The CFL has no live feed, so it updates when a season ends.
             </p>
           </div>
         </div>

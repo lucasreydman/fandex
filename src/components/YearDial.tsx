@@ -92,8 +92,10 @@ export function Stepper({ value, min, max, onChange, label }: { value: number; m
 }
 
 export function YearDial({
-  state, set, min, max,
+  state, set, min, max, allTimeNote,
 }: {
+  /** Which leagues are counted and when each begins, for the all-time view. */
+  allTimeNote: string;
   state: State;
   set: (patch: Partial<State>) => void;
   min: number;
@@ -123,7 +125,7 @@ export function YearDial({
             {String(max).slice(2)}
           </div>
           <p className="mt-4 max-w-[36rem] text-[14px] leading-5 text-ink-2">
-            Every season on record: MLB from 1903, the NHL from 1917, the NFL from 1922 and the NBA from 1946
+            {allTimeNote}
           </p>
         </div>
       ) : (

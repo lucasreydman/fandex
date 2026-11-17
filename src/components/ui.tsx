@@ -184,6 +184,11 @@ export function signed(v: number, digits = 2): string {
   return `${v < 0 ? "−" : "+"}${s}`;
 }
 
+/** The plain word for a season's standing, matching the legend: a full standard deviation clear of the league either way. */
+export function rating(z: number): string {
+  return z >= 1 ? " · great season" : z <= -1 ? " · awful season" : "";
+}
+
 export function record(w: number, l: number, t = 0): string {
   return t ? `${w}-${l}-${t}` : `${w}-${l}`;
 }

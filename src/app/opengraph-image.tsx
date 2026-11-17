@@ -22,7 +22,7 @@ export default function Image() {
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 104, lineHeight: 1, letterSpacing: -2 }}>Every season, one scale</div>
-          <div style={{ fontSize: 34, color: "#aaa69d", marginTop: 24 }}>NFL, NBA, MLB and NHL since 1903. Pick your teams and your years</div>
+          <div style={{ fontSize: 34, color: "#aaa69d", marginTop: 24 }}>Nine pro leagues since 1903. Pick your teams and your years</div>
         </div>
         <div style={{ display: "flex", gap: 6 }}>
           {TAPE.map((z, i) => (

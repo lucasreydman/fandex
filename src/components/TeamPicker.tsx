@@ -14,9 +14,10 @@ import { EASE, LeagueMark, Logo, Segmented } from "./ui";
 
 export type PickerView = League | "city";
 
-export function randomPicks(teams: Team[]): Picks {
+/** A random team in every league that has data. */
+export function randomPicks(teams: Team[], leagues: League[]): Picks {
   const next: Picks = { ...EMPTY_PICKS };
-  for (const l of CORE) {
+  for (const l of leagues) {
     const pool = teams.filter((t) => t.league === l && !t.inactive);
     next[l] = pool[Math.floor(Math.random() * pool.length)].key;
   }
@@ -254,7 +255,7 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
         <button type="button" onClick={() => open("city")} className="flex h-8 items-center gap-2 transition-colors duration-150 hover:text-ink">
           <MapPin size={16} strokeWidth={1.5} /> Pick a whole city
         </button>
-        <button type="button" onClick={() => onChange(randomPicks(teams))} className="flex h-8 items-center gap-2 transition-colors duration-150 hover:text-ink">
+        <button type="button" onClick={() => onChange(randomPicks(teams, leagues))} className="flex h-8 items-center gap-2 transition-colors duration-150 hover:text-ink">
           <Dices size={16} strokeWidth={1.5} /> Random fan
         </button>
         {count > 0 && (

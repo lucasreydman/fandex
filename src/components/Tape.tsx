@@ -5,7 +5,7 @@ import { useState } from "react";
 import { heat } from "@/lib/color";
 import { seasonLabel } from "@/lib/engine";
 import type { League, SeasonPoint } from "@/lib/types";
-import { Pennant, pct, record, signed } from "./ui";
+import { Pennant, pct, rating, record } from "./ui";
 
 /**
  * The season tape: one cell per season, cold blue for bad years through hot red
@@ -63,7 +63,7 @@ export function Tape({
         <div className="num mt-1 flex h-4 justify-between text-[12px] leading-4 text-ink-3">
           {shown ? (
             <span className="text-ink-2">
-              {seasonLabel(league, shown.y)}{shown.as ? ` · ${shown.as}` : ""} · {record(shown.w, shown.l, shown.t)} · {pct(shown.pct)} · {signed(shown.z, 1)}σ
+              {seasonLabel(league, shown.y)}{shown.as ? ` · ${shown.as}` : ""} · {record(shown.w, shown.l, shown.t)} · {pct(shown.pct)}{rating(shown.z)}
               {shown.champ ? " · champions" : shown.runnerUp ? " · lost the final" : ""}
               {shown.live ? " · in progress" : ""}
             </span>

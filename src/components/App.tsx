@@ -98,6 +98,11 @@ export function App() {
   const style = accent ? ({ "--accent": accent.accent, "--accent-ink": accent.ink } as React.CSSProperties) : undefined;
 
   const counted = useMemo(() => AVAILABLE.filter((l) => !state.off.includes(l)), [state.off]);
+  // Copy that names the leagues is built from the data, so it stays true as leagues are added or switched off.
+  const starts = counted.map((l) => ({ l, y: data.leagues[l]!.seasons[0].y })).sort((a, b) => a.y - b.y);
+  const allTimeNote = starts.length ? `Every season on record: ${list(starts.map((s) => `${s.l} from ${s.y}`))}` : "";
+  const NUMBER = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+  const intro = `${(NUMBER[AVAILABLE.length] ?? String(AVAILABLE.length)).replace(/^./, (c) => c.toUpperCase())} North American pro leagues, from baseball in ${MIN} to today, scored so a baseball dynasty and a hockey dynasty can be compared. Set your years and pick your teams to see how good you’ve had it`;
   const eraLabel = state.mode === "all" ? "all time" : state.mode === "custom" ? `${options.from} to ${options.to}` : `since ${options.from}`;
   const live = LEAGUES.flatMap((l) => {
     const s = data.leagues[l]?.seasons.at(-1);
@@ -138,10 +143,10 @@ export function App() {
             >
               <h1 className="display text-[44px] leading-[1.02] tracking-[-0.01em] text-ink sm:text-[64px]">Every season, one scale</h1>
               <p className="mt-4 max-w-[36rem] text-pretty text-[18px] leading-7 text-ink-2">
-                The NFL, NBA, MLB and NHL since 1903, plus MLS, the WNBA, NWSL, PWHL and CFL, scored so a baseball dynasty and a football dynasty can be compared. Set your years and your teams to see how good you’ve had it
+                {intro}
               </p>
               <div className="mt-10 grid gap-x-16 gap-y-10 lg:grid-cols-2">
-                <YearDial state={state} set={set} min={MIN} max={MAX} />
+                <YearDial state={state} set={set} min={MIN} max={MAX} allTimeNote={allTimeNote} />
                 <TeamPicker teams={data.teams} leagues={AVAILABLE} picks={state.picks} onChange={(p) => set({ picks: p })} />
               </div>
             </motion.section>
@@ -158,7 +163,7 @@ export function App() {
                 <section className="flex flex-col items-start gap-6 rounded-[16px] border border-line bg-card p-6 md:flex-row md:items-center md:justify-between md:p-8">
                   <div>
                     <h2 className="text-[20px] font-medium leading-7 text-ink">Pick a team to get your number</h2>
-                    <p className="mt-1 text-[15px] text-ink-2">One is enough. Four gives you the full picture</p>
+                    <p className="mt-1 text-[15px] text-ink-2">One is enough. Add a team in each league you follow for the full picture</p>
                   </div>
                   {top && bottom && (
                     <div className="flex flex-wrap gap-x-10 gap-y-4">

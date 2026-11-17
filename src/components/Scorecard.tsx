@@ -7,7 +7,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { seasonLabel, verdict } from "@/lib/engine";
 import type { FanSummary, Result } from "@/lib/types";
 import { HeatLegend, Tape } from "./Tape";
-import { EASE, Logo, Pennant, pct, record, signed } from "./ui";
+import { EASE, Logo, Pennant, pct, record } from "./ui";
 
 /**
  * Where the fan lands among the cities, on one 0 to 100 line. Each city is a
@@ -173,9 +173,9 @@ export function Scorecard({ result, fan, eraLabel }: { result: Result; fan: FanS
           <NumberFlow value={fan.titles} className="[--number-flow-mask-height:0.06em]" style={{ lineHeight: 1 }} />
           {fan.titles > 0 && <Pennant size={18} className="text-accent" />}
         </Stat>
-        <Stat label="Finals lost" value={fan.finalsLost} note="So close" />
-        <Stat label="Great seasons" value={fan.elite} note="A full σ above the league" />
-        <Stat label="Awful seasons" value={fan.dud} note="A full σ below it" />
+        <Stat label="Finals lost" value={fan.finalsLost} note="Reached the final and lost it" />
+        <Stat label="Great seasons" value={fan.elite} note="About the top sixth of the league" />
+        <Stat label="Awful seasons" value={fan.dud} note="About the bottom sixth" />
         <Stat label="Win rate" note={`${fan.picks.reduce((a, s) => a + s.w, 0).toLocaleString("en-US")} wins`}>
           <span>{pct(fan.pct)}</span>
         </Stat>
@@ -205,10 +205,10 @@ export function Scorecard({ result, fan, eraLabel }: { result: Result; fan: FanS
         {(fan.bestYear || fan.worstYear) && fan.picks.length > 0 && (
           <p className="mt-4 text-[13px] leading-5 text-ink-2">
             {fan.bestYear && (
-              <>Best year to be you: <span className="num text-ink">{yearLabel(fan, fan.bestYear.y)}</span> ({signed(fan.bestYear.z, 1)}σ on average). </>
+              <>Best year to be you: <span className="num text-ink">{yearLabel(fan, fan.bestYear.y)}</span>. </>
             )}
             {fan.worstYear && fan.worstYear.y !== fan.bestYear?.y && (
-              <>Worst: <span className="num text-ink">{yearLabel(fan, fan.worstYear.y)}</span> ({signed(fan.worstYear.z, 1)}σ)</>
+              <>Worst: <span className="num text-ink">{yearLabel(fan, fan.worstYear.y)}</span></>
             )}
           </p>
         )}
