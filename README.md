@@ -39,6 +39,7 @@ MLS (1996), the WNBA (1997), NWSL (2013), the PWHL (2023-24) and the CFL (1958) 
 - In soccer a draw counts as half a win.
 - Each league is scored against its own spread, so the nine share one scale.
 - Any league can be switched off in the Scoring panel.
+- Clubs that folded in the modern era keep their history as inactive franchises (the Houston Comets, Sacramento Monarchs, FC Kansas City, Chivas USA, the CFL's American teams and others, plus the NHL's Coyotes and Seals/Barons). They can be picked and ranked, and their cities are credited. Clubs from before about 1960 are not tracked individually.
 - ESPN carries no CFL or PWHL league artwork and no CFL club logos, so those come from TheSportsDB.
 
 ## Franchise history

@@ -102,8 +102,28 @@ export async function buildExtraLeagues({ ROOT, NOW, getJson, warn, prev, teams,
       if (m?.id && m.id !== "none") byFeedId.set(m.id, team);
     }
 
+    // Folded clubs that keep their history, like the Houston Comets. The reference
+    // file's standings name them "defunct:..."; here they become teams of their own.
+    const folded = new Map();
+    for (const t of ref.inactive ?? []) {
+      const old = prev?.teams?.find((p) => p.league === league && p.name === t.name);
+      if (!metros[t.metro]) throw new Error(`${league}: unknown metro "${t.metro}" for ${t.name}`);
+      for (const e of t.eras ?? []) if (!metros[e[2]]) throw new Error(`${league}: unknown metro "${e[2]}" in eras for ${t.name}`);
+      let key = old?.key ?? `${league}-${t.abbr}`.toLowerCase();
+      while (used.has(key) && key !== old?.key) key += "x";
+      used.add(key);
+      const team = {
+        key, espnId: "none", league, name: t.name, nick: t.nick ?? t.name, place: t.metro, abbr: t.abbr,
+        color: t.color ?? "#444444", alt: t.alt ?? "#bbbbbb", logo: t.logo ?? null, logoDark: t.logo ?? null,
+        metro: t.metro, ...(t.eras ? { eras: t.eras } : {}), inactive: true,
+      };
+      teams.push(team);
+      for (const n of t.names ?? [t.name]) folded.set(n, team);
+    }
+
     const keyOf = (name) => {
-      if (!name || name.startsWith("defunct:")) return null;
+      if (name?.startsWith("defunct:")) return folded.get(name.slice(8))?.key ?? null;
+      if (!name) return null;
       const t = byName.get(name);
       if (!t) warn(`${league}: reference file names "${name}", which is not in its team list`);
       return t?.key ?? null;

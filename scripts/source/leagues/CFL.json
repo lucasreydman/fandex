@@ -15,7 +15,8 @@
   "Naming: 'Ottawa Red Blacks' is the spelling required by the team feed; the club styles itself 'Ottawa REDBLACKS' / 'Redblacks'. 'BC Lions' is used for every season (formally the British Columbia Lions; never renamed). The Saskatchewan Roughriders play in Regina, hence metro 'Regina'.",
   "The CFL name dates from 1958, but the record book counts the 1958 clubs' earlier IRFU/WIFU seasons as part of the same franchises; this file starts at 1958 by design, and Grey Cups before 1958 are not included.",
   "Ottawa follows the CFL record book (2017 edition on): the Rough Riders, Renegades and Redblacks are one franchise with two breaks, 1997-2001 and 2006-2013.",
-  "ESPN carries no CFL artwork, so club badges come from TheSportsDB (logo on each team); abbr, color and alt are set here too."
+  "ESPN carries no CFL artwork, so club badges come from TheSportsDB (logo on each team); abbr, color and alt are set here too.",
+  "Clubs under \"inactive\" have folded but keep their history: they can be picked and ranked, and their cities are credited. Each lists the \"defunct:\" names it covers in \"names\" (its own name when left out)."
  ],
  "teams": [
   {
@@ -3638,6 +3639,82 @@
    "lat": 43.256,
    "lon": -79.869,
    "region": "ON"
+  },
+  "Shreveport": {
+   "lat": 32.525,
+   "lon": -93.75,
+   "region": "LA"
+  },
+  "Birmingham": {
+   "lat": 33.519,
+   "lon": -86.81,
+   "region": "AL"
   }
- }
+ },
+ "inactive": [
+  {
+   "name": "Baltimore Stallions",
+   "nick": "Stallions",
+   "abbr": "BAL",
+   "metro": "Baltimore",
+   "color": "#0033a0",
+   "alt": "#a5acaf"
+  },
+  {
+   "name": "San Antonio Texans",
+   "nick": "Texans",
+   "abbr": "SA",
+   "metro": "San Antonio",
+   "color": "#862633",
+   "alt": "#002d62",
+   "names": [
+    "Sacramento Gold Miners",
+    "San Antonio Texans"
+   ],
+   "eras": [
+    [
+     1993,
+     "Sacramento Gold Miners",
+     "Sacramento"
+    ],
+    [
+     1995,
+     "San Antonio Texans",
+     "San Antonio"
+    ]
+   ]
+  },
+  {
+   "name": "Las Vegas Posse",
+   "nick": "Posse",
+   "abbr": "LV",
+   "metro": "Las Vegas",
+   "color": "#1a1a1a",
+   "alt": "#c5a05a"
+  },
+  {
+   "name": "Shreveport Pirates",
+   "nick": "Pirates",
+   "abbr": "SHR",
+   "metro": "Shreveport",
+   "color": "#5b2b82",
+   "alt": "#f58220"
+  },
+  {
+   "name": "Birmingham Barracudas",
+   "nick": "Barracudas",
+   "abbr": "BIR",
+   "metro": "Birmingham",
+   "color": "#00778b",
+   "alt": "#1a1a1a"
+  },
+  {
+   "name": "Memphis Mad Dogs",
+   "nick": "Mad Dogs",
+   "abbr": "MEM",
+   "metro": "Memphis",
+   "color": "#1b4d2e",
+   "alt": "#b3995d"
+  }
+ ]
 }

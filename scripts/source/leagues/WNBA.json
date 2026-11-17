@@ -9,7 +9,8 @@
   "Portland Fire: the 2000-2002 team folded and is keyed 'defunct:Portland Fire'. The 2026 Portland Fire is a new expansion franchise (awarded 2024) that revived the name only; it has just the 2026 season.",
   "Lineages followed: Utah Starzz (1997-2002) -> San Antonio Silver Stars (2003-2013) -> San Antonio Stars (2014-2017) -> Las Vegas Aces (2018-); Detroit Shock (1998-2009) -> Tulsa Shock (2010-2015) -> Dallas Wings (2016-); Orlando Miracle (1999-2002) -> Connecticut Sun (2003-2026).",
   "Defunct franchises: Houston Comets (1997-2008), Sacramento Monarchs (1997-2009), Charlotte Sting (1997-2006), Cleveland Rockers (1997-2003), Miami Sol (2000-2002), Portland Fire (2000-2002).",
-  "Metros: Connecticut Sun (Uncasville) use 'Hartford'; Golden State Valkyries 'SF Bay Area'; Indiana Fever 'Indianapolis'. 'Tulsa' is the only metro not in the existing list and is defined in 'metros'."
+  "Metros: Connecticut Sun (Uncasville) use 'Hartford'; Golden State Valkyries 'SF Bay Area'; Indiana Fever 'Indianapolis'. 'Tulsa' is the only metro not in the existing list and is defined in 'metros'.",
+  "Clubs under \"inactive\" have folded but keep their history: they can be picked and ranked, and their cities are credited. Each lists the \"defunct:\" names it covers in \"names\" (its own name when left out)."
  ],
  "teams": [
   {
@@ -2265,5 +2266,61 @@
    "lon": -95.993,
    "region": "OK"
   }
- }
+ },
+ "inactive": [
+  {
+   "name": "Houston Comets",
+   "nick": "Comets",
+   "abbr": "HOU",
+   "metro": "Houston",
+   "color": "#c8102e",
+   "alt": "#002d62",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/fkdia11692358082.png/small"
+  },
+  {
+   "name": "Sacramento Monarchs",
+   "nick": "Monarchs",
+   "abbr": "SAC",
+   "metro": "Sacramento",
+   "color": "#5b2b82",
+   "alt": "#a8a9ad",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/4tiudl1664016505.png/small"
+  },
+  {
+   "name": "Charlotte Sting",
+   "nick": "Sting",
+   "abbr": "CHA",
+   "metro": "Charlotte",
+   "color": "#00778b",
+   "alt": "#280071",
+   "logo": "https://r2.thesportsdb.com/images/media/team/badge/z8ad0l1749029229.png/small"
+  },
+  {
+   "name": "Cleveland Rockers",
+   "nick": "Rockers",
+   "abbr": "CLE",
+   "metro": "Cleveland",
+   "color": "#1a1a1a",
+   "alt": "#0077c8"
+  },
+  {
+   "name": "Miami Sol",
+   "nick": "Sol",
+   "abbr": "SOL",
+   "metro": "Miami",
+   "color": "#e03a3e",
+   "alt": "#f9a01b"
+  },
+  {
+   "name": "Portland Fire (2000–02)",
+   "nick": "Fire (2000–02)",
+   "abbr": "PDX",
+   "metro": "Portland",
+   "color": "#c8102e",
+   "alt": "#1a1a1a",
+   "names": [
+    "Portland Fire"
+   ]
+  }
+ ]
 }

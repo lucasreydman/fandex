@@ -47,7 +47,7 @@ const FIRST: Partial<Record<League, Record<string, number>>> = {
   },
   NHL: {
     "Montreal Canadiens": 1917, "Toronto Maple Leafs": 1917, "Boston Bruins": 1924, "New York Rangers": 1926, "Chicago Blackhawks": 1926,
-    "Detroit Red Wings": 1926, "Dallas Stars": 1967, "Los Angeles Kings": 1967, "Philadelphia Flyers": 1967, "Pittsburgh Penguins": 1967,
+    "Detroit Red Wings": 1926, "Dallas Stars": 1967, "Cleveland Barons": 1967, "Los Angeles Kings": 1967, "Philadelphia Flyers": 1967, "Pittsburgh Penguins": 1967,
     "St. Louis Blues": 1967, "Buffalo Sabres": 1970, "Vancouver Canucks": 1970, "Calgary Flames": 1972, "New York Islanders": 1972,
     "New Jersey Devils": 1974, "Washington Capitals": 1974, "Carolina Hurricanes": 1979, "Colorado Avalanche": 1979, "Edmonton Oilers": 1979,
     "Winnipeg Jets": 1999, "San Jose Sharks": 1991, "Ottawa Senators": 1992, "Tampa Bay Lightning": 1992, "Anaheim Ducks": 1993,

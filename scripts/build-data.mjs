@@ -54,7 +54,7 @@ const MERGED = {
 // The Federal League of 1914-15 appears in baseball's standings but was a rival league.
 const RIVAL_LEAGUE = { MLB: [1914, 1915] };
 
-// An inactive franchise, kept so its fans and its city keep their history. The
+// Inactive franchises, kept so their fans and their cities keep their history. The
 // NHL made Utah a new team in 2024 and left the Coyotes' record with Arizona.
 const LEGACY = [
   {
@@ -62,6 +62,13 @@ const LEGACY = [
     color: "#8c2633", alt: "#e2d6b5",
     logo: "https://a.espncdn.com/i/teamlogos/nhl/500/ari.png", logoDark: "https://a.espncdn.com/i/teamlogos/nhl/500-dark/ari.png",
     metro: "Phoenix", inactive: true,
+  },
+  // The 1967 expansion Seals, who moved to Cleveland in 1976 and were merged into the North Stars in 1978.
+  {
+    key: "nhl-cbn", espnId: "legacy", league: "NHL", name: "Cleveland Barons", nick: "Barons", place: "Cleveland", abbr: "CBN",
+    color: "#c8102e", alt: "#1a1a1a",
+    logo: "https://r2.thesportsdb.com/images/media/team/badge/n602gz1712643341.png/small", logoDark: "https://r2.thesportsdb.com/images/media/team/badge/n602gz1712643341.png/small",
+    metro: "Cleveland", inactive: true,
   },
 ];
 

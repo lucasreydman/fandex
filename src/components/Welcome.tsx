@@ -56,7 +56,7 @@ export function Welcome({
     <dialog
       ref={ref}
       aria-label="Set up Fandex"
-      className="m-auto w-[min(760px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
+      className="m-auto w-[min(920px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
     >
       <div className="flex max-h-[min(720px,calc(100dvh-32px))] flex-col">
         <div className="flex h-14 shrink-0 items-center justify-between border-b border-line px-6">

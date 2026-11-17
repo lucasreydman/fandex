@@ -51,7 +51,7 @@ export function TeamBrowser({
   }, [teams]);
 
   const q = query.trim().toLowerCase();
-  const list = view === "city" ? [] : teams.filter((t) => t.league === view && (!q || t.name.toLowerCase().includes(q))).sort((a, b) => a.nick.localeCompare(b.nick));
+  const list = view === "city" ? [] : teams.filter((t) => t.league === view && (!q || t.name.toLowerCase().includes(q))).sort((a, b) => Number(!!a.inactive) - Number(!!b.inactive) || a.nick.localeCompare(b.nick));
   const cityList = metros.filter(([name, ts]) => !q || name.toLowerCase().includes(q) || ts.some((t) => t.name.toLowerCase().includes(q)));
   const go = (v: PickerView) => { setView(v); setQuery(""); };
 
@@ -125,7 +125,7 @@ export function TeamBrowser({
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-3 gap-1 sm:grid-cols-6 md:grid-cols-8">
+          <div className="grid grid-cols-3 gap-1 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
             {list.map((t) => {
               const on = picks[t.league] === t.key;
               return (
@@ -268,7 +268,7 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
       <dialog
         ref={ref}
         aria-label="Pick your teams"
-        className="m-auto w-[min(760px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
+        className="m-auto w-[min(920px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
       >
         <TeamBrowser
           key={session}
