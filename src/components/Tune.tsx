@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import { DEFAULT_WEIGHTS } from "@/lib/engine";
 import type { State } from "@/lib/state";
 import type { League, Weights } from "@/lib/types";
-import { Segmented, Switch } from "./ui";
+import { LeagueLabel, Segmented, Switch } from "./ui";
 
 const PARTS: { key: keyof Weights; label: string; note: string }[] = [
   { key: "record", label: "Overall record", note: "Total wins and losses across the whole span" },
@@ -102,7 +102,7 @@ export function Tune({
                       : "num h-8 rounded-[8px] border border-line-2 px-3 text-[13px] text-ink-3 line-through transition-[background-color,color,transform] duration-150 hover:text-ink active:scale-[0.97]"
                   }
                 >
-                  {l}
+                  <LeagueLabel league={l} onInk={on} />
                 </button>
               );
             })}

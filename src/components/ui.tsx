@@ -5,7 +5,8 @@ import { motion } from "motion/react";
 import { createContext, useContext, useId } from "react";
 import type { ReactNode } from "react";
 import { contrast } from "@/lib/color";
-import type { Team } from "@/lib/types";
+import { LEAGUE_MARK } from "@/lib/leagues";
+import type { League, Team } from "@/lib/types";
 
 export const EASE = [0.22, 1, 0.36, 1] as const;
 export const ThemeContext = createContext<"light" | "dark">("light");
@@ -38,6 +39,29 @@ export function Logo({ team, size = 24, className }: { team: Team; size?: number
       className={clsx("shrink-0 object-contain", className)}
       style={{ width: size, height: size }}
     />
+  );
+}
+
+/** A league's own mark. Renders nothing for leagues without one, so the name beside it carries on alone. */
+export function LeagueMark({ league, size = 16, onInk = false, className }: { league: League; size?: number; onInk?: boolean; className?: string }) {
+  const theme = useContext(ThemeContext);
+  const mark = LEAGUE_MARK[league];
+  if (!mark) return null;
+  // On an ink-filled chip the surface is the opposite of the page, so the other artwork reads.
+  const dark = (theme === "dark") !== onInk;
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={dark ? mark.dark : mark.light} alt="" width={size} height={size} loading="lazy" decoding="async" className={clsx("shrink-0 object-contain", className)} style={{ width: size, height: size }} />
+  );
+}
+
+/** League mark and name together, for tabs, filters and chips. */
+export function LeagueLabel({ league, onInk = false }: { league: League; onInk?: boolean }) {
+  return (
+    <span className="flex items-center gap-1.5">
+      <LeagueMark league={league} size={16} onInk={onInk} />
+      {league}
+    </span>
   );
 }
 

@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 import { heatIndex } from "@/lib/color";
 import type { League, Result, TeamStat } from "@/lib/types";
 import { Tape } from "./Tape";
-import { EASE, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
+import { EASE, LeagueLabel, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
 
 /** Earlier names this franchise carried inside the span, oldest first. */
 function formerNames(s: TeamStat): string {
@@ -61,7 +61,7 @@ export function Rankings({ result, picks, leagues }: { result: Result; picks: st
           size="sm"
           value={filter}
           onChange={setFilter}
-          options={[{ value: "all", label: "All" }, ...leagues.map((l) => ({ value: l as Filter, label: l }))]}
+          options={[{ value: "all", label: "All" }, ...leagues.map((l) => ({ value: l as Filter, label: <LeagueLabel league={l} /> }))]}
         />
         <label className="flex h-9 min-w-0 flex-1 items-center gap-2 rounded-[10px] bg-raised px-3 sm:max-w-[240px]">
           <Search size={16} strokeWidth={1.5} className="shrink-0 text-ink-3" />

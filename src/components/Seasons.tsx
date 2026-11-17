@@ -6,7 +6,7 @@ import { heat } from "@/lib/color";
 import { seasonLabel } from "@/lib/engine";
 import type { League, Result, SeasonPoint, TeamStat } from "@/lib/types";
 import { HeatLegend } from "./Tape";
-import { Logo, Pennant, pct, record, Segmented, signed } from "./ui";
+import { LeagueLabel, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
 
 /** Every team in a league against every season: the whole era on one sheet. */
 export function Seasons({ result, picks, leagues }: { result: Result; picks: string[]; leagues: League[] }) {
@@ -28,7 +28,7 @@ export function Seasons({ result, picks, leagues }: { result: Result; picks: str
   return (
     <div>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <Segmented<League> label="League" size="sm" value={league} onChange={(l) => { setLeague(l); setHover(null); }} options={leagues.map((l) => ({ value: l, label: l }))} />
+        <Segmented<League> label="League" size="sm" value={league} onChange={(l) => { setLeague(l); setHover(null); }} options={leagues.map((l) => ({ value: l, label: <LeagueLabel league={l} /> }))} />
         <HeatLegend />
       </div>
       <p className="num mt-4 h-5 text-[13px] leading-5 text-ink-2">

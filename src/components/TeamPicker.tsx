@@ -5,11 +5,12 @@ import { Dices, MapPin, Plus, Search, X } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
+import { LEAGUE_MARK } from "@/lib/leagues";
 import { EMPTY_PICKS } from "@/lib/state";
 import type { Picks } from "@/lib/state";
 import { CORE, MORE } from "@/lib/types";
 import type { League, Team } from "@/lib/types";
-import { EASE, Logo, Segmented } from "./ui";
+import { EASE, LeagueMark, Logo, Segmented } from "./ui";
 
 export type PickerView = League | "city";
 
@@ -84,6 +85,7 @@ export function TeamBrowser({
               value: l as PickerView,
               label: (
                 <span className="flex items-center gap-1.5">
+                  <LeagueMark league={l} size={16} />
                   {l}
                   {picks[l] && <span className="size-[5px] rounded-full bg-accent" />}
                 </span>
@@ -204,7 +206,9 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
                 </motion.span>
               ) : (
                 <span className="grid size-14 place-items-center rounded-full bg-raised text-ink-3 transition-colors duration-150 group-hover:text-ink">
-                  <Plus size={18} strokeWidth={1.5} />
+                  {/* The league's own mark says what goes here; a plus where there is none. */}
+                  <LeagueMark league={l} size={32} className="opacity-70 transition-opacity duration-150 group-hover:opacity-100" />
+                  {!LEAGUE_MARK[l] && <Plus size={18} strokeWidth={1.5} />}
                 </span>
               )}
               <span className="px-2 text-[13px] leading-4">
@@ -233,7 +237,8 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
                   <Logo team={t} size={28} />
                 ) : (
                   <span className="grid size-7 shrink-0 place-items-center rounded-full bg-raised text-ink-3">
-                    <Plus size={14} strokeWidth={1.5} />
+                    <LeagueMark league={l} size={18} className="opacity-70" />
+                    {!LEAGUE_MARK[l] && <Plus size={14} strokeWidth={1.5} />}
                   </span>
                 )}
                 <span className="min-w-0 text-[13px] leading-4">
