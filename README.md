@@ -39,8 +39,8 @@ MLS (1996), the WNBA (1997), NWSL (2013), the PWHL (2023-24) and the CFL (1958) 
 - In soccer a draw counts as half a win.
 - Each league is scored against its own spread, so the nine share one scale.
 - Any league can be switched off in the Scoring panel.
-- A handful of folded clubs keep their history as inactive franchises: the NHL's Coyotes, the Houston Comets, Sacramento Monarchs and Charlotte Sting, the Tampa Bay Mutiny, Miami Fusion and Chivas USA, and FC Kansas City and the Boston Breakers. They can be picked and ranked, and their cities are credited. A switch in the rankings and in the Scoring panel leaves them out.
-- Other folded clubs are not tracked individually: anything from before about 1960, the NHL's Seals/Barons, the CFL's American teams of 1993 to 1995, and the short-lived Cleveland Rockers, Miami Sol and first Portland Fire. Their seasons still count toward the size and spread of the league they played in, so everyone else's numbers are unchanged.
+- Four folded clubs keep their history as inactive franchises, the ones likely to still have fans: the NHL's Coyotes, who stopped playing in 2024, and the three that won a title, the Houston Comets, Sacramento Monarchs and FC Kansas City. They can be picked and ranked, and their cities are credited. A switch in the rankings and in the Scoring panel leaves them out.
+- Other folded clubs are not tracked individually: anything from before about 1960, the NHL's Seals/Barons, the CFL's American teams of 1993 to 1995, the Tampa Bay Mutiny, Miami Fusion and Chivas USA, the Charlotte Sting, Cleveland Rockers, Miami Sol and first Portland Fire, and the Boston Breakers. Their seasons still count toward the size and spread of the league they played in, so everyone else's numbers are unchanged.
 - ESPN carries no CFL or PWHL league artwork and no CFL club logos, so those come from TheSportsDB.
 
 ## Franchise history

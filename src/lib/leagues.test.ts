@@ -42,16 +42,15 @@ describe("leagues beyond the big four", () => {
     expect(stat("FC Kansas City").titles).toBe(2);
     const houston = all.metros.find((m) => m.name === "Houston")!;
     expect(houston.teams.some((s) => s.team.name === "Houston Comets" && !s.current)).toBe(true);
-    // Kept: the Coyotes, and the folded MLS, WNBA and NWSL clubs that have a logo to show.
-    expect(all.teams.filter((s) => s.team.inactive).map((s) => s.team.name).sort()).toEqual([
-      "Arizona Coyotes", "Boston Breakers", "Charlotte Sting", "Chivas USA", "FC Kansas City",
-      "Houston Comets", "Miami Fusion", "Sacramento Monarchs", "Tampa Bay Mutiny",
-    ]);
+    // Kept: the Coyotes, who stopped playing in 2024, and the folded clubs that won a title.
+    const kept = all.teams.filter((s) => s.team.inactive);
+    expect(kept.map((s) => s.team.name).sort()).toEqual(["Arizona Coyotes", "FC Kansas City", "Houston Comets", "Sacramento Monarchs"]);
+    expect(kept.every((s) => s.titles > 0 || s.team.name === "Arizona Coyotes")).toBe(true);
     expect(all.teams.every((s) => s.team.logo)).toBe(true);
   });
 
   it("leaves out the folded clubs that are not tracked, without losing their seasons", () => {
-    for (const name of ["Cleveland Barons", "Baltimore Stallions", "Las Vegas Posse", "Cleveland Rockers", "Miami Sol"]) {
+    for (const name of ["Cleveland Barons", "Baltimore Stallions", "Las Vegas Posse", "Cleveland Rockers", "Miami Sol", "Charlotte Sting", "Chivas USA", "Tampa Bay Mutiny", "Boston Breakers"]) {
       expect(all.teams.some((s) => s.team.name === name), name).toBe(false);
     }
     // The CFL's American clubs still count toward the size of the league they played in.
@@ -65,7 +64,7 @@ describe("leagues beyond the big four", () => {
 
   it("can leave inactive franchises out of the rankings and the cities", () => {
     const active = compute(data, { from: 0, to: 9999, includeLive: false, weights: DEFAULT_WEIGHTS, halfLife: 0, excludeInactive: true });
-    expect(active.teams).toHaveLength(all.teams.length - 9);
+    expect(active.teams).toHaveLength(all.teams.length - 4);
     expect(active.teams.some((s) => s.team.inactive)).toBe(false);
     expect(active.metros.some((m) => m.teams.some((s) => s.team.inactive))).toBe(false);
     // Phoenix loses the Coyotes' seasons with them.
