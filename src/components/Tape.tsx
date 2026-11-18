@@ -8,7 +8,7 @@ import type { League, SeasonPoint } from "@/lib/types";
 import { Pennant, pct, rating, record } from "./ui";
 
 /**
- * The season tape: one cell per season, cold blue for bad years through hot red
+ * The season tape: one cell per season, red for bad years through green
  * for great ones, a pennant over every title. Columns line up across teams when
  * they share the same first and last year.
  */

@@ -2294,33 +2294,6 @@
    "color": "#00778b",
    "alt": "#280071",
    "logo": "https://r2.thesportsdb.com/images/media/team/badge/z8ad0l1749029229.png/small"
-  },
-  {
-   "name": "Cleveland Rockers",
-   "nick": "Rockers",
-   "abbr": "CLE",
-   "metro": "Cleveland",
-   "color": "#1a1a1a",
-   "alt": "#0077c8"
-  },
-  {
-   "name": "Miami Sol",
-   "nick": "Sol",
-   "abbr": "SOL",
-   "metro": "Miami",
-   "color": "#e03a3e",
-   "alt": "#f9a01b"
-  },
-  {
-   "name": "Portland Fire (2000–02)",
-   "nick": "Fire (2000–02)",
-   "abbr": "PDX",
-   "metro": "Portland",
-   "color": "#c8102e",
-   "alt": "#1a1a1a",
-   "names": [
-    "Portland Fire"
-   ]
   }
  ]
 }

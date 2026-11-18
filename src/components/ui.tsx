@@ -130,6 +130,40 @@ export function Segmented<T extends string>({
   );
 }
 
+/**
+ * A row of toggles where several can be on at once. An empty selection means all of
+ * them: from there the first click narrows to that one, and further clicks add or remove.
+ */
+export function MultiToggle<T extends string>({
+  values, onChange, options, label, allLabel = "All",
+}: {
+  values: T[];
+  onChange: (v: T[]) => void;
+  options: { value: T; label: ReactNode }[];
+  label: string;
+  allLabel?: string;
+}) {
+  const toggle = (v: T) => {
+    const next = values.includes(v) ? values.filter((x) => x !== v) : options.map((o) => o.value).filter((x) => x === v || values.includes(x));
+    // Every one switched on by hand is the same as All.
+    onChange(next.length === options.length ? [] : next);
+  };
+  const item = (active: boolean) => clsx(
+    "h-7 shrink-0 rounded-[6px] px-3 text-[13px] font-medium transition-[background-color,color,box-shadow] duration-150",
+    active ? "bg-card text-ink shadow-[0_1px_2px_rgb(0_0_0/0.08)] ring-1 ring-line" : "text-ink-2 hover:text-ink",
+  );
+  return (
+    <div role="group" aria-label={label} className="inline-flex max-w-full gap-0.5 overflow-x-auto rounded-[10px] bg-raised p-1 [scrollbar-width:none]">
+      <button type="button" aria-pressed={!values.length} onClick={() => onChange([])} className={item(!values.length)}>{allLabel}</button>
+      {options.map((o) => (
+        <button key={o.value} type="button" aria-pressed={values.includes(o.value)} onClick={() => toggle(o.value)} className={item(values.includes(o.value))}>
+          {o.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export function Switch({ checked, onChange, label }: { checked: boolean; onChange: (v: boolean) => void; label: string }) {
   return (
     <button

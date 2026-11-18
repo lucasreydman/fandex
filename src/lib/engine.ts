@@ -89,7 +89,7 @@ export function compute(data: Dataset, opts: Options): Result {
 
     const rows: { stat: TeamStat; points: Scored[]; totals: Totals }[] = [];
     for (const team of data.teams) {
-      if (team.league !== league) continue;
+      if (team.league !== league || (opts.excludeInactive && team.inactive)) continue;
       const points: Scored[] = [];
       for (const s of seasons) {
         const row = s.rows[team.key];

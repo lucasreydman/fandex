@@ -41,7 +41,7 @@ export function Tune({
 
   const w = state.weights;
   const sum = w.record + w.consistency + w.titles || 1;
-  const isDefault = w.record === DEFAULT_WEIGHTS.record && w.consistency === DEFAULT_WEIGHTS.consistency && w.titles === DEFAULT_WEIGHTS.titles && !state.halfLife && !state.includeLive && !state.off.length;
+  const isDefault = w.record === DEFAULT_WEIGHTS.record && w.consistency === DEFAULT_WEIGHTS.consistency && w.titles === DEFAULT_WEIGHTS.titles && !state.halfLife && !state.includeLive && !state.off.length && state.includeInactive;
 
   return (
     <dialog
@@ -109,6 +109,16 @@ export function Tune({
           </div>
           <p className="mt-2 text-[12px] leading-4 text-ink-3">Switch a league off to leave it out of the rankings, the cities and your number</p>
 
+          <h3 className="mt-8 text-[13px] text-ink-2">Franchises</h3>
+          <div className="mt-3 grid gap-3">
+            <Switch checked={state.includeInactive} onChange={(v) => set({ includeInactive: v })} label="Include inactive franchises" />
+            <p className="text-[12px] leading-4 text-ink-3">
+              {state.includeInactive
+                ? "Clubs that no longer play, like the Arizona Coyotes and the Houston Comets, are ranked with the rest and count toward their cities"
+                : "Only clubs playing today are ranked. Folded clubs and the seasons they gave their cities are left out"}
+            </p>
+          </div>
+
           <h3 className="mt-8 text-[13px] text-ink-2">Recency</h3>
           <div className="mt-3">
             <Segmented<string>
@@ -167,7 +177,7 @@ export function Tune({
           <button
             type="button"
             disabled={isDefault}
-            onClick={() => set({ weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, off: [] })}
+            onClick={() => set({ weights: { ...DEFAULT_WEIGHTS }, halfLife: 0, includeLive: false, off: [], includeInactive: true })}
             className="-ml-3 flex h-9 items-center gap-2 rounded-[10px] px-3 text-[14px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink disabled:opacity-40"
           >
             <RotateCcw size={16} strokeWidth={1.5} /> Reset

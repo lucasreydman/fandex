@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 import { heatIndex } from "@/lib/color";
 import type { League, Result, TeamStat } from "@/lib/types";
 import { Tape } from "./Tape";
-import { EASE, LeagueLabel, Logo, Pennant, pct, record, Segmented, signed } from "./ui";
+import { EASE, LeagueLabel, Logo, MultiToggle, Pennant, pct, record, signed, Switch } from "./ui";
 
 /** Earlier names this franchise carried inside the span, oldest first. */
 function formerNames(s: TeamStat): string {
@@ -15,7 +15,6 @@ function formerNames(s: TeamStat): string {
 }
 
 type SortKey = "rank" | "pct" | "z" | "avgZ" | "elite" | "dud" | "titles" | "finalsLost" | "seasons";
-type Filter = "all" | League;
 
 const COLS: { key: SortKey; label: string; title: string; hide?: string; get: (s: TeamStat) => number }[] = [
   { key: "seasons", label: "Yrs", title: "Seasons played in these years", hide: "hidden lg:flex", get: (s) => s.seasons },
@@ -31,8 +30,19 @@ const COLS: { key: SortKey; label: string; title: string; hide?: string; get: (s
 
 const GRID = "grid grid-cols-[20px_minmax(0,1fr)_44px_40px_44px] md:grid-cols-[40px_minmax(0,1fr)_72px_64px_56px_96px] lg:grid-cols-[40px_minmax(0,1.4fr)_48px_72px_64px_80px_56px_56px_56px_112px] xl:grid-cols-[40px_minmax(0,1.4fr)_48px_72px_64px_80px_56px_56px_56px_80px_128px] items-center gap-x-2 md:gap-x-3";
 
-export function Rankings({ result, picks, leagues }: { result: Result; picks: string[]; leagues: League[] }) {
-  const [filter, setFilter] = useState<Filter>("all");
+export function Rankings({
+  result, picks, leagues, includeInactive, onIncludeInactive,
+}: {
+  result: Result;
+  picks: string[];
+  leagues: League[];
+  includeInactive: boolean;
+  onIncludeInactive: (v: boolean) => void;
+}) {
+  // Leagues picked to show. Empty means all of them.
+  const [chosen, setChosen] = useState<League[]>([]);
+  // A league switched off in Scoring drops out of the selection with it.
+  const shown = useMemo(() => chosen.filter((l) => leagues.includes(l)), [chosen, leagues]);
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: "rank", dir: -1 });
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState<string | null>(null);
@@ -41,9 +51,9 @@ export function Rankings({ result, picks, leagues }: { result: Result; picks: st
     const col = COLS.find((c) => c.key === sort.key)!;
     const q = query.trim().toLowerCase();
     return result.teams
-      .filter((s) => (filter === "all" || s.team.league === filter) && (!q || s.team.name.toLowerCase().includes(q) || s.team.metro.toLowerCase().includes(q)))
+      .filter((s) => (!shown.length || shown.includes(s.team.league)) && (!q || s.team.name.toLowerCase().includes(q) || s.team.metro.toLowerCase().includes(q)))
       .sort((a, b) => (col.get(a) - col.get(b)) * sort.dir || a.rank - b.rank);
-  }, [result, filter, sort, query]);
+  }, [result, shown, sort, query]);
 
   const { first, last } = useMemo(() => {
     let a = Infinity, b = -Infinity;
@@ -56,12 +66,11 @@ export function Rankings({ result, picks, leagues }: { result: Result; picks: st
   return (
     <div>
       <div className="flex flex-wrap items-center gap-3">
-        <Segmented<Filter>
-          label="League"
-          size="sm"
-          value={filter}
-          onChange={setFilter}
-          options={[{ value: "all", label: "All" }, ...leagues.map((l) => ({ value: l as Filter, label: <LeagueLabel league={l} /> }))]}
+        <MultiToggle<League>
+          label="Leagues shown"
+          values={shown}
+          onChange={setChosen}
+          options={leagues.map((l) => ({ value: l, label: <LeagueLabel league={l} /> }))}
         />
         <label className="flex h-9 min-w-0 flex-1 items-center gap-2 rounded-[10px] bg-raised px-3 sm:max-w-[240px]">
           <Search size={16} strokeWidth={1.5} className="shrink-0 text-ink-3" />
@@ -73,6 +82,7 @@ export function Rankings({ result, picks, leagues }: { result: Result; picks: st
             className="w-full min-w-0 bg-transparent text-[14px] outline-none placeholder:text-ink-3"
           />
         </label>
+        <Switch checked={includeInactive} onChange={onIncludeInactive} label="Inactive franchises" />
         {rows.length !== result.teams.length && <span className="num ml-auto text-[12px] text-ink-3">{rows.length} of {result.teams.length} teams</span>}
       </div>
 
@@ -171,7 +181,7 @@ export function Rankings({ result, picks, leagues }: { result: Result; picks: st
               </motion.div>
             );
           })}
-          {rows.length === 0 && <p className="py-12 text-center text-[14px] text-ink-3">No team matches “{query}”</p>}
+          {rows.length === 0 && <p className="py-12 text-center text-[14px] text-ink-3">{query.trim() ? `No team matches “${query.trim()}”` : "No teams to show"}</p>}
         </div>
       </div>
     </div>
