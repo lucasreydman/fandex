@@ -3333,34 +3333,5 @@
    "lon": -97.743,
    "region": "TX"
   }
- },
- "inactive": [
-  {
-   "name": "Tampa Bay Mutiny",
-   "nick": "Mutiny",
-   "abbr": "TB",
-   "metro": "Tampa Bay",
-   "color": "#003da5",
-   "alt": "#00a651",
-   "logo": "https://r2.thesportsdb.com/images/media/team/badge/7pyny91595155313.png/small"
-  },
-  {
-   "name": "Miami Fusion",
-   "nick": "Fusion",
-   "abbr": "FUS",
-   "metro": "Miami",
-   "color": "#009fdf",
-   "alt": "#fedd00",
-   "logo": "https://r2.thesportsdb.com/images/media/team/badge/0selts1595156351.png/small"
-  },
-  {
-   "name": "Chivas USA",
-   "nick": "Chivas USA",
-   "abbr": "CHV",
-   "metro": "Los Angeles",
-   "color": "#c8102e",
-   "alt": "#002d62",
-   "logo": "https://r2.thesportsdb.com/images/media/team/badge/qfumtg1488221897.png/small"
-  }
- ]
+ }
 }
