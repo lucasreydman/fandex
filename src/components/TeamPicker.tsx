@@ -1,8 +1,8 @@
 "use client";
 
 import clsx from "clsx";
-import { Dices, MapPin, Plus, Search, X } from "lucide-react";
-import { motion } from "motion/react";
+import { ArrowRight, Check, Dices, MapPin, Plus, Search, X } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { LEAGUE_MARK } from "@/lib/leagues";
@@ -26,8 +26,9 @@ export function randomPicks(teams: Team[], leagues: League[]): Picks {
 
 /**
  * League tabs, search and the logo grid. Shared by the picker sheet and the
- * first-visit setup. Picking a team moves on to the next league that still
- * needs one; onComplete fires once nothing is left to pick.
+ * first-visit setup. Picking a team, or skipping a league, moves on to the next
+ * league down the line that still needs one; onComplete fires after the last.
+ * Picking a city fills every league at once and finishes.
  */
 export function TeamBrowser({
   teams, leagues, picks, onChange, view, setView, onComplete, trailing, className,
@@ -39,11 +40,16 @@ export function TeamBrowser({
   onChange: (p: Picks) => void;
   view: PickerView;
   setView: (v: PickerView) => void;
-  onComplete?: () => void;
+  /** Called with the picks as they stand, which the caller's own state may not have caught up with yet. */
+  onComplete?: (picks: Picks) => void;
   trailing?: ReactNode;
   className?: string;
 }) {
   const [query, setQuery] = useState("");
+  const tabs = useRef<HTMLDivElement>(null);
+  const body = useRef<HTMLDivElement>(null);
+  // Which way the next league slides in: forward down the line, or back.
+  const [dir, setDir] = useState(1);
   const metros = useMemo(() => {
     const m = new Map<string, Team[]>();
     for (const t of teams) if (!t.inactive) m.set(t.metro, [...(m.get(t.metro) ?? []), t]);
@@ -53,36 +59,49 @@ export function TeamBrowser({
   const q = query.trim().toLowerCase();
   const list = view === "city" ? [] : teams.filter((t) => t.league === view && (!q || t.name.toLowerCase().includes(q))).sort((a, b) => Number(!!a.inactive) - Number(!!b.inactive) || a.nick.localeCompare(b.nick));
   const cityList = metros.filter(([name, ts]) => !q || name.toLowerCase().includes(q) || ts.some((t) => t.name.toLowerCase().includes(q)));
-  const go = (v: PickerView) => { setView(v); setQuery(""); };
+  const place = (v: PickerView) => (v === "city" ? leagues.length : leagues.indexOf(v));
+  const go = (v: PickerView) => { setDir(place(v) >= place(view) ? 1 : -1); setView(v); setQuery(""); };
+
+  // On a narrow screen the league row scrolls, so keep the current league in sight; each league starts at the top of its list.
+  useEffect(() => {
+    tabs.current?.querySelector('[aria-checked="true"]')?.scrollIntoView({ inline: "center", block: "nearest" });
+    body.current?.scrollTo({ top: 0 });
+  }, [view]);
+
+  /** On to the next league after this one that has no team yet, or finish when there is none. */
+  const advance = (from: League, next: Picks) => {
+    const todo = leagues.slice(leagues.indexOf(from) + 1).find((l) => !next[l]);
+    if (todo) go(todo);
+    else onComplete?.(next);
+  };
 
   const choose = (t: Team) => {
     const next = { ...picks, [t.league]: picks[t.league] === t.key ? null : t.key };
     onChange(next);
-    if (!next[t.league]) return;
-    // Move on within the same group: the big four first, the other leagues only once you are in them.
-    const group = (CORE.includes(t.league) ? CORE : MORE).filter((l) => leagues.includes(l));
-    const todo = group.find((l) => !next[l]);
-    if (todo) go(todo);
-    else onComplete?.();
+    if (next[t.league]) advance(t.league, next);
   };
 
   const chooseCity = (ts: Team[]) => {
     const next: Picks = { ...EMPTY_PICKS };
     for (const t of ts) if (!next[t.league]) next[t.league] = t.key;
     onChange(next);
-    onComplete?.();
+    onComplete?.(next);
   };
+
+  const league = view === "city" ? null : view;
+  const isLast = !!league && !leagues.slice(leagues.indexOf(league) + 1).some((l) => !picks[l]);
 
   return (
     <div className={clsx("flex min-h-0 flex-col", className)}>
-      <div className="flex flex-wrap items-center gap-3 border-b border-line p-4">
-        <Segmented<PickerView>
-          label="League"
-          size="sm"
-          value={view}
-          onChange={go}
-          options={[
-            ...leagues.map((l) => ({
+      {/* One row that never wraps: the leagues scroll sideways when they don't fit, and the city shortcut and close button stay put. */}
+      <div className="flex items-center gap-2 px-4 pt-4">
+        <div ref={tabs} className="flex min-w-0 flex-1">
+          <Segmented<PickerView>
+            label="League"
+            size="sm"
+            value={view}
+            onChange={go}
+            options={leagues.map((l) => ({
               value: l as PickerView,
               label: (
                 <span className="flex items-center gap-1.5">
@@ -91,23 +110,60 @@ export function TeamBrowser({
                   {picks[l] && <span className="size-[5px] rounded-full bg-accent" />}
                 </span>
               ),
-            })),
-            { value: "city" as PickerView, label: "By city" },
-          ]}
-        />
-        <label className="ml-auto flex h-8 min-w-0 flex-1 items-center gap-2 rounded-[8px] bg-raised px-3 sm:max-w-[220px]">
+            }))}
+          />
+        </div>
+        <button
+          type="button"
+          aria-pressed={view === "city"}
+          onClick={() => go("city")}
+          className={clsx(
+            "flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[10px] border px-3 text-[13px] font-medium transition-[background-color,border-color,color] duration-150",
+            view === "city" ? "border-ink bg-raised text-ink" : "border-line-2 text-ink-2 hover:bg-raised hover:text-ink",
+          )}
+        >
+          <MapPin size={15} strokeWidth={1.5} /> <span className="max-sm:hidden">By city</span><span className="sm:hidden">City</span>
+        </button>
+        {trailing}
+      </div>
+      <div className="flex items-center gap-3 border-b border-line px-4 py-3">
+        <label className="flex h-9 min-w-0 flex-1 items-center gap-2 rounded-[10px] bg-raised px-3 sm:max-w-[260px]">
           <Search size={16} strokeWidth={1.5} className="shrink-0 text-ink-3" />
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search"
-            aria-label="Search teams"
+            placeholder={league ? `Search ${league} teams` : "Search cities"}
+            aria-label={league ? "Search teams" : "Search cities"}
             className="w-full min-w-0 bg-transparent text-[14px] outline-none placeholder:text-ink-3"
           />
         </label>
-        {trailing}
+        {league ? (
+          <button
+            type="button"
+            onClick={() => advance(league, picks)}
+            className="ml-auto flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[10px] px-3 text-[14px] text-ink-2 transition-[background-color,color,transform] duration-150 hover:bg-raised hover:text-ink active:scale-[0.98]"
+          >
+            {picks[league] ? (isLast ? "Done" : "Next") : `Skip ${league}`}
+            {picks[league] && isLast ? <Check size={16} strokeWidth={1.5} /> : <ArrowRight size={16} strokeWidth={1.5} />}
+          </button>
+        ) : (
+          <span className="ml-auto text-right text-[13px] leading-4 text-ink-3 max-sm:hidden">Pick a city to take all of its teams</span>
+        )}
       </div>
-      <div className="scroll-quiet min-h-0 flex-1 overflow-y-auto p-4">
+      <div ref={body} className="scroll-quiet min-h-0 flex-1 overflow-y-auto overflow-x-hidden p-4">
+        <AnimatePresence mode="wait" initial={false} custom={dir}>
+        <motion.div
+          key={view}
+          custom={dir}
+          variants={{
+            enter: (d: number) => ({ opacity: 0, x: d * 24 }),
+            show: { opacity: 1, x: 0, transition: { duration: 0.26, ease: EASE } },
+            leave: (d: number) => ({ opacity: 0, x: d * -24, transition: { duration: 0.14, ease: "easeIn" } }),
+          }}
+          initial="enter"
+          animate="show"
+          exit="leave"
+        >
         {view === "city" ? (
           <div className="grid grid-cols-1 gap-1 sm:grid-cols-2">
             {cityList.map(([name, ts]) => (
@@ -152,6 +208,8 @@ export function TeamBrowser({
         {(view === "city" ? cityList.length : list.length) === 0 && (
           <p className="py-12 text-center text-[14px] text-ink-3">No match for “{query}”</p>
         )}
+        </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );
@@ -268,7 +326,7 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
       <dialog
         ref={ref}
         aria-label="Pick your teams"
-        className="m-auto w-[min(920px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
+        className="m-auto w-[min(980px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
       >
         <TeamBrowser
           key={session}
@@ -279,7 +337,7 @@ export function TeamPicker({ teams, leagues, picks, onChange }: { teams: Team[];
           view={view}
           setView={setView}
           onComplete={close}
-          className="max-h-[min(640px,calc(100dvh-48px))]"
+          className="h-[min(640px,calc(100dvh-48px))]"
           trailing={
             <button type="button" aria-label="Close" onClick={close} className="grid size-8 place-items-center rounded-[8px] text-ink-2 transition-colors duration-150 hover:bg-raised hover:text-ink">
               <X size={18} strokeWidth={1.5} />

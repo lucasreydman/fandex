@@ -1,17 +1,19 @@
 "use client";
 
 import { ArrowLeft, ArrowRight, Dices } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Picks, State } from "@/lib/state";
 import type { League, Team } from "@/lib/types";
 import { randomPicks, TeamBrowser } from "./TeamPicker";
 import type { PickerView } from "./TeamPicker";
-import { Logo, Wordmark } from "./ui";
+import { EASE, Logo, Wordmark } from "./ui";
 import { Ruler, Stepper } from "./YearDial";
 
 /**
- * First-visit setup: a birth year, then teams, then straight to the scorecard.
- * Two short steps, and either can be skipped.
+ * First-visit setup: a birth year, then teams league by league, then straight to
+ * the scorecard. Any league can be skipped, and picking a city fills them all.
+ * The sheet keeps one size throughout, so moving between steps never makes it jump.
  */
 export function Welcome({
   open, teams, leagues, state, set, min, max, onDone,
@@ -58,14 +60,22 @@ export function Welcome({
       aria-label="Set up Fandex"
       className="m-auto w-[min(920px,calc(100vw-24px))] rounded-[16px] border border-line bg-card p-0 text-ink shadow-[var(--shadow)]"
     >
-      <div className="flex max-h-[min(720px,calc(100dvh-32px))] flex-col">
+      <div className="flex h-[min(700px,calc(100dvh-32px))] flex-col">
         <div className="flex h-14 shrink-0 items-center justify-between border-b border-line px-6">
           <Wordmark />
           <span className="num text-[12px] text-ink-3">Step {step} of 2</span>
         </div>
 
+        <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={step}
+          initial={{ opacity: 0, x: step === 2 ? 24 : -24 }}
+          animate={{ opacity: 1, x: 0, transition: { duration: 0.28, ease: EASE } }}
+          exit={{ opacity: 0, transition: { duration: 0.14 } }}
+          className="flex min-h-0 flex-1 flex-col overflow-hidden"
+        >
         {step === 1 ? (
-          <div className="px-6 pb-2 pt-8 sm:px-10">
+          <div className="flex flex-1 flex-col justify-center px-6 py-8 sm:px-10">
             <h2 className="display text-[36px] leading-[1.05] text-ink sm:text-[44px]">What year were you born</h2>
             <p className="mt-3 max-w-[32rem] text-[15px] leading-[22px] text-ink-2">
               Fandex adds up every season your teams have played since. You can switch to all time or any span of years afterwards
@@ -82,7 +92,7 @@ export function Welcome({
             <div className="px-6 pb-4 pt-6 sm:px-10">
               <h2 className="display text-[36px] leading-[1.05] text-ink sm:text-[44px]">Who do you root for</h2>
               <div className="mt-3 flex min-h-8 flex-wrap items-center gap-x-4 gap-y-2">
-                <p className="text-[15px] leading-[22px] text-ink-2">One per league. Skip any you don’t follow</p>
+                <p className="text-[15px] leading-[22px] text-ink-2">One per league. Skip any you don’t follow, or pick your city to take them all</p>
                 {chosen.length > 0 && (
                   <span className="flex items-center gap-2">
                     {chosen.map((k) => <Logo key={k} team={byKey.get(k)!} size={28} />)}
@@ -97,10 +107,13 @@ export function Welcome({
               onChange={(p: Picks) => set({ picks: p })}
               view={view}
               setView={setView}
+              onComplete={(p) => { if (leagues.some((l) => p[l])) onDone(true); }}
               className="min-h-0 flex-1 border-t border-line"
             />
           </>
         )}
+        </motion.div>
+        </AnimatePresence>
 
         <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-t border-line px-6 py-4">
           {step === 1 ? (
