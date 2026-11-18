@@ -4,10 +4,10 @@ export const alt = "Fandex: every season, every team, one scale";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// A strip of seasons, cold to hot, the way the site draws a team's history.
+// A strip of seasons, red for bad years and green for good, the way the site draws a team's history.
 const TAPE = [-1.6, -0.9, -0.2, 0.4, -1.1, 0.3, 1.2, 1.9, 0.8, 1.5, 2.1, 0.6, -0.4, 0.9, 1.7, 0.2, -0.8, -1.5, 0.5, 1.3];
 const mix = (a: number[], b: number[], t: number) => `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * t)).join(",")})`;
-const fill = (z: number) => mix([44, 44, 41], z >= 0 ? [238, 106, 77] : [91, 155, 209], Math.min(1, Math.abs(z) / 2.2) ** 0.8);
+const fill = (z: number) => mix([44, 44, 41], z >= 0 ? [55, 168, 107] : [229, 89, 60], Math.min(1, Math.abs(z) / 2.2) ** 0.8);
 
 export default function Image() {
   return new ImageResponse(

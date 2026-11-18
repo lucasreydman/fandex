@@ -1,8 +1,8 @@
-/** Cold to hot fill for a season, from its z-score. Theme aware through CSS variables. */
+/** Red to green fill for a season, from its z-score: bad years red, good years green. Theme aware through CSS variables. */
 export function heat(z: number): string {
   const p = Math.round(Math.min(1, Math.abs(z) / 2.2) ** 0.8 * 100);
   if (p < 4) return "var(--heat-0)";
-  return `color-mix(in oklab, var(${z >= 0 ? "--hot" : "--cold"}) ${p}%, var(--heat-0))`;
+  return `color-mix(in oklab, var(${z >= 0 ? "--good" : "--bad"}) ${p}%, var(--heat-0))`;
 }
 
 /** Same scale for a 0 to 100 index, centred on 50. */

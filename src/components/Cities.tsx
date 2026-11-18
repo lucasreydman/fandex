@@ -15,7 +15,12 @@ export function Cities({ result, picks }: { result: Result; picks: string[] }) {
   const mine = useMemo(() => new Set(picks.map((k) => result.byKey.get(k)?.team.metro).filter(Boolean) as string[]), [picks, result]);
   const [selected, setSelected] = useState<string | null>(null);
   const [hover, setHover] = useState<string | null>(null);
-  const active = result.metros.find((m) => m.name === (hover ?? selected)) ?? result.metros.find((m) => mine.has(m.name)) ?? result.metros[0];
+  // The card under the map follows the city that was picked, never the pointer. Cards differ in
+  // height, and a page that changes length under a hovering pointer slides the map out from
+  // under it, which drops the hover, which changes the card back: the whole view shakes.
+  const shown = result.metros.find((m) => m.name === selected) ?? result.metros.find((m) => mine.has(m.name)) ?? result.metros[0];
+  // Hovering only moves the outline and the label, neither of which takes up room.
+  const active = result.metros.find((m) => m.name === hover) ?? shown;
   // Draw big circles first so small cities stay clickable on top of them.
   const drawOrder = useMemo(() => [...result.metros].sort((a, b) => b.teams.length - a.teams.length), [result]);
 
@@ -83,7 +88,7 @@ export function Cities({ result, picks }: { result: Result; picks: string[] }) {
             </span>
           )}
         </div>
-        {active && <CityCard m={active} total={result.teams.length} />}
+        {shown && <CityCard m={shown} total={result.teams.length} />}
       </div>
 
       <ol className="scroll-quiet max-h-[720px] overflow-y-auto lg:pr-1">

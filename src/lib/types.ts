@@ -74,6 +74,8 @@ export interface Options {
   halfLife: number;
   /** Leagues to score. All of them when left out. */
   leagues?: League[];
+  /** Leave out franchises that no longer play, from the rankings, the cities and the scale. */
+  excludeInactive?: boolean;
 }
 
 export interface SeasonPoint {

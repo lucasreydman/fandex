@@ -86,10 +86,10 @@ export function App() {
   const fan = useMemo(() => summarize(result, picks), [result, picks]);
 
   // The birth-year curve does not depend on the dial, so dragging the dial never recomputes it.
-  const curveKey = useDeferredValue(useMemo(() => ({ picks, weights: state.weights, halfLife: state.halfLife, includeLive: state.includeLive }), [picks, state.weights, state.halfLife, state.includeLive]));
+  const curveKey = useDeferredValue(useMemo(() => ({ picks, weights: state.weights, halfLife: state.halfLife, includeLive: state.includeLive, excludeInactive: !state.includeInactive }), [picks, state.weights, state.halfLife, state.includeLive, state.includeInactive]));
   const points = useMemo(() => {
     if (!curveKey.picks.length) return [];
-    const base = { from: MIN, to: MAX, includeLive: curveKey.includeLive, weights: curveKey.weights, halfLife: curveKey.halfLife };
+    const base = { from: MIN, to: MAX, includeLive: curveKey.includeLive, weights: curveKey.weights, halfLife: curveKey.halfLife, excludeInactive: curveKey.excludeInactive };
     return curve(data, base, curveKey.picks, MIN, MAX - 2);
   }, [curveKey]);
 
@@ -205,7 +205,7 @@ export function App() {
                 </span>
               </div>
               <motion.div key={state.tab} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, ease: EASE }} className="pt-6">
-                {state.tab === "rankings" && <Rankings result={result} picks={picks} leagues={counted} />}
+                {state.tab === "rankings" && <Rankings result={result} picks={picks} leagues={counted} includeInactive={state.includeInactive} onIncludeInactive={(v) => set({ includeInactive: v })} />}
                 {state.tab === "seasons" && <Seasons result={result} picks={picks} leagues={counted} />}
                 {state.tab === "cities" && <Cities result={result} picks={picks} />}
               </motion.div>
